@@ -1,0 +1,59 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+There are five datasets from TCMGeneDIT (http://tcm.lifescience.ntu.edu.tw/):
+* TCM_disease_associations.tab
+* TCM_effect_associations.tab
+* TCM_gene_associations.tab
+* TCM_gene_disease_associations.tab
+* TCM_ingredient_associations.tab
+
+All of them are available as tab delimited data files.
+
+= Details =
+== Disease association ==
+TCM_Name	Disease_Name	t-value
+
+== Effect association ==
+TCM_Name	Effect_Name	t-value
+
+== Gene association ==
+TCM_Name	Gene_Symbol	t-value
+
+No gene names proposed by Kei exist here.
+
+== Ingredient association ==
+TCM_Name	Ingredient_Name	t-value
+
+== Gene-Disease association ==
+TCM_Name	Gene_Symbol	Disease_Name	t-value
+
+== Example data ==
+For "alzheimer's disease",
+
+* Angelica gigas        APLP2   Alzheimer Disease       1.414
+* Cannabis sativa       APLP2   Alzheimer Disease       1.414 
+* Curcuma longa         NFKB1   Alzheimer Disease       1.414 
+* Curcuma longa         CCND1   Alzheimer Disease       1.414 
+* Curcuma longa         TNF     Alzheimer Disease       1.414 
+* Curcuma longa         IL6     Alzheimer Disease       1.414 
+* Curcuma longa         ERBB2   Alzheimer Disease       1.414 
+* Curcuma longa         IL1B    Alzheimer Disease       1.414 
+* Ginkgo biloba         MAPT    Alzheimer Disease       2.000 
+* Ginkgo biloba         ADAMTS2 Alzheimer Disease       1.414 
+* Ginkgo biloba         AGPS    Alzheimer Disease       2.236 
+* Ginkgo biloba         TTR     Alzheimer Disease       1.414 
+* Ginkgo biloba         APLP2   Alzheimer Disease       5.000 
+* Ginkgo biloba         APP     Alzheimer Disease       1.732 
+* Ginkgo biloba         ACHE    Alzheimer Disease       2.828 
+* Ginkgo biloba         APOE    Alzheimer Disease       1.732 
+* Ginkgo biloba         CASP3   Alzheimer Disease       1.732 
+* Ginkgo biloba         MAPK1   Alzheimer Disease       1.414 
+* Ginkgo biloba         CREB1   Alzheimer Disease       1.414 
+* Hypericum perforatum  APLP2   Alzheimer Disease       1.414 
+* Polygala tenuifolia   APLP2   Alzheimer Disease       1.414 
+* Polygala tenuifolia   APP     Alzheimer Disease       1.414 
+* Prunus persica        ACHE    Alzheimer Disease       1.414 
+
+
