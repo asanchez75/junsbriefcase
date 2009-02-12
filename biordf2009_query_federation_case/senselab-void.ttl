@@ -16,15 +16,14 @@
 :senselabontology a void:Dataset ;
 	dcterms:title "SenseLab Neuron Ontology" ;
 	dcterms:description "Neuroscience ontology derived from the SenseLab NeuronDB database.";
-	dcterms:license <> ;
+	dcterms:license <> ;	# TODO
 	foaf:homepage	<http://neuroweb.med.yale.edu/senselab/> ;
 	void:exampleResource <http://purl.org/science/owl/sciencecommons/identified_by_pmid> ;
 	void:exampleResource <http://purl.org/ycmi/senselab/neuron_ontology.owl#has_Receptor> ;
 	void:exampleResource <http://purl.org/ycmi/senselab/neuron_ontology.owl#NMDA> ;
 	dcterms:creator  :senselab ; ## this organization can be further defined
-    dcterms:publisher : ; ## someone's foaf file
 	dcterms:source <http://purl.org/ycmi/senselab/neuron_ontology.owl#> ;
-    dcterms:subject <http://dbpedia.org/resource/> ;
+    dcterms:subject <http://purl.org/ycmi/senselab/neuron_ontology.owl#Receptor> ; ## TODO: find a better subject URI
 	void:feature :owl ; ## this technical feature can be further defined
     void:vocabulary <http://www.obofoundry.org/ro/ro.owl> .
 
@@ -37,10 +36,9 @@
 			dcterms:description "RDF data extracted from Wikipedia" ;
 			dcterms:license <http://www.gnu.org/copyleft/fdl.html> ;
 			foaf:homepage <http://dbpedia.org/> ; 
-			void:exampleResource <http://dbpedia.org/resource/NMDA_receptor> ; ## TODO 
-			void:exampleResource <http://dbpedia.org/resource/Physics> ; ## TODO
-			void:exampleResource <http://dbpedia.org/resource/Ludwig_van_Beethoven> ; ## TODO
+			void:exampleResource <http://dbpedia.org/resource/NMDA_receptor> ;
 			dcterms:source <http://dbpedia.org/resource/Wikipedia> ;
+		    dcterms:subject <http://dbpedia.org/resource/Molecular_neuroscience/> ;
 			dcterms:modified "2008-11-17"^^xsd:date ;
 			void:feature :RDFXML ;
 			void:sparqlEndpoint <http://dbpedia.org/sparql> .
