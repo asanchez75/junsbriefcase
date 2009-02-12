@@ -55,3 +55,32 @@ For "alzheimer's disease",
 || Polygala tenuifolia  || APLP2 ||  Alzheimer Disease  ||     1.414 ||
 || Polygala tenuifolia  || APP   ||  Alzheimer Disease  ||     1.414 ||
 || Prunus persica       ||  ACHE ||   Alzheimer Disease ||      1.414 ||
+
+There are further information about the effect of a TCM ingredient, which might be interesting. For example, for "Ginkgo_biloba", one can fine information from the TCM_ingredient_associations.tab. Some example data are copied below.
+
+|| *TCM_name* || *Effect* || *t-value* ||
+||Ginkgo biloba	||ginkgolide ||	12.910 
+||
+||Ginkgo biloba	||bilobalide ||	10.944 
+||
+||Ginkgo biloba	||flavonoid ||	10.762 
+||
+||Ginkgo biloba	||quercetin ||	9.512 
+||
+||Ginkgo biloba	||terpene ||	9.102 
+||
+||Ginkgo biloba	||glycoside ||	7.495 
+||
+||Ginkgo biloba	||kaempferol ||	7.397 
+||
+||Ginkgo biloba	||vitamin e ||	6.314 
+||
+||Ginkgo biloba	||glucose ||	6.283 
+||
+||Ginkgo biloba	||calcium ||	6.180 
+||
+||Ginkgo biloba	||flavone ||	6.063 
+||
+||Ginkgo biloba	||lactone ||	6.059 
+||
+||Ginkgo biloba	||terpenoid ||	5.817||
