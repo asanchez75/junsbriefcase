@@ -1,0 +1,94 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix senselabontology: <http://purl.org/ycmi/senselab/neuron_ontology.owl> .
+@prefix : </> .
+
+#######################################################
+### define the first dataset, the SenseLab Ontology ###
+#######################################################
+
+:senselabontology a void:Dataset ;
+	dcterms:title "SenseLab Neuron Ontology" ;
+	dcterms:description "Neuroscience ontology derived from the SenseLab NeuronDB database.";
+	dcterms:license <> ;
+	foaf:homepage	<http://neuroweb.med.yale.edu/senselab/> ;
+	void:exampleResource <http://purl.org/science/owl/sciencecommons/identified_by_pmid> ;
+	void:exampleResource <http://purl.org/ycmi/senselab/neuron_ontology.owl#has_Receptor> ;
+	void:exampleResource <http://purl.org/ycmi/senselab/neuron_ontology.owl#NMDA> ;
+	dcterms:creator  :senselab ; ## this organization can be further defined
+    dcterms:publisher : ; ## someone's foaf file
+	dcterms:source <http://purl.org/ycmi/senselab/neuron_ontology.owl#> ;
+    dcterms:subject <http://dbpedia.org/resource/> ;
+	void:feature :owl ; ## this technical feature can be further defined
+    void:vocabulary <http://www.obofoundry.org/ro/ro.owl> .
+
+#######################################################
+### define the first dataset, DBPedia ###
+#######################################################
+
+:dbpedia	a void:Dataset ;
+			dcterms:title "DBPedia" ;
+			dcterms:description "RDF data extracted from Wikipedia" ;
+			dcterms:license <http://www.gnu.org/copyleft/fdl.html> ;
+			foaf:homepage <http://dbpedia.org/> ; 
+			void:exampleResource <http://dbpedia.org/resource/NMDA_receptor> ; ## TODO 
+			void:exampleResource <http://dbpedia.org/resource/Physics> ; ## TODO
+			void:exampleResource <http://dbpedia.org/resource/Ludwig_van_Beethoven> ; ## TODO
+			dcterms:source <http://dbpedia.org/resource/Wikipedia> ;
+			dcterms:modified "2008-11-17"^^xsd:date ;
+			void:feature :RDFXML ;
+			void:sparqlEndpoint <http://dbpedia.org/sparql> .
+
+:FU_Berlin	a foaf:Organization ;
+			rdfs:label "Freie Universitat Berlin" ;
+			foaf:homepage <http://www.fu-berlin.de/> .
+
+:RDFXML	a void:TechnicalFeature;
+		rdfs:label "RDF/XML" ;
+		rdfs:comment "Available as linked data in RDF/XML format" ;
+		dcterms:format "application/rdf+xml" . 
+
+##########################################################
+### define the third dataset, i.e., Matthias's mapping ###
+### which atm is delicated to store links between the  ###
+### two datasets, :senselabontology and :dbpedia 	   ###
+##########################################################
+
+:senselabmapping a void:Dataset ;
+	void:subset :senselabNeuroToDbpedia ;
+	void:subset	:senselabReceptorToDbpedia ;
+	foaf:homepage <http://esw.w3.org/topic/HCLSIG_BioRDF_Subgroup/QueryFederation/mappings>
+
+############################################################
+### define the two actual link files created by Matthias ###
+### they are part of :senselabmapping, because they are  ###
+### not stored in either :senselabontology or :dbpedia   ###
+############################################################
+
+:senselabNeuroToDbpedia a void:Linkset ;
+	void:target :senselabontology ;
+    void:target :dbpedia ;
+    void:linkPredicate owl:sameAs ;
+	dcterms:source <http://purl.org/ycmi/res/senselab_neuron_to_DBpedia_mapping.owl> ;
+	void:statItem [ 
+       rdf:value 9;
+       scovo:dimension void:numberOfTriples ;
+       scovo:dimension owl:sameAs ;
+    ] .
+	
+:senselabReceptorToDbpedia a void:Linkset ;
+	void:target :senselabontology ;
+    void:target :dbpedia ;
+    void:linkPredicate owl:sameAs ;
+	dcterms:source <http://neuroweb.med.yale.edu/res/senselab_receptor_to_DBpedia_mapping.owl> ;
+	void:statItem [ 
+       rdf:value 68;
+       scovo:dimension void:numberOfTriples ;
+       scovo:dimension owl:sameAs ;
+    ] .
