@@ -74,9 +74,20 @@
 	void:target :senselabontology ;
     void:target :dbpedia ;
     void:linkPredicate owl:sameAs ;
+	dcterms:source <http://purl.org/ycmi/res/senselab_neuron_to_DBpedia_mapping.owl> ;
+	void:statItem [ 
+       rdf:value 9;
+       scovo:dimension void:numberOfTriples ;
+       scovo:dimension owl:sameAs ;
+    ] .
 	
-	
-:senselabNeuroToDbpedia a void:Linkset ;
+:senselabReceptorToDbpedia a void:Linkset ;
 	void:target :senselabontology ;
     void:target :dbpedia ;
-    void:linkPredicate owl:sameAs .
+    void:linkPredicate owl:sameAs ;
+	dcterms:source <http://neuroweb.med.yale.edu/res/senselab_receptor_to_DBpedia_mapping.owl> ;
+	void:statItem [ 
+       rdf:value 68;
+       scovo:dimension void:numberOfTriples ;
+       scovo:dimension owl:sameAs ;
+    ] .
