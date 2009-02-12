@@ -3,15 +3,15 @@
 = Introduction =
 
 There are five datasets from TCMGeneDIT (http://tcm.lifescience.ntu.edu.tw/):
-* TCM_disease_associations.tab
-* TCM_effect_associations.tab
-* TCM_gene_associations.tab
-* TCM_gene_disease_associations.tab
-* TCM_ingredient_associations.tab
+ * TCM_disease_associations.tab
+ * TCM_effect_associations.tab
+ * TCM_gene_associations.tab
+ * TCM_gene_disease_associations.tab
+ * TCM_ingredient_associations.tab
 
 All of them are available as tab delimited data files.
 
-= Details =
+= Data Structure =
 == Disease association ==
 TCM_Name	Disease_Name	t-value
 
@@ -29,7 +29,7 @@ TCM_Name	Ingredient_Name	t-value
 == Gene-Disease association ==
 TCM_Name	Gene_Symbol	Disease_Name	t-value
 
-== Example data ==
+= Example data =
 For "alzheimer's disease",
 || *TCM_name* || *Gene_Symbol* || *Disease_Name* || *t-value* ||
 || Angelica gigas  ||      APLP2 ||  Alzheimer Disease  ||     1.414 ||
