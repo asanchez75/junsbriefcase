@@ -39,6 +39,7 @@
 			void:exampleResource <http://dbpedia.org/resource/NMDA_receptor> ;
 			dcterms:source <http://dbpedia.org/resource/Wikipedia> ;
 		    dcterms:subject <http://dbpedia.org/resource/Molecular_neuroscience/> ;
+		    dcterms:subject <http://dbpedia.org/class/yago/Receptors> ;
 			dcterms:modified "2008-11-17"^^xsd:date ;
 			void:feature :RDFXML ;
 			void:sparqlEndpoint <http://dbpedia.org/sparql> .
