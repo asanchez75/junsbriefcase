@@ -24,6 +24,7 @@
 	dcterms:creator  :senselab ; ## this organization can be further defined
 	dcterms:source <http://purl.org/ycmi/senselab/neuron_ontology.owl#> ;
     dcterms:subject <http://purl.org/ycmi/senselab/neuron_ontology.owl#Receptor> ; ## TODO: find a better subject URI
+    dcterms:subject <http://dbpedia.org/resource/Receptor_(biochemistry)> ;
 	void:feature :owl ; ## this technical feature can be further defined
     void:vocabulary <http://www.obofoundry.org/ro/ro.owl> .
 
