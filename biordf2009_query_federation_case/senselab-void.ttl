@@ -7,7 +7,7 @@
 @prefix scovo: <http://purl.org/NET/scovo#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix senselabontology: <http://purl.org/ycmi/senselab/neuron_ontology.owl> .
-@prefix : </> .
+@prefix : <http://neuroweb.med.yale.edu/senselab/senselab-void.ttl>
 
 #######################################################
 ### define the first dataset, the SenseLab Ontology ###
@@ -25,7 +25,11 @@
 	dcterms:source <http://purl.org/ycmi/senselab/neuron_ontology.owl#> ;
     dcterms:subject <http://purl.org/ycmi/senselab/neuron_ontology.owl#Receptor> ; ## TODO: find a better subject URI
     dcterms:subject <http://dbpedia.org/resource/Receptor_(biochemistry)> ;
+    dcterms:subject <http://dbpedia.org/resource/Neurotransmitter_receptor> ;
+    dcterms:subject <http://dbpedia.org/resource/Sensory_receptor> ;
+    dcterms:source <doi:10.1093/bib/bbm018> ;
 	void:feature :owl ; ## this technical feature can be further defined
+	void:sparqlEndpoint <http://hcls.deri.org:8080/> ;
     void:vocabulary <http://www.obofoundry.org/ro/ro.owl> .
 
 #######################################################
