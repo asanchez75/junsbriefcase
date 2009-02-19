@@ -2,9 +2,9 @@ shows how to use jena.rdfcat to convert rdf files from one format to another.
 
 = Details =
 
-cd /root/workspace/oaisparql
+cd /root/workspace/oai2sparql
 
-export OAI2SPARQLROOT=/root/workspace/oaisparql
+export OAITOSPARQLROOT=/root/workspace/oai2sparql
 
 CP="$(./oai2sparql_path)"
 
