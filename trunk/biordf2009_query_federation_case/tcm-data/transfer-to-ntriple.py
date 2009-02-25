@@ -23,6 +23,7 @@ type_ingredient = '<http://tcm.lifescience.ntu.edu.tw/Ingredient>'
 type_gene = '<http://tcm.lifescience.ntu.edu.tw/Gene>'
 predicate_ingredient = '<http://tcm.lifescience.ntu.edu.tw/ingredient>'
 predicate_gene = '<http://tcm.lifescience.ntu.edu.tw/gene>'
+rdfs_label = '<http://www.w3.org/2000/01/rdf-schema#label>'
 
 
 #reader = csv.DictReader(infile, delimiter="\t")
@@ -41,13 +42,13 @@ for row in reader:
         ingredientid, geneid, diseaseid = splits[0].replace(" ", "_"), splits[1].replace(" ", "_"), splits[2].replace(" ", "_")
         
         triple = diseasename + diseaseid + ">\ta\t" + type_disease + " ;\n"
-        triple = triple + "\trdfs:label\t\"" + splits[2] + "\";\n"
+        triple = triple + "\t" + rdfs_label + "\t\"" + splits[2] + "\";\n"
         triple = triple + "\t" + predicate_ingredient + "\t" +  ingredientname + ingredientid + "> ;\n"
         triple = triple + "\t" + predicate_gene + "\t" +  genename + geneid + "> .\n"
         triple = triple + ingredientname + ingredientid + ">\ta\t" + type_ingredient + " ;\n"
-        triple = triple + "\trdfs:label\t\"" + splits[0] + "\" .\n"
+        triple = triple + "\t" + rdfs_label + "\t\"" + splits[0] + "\" .\n"
         triple = triple + genename + geneid + ">\ta\t" + type_gene + " ;\n"
-        triple = triple + "\trdfs:label\t\"" + splits[1] + "\" .\n\n"
+        triple = triple + "\t" + rdfs_label + "\t\"" + splits[1] + "\" .\n\n"
     outfile.write(triple)
     outfile.flush()
     i = i + 1
