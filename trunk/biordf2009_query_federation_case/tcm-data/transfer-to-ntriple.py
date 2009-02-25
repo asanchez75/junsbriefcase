@@ -7,10 +7,12 @@ import optparse
 import logging
 
 # TODO set this to file path
-infilename = '/root/workspace/biordf2009_query_federation_case/TCM_gene_disease_associations.tab'
+#infilename = '/root/workspace/biordf2009_query_federation_case/TCM_gene_disease_associations.tab'
+infilename = '\\oxford\\svn\\biordf2009_query_federation_case\\tcm-data\\TCM_gene_disease_associations.tab'
 infile = codecs.open(infilename, mode='r', encoding='UTF-8')
 
-outfilename = '/root/workspace/biordf2009_query_federation_case/tcm-data/TCM_gene_disease_associations.nt'
+#outfilename = '/root/workspace/biordf2009_query_federation_case/tcm-data/TCM_gene_disease_associations.nt'
+outfilename = '\\oxford\\svn\\biordf2009_query_federation_case\\tcm-data\\TCM_gene_disease_associations.nt'
 outfile = codecs.open(outfilename, mode='w', encoding='UTF-8')
 
 ingredientname = '<http://tcm.lifescience.ntu.edu.tw/id/ingredient/'
@@ -39,10 +41,13 @@ for row in reader:
         ingredientid, geneid, diseaseid = splits[0].replace(" ", "_"), splits[1].replace(" ", "_"), splits[2].replace(" ", "_")
         
         triple = diseasename + diseaseid + ">\ta\t" + type_disease + " ;\n"
+        triple = triple + "\trdfs:label\t\"" + splits[2] + "\";\n"
         triple = triple + "\t" + predicate_ingredient + "\t" +  ingredientname + ingredientid + "> ;\n"
         triple = triple + "\t" + predicate_gene + "\t" +  genename + geneid + "> .\n"
-        triple = triple + ingredientname + ingredientid + ">\ta\t" + type_ingredient + " .\n"
-        triple = triple + genename + geneid + ">\ta\t" + type_gene + " .\n\n"
+        triple = triple + ingredientname + ingredientid + ">\ta\t" + type_ingredient + " ;\n"
+        triple = triple + "\trdfs:label\t\"" + splits[0] + "\" .\n"
+        triple = triple + genename + geneid + ">\ta\t" + type_gene + " ;\n"
+        triple = triple + "\trdfs:label\t\"" + splits[1] + "\" .\n\n"
     outfile.write(triple)
     outfile.flush()
     i = i + 1
