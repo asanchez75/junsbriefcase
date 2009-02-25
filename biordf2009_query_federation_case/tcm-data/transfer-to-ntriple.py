@@ -11,8 +11,8 @@ import logging
 infilename = '\\oxford\\svn\\biordf2009_query_federation_case\\tcm-data\\TCM_gene_disease_associations.tab'
 infile = codecs.open(infilename, mode='r', encoding='UTF-8')
 
-#outfilename = '/root/workspace/biordf2009_query_federation_case/tcm-data/TCM_gene_disease_associations.nt'
-outfilename = '\\oxford\\svn\\biordf2009_query_federation_case\\tcm-data\\TCM_gene_disease_associations.nt'
+#outfilename = '/root/workspace/biordf2009_query_federation_case/tcm-data/TCM_gene_disease_associations.ttl'
+outfilename = '\\oxford\\svn\\biordf2009_query_federation_case\\tcm-data\\TCM_gene_disease_associations.ttl'
 outfile = codecs.open(outfilename, mode='w', encoding='UTF-8')
 
 ingredientname = '<http://tcm.lifescience.ntu.edu.tw/id/ingredient/'
