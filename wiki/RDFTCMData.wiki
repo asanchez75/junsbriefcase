@@ -26,6 +26,32 @@ See also: http://code.google.com/p/junsbriefcase/wiki/TGDdataset
  where {?medicine tcm:treatment <http://tcm.lifescience.ntu.edu.tw/id/disease/Alzheimer_Disease>}
 }}}
 
+{{{
+ <http://tcm.lifescience.ntu.edu.tw/id/medicine/Polygala_tenuifolia>
+ <http://tcm.lifescience.ntu.edu.tw/id/medicine/Camellia_sinensis>
+ <http://tcm.lifescience.ntu.edu.tw/id/medicine/Polygonum_multiflorum>
+ <http://tcm.lifescience.ntu.edu.tw/id/medicine/Panax_notoginseng>
+ <http://tcm.lifescience.ntu.edu.tw/id/medicine/Papaver_somniferum>
+ <http://tcm.lifescience.ntu.edu.tw/id/medicine/Carica_papaya>
+ <http://tcm.lifescience.ntu.edu.tw/id/medicine/Lycium_barbarum>
+ <http://tcm.lifescience.ntu.edu.tw/id/medicine/Cannabis_sativa>
+ <http://tcm.lifescience.ntu.edu.tw/id/medicine/Prunus_persica>
+ <http://tcm.lifescience.ntu.edu.tw/id/medicine/Apis_mellifera>
+ <http://tcm.lifescience.ntu.edu.tw/id/medicine/Scutellaria_baicalensis>
+ <http://tcm.lifescience.ntu.edu.tw/id/medicine/Angelica_gigas>
+ <http://tcm.lifescience.ntu.edu.tw/id/medicine/Salvia_miltiorrhiza>
+ <http://tcm.lifescience.ntu.edu.tw/id/medicine/Centella_asiatica>
+ <http://tcm.lifescience.ntu.edu.tw/id/medicine/Evodia_rutaecarpa>
+ <http://tcm.lifescience.ntu.edu.tw/id/medicine/Zingiber_officinale>
+ <http://tcm.lifescience.ntu.edu.tw/id/medicine/Glycyrrhiza_uralensis>
+ <http://tcm.lifescience.ntu.edu.tw/id/medicine/Panax_ginseng>
+ <http://tcm.lifescience.ntu.edu.tw/id/medicine/Hypericum_perforatum>
+ <http://tcm.lifescience.ntu.edu.tw/id/medicine/Gastrodia_elata>
+ <http://tcm.lifescience.ntu.edu.tw/id/medicine/Nardostachys_jatamansi>
+ <http://tcm.lifescience.ntu.edu.tw/id/medicine/Ginkgo_biloba>
+ <http://tcm.lifescience.ntu.edu.tw/id/medicine/Curcuma_longa>
+}}}
+
 == Find all the effect information about the tcm medicines that can treat Alzheimer's disease ==
 {{{
  PREFIX tcm:      <http://tcm.lifescience.ntu.edu.tw/>
