@@ -8,6 +8,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Date;
 import java.util.Iterator;
@@ -15,6 +16,12 @@ import java.util.Iterator;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import com.hp.hpl.jena.query.QuerySolution;
+import com.hp.hpl.jena.query.ResultSetFactory;
+import com.hp.hpl.jena.rdf.model.Resource;
+import com.hp.hpl.jena.vocabulary.ResultSet;
+import com.sun.xml.internal.txw2.output.ResultFactory;
 
 /**
  * @author Jun Zhao
@@ -36,7 +43,7 @@ public class DiagnoseTCMData {
 
 			printKeys();
 
-			// diagnose();
+			diagnose();
 
 			System.out.println("\nAll done.");
 
@@ -50,17 +57,23 @@ public class DiagnoseTCMData {
 		// TODO Auto-generated method stub
 		Iterator keys = originalTcmData.keys();
 		System.out.println("==== The key of the original dataset ====");
+		int originalMedicine =0;
+		int queryMedicine = 0;
 		while (keys.hasNext()) {
 			String key = keys.next().toString();
 			System.out.println(key);
+			originalMedicine ++;
 		}
+		System.out.println("==== There are " + originalMedicine + " medicines ====");
 
 		keys = localQueryResult.keys();
 		System.out.println("==== The key of the query result dataset ====");
 		while (keys.hasNext()) {
 			String key = keys.next().toString();
 			System.out.println(key);
+			queryMedicine ++;
 		}
+		System.out.println("==== There are " + queryMedicine + " medicines ====");
 	}
 
 	private void diagnose() throws JSONException {
@@ -74,8 +87,9 @@ public class DiagnoseTCMData {
 		Iterator keys = originalTcmData.keys();
 		while (keys.hasNext()) {
 			String key = keys.next().toString();
-			JSONArray mappings = (JSONArray) localQueryResult.get(key);
-			if (mappings.length() == 0) {
+			if (localQueryResult.has(key)){
+				String mappings = (String) localQueryResult.get(key);
+			}else{
 				System.out.println("* " + key);
 				missing++;
 			}
@@ -90,8 +104,10 @@ public class DiagnoseTCMData {
 		keys = localQueryResult.keys();
 		while (keys.hasNext()) {
 			String key = keys.next().toString();
-			JSONArray mappings = (JSONArray) originalTcmData.get(key);
-			if (mappings.length() == 0) {
+			if (originalTcmData.has(key)){
+				String mappings = (String) originalTcmData.get(key);
+				//System.out.println("\n=== Found " + mappings + " disease names.");
+			}else{
 				System.out.println("* " + key);
 				newDisease++;
 			}
@@ -103,24 +119,29 @@ public class DiagnoseTCMData {
 
 	private void readFiles() throws IOException, JSONException {
 		// TODO Auto-generated method stub
-		//localQueryResult = readMap("tcm-data/tcm1.js");
-		originalTcmData = readMap("tcm-data/TCM_gene_disease_associations.tab");
+		localQueryResult = readJson("tcm-data\\medicine_disease.js");
+		originalTcmData = readJson("tcm-data\\medicine_disease_from_tcm.js");
 	}
-
-	private JSONObject readMap(String filename) throws IOException,
-			JSONException {
-		// TODO Auto-generated method stub
+	
+	private JSONObject readJson (String filename) throws FileNotFoundException, JSONException{
 		File f = new File(filename);
-		BufferedReader r = new BufferedReader(new InputStreamReader(
-				new FileInputStream(f)));
-		StringBuffer buffer = new StringBuffer();
-
-		String line = r.readLine();
-		while (line != null) {
-			buffer.append(line);
-			line = r.readLine();
+		InputStream inFile = new FileInputStream(f);
+		com.hp.hpl.jena.query.ResultSet results = ResultSetFactory.fromJSON(inFile);
+		
+		// read the keys and loop to construct JSON result object
+		JSONObject container = new JSONObject();
+		for ( ; results.hasNext() ; ){
+			QuerySolution soln = results.nextSolution() ;
+			String medicine = soln.get("medicine").toString();
+			Iterator<String> varNames = soln.varNames();
+			String varName = "";
+			if (varNames.next().toString().equals("medicine"))
+				varName = varNames.next().toString();
+//				System.out.println("=== the other variable name " + varName);
+			container.put(medicine, soln.get(varName).toString());
 		}
-		return new JSONObject(buffer.toString());
+		
+		return container;
 	}
 
 	/**
