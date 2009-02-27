@@ -66,8 +66,11 @@ See also: http://code.google.com/p/junsbriefcase/wiki/TGDdataset
 {{{
  PREFIX tcm:      <http://tcm.lifescience.ntu.edu.tw/>
  PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
  select distinct *
- where {?disease tcm:medicine ?herb ;
-                 tcm:gene <http://tcm.lifescience.ntu.edu.tw/id/gene/OPRM1> .
+ where {?gene rdfs:label ?name .
+        filter regex(?name, "^CASP") .
+        ?disease tcm:medicine ?herb ;
+                 tcm:gene ?gene.
  }
 }}}
