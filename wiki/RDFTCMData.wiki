@@ -10,9 +10,12 @@ See also: http://code.google.com/p/junsbriefcase/wiki/TGDdataset
 ||         || Effect||
 
 ||  Object Properties || Domain || Range ||
-|| medicalEffect || Medicine || Disease ||
+|| treatment || Medicine || Disease ||
 || association || Medicine || Gene ||
 || medicine || Disease || Medicine ||
 || gene || Disease || Gene ||
 || ingredient || Medicine || Ingredient ||
 || effect || Medicine || Effect ||
+
+= Example SPARQL Queries =
+== Find all the 
