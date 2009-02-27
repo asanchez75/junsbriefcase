@@ -70,19 +70,3 @@ There are further information about the effect of a TCM ingredient, which might 
 ||Ginkgo biloba	||flavone ||	6.063 ||
 ||Ginkgo biloba	||lactone ||	6.059 ||
 ||Ginkgo biloba	||terpenoid ||	5.817||
-
-= Data Ontology for the RDF TCM Dataset =
-|| Classes ||       ||
-||         || Disease ||
-||         || Medicine||
-||         || Gene    ||
-||         || Ingredient||
-||         || Effect||
-
-||  Object Properties || Domain || Range ||
-|| medicalEffect || Medicine || Disease ||
-|| association || Medicine || Gene ||
-|| medicine || Disease || Medicine ||
-|| gene || Disease || Gene ||
-|| ingredient || Medicine || Ingredient ||
-|| effect || Medicine || Effect ||
