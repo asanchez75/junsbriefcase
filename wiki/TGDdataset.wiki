@@ -83,6 +83,6 @@ There are further information about the effect of a TCM ingredient, which might 
 || medicalEffect || Medicine || Disease ||
 || association || Medicine || Gene ||
 || medicine || Disease || Medicine ||
-|| gene || Disease || gene ||
+|| gene || Disease || Gene ||
 || ingredient || Medicine || Ingredient ||
 || effect || Medicine || Effect ||
