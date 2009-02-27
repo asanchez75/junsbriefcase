@@ -1,0 +1,24 @@
+Describe the schema and example queries of the RDF TCMGeneDIT dataset (http://tcm.lifescience.ntu.edu.tw/).
+See also: http://code.google.com/p/junsbriefcase/wiki/TGDdataset
+
+= Data Ontology for the RDF TCM Dataset =
+|| Classes ||       ||
+||         || Disease ||
+||         || Medicine||
+||         || Gene    ||
+||         || Ingredient||
+||         || Effect||
+
+||  Object Properties || Domain || Range ||
+|| medicalEffect || Medicine || Disease ||
+|| association || Medicine || Gene ||
+|| medicine || Disease || Medicine ||
+|| gene || Disease || Gene ||
+|| ingredient || Medicine || Ingredient ||
+|| effect || Medicine || Effect ||
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
