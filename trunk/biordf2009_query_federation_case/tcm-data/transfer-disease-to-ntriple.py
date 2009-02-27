@@ -19,7 +19,7 @@ medicinename = '<http://tcm.lifescience.ntu.edu.tw/id/medicine/'
 diseasename = '<http://tcm.lifescience.ntu.edu.tw/id/disease/'
 type_disease = '<http://tcm.lifescience.ntu.edu.tw/Disease>'
 type_medicine = '<http://tcm.lifescience.ntu.edu.tw/Medicine>'
-predicate_medicine = '<http://tcm.lifescience.ntu.edu.tw/medicine>'
+predicate_treatment = '<http://tcm.lifescience.ntu.edu.tw/treatment>'
 rdfs_label = '<http://www.w3.org/2000/01/rdf-schema#label>'
 
 #reader = csv.DictReader(infile, delimiter="\t")
@@ -36,12 +36,11 @@ for row in reader:
         splits = row[0].split("\t")
         #print "to see what is the first column in a row: " + splits[0] + "\n"
         medicineid, diseaseid = splits[0].replace(" ", "_"), splits[1].replace(" ", "_")
-        
-        triple = diseasename + diseaseid + ">\ta\t" + type_disease + " ;\n"
-        triple = triple + "\t" + rdfs_label + "\t\"" + splits[1] + "\";\n"
-        triple = triple + "\t" + predicate_medicine + "\t" +  medicinename + medicineid + "> .\n"
-        triple = triple + medicinename + medicineid + ">\ta\t" + type_medicine + " ;\n"
-        triple = triple + "\t" + rdfs_label + "\t\"" + splits[0] + "\" .\n\n"
+        triple = medicinename + medicineid + ">\ta\t" + type_medicine + " ;\n"
+        triple = triple + "\t" + rdfs_label + "\t\"" + splits[0] + "\";\n"
+        triple = triple + "\t" + predicate_treatment + "\t" +  diseasename + diseaseid + "> .\n"
+        triple = triple + diseasename + diseaseid + ">\ta\t" + type_disease + " ;\n"
+        triple = triple + "\t" + rdfs_label + "\t\"" + splits[1] + "\" .\n\n"
     outfile.write(triple)
     outfile.flush()
     i = i + 1
