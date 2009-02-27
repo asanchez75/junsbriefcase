@@ -13,21 +13,19 @@ All of them are available as tab delimited data files.
 
 = Data Structure =
 == Disease association ==
-TCM_Name	Disease_Name	t-value
+|| TCM_Name || Disease_Name || t-value ||
 
 == Effect association ==
-TCM_Name	Effect_Name	t-value
+|| TCM_Name || Effect_Name || t-value ||
 
 == Gene association ==
-TCM_Name	Gene_Symbol	t-value
-
-No gene names proposed by Kei exist here.
+|| TCM_Name || Gene_Symbol || t-value ||
 
 == Ingredient association ==
-TCM_Name	Ingredient_Name	t-value
+|| TCM_Name || Ingredient_Name	|| t-value ||
 
 == Gene-Disease association ==
-TCM_Name	Gene_Symbol	Disease_Name	t-value
+|| TCM_Name || Gene_Symbol || Disease_Name || t-value ||
 
 = Example data =
 For "alzheimer's disease",
@@ -72,3 +70,19 @@ There are further information about the effect of a TCM ingredient, which might 
 ||Ginkgo biloba	||flavone ||	6.063 ||
 ||Ginkgo biloba	||lactone ||	6.059 ||
 ||Ginkgo biloba	||terpenoid ||	5.817||
+
+= Data Ontology for the RDF TCM Dataset =
+|| Classes ||       ||
+||         || Disease ||
+||         || Medicine||
+||         || Gene    ||
+||         || Ingredient||
+||         || Effect||
+
+||  Object Properties || Domain || Range ||
+|| medicalEffect || Medicine || Disease ||
+|| association || Medicine || Gene ||
+|| medicine || Disease || Medicine ||
+|| gene || Disease || gene ||
+|| ingredient || Medicine || Ingredient ||
+|| effect || Medicine || Effect ||
