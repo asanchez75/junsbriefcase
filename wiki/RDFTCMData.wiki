@@ -19,10 +19,12 @@ See also: http://code.google.com/p/junsbriefcase/wiki/TGDdataset
 
 = Example SPARQL Queries =
 == Find all the tcm medicines that can treat Alzheimer's disease ==
+{{{
  PREFIX tcm:      <http://tcm.lifescience.ntu.edu.tw/>
  PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
  select distinct ?medicine
  where {?medicine tcm:treatment <http://tcm.lifescience.ntu.edu.tw/id/disease/Alzheimer_Disease>}
+}}}
 
 == Find all the effect information about the tcm medicines that can treat Alzheimer's disease ==
  PREFIX tcm:      <http://tcm.lifescience.ntu.edu.tw/>
