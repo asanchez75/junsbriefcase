@@ -109,3 +109,53 @@ Documentations:
 see also:
 * http://www.w3.org/TR/hcls-kb/
 * http://www.w3.org/TR/hcls-senselab
+
+
+== Neurocommons at neurocommons ==
+{{{
+# All the mesh terms for a given pubmed paper
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix mesh: <http://purl.org/commons/record/mesh/>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix sc: <http://purl.org/science/owl/sciencecommons/>
+
+select distinct ?p ?o
+from <http://purl.org/science/graph/medline/subject-headings>
+from <http://purl.org/science/graph/mesh/mesh-skos>
+from <http://purl.org/science/graph/mesh/qualified-headings>
+where
+{   
+    <http://purl.org/commons/record/pmid/836189> ?p ?term. 
+    { ?term skos:prefLabel ?name. }
+      union
+    { ?term skos:narrower ?uterm. 
+      ?uterm skos:prefLabel ?name. 
+      ?term sc:is_qualified_by ?qterm.
+      ?qterm skos:prefLabel ?qualifier
+    }
+}
+}}}
+
+Not very successful
+
+{{{
+# All the descriptions for a given pubmed paper
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix mesh: <http://purl.org/commons/record/mesh/>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix sc: <http://purl.org/science/owl/sciencecommons/>
+
+select distinct *
+from <http://purl.org/science/graph/medline/subject-headings>
+from <http://purl.org/science/graph/mesh/mesh-skos>
+from <http://purl.org/science/graph/mesh/qualified-headings>
+from <http://purl.org/science/graph/medline/titles-years>
+from <http://purl.org/science/graph/ncbi/gene-pubmed>
+where
+{   
+    <http://purl.org/commons/record/pmid/836189> ?p ?o .
+    ?s ?p1 <http://purl.org/commons/record/pmid/836189> .
+}
+}}}
