@@ -143,6 +143,125 @@ where
 }}}
 
 
+{{{
+## search for publications about a specific gene
+
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+
+select *
+from <http://purl.org/science/graph/ncbi/gene-pubmed>
+where 
+ {
+   <http://purl.org/commons/record/ncbi_gene/3772180> ?p ?o
+ }
+}}}
+
+{{{
+{ "head": { "link": [], "vars": ["p", "o"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/7789765" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/14704182" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/1900493" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/7569915" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/7823955" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/8370520" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/8982468" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/1703632" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/8331337" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/11237461" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/15927177" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/9892668" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/8275850" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/16511567" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/9487384" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/10790394" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/10879541" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/3089868" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/9748152" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/12479803" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/12506004" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/11526072" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/10445033" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/8253214" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/105964" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/6790338" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/1398052" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/8984640" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/8246990" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/9398148" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/116894" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/2473007" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/1748277" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/2124516" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/11105896" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/2109831" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/7651341" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/8178152" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/9524128" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/10996811" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/14668388" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/8417324" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/11131529" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/7707963" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/10692016" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/1743482" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/12672493" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/7883789" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/9988773" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/11092827" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/1509513" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/8816800" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/9144292" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/9622612" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/10199951" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/10801462" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/11396999" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/17276344" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/8119121" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/3145197" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/11245569" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/11222155" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/8878676" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/9592147" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/12645926" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/16122416" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/10525352" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/9649497" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/12350340" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/10191049" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/17363251" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/10581276" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/12086596" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/10556072" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/1511868" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/12537572" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/1485963" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/2193131" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/6402396" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/11483574" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/11840322" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/7567454" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/7867511" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/8001118" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/8062457" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/9017901" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/11238895" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/11581160" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/14972680" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/12091311" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/1781021" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/10916158" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/7779680" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/10831834" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/10652276" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/12429692" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/2015624" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/7588059" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/8441386" }},
+    { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/8791531" }} ] } }
+}}}
+
 == Neurocommons at neurocommons ==
 http://sparql.neurocommons.org/
 
