@@ -279,9 +279,43 @@ where {
 }}}
 
 {{{
+### search for genes mentioned in a publication
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+
+select *
+from <http://purl.org/science/graph/ncbi/goa>
+from <http://purl.org/science/graph/mesh/mesh-skos>
+from <http://purl.org/science/graph/mesh/qualified-headings>
+from <http://purl.org/science/graph/medline/subject-headings>
+from <http://purl.org/science/graph/medline/titles-years>
+from <http://purl.org/science/graph/ncbi/gene-pubmed>
+where 
+ {
+  ?s ?p1 <http://purl.org/science/article/pmid/14704182> .
+ }
+}}}
+
 ### search for information about a publication
+{{{
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX sc: <http://purl.org/science/owl/sciencecommons/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
 
-
+select *
+from <http://purl.org/science/graph/ncbi/goa>
+from <http://purl.org/science/graph/mesh/mesh-skos>
+from <http://purl.org/science/graph/mesh/qualified-headings>
+from <http://purl.org/science/graph/medline/subject-headings>
+from <http://purl.org/science/graph/medline/titles-years>
+from <http://purl.org/science/graph/ncbi/gene-pubmed>
+where 
+ {
+  ?pub  sc:identified_by_pmid ?pmid ;
+        dc:date ?pubdate ;
+        dc:title ?title .
+ }
 }}}
 
 == Neurocommons at neurocommons ==
