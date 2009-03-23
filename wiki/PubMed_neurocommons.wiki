@@ -38,7 +38,7 @@ where
 PREFIX sc: <http://purl.org/science/owl/sciencecommons/>
 prefix skos: <http://www.w3.org/2004/02/skos/core#>
 
-select distinct ?mesh
+select distinct *
 from <http://purl.org/science/graph/ncbi/goa>
 from <http://purl.org/science/graph/mesh/mesh-skos>
 from <http://purl.org/science/graph/mesh/qualified-headings>
