@@ -35,10 +35,8 @@ where
 
 == Search for Mesh terms associated with a publication ==
 {{{
-PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX sc: <http://purl.org/science/owl/sciencecommons/>
-prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
 
 select distinct ?mesh
 from <http://purl.org/science/graph/ncbi/goa>
@@ -49,8 +47,14 @@ from <http://purl.org/science/graph/medline/titles-years>
 from <http://purl.org/science/graph/ncbi/gene-pubmed>
 where 
  {
-  <http://purl.org/commons/article/pmid/11665278>  
-     <http://purl.org/science/owl/sciencecommons/has-as-minor-mesh> ?mesh .
+  <http://purl.org/commons/article/pmid/11665278>  ?p ?term. 
+    { ?term skos:prefLabel ?name. }
+      union
+    { ?term skos:narrower ?uterm. 
+      ?uterm skos:prefLabel ?name. 
+      ?term sc:is_qualified_by ?qterm.
+      ?qterm skos:prefLabel ?qualifier
+    }
 }
 }}}
 
