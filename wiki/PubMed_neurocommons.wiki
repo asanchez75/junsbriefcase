@@ -13,11 +13,11 @@ where {
 
 == Search for publications about a specific ncbi gene ==
 {{{
-select distinct ?publication
+select distinct ?pubID
 from <http://purl.org/science/graph/ncbi/gene-pubmed>
 where 
  {
-   <http://purl.org/commons/record/ncbi_gene/3772180> <http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by> ?publication
+   <http://purl.org/commons/record/ncbi_gene/3772180> <http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by> ?pubID
  }
 }}}
 
@@ -78,5 +78,35 @@ where
   optional {?pub dc:date ?pubdate } .
   optional {?pub dc:date ?title} .
   optional {?pub ?p ?o} 
+ }
+}}}
+
+== The big query: query for publications about a gene and information about these publications ==
+{{{
+PREFIX sc: <http://purl.org/science/owl/sciencecommons/>
+
+select distinct ?pubID ?pubdate ?title ?mesh ?name ?gene
+from <http://purl.org/science/graph/ncbi/gene-pubmed>
+from <http://purl.org/science/graph/ncbi/goa>
+from <http://purl.org/science/graph/mesh/mesh-skos>
+from <http://purl.org/science/graph/mesh/qualified-headings>
+from <http://purl.org/science/graph/medline/subject-headings>
+from <http://purl.org/science/graph/medline/titles-years>
+where 
+ {
+   <http://purl.org/commons/record/ncbi_gene/3772180> <http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by> ?pubID .
+   ?gene <http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by> ?pubID .
+   optional {?pub dc:date ?pubdate } .
+   optional {?pub dc:date ?title} .
+   optional
+   {?pubID ?p ?mesh . 
+    { ?mesh skos:prefLabel ?name. }
+      union
+    { ?mesh skos:narrower ?uterm. 
+      ?uterm skos:prefLabel ?name. 
+      ?mesh sc:is_qualified_by ?qterm.
+      ?qterm skos:prefLabel ?qualifier
+    }
+    } 
  }
 }}}
