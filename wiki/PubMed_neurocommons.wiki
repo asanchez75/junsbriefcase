@@ -1,0 +1,22 @@
+#summary Pubmed queries from neurocommons KB
+
+== Search for the NCBI gene ID using a gene symbol ==
+{{{
+select *
+from <http://purl.org/science/graph/ncbi/gene-info>
+where {
+ ?gene <http://purl.org/science/owl/sciencecommons/ggp_has_symbol> ?symbol .
+ filter regex (?symbol, "CG18350")
+}
+}}}
+
+
+== Search for publications about a specific ncbi gene ==
+{{{
+select distinct ?publication
+from <http://purl.org/science/graph/ncbi/gene-pubmed>
+where 
+ {
+   <http://purl.org/commons/record/ncbi_gene/3772180> <http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by> ?publication
+ }
+}}}
