@@ -262,6 +262,28 @@ where
     { "p": { "type": "uri", "value": "http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by" }	, "o": { "type": "uri", "value": "http://purl.org/science/article/pmid/8791531" }} ] } }
 }}}
 
+
+### Search for the ncbi gene id for a gene
+{{{
+select *
+from <http://purl.org/science/graph/ncbi/gene-info>
+where {
+ ?gene <http://purl.org/science/owl/sciencecommons/ggp_has_symbol> ?symbol .
+ filter regex (?symbol, "CG18350")
+}}}
+
+{{{
+  { "head": { "link": [], "vars": ["gene", "symbol"] },  
+    "results": { "distinct": false, "ordered": true, "bindings": [  
+      { "gene": { "type": "uri", "value": "http://purl.org/commons/record/ncbi_gene/3772180" }    , "symbol": { "type": "literal", "value": "CG18350" }} ] } }  
+}}}
+
+{{{
+### search for information about a publication
+
+
+}}}
+
 == Neurocommons at neurocommons ==
 http://sparql.neurocommons.org/
 
