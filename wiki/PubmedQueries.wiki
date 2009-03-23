@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#Pubmed publication records queries from Bio2RDF and HCLS KB
 
 = Bio2RDF endpoints =
 Query for pubmed publication http://bio2rdf.org/pubmed:11910129
@@ -81,7 +81,7 @@ WHERE {
        <http://purl.org/commons/record/pmid/11910129> ?p ?o .  
 }   } 
 }}}
-
+http://hcls.deri.org:8080/page/science/article/pmid/11910129
 6. http://pubmed.bio2rdf.org/sparql  search in pubmed sparql endpoint
 {{{
 CONSTRUCT { 
@@ -97,3 +97,15 @@ WHERE {
     GRAPH <http://purl.org/science/graph/ncbi/gene-pubmed> {  
         <http://purl.org/science/article/pmid/11910129> ?p ?o .  }   } LIMIT 2000
 }}}
+
+== HCLS KB @ DERI ==
+* http://hcls.deri.org:8080/
+* http://hcls.deri.org:8080/page/science/article/pmid/11910129
+
+Documentations:
+* http://neurocommons.org/page/RDF_distribution
+* http://neurocommons.org/page/Bundles 
+
+see also:
+* http://www.w3.org/TR/hcls-kb/
+* http://www.w3.org/TR/hcls-senselab
