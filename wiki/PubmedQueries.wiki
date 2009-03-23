@@ -111,7 +111,41 @@ see also:
 * http://www.w3.org/TR/hcls-senselab
 
 
+{{{
+### this works
+
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+
+select *
+where 
+ {
+   <http://purl.org/commons/record/ncbi_gene/3772180> ?p ?o
+ }
+
+}}}
+
+{{{
+## search for genes info from a specific graph
+
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+
+select *
+from <http://purl.org/science/graph/ncbi/goa>
+from <http://purl.org/science/graph/ncbi/homologene>
+from <http://purl.org/science/graph/ncbi/gene-info>
+from <http://purl.org/science/graph/ncbi/gene-pubmed>
+where 
+ {
+   <http://purl.org/commons/record/ncbi_gene/3772180> ?p ?o
+ }
+}}}
+
+
 == Neurocommons at neurocommons ==
+http://sparql.neurocommons.org/
+
 {{{
 # All the mesh terms for a given pubmed paper
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -157,5 +191,28 @@ where
 {   
     <http://purl.org/commons/record/pmid/836189> ?p ?o .
     ?s ?p1 <http://purl.org/commons/record/pmid/836189> .
+}
+}}}
+
+
+
+{{{
+### find out what identifiers are used for this pubmed record
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix mesh: <http://purl.org/commons/record/mesh/>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix sc: <http://purl.org/science/owl/sciencecommons/>
+
+select distinct *
+from <http://purl.org/science/graph/medline/subject-headings>
+from <http://purl.org/science/graph/mesh/mesh-skos>
+from <http://purl.org/science/graph/mesh/qualified-headings>
+from <http://purl.org/science/graph/medline/titles-years>
+from <http://purl.org/science/graph/ncbi/gene-pubmed>
+where
+{   
+ ?s ?p ?term. 
+ filter (regex(?s,".*11910129*")
 }
 }}}
