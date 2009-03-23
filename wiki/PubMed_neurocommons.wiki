@@ -24,6 +24,53 @@ where
 
 == Search for other gene names associated with a publication ==
 
+{{{
+select distinct ?gene
+from <http://purl.org/science/graph/ncbi/gene-pubmed>
+where 
+ {
+   ?gene <http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by> <http://purl.org/science/article/pmid/7789765>
+ }
+}}}
+
 == Search for Mesh terms associated with a publication ==
+{{{
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX sc: <http://purl.org/science/owl/sciencecommons/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+
+select distinct ?mesh
+from <http://purl.org/science/graph/ncbi/goa>
+from <http://purl.org/science/graph/mesh/mesh-skos>
+from <http://purl.org/science/graph/mesh/qualified-headings>
+from <http://purl.org/science/graph/medline/subject-headings>
+from <http://purl.org/science/graph/medline/titles-years>
+from <http://purl.org/science/graph/ncbi/gene-pubmed>
+where 
+ {
+  <http://purl.org/commons/article/pmid/11665278>  
+     <http://purl.org/science/owl/sciencecommons/has-as-minor-mesh> ?mesh .
+}
+}}}
 
 == Search for bibliographic information associated with a publication ==
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX sc: <http://purl.org/science/owl/sciencecommons/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+
+select *
+from <http://purl.org/science/graph/ncbi/goa>
+from <http://purl.org/science/graph/mesh/mesh-skos>
+from <http://purl.org/science/graph/mesh/qualified-headings>
+from <http://purl.org/science/graph/medline/subject-headings>
+from <http://purl.org/science/graph/medline/titles-years>
+from <http://purl.org/science/graph/ncbi/gene-pubmed>
+where 
+ {
+  <http://purl.org/commons/article/pmid/11665278>  sc:identified_by_pmid ?pmid .
+  optional {?pub dc:date ?pubdate } .
+  optional {?pub dc:date ?title} .
+  optional {?pub ?p ?o} 
+ }
