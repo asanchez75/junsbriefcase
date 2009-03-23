@@ -1,4 +1,4 @@
-#Pubmed publication records queries from Bio2RDF and HCLS KB
+#summary Pubmed publication records queries from Bio2RDF and HCLS KB
 
 = Bio2RDF endpoints =
 Query for pubmed publication http://bio2rdf.org/pubmed:11910129
