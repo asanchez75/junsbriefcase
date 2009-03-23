@@ -20,3 +20,10 @@ where
    <http://purl.org/commons/record/ncbi_gene/3772180> <http://purl.org/science/owl/sciencecommons/describes_gene_or_gene_product_mentioned_by> ?publication
  }
 }}}
+
+
+== Search for other gene names associated with a publication ==
+
+== Search for Mesh terms associated with a publication ==
+
+== Search for bibliographic information associated with a publication ==
