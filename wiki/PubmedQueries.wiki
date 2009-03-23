@@ -1,0 +1,99 @@
+#summary One-sentence summary of this page.
+
+= Bio2RDF endpoints =
+Query for pubmed publication http://bio2rdf.org/pubmed:11910129
+
+1. http://sparql.neurocommons.org/sparql/ Search for information from Prosite2Go graph
+{{{
+CONSTRUCT { 
+	<http://bio2rdf.org/pubmed:11910129> 
+           <http://bio2rdf.org/ns/go#has_prosite_pattern> ?prositeReference .  
+} 
+WHERE {   
+GRAPH <http://purl.org/science/graph/obo/PROSITE2GO> {   
+   <http://bio2rdf.org/pubmed:11910129> 
+            <http://www.geneontology.org/formats/oboInOwl#hasDbXref> ?o .
+   ?o http://www.geneontology.org/formats/oboInOwl#hasURI> ?prositeReference .  
+} } LIMIT 2000
+}}}
+
+
+2. http://sparql.neurocommons.org/sparql/ Search for information from Prosite2Go graph
+{{{
+CONSTRUCT { 
+    <http://bio2rdf.org/pubmed:11910129> 
+       <http://bio2rdf.org/ns/bio2rdf#has_go_annotation> ?goAnnotation .  
+} 
+WHERE {  
+    GRAPH <http://purl.org/science/graph/obo/PROSITE2GO> {   
+	?goAnnotation <http://www.geneontology.org/formats/oboInOwl#hasDbXref> ?o . 
+	?o <http://www.geneontology.org/formats/oboInOwl#hasURI> 'http://bio2rdf.org/pubmed:11910129'^^xsd:anyURI .  
+}   } LIMIT 2000
+}}}
+
+3. http://bio2rdf.mquter.qut.edu.au:8890/sparql 
+{{{
+PREFIX tags: <http://www.holygoat.co.uk/owl/redwood/0.1/tags/> 
+PREFIX terms: <http://purl.org/net/terms#> 
+CONSTRUCT { 
+    ?taggingInstance rdf:type terms:TermInstance . 
+    ?taggingInstance terms:subject <http://bio2rdf.org/pubmed:11910129> . 
+    ?taggingInstance terms:term ?tagLabelUri . 
+    ?tagLabelUri tags:name ?tagLabelName . 
+} 
+WHERE {  
+   GRAPH <http://purl.org/net/terms#TermsSparqlGraph> {  
+	?taggingInstance rdf:type terms:TermInstance . 
+	?taggingInstance terms:taggedBy ?foafUser . 
+	?taggingInstance terms:taggedOn ?taggedOn .         
+	?taggingInstance terms:subject <http://bio2rdf.org/pubmed:11910129> . 
+	OPTIONAL{ 
+	    ?taggingInstance terms:predicate ?termPredicate .
+	} 
+	OPTIONAL{
+	    ?taggingInstance terms:object ?termObject .
+	} 
+	?taggingInstance terms:term ?tagLabelUri . 
+	?tagLabelUri tags:name ?tagLabelName . 
+	FILTER(sameTerm(?foafUser, <http://purl.org/net/terms#AnonymousUser>))  
+	}  
+} LIMIT 2000
+}}}
+
+4. http://sparql.neurocommons.org/sparql/  search in medline
+{{{
+CONSTRUCT { 
+    <http://bio2rdf.org/pubmed:11910129> ?p ?o . 
+} 
+WHERE {  
+    GRAPH <http://purl.org/science/graph/medline/titles-years> {  
+	<http://purl.org/commons/record/pmid/11910129> ?p ?o .  
+}   } LIMIT 2000
+}}}
+
+5. http://sparql.neurocommons.org/sparql/  search by mesh headers
+{{{
+CONSTRUCT { 
+   <http://bio2rdf.org/pubmed:11910129> ?p ?o . 
+} 
+WHERE {  
+   GRAPH <http://purl.org/science/graph/medline/subject-headings> {  
+       <http://purl.org/commons/record/pmid/11910129> ?p ?o .  
+}   } 
+}}}
+
+6. http://pubmed.bio2rdf.org/sparql  search in pubmed sparql endpoint
+{{{
+CONSTRUCT { 
+    <http://bio2rdf.org/pubmed:11910129> ?p ?o . 
+} 
+WHERE {  <http://pubmed.bio2rdf.org/pubmed:11910129> ?p ?o .   } LIMIT 2000
+}}}
+
+7. http://sparql.neurocommons.org/sparql/ 
+{{{
+CONSTRUCT { <http://bio2rdf.org/pubmed:11910129> ?p ?o . } 
+WHERE {  
+    GRAPH <http://purl.org/science/graph/ncbi/gene-pubmed> {  
+        <http://purl.org/science/article/pmid/11910129> ?p ?o .  }   } LIMIT 2000
+}}}
