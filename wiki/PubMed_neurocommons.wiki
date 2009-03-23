@@ -55,6 +55,7 @@ where
 }}}
 
 == Search for bibliographic information associated with a publication ==
+{{{
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX sc: <http://purl.org/science/owl/sciencecommons/>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -74,3 +75,4 @@ where
   optional {?pub dc:date ?title} .
   optional {?pub ?p ?o} 
  }
+}}}
