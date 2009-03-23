@@ -110,3 +110,21 @@ where
     } 
  }
 }}}
+
+== Search for publication records about Drosophila melanogaster genes ==
+{{{
+PREFIX sc: <http://purl.org/science/owl/sciencecommons/>
+select ?gene count(distinct ?gene) ?pubID
+from <http://purl.org/science/graph/ncbi/gene-pubmed>
+from <http://purl.org/science/graph/ncbi/goa>
+from <http://purl.org/science/graph/mesh/mesh-skos>
+from <http://purl.org/science/graph/mesh/qualified-headings>
+from <http://purl.org/science/graph/medline/subject-headings>
+from <http://purl.org/science/graph/medline/titles-years>
+from <http://purl.org/science/graph/ncbi/gene-info>
+where 
+ {
+   ?gene sc:ggp_from_species_described_by <http://purl.org/commons/record/ncbi_taxonomy/7227> .
+   ?gene sc:describes_gene_or_gene_product_mentioned_by ?pubID .
+ }
+}}}
