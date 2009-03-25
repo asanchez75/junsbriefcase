@@ -39,12 +39,12 @@ PREFIX sc: <http://purl.org/science/owl/sciencecommons/>
 prefix skos: <http://www.w3.org/2004/02/skos/core#>
 
 select distinct *
-from <http://purl.org/science/graph/ncbi/goa>
+#from <http://purl.org/science/graph/ncbi/goa>
 from <http://purl.org/science/graph/mesh/mesh-skos>
 from <http://purl.org/science/graph/mesh/qualified-headings>
 from <http://purl.org/science/graph/medline/subject-headings>
-from <http://purl.org/science/graph/medline/titles-years>
-from <http://purl.org/science/graph/ncbi/gene-pubmed>
+#from <http://purl.org/science/graph/medline/titles-years>
+#from <http://purl.org/science/graph/ncbi/gene-pubmed>
 where 
  {
   <http://purl.org/commons/article/pmid/11665278>  ?p ?term. 
@@ -57,6 +57,8 @@ where
     }
 }
 }}}
+
+Note that, I believe there are only two properties associating a publication record with mesh terms, i.e., sc:has_minor_mesh and sc:has_major_mesh
 
 == Search for bibliographic information associated with a publication ==
 {{{
