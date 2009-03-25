@@ -74,7 +74,7 @@ where
  {
   <http://purl.org/commons/article/pmid/11665278>  sc:identified_by_pmid ?pmid ;
                                                    dc:date ?pubdate ;
-                                                   dc:date ?title .
+                                                   dc:title ?title .
   optional {?pmid ?p ?term }
  }
 }}}
