@@ -1,0 +1,17 @@
+#summary Temporary bin for flyweb application sparql queries
+
+= FlyTED =
+{{{
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX flyted: <http://purl.org/net/flyted/schema/>
+PREFIX so: <http://purl.org/obo/owl/SO#>
+    
+SELECT DISTINCT ?fullImageURL ?thumbnailURL ?flytedURL ?caption ?probe ?probeLabel WHERE 
+{ 
+  ?probe flyted:hybridisesTranscriptOf <http://openflydata.org/id/flybase/feature/FBgn0036925> ;
+	 rdfs:label ?probeLabel .
+  ?fullImageURL flyted:probe ?probe ; flyted:thumbnail ?thumbnailURL; 
+                rdfs:seeAlso ?flytedURL; rdfs:label ?caption .
+}
+}}}
