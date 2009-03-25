@@ -1,0 +1,7 @@
+#summary Raw notes about creating a widget structure
+
+== Top-level structure ==
+A Widget
+ * A controller
+ * A model
+ * A render
