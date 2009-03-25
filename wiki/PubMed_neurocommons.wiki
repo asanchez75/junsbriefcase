@@ -69,12 +69,13 @@ prefix owl: <http://www.w3.org/2002/07/owl#>
 
 select *
 from <http://purl.org/science/graph/medline/titles-years>
+from <http://purl.org/science/graph/medline/subject-headings>
 where 
  {
-  <http://purl.org/commons/article/pmid/11665278>  sc:identified_by_pmid ?pmid .
-  optional {?pub dc:date ?pubdate } .
-  optional {?pub dc:date ?title} .
-  optional {?pub ?p ?o} 
+  <http://purl.org/commons/article/pmid/11665278>  sc:identified_by_pmid ?pmid ;
+                                                   dc:date ?pubdate ;
+                                                   dc:date ?title .
+  optional {?pmid ?p ?term }
  }
 }}}
 
