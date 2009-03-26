@@ -24,12 +24,24 @@ or
 psql -h flybase.org -U flybase flybase
 }}}
 
-== Query for Gene FBgn00015799 ==
+== Query for Gene FBgn0015799 ==
 {{{
 select feature.uniquename, feature_pub.feature_id, pub.pub_id
 from feature_pub, pub, feature
-where feature_pub.pub_id = pub.pub_id and feature.feature_id = feature_pub.feature_id and feature.uniquename = 'fbgn00015799'
+where feature_pub.pub_id = pub.pub_id and feature.feature_id = feature_pub.feature_id and feature.uniquename = 'fbgn0015799'
 }}}
+
+162 records were returned. Some of them might be new records added since February.
+
+Query to FlyBase Site Release2009-02 returns 160 records. New references are:
+ * http://flybase.org/cgi-bin/fbidq.html?FBrf0202994
+ * http://flybase.org/cgi-bin/fbidq.html?FBrf0205083
+
+Query to FlyBase RDF SPARQL endpoint updated in 2009-02 returns 159 records. The missed reference is:
+ * http://flybase.org/reports/FBrf0057329.html
+
+Very strange! This record is not in the database for this gene either! The database does have an "unattributed" record (having no uniquename, title, or anything, but only asociated with the gene), which makes the number 160 even.
+
 
 = Details =
 
