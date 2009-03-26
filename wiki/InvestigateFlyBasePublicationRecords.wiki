@@ -82,7 +82,7 @@ where expression_pub.pub_id = '2189960'
 
 
 {{{
-### search in the feature_relationship_pub, feature_relationship, and feature tables
+### search in the featureprop_pub, featureprop, and feature tables
 
 SELECT featureprop.feature_id, featureprop_pub.*, feature.*
   FROM featureprop_pub, featureprop, feature
