@@ -56,3 +56,37 @@ where featureloc_pub.pub_id = '2189960'
 ### 0 rows returned
 
 }}}
+
+{{{
+### search in the featuremap_pub table
+
+select *
+from featuremap_pub
+where featuremap_pub.pub_id = '2189960'
+
+### 0 rows returned
+
+}}}
+
+
+{{{
+### search in the expression_pub table
+
+select *
+from expression_pub
+where expression_pub.pub_id = '2189960'
+
+### 0 rows returned
+
+}}}
+
+
+{{{
+### search in the feature_relationship_pub, feature_relationship, and feature tables
+
+SELECT featureprop.feature_id, featureprop_pub.*, feature.*
+  FROM featureprop_pub, featureprop, feature
+where featureprop_pub.featureprop_id = featureprop.featureprop_id and feature.feature_id = featureprop.feature_id and featureprop_pub.pub_id='218960'
+
+### 23 rows returned
+}}}
