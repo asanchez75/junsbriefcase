@@ -120,3 +120,9 @@ where r.feature_relationship_id = p.feature_relationship_id and p.pub_id = '2189
 }}}
 
 == Query SPARQL to test whether featureprop is present in the KB ==
+By reading the D2R mapping files, it shows that this is not present in the KB.
+
+
+
+
+The following map might be needed:
