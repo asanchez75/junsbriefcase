@@ -101,6 +101,8 @@ The feature property relating to the gene "FBgn0057329" is "polyclonal":
 }}}
 
 
+The "antibody" section in FlyBase section clearly shows how this citation is associated with this Gene, although this is not clearly stated by the "Data from Reference" section in the page http://fb2009_02.flybase.org/reports/FBrf0057329.html.
+
 {{{
 ### search in the feature_relationship_pub, featurerelationship, and feature tables
 
