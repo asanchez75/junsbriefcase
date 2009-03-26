@@ -2,7 +2,7 @@
 
 = Queries to FlyBase DB =
 
-Release 2009-03, more recent than the data harvested in our RDF DB.
+By the time of writing, the official realease of FlyBase is Release 2009-03, more recent than the data harvested in our RDF DB.
 
 See also:
  * http://imageweb.zoo.ox.ac.uk/wiki/index.php/Flyweb/Gene_Name_Synonyms
@@ -122,7 +122,7 @@ where r.feature_relationship_id = p.feature_relationship_id and p.pub_id = '2189
 == Query SPARQL to test whether featureprop is present in the KB ==
 By reading the D2R mapping files, it shows that this is not present in the KB.
 
-= Query for other genes ==
+= Summary of query for genes with missing results =
 || Gene name || FlyWeb widget || FlyBase site 2009-02 || Missing reference || FlyBase DB 2009-03 ||
 || FBgn0015799 || 159 || 160 || FBrf0057329 (2189960) || 162 (2 updates, 1 unattributed, actually 159), +1 from featureprop_pub ||
 || FBgn0024285 ||22 ||23 || FBrf0204101 (348205) || 22, +1 from feature_relationship ||
