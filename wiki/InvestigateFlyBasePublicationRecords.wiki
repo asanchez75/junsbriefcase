@@ -92,6 +92,12 @@ where featureprop_pub.featureprop_id = featureprop.featureprop_id and feature.fe
 }}}
 
 
+{{{
+SELECT featureprop.*, featureprop_pub.*, feature.*
+  FROM featureprop_pub, featureprop, feature
+where featureprop_pub.featureprop_id = featureprop.featureprop_id and feature.feature_id = featureprop.feature_id and feature.uniquename = 'FBgn0015799'
+}}}
+
 The feature property relating to the gene "FBgn0057329" is "polyclonal":
 
 {{{
