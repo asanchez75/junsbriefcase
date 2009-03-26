@@ -28,10 +28,16 @@ psql -h flybase.org -U flybase flybase
 {{{
 select feature.uniquename, feature_pub.feature_id, pub.pub_id
 from feature_pub, pub, feature
-where feature_pub.pub_id = pub.pub_id and feature.feature_id = feature_pub.feature_id and feature.uniquename = 'fbgn0015799'
+where feature_pub.pub_id = pub.pub_id and feature.feature_id = feature_pub.feature_id and feature.uniquename = 'FBgn0015799'
 }}}
 
 162 records were returned. Some of them might be new records added since February.
+
+{{{
+select feature.uniquename, featureloc_pub.feature_id, pub.pub_id
+from featureloc_pub, pub, feature
+where featureloc_pub.pub_id = pub.pub_id and feature.feature_id = featureloc_pub.feature_id and feature.uniquename = 'FBgn0015799'
+}}}
 
 Query to FlyBase Site Release2009-02 returns 160 records. New references are:
  * http://flybase.org/cgi-bin/fbidq.html?FBrf0202994
