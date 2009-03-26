@@ -6,7 +6,8 @@ Release 2009-03, more recent than the data harvested in our RDF DB.
 
 See also:
  * http://imageweb.zoo.ox.ac.uk/wiki/index.php/Flyweb/Gene_Name_Synonyms
- * http://code.google.com/p/openflydata/source/browse/#svn/tags/chado-20090311-FM3-RC2/modules/pub
+ * http://code.google.com/p/openflydata/source/browse/#svn/tags/chado-20090311-FM3-RC2/modules/pub (publication metadata only)
+ * http://code.google.com/p/openflydata/source/browse/tags/chado-20090311-FM3-RC2/modules/sequence/flybase/sequence-vanilla-all.d2rq.ttl (linking features with publications)
 
 
 Access FlyBase Chado database (PostgreSQL)
@@ -24,9 +25,11 @@ psql -h flybase.org -U flybase flybase
 }}}
 
 == Query for Gene FBgn00015799 ==
-
-
-
+{{{
+select feature.uniquename, feature_pub.feature_id, pub.pub_id
+from feature_pub, pub, feature
+where feature_pub.pub_id = pub.pub_id and feature.feature_id = feature_pub.feature_id and feature.uniquename = 'fbgn00015799'
+}}}
 
 = Details =
 
