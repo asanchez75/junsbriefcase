@@ -84,9 +84,18 @@ where expression_pub.pub_id = '2189960'
 {{{
 ### search in the featureprop_pub, featureprop, and feature tables
 
-SELECT featureprop.feature_id, featureprop_pub.*, feature.*
+SELECT featureprop.*, featureprop_pub.*, feature.*
   FROM featureprop_pub, featureprop, feature
 where featureprop_pub.featureprop_id = featureprop.featureprop_id and feature.feature_id = featureprop.feature_id and featureprop_pub.pub_id='218960'
 
 ### 23 rows returned
+}}}
+
+
+The feature property relating to the gene "FBgn0057329" is "polyclonal":
+
+{{{
+"featureprop_id";"feature_id";"type_id";"value";"rank";"featureprop_pub_id";"featureprop_id";"pub_id";"feature_id";"dbxref_id";"organism_id";"name";"uniquename";"residues";"seqlen";"md5checksum";"type_id";"is_analysis";"timeaccessioned";"timelastmodified";"is_obsolete"
+2288675;3084941;60035;"polyclonal";0;402500;2288675;218960;3084941;58047;1;"Rbf";"FBgn0015799";"";4370;"";219;f;"2003-12-01 16:53:34.014597";"2003-12-01 16:53:34.014597";f
+
 }}}
