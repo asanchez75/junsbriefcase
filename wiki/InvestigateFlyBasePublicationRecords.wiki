@@ -92,12 +92,6 @@ where featureprop_pub.featureprop_id = featureprop.featureprop_id and feature.fe
 }}}
 
 
-{{{
-SELECT featureprop.*, featureprop_pub.*, feature.*
-  FROM featureprop_pub, featureprop, feature
-where featureprop_pub.featureprop_id = featureprop.featureprop_id and feature.feature_id = featureprop.feature_id and feature.uniquename = 'FBgn0015799'
-}}}
-
 The feature property relating to the gene "FBgn0057329" is "polyclonal":
 
 {{{
@@ -129,9 +123,19 @@ where r.feature_relationship_id = p.feature_relationship_id and p.pub_id = '2189
 By reading the D2R mapping files, it shows that this is not present in the KB.
 
 = Query for other genes ==
- * FBgn0024285
- * FBgn0003996
- * FBgn0002838
- * FBgn0027279
+|| Gene name || FlyWeb widget || FlyBase site 2009-02 || Missing reference || FlyBase DB 2009-03 ||
+|| FBgn0024285 ||22 ||23 || 348205 || 22, +1 from feature_relationship
+|| FBgn0003996 ||||||||
+|| FBgn0002838 ||||||||
+|| FBgn0027279 ||||||||
+|| FBgn0000577 ||||||||
 
- * FBgn0000577
+
+{{{
+## query for FBgn0024285 
+
+select r.*, p.*, f.uniquename, f.feature_id, cvterm.*, cv.name
+from feature_relationship as r, feature_relationship_pub as p, feature as f, cvterm, cv
+where r.feature_relationship_id = p.feature_relationship_id and r.type_id = cvterm.cvterm_id and cvterm.cv_id = cv.cv_id and p.pub_id = '348205' and f.feature_id = r.subject_id and f.uniquename = 'FBgn0024285'
+
+}}}
