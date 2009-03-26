@@ -1,0 +1,21 @@
+#summary Investigate both the FlyBase db and our RDF db for query precision
+
+= Queries to FlyBase DB =
+
+Release 2009-03, more recent than the data harvested in our RDF DB.
+
+See also:
+ * http://imageweb.zoo.ox.ac.uk/wiki/index.php/Flyweb/Gene_Name_Synonyms
+ * http://code.google.com/p/openflydata/source/browse/#svn/tags/chado-20090311-FM3-RC2/modules/pub
+
+== Query for Gene FBgn00015799 ==
+
+
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
