@@ -8,6 +8,21 @@ See also:
  * http://imageweb.zoo.ox.ac.uk/wiki/index.php/Flyweb/Gene_Name_Synonyms
  * http://code.google.com/p/openflydata/source/browse/#svn/tags/chado-20090311-FM3-RC2/modules/pub
 
+
+Access FlyBase Chado database (PostgreSQL)
+{{{
+hostname: flybase.org
+port: 5432
+username: flybase
+password: (no password)
+database name: flybase
+}}}
+
+or
+{{{
+psql -h flybase.org -U flybase flybase
+}}}
+
 == Query for Gene FBgn00015799 ==
 
 
