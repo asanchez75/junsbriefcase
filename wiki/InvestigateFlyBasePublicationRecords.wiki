@@ -99,3 +99,22 @@ The feature property relating to the gene "FBgn0057329" is "polyclonal":
 2288675;3084941;60035;"polyclonal";0;402500;2288675;218960;3084941;58047;1;"Rbf";"FBgn0015799";"";4370;"";219;f;"2003-12-01 16:53:34.014597";"2003-12-01 16:53:34.014597";f
 
 }}}
+
+
+{{{
+### search in the feature_relationship_pub, featurerelationship, and feature tables
+
+select r.*, p.*, f.uniquename, f.feature_id
+from feature_relationship as r, feature_relationship_pub as p, feature as f
+where r.feature_relationship_id = p.feature_relationship_id and p.pub_id = '218960' and f.feature_id = r.object_id 
+
+### 4 rows returned, but none relates to our gene
+
+select r.*, p.*, f.uniquename, f.feature_id
+from feature_relationship as r, feature_relationship_pub as p, feature as f
+where r.feature_relationship_id = p.feature_relationship_id and p.pub_id = '218960' and f.feature_id = r.subject_id 
+
+### 4 rows returned, but none relates to our gene
+}}}
+
+== Query SPARQL to test whether featureprop is present in the KB ==
