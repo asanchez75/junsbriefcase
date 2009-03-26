@@ -176,11 +176,10 @@ SELECT featureprop.*, featureprop_pub.*, feature.*
 where featureprop_pub.featureprop_id = featureprop.featureprop_id and feature.feature_id = featureprop.feature_id and feature.uniquename = 'FBgn0002838' and featureprop_pub.pub_id = '150339'
 
 
+### result
+0 rows returned
+
 }}}
-
-
-
-
 
 {{{
 ## query for FBgn0027279
@@ -199,4 +198,24 @@ where r.feature_relationship_id = p.feature_relationship_id and f.feature_id = r
 ### result
 0 rows returned
 
+}}}
+
+{{{
+## query for FBgn0027279
+
+SELECT featureprop.*, featureprop_pub.*, feature.*
+  FROM featureprop_pub, featureprop, feature, pub
+where featureprop_pub.featureprop_id = featureprop.featureprop_id and feature.feature_id = featureprop.feature_id and feature.uniquename = 'FBgn0027279' and featureprop_pub.pub_id = '150339'
+
+
+### result
+0 rows returned
+
+SELECT featureprop.*, featureprop_pub.*, feature.*
+  FROM featureprop_pub, featureprop, feature, pub
+where featureprop_pub.featureprop_id = featureprop.featureprop_id and feature.feature_id = featureprop.feature_id and feature.uniquename = 'FBgn0027279' and featureprop_pub.pub_id = '150340'
+
+
+### result
+0 rows returned
 }}}
