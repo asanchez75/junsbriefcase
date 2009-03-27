@@ -131,6 +131,9 @@ By reading the D2R mapping files, it shows that this is not present in the KB.
 || FBgn0000577 || 1462  ||1465   ||    || 1471 (todo: too many to eyeball) || 
 || FBgn0003996 || cannot be finished ||3625 ||  || 3633 (todo: too many to eyeball) ||
 
+For the last two genes, I searched in every possible table and could not find the expected publication records. Note that, these missing publication records are also marked as pink in FlyBase's web site. Maybe it would be worthwhile to communicate with the team to understand why they are being marked as pink on the web site.
+
+
 {{{
 
 ### query for FBgn0024285 in the featureprop_pub, featureprop, and feature tables
