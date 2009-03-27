@@ -219,3 +219,30 @@ where featureprop_pub.featureprop_id = featureprop.featureprop_id and feature.fe
 ### result
 0 rows returned
 }}}
+
+
+= Search for publication record 150339 =
+== Search in the feature_relationship_pub table ==
+{{{
+select p.pub_id, f.uniquename, r.*
+from feature_relationship_pub as p, feature_relationship as r, feature as f 
+where p.pub_id='150339' and p.feature_relationship_id = r.feature_relationship_id and r.subject_id = f.feature_id and f.uniquename ='FBgn0027279'
+
+###
+0 rows returned
+
+}}}
+
+== Search in the feature_relationshipprop_pub table ==
+{{{
+select *
+from feature_relationshipprop_pub as p, feature_relationshipprop as r, feature_relationship as rr, feature as f
+where p.pub_id = '150339' and r.feature_relationshipprop_id = p.feature_relationshipprop_id and r.feature_relationship_id = rr.feature_relationship_id and rr.subject_id = f.feature_id
+
+### nothing for my genes
+}}}
+
+
+== Search in the featureprop_pub table ==
+{{{
+}}}
