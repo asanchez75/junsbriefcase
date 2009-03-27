@@ -262,3 +262,22 @@ where pub_id = '150339' and p.genotype_id = fp.genotype_id and fp.feature_id = f
 
 ### nothing for my genes
 }}}
+
+
+== Search in the phenstatement and feature_genotype table ==
+{{{
+select f.uniquename
+from phenstatement as p, feature_genotype as fp, feature as f
+where p.pub_id = '150339' and p.genotype_id = fp.genotype_id and fp.feature_id = f.feature_id
+
+### nothing for my genes
+}}}
+
+== Search in the phenotype_comparison and feature_genotype table ==
+{{{
+select f.uniquename
+from phenstatement as p, feature_genotype as fp, feature as f
+where p.pub_id = '150339' and p.genotype_id = fp.genotype_id and fp.feature_id = f.feature_id
+
+### nothing for my genes
+}}}
