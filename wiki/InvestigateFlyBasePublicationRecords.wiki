@@ -126,8 +126,8 @@ By reading the D2R mapping files, it shows that this is not present in the KB.
 || Gene name || FlyWeb widget || FlyBase site 2009-02 || Missing reference || FlyBase DB 2009-03 ||
 || FBgn0015799 || 159 || 160 || FBrf0057329 (2189960) || 162 (2 updates, 1 unattributed, actually 159), +1 from featureprop_pub ||
 || FBgn0024285 ||22 ||23 || FBrf0204101 (348205) || 22, +1 from feature_relationship ||
-|| FBgn0002838 || 34  || 35  || FBrf0105495 (150339) || 34, ||
-|| FBgn0027279 || 13  || 15  || FBrf0105495 (150339), FBrf0174215 (150340) || 13, ||
+|| FBgn0002838 (FBgn0039460)|| 34  || 35  || FBrf0105495 (150339) || 34, ||
+|| FBgn0027279 (FBgn0031192, FBgn0052502)|| 13  || 15  || FBrf0105495 (150339), FBrf0174215 (150340) || 13, ||
 || FBgn0000577 || 1462  ||1465   ||    || 1471 (todo: too many to eyeball) || 
 || FBgn0003996 || cannot be finished ||3625 ||  || 3633 (todo: too many to eyeball) ||
 
