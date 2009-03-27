@@ -245,4 +245,10 @@ where p.pub_id = '150339' and r.feature_relationshipprop_id = p.feature_relation
 
 == Search in the featureprop_pub table ==
 {{{
+SELECT featureprop.*, featureprop_pub.*, feature.*
+  FROM featureprop_pub, featureprop, feature
+where featureprop_pub.featureprop_id = featureprop.featureprop_id and feature.feature_id = featureprop.feature_id and featureprop_pub.pub_id='150339'
+
+### nothing for my genes
+
 }}}
