@@ -49,10 +49,14 @@ Virtuoso Open Source Edition 5.0.8 configuration summary
 This started at 12:52
 
 == Installation ==
-{{{ make install}}}
+{{{ 
+make install
+}}}
 
 Optionally, at the root of the build tree to start the automated test suite:
-{{{ make check}}}
+{{{ 
+make check
+}}}
 This takes about an hour on a 2GHz machine and requires approximately 1 GB of free disk space.
 
 == Get started ==
@@ -69,7 +73,8 @@ The default login is `dba' with a password of `dba' for the Conductor and isql (
 
 == Insert OWL ==
 == Insert RDF ==
-{{{ curl -i -d "INSERT {<http://localhost:8890/DAV/home/rdf_sink/myfoaf.rdf> <http://www.w3.org/1999/02 /22-rdf-syntax-ns#type> <http://rdfs.org/sioc/ns#User>}" -u "jun:jun" -H "Content-Type: application/sparql-query" http://localhost:8890/DAV/home/xx/yy
+{{{ 
+curl -i -d "INSERT {<http://localhost:8890/DAV/home/rdf_sink/myfoaf.rdf> <http://www.w3.org/1999/02 /22-rdf-syntax-ns#type> <http://rdfs.org/sioc/ns#User>}" -u "jun:jun" -H "Content-Type: application/sparql-query" http://localhost:8890/DAV/home/xx/yy
 }}}
 
 {{{
