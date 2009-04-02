@@ -2,6 +2,8 @@
 
 = Load data into Virtuoso RDF Store at Naxos =
 
+== Load FlyBase gene names ==
+
 {{{
-./bin/isql 1111 dba dba verbose=on banner=off echo=ON errors=stdout exec="ttlp_mt(file_to_string_output('/root/Desktop/sequence-vanilla-feature.nt'), '', 'http://openflydata.org/flybasegenes-20090402',0);checkpoint;"
+./bin/isql 129.67.24.116:1111 dba dba verbose=on banner=off echo=ON errors=stdout exec="ttlp_mt(file_to_string_output('/root/Desktop/sequence-vanilla-feature.nt'), '', 'http://openflydata.org/flybasegenes-20090402',0);checkpoint;"
 }}}
