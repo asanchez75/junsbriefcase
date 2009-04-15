@@ -62,7 +62,8 @@ I believe there are only two properties associating a publication record with me
 
 == Different identifiers for pubmed records/articles ==
 ||http://purl.org/science/article/pmid/7789765||http://purl.org/science/graph/ncbi/gene-pubmed||
-||http://purl.org/commons/record/ncbi_gene/3772180||http://purl.org/science/graph/ncbi/gene-pubmed||
+||http://purl.org/commons/record/pmid/7789765|| http://purl.org/science/graph/medline/titles-years and http://purl.org/science/graph/medline/subject-headings||
+||http://purl.org/commons/article/pmid/7789765||http://purl.org/science/graph/medline/titles-years and http://purl.org/science/graph/medline/subject-headings||
 
 == Search for bibliographic information associated with a publication ==
 {{{
