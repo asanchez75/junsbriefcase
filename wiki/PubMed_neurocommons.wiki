@@ -60,6 +60,8 @@ where
 
 I believe there are only two properties associating a publication record with mesh terms, i.e., sc:has-as-minor-mesh and sc:has-as-major-mesh
 
+== Different identifiers for pubmed records/articles ==
+
 == Search for bibliographic information associated with a publication ==
 {{{
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
