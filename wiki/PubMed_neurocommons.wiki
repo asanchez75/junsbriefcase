@@ -61,6 +61,8 @@ where
 I believe there are only two properties associating a publication record with mesh terms, i.e., sc:has-as-minor-mesh and sc:has-as-major-mesh
 
 == Different identifiers for pubmed records/articles ==
+||http://purl.org/science/article/pmid/7789765||http://purl.org/science/graph/ncbi/gene-pubmed||
+||||http://purl.org/science/graph/ncbi/gene-pubmed||
 
 == Search for bibliographic information associated with a publication ==
 {{{
