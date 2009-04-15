@@ -86,6 +86,9 @@ where
 
 == The big query: query for publications about a gene and information about these publications ==
 {{{
+
+## this query does not work at the moment until the publication URIs are fixed by Neurocommons
+
 PREFIX sc: <http://purl.org/science/owl/sciencecommons/>
 
 select distinct ?pubID ?pubdate ?title ?mesh ?name ?genes
