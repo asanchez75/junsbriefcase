@@ -41,11 +41,22 @@ SELECT DISTINCT ?uniquename ?name ?accession ?fullname WHERE {
 
 
 {{{
-SELECT f.uniquename, f.name, d.accession FROM feature f, organism o, feature_dbxref fd, dbxref d, db db
-WHERE f.organism_id = o.organism_id and o.genus = 'Drosophila' and 
-o.species = 'melanogaster' and f.name = 'aly' and f.feature_id = fd.feature_id and
-fd.dbxref_id = d.dbxref_id and d.db_id = db.db_id and db.name='FlyBase Annotation IDs'
+SELECT distinct f.uniquename, f.name, d.accession, s.name FROM feature f, organism o, feature_dbxref fd, dbxref d, db db, feature_synonym fs, synonym s
+WHERE f.organism_id = o.organism_id and o.genus = 'Drosophila' and o.species = 'melanogaster' and f.name = 'aly' and 
+f.feature_id = fd.feature_id and fd.dbxref_id = d.dbxref_id and d.db_id = db.db_id and db.name='FlyBase Annotation IDs'
+and f.feature_id = fs.feature_id and fs.is_current and fs.synonym_id = s.synonym_id and s.type_id='60037'
 }}}
+
+||1547||
+||1484||
+||1469||
+||1484||
+||1484||
+||1500||
+||1484||
+||1485||
+||1516||
+||1485||
 
 = Query 2 =
 {{{
