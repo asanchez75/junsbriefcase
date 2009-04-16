@@ -129,3 +129,9 @@ SELECT * WHERE {
     chado:seqlen ?srcfeature_seqlen .
 }
 }}}
+
+{{{
+select distinct f.feature_id, fl.fmin, fl.fmax, fl.locgroup, fl.strand, fl.scrfeature
+from feature f, featureloc fl, organism o
+where f.feature_id = fl.feature_id and f.organism_id = o.organism_id and o.genus = 'Drosophila' and o.species = 'melanogaster' and f.uniquename = 'FBgn0015269'
+}}}
