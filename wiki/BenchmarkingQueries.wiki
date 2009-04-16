@@ -39,6 +39,12 @@ SELECT DISTINCT ?uniquename ?name ?accession ?fullname WHERE {
 }
 }}}
 
+
+{{{
+SELECT f.uniquename, f.name, d.accession FROM feature f, organism o, feature_dbxref fd, dbxref d, db db
+WHERE f.organism_id = o.organism_id and o.genus = 'Drosophila' and o.species = 'melanogaster' and f.name = 'aly' and f.feature_id = fd.feature_id and fd.dbxref_id = d.dbxref_id and d.db_id = db.db_id and db.name='FlyBase Annotation IDs'
+}}}
+
 = Query 2 =
 {{{
 # query 2
