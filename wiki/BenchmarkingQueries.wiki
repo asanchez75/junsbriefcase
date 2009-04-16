@@ -132,6 +132,24 @@ SELECT * WHERE {
 
 {{{
 select distinct f.feature_id, fl.fmin, fl.fmax, fl.locgroup, fl.strand, fl.scrfeature
-from feature f, featureloc fl, organism o
+select distinct f.feature_id, f.name, f.uniquename, f.seqlen
+from feature f
+where f.feature_id in (select distinct fl.srcfeature_id from feature f, featureloc fl, organism o
+where f.feature_id = fl.feature_id and f.organism_id = o.organism_id and o.genus = 'Drosophila' and o.species = 'melanogaster' and f.uniquename = 'FBgn0015269')
+}}}
+
+{{{
+select distinct f.feature_id, fl.fmin, fl.fmax, fl.locgroup, fl.strand from feature f, featureloc fl, organism o
 where f.feature_id = fl.feature_id and f.organism_id = o.organism_id and o.genus = 'Drosophila' and o.species = 'melanogaster' and f.uniquename = 'FBgn0015269'
 }}}
+
+||20422+20578=41000||
+||19859+20250=40109||
+||21312+20703=42015||
+||20453+20594=41047||
+||+||
+||+||
+||+||
+||+||
+||+||
+||+||
