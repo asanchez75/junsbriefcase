@@ -1,0 +1,103 @@
+#summary One-sentence summary of this page.
+
+= Query 1 =
+{{{
+# query 1
+# Select feature short name, unique name, annotation ID, and official
+# full name, given any label and where feature is D. melanogaster
+# gene.
+
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX chado: <http://purl.org/net/chado/schema/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>    
+PREFIX so: <http://purl.org/obo/owl/SO#>
+PREFIX syntype: <http://purl.org/net/flybase/synonym-types/>
+
+SELECT DISTINCT ?uniquename ?name ?accession ?fullname WHERE {
+
+  ?feature skos:altLabel "aly" ; 
+    a so:SO_0000704 ;
+    chado:organism <http://openflydata.org/id/flybase/organism/Drosophila_melanogaster> ;
+    chado:uniquename ?uniquename ;
+    chado:name ?name ; 
+    chado:feature_dbxref [ 
+      chado:accession ?accession ; 
+      chado:db <http://openflydata.org/id/flybase/db/FlyBase_Annotation_IDs> 
+    ] .
+
+  OPTIONAL {
+    ?fs 
+      chado:feature ?feature ; 
+      chado:is_current "true"^^xsd:boolean ;
+      chado:synonym [ 
+        a syntype:FullName ;
+        chado:name ?fullname ; 
+      ] ;
+      a chado:Feature_Synonym .
+  }
+
+}
+}}}
+
+= Query 2 =
+{{{
+# query 2
+# select publications for a given D. melanogaster gene
+
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX chado: <http://purl.org/net/chado/schema/>
+PREFIX so: <http://purl.org/obo/owl/SO#>
+
+SELECT * WHERE {
+  
+  ?feature 
+    chado:uniquename "FBgn0010774"^^xsd:string ;
+    a so:SO_0000704 ;
+    chado:organism <http://openflydata.org/id/flybase/organism/Drosophila_melanogaster> ;
+    chado:feature_pub ?pub .
+
+  ?pub a chado:Pub ;
+    chado:uniquename ?uniquename .
+  
+  OPTIONAL { ?pub chado:title ?title }
+  OPTIONAL { ?pub chado:pyear ?pyear }
+  OPTIONAL { ?pub chado:pages ?pages }
+  OPTIONAL { ?pub chado:volume ?volume }
+  OPTIONAL { ?pub chado:issue ?issue }
+  OPTIONAL { ?pub chado:miniref ?miniref }
+
+}
+}}}
+
+= Query 3 =
+{{{
+# query 3
+# select location data for a given D. melanogaster gene
+
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX chado: <http://purl.org/net/chado/schema/>
+PREFIX fbp: <http://purl.org/net/flybase/property-types/>   
+PREFIX so: <http://purl.org/obo/owl/SO#>
+ 
+SELECT * WHERE {
+  ?feature 
+    chado:uniquename "FBgn0015269"^^xsd:string ;
+    a so:SO_0000704 ;
+    chado:organism <http://openflydata.org/id/flybase/organism/Drosophila_melanogaster> .
+    
+  ?featureloc 
+    chado:feature ?feature ;
+    a chado:Featureloc ;
+    chado:fmin ?fmin ;
+    chado:fmax ?fmax ;
+    chado:locgroup ?locgroup ;
+    chado:strand ?strand ;
+    chado:srcfeature ?srcfeature .
+    
+  ?srcfeature
+    a chado:Feature ;
+    chado:name ?srcfeature_name ;
+    chado:uniquename ?srcfeature_uniquename ;
+    chado:seqlen ?srcfeature_seqlen .
+}
+}}}
