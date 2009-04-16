@@ -88,6 +88,15 @@ SELECT * WHERE {
 }
 }}}
 
+{{{
+select distinct feature.uniquename, feature_pub.feature_id, pub.pub_id, pub.title, pub.pyear, pub.pages, pub.volume, pub.issue, pub.miniref
+from feature_pub, pub, feature
+where feature_pub.pub_id = pub.pub_id and feature.feature_id = feature_pub.feature_id and feature.uniquename = 'FBgn0015799'
+}}}
+
+
+1594,1344,1468,1609,1469,1344,1344,1360,1343,1344
+  
 = Query 3 =
 {{{
 # query 3
