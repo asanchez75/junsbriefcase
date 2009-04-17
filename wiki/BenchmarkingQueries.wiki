@@ -159,9 +159,10 @@ Avg: 41262.5ms
 
 The new query, which is more correct:
 {{{
-select distinct f2.feature_id, f2.name, f2.uniquename, f2.seqlen,  f.feature_id, fl.fmin, fl.fmax, fl.locgroup, fl.strand
+select distinct f.uniquename, fl.featureloc_id, fl.fmin, fl.fmax, fl.locgroup, fl.strand, f2.feature_id, f2.name, f2.uniquename, f2.seqlen,  f.feature_id
 from feature f2, feature f, featureloc fl, organism o
-where f.feature_id = fl.feature_id and f.organism_id = o.organism_id and o.genus = 'Drosophila' and o.species = 'melanogaster' and f.uniquename = 'FBgn0015269' and f2.feature_id=fl.srcfeature_id
+where f.feature_id = fl.feature_id and f.organism_id = o.organism_id and o.genus = 'Drosophila' and o.species = 'melanogaster' 
+and f.uniquename = 'FBgn0015269' and f2.feature_id=fl.srcfeature_id
 }}}
 
 ||20266||
@@ -169,9 +170,9 @@ where f.feature_id = fl.feature_id and f.organism_id = o.organism_id and o.genus
 ||20312||
 ||20516||
 ||20219||
-||||
-||||
-||||
-||||
-||||
-Avg: 41262.5ms
+||20750||
+||20375||
+||20141||
+||20532||
+||20703||
+Avg: 20378.3ms
