@@ -221,3 +221,77 @@ and f.uniquename = 'FBgn0015269' and f2.feature_id=fl.srcfeature_id
 ||20532||
 ||20703||
 Avg: 20378.3ms
+
+
+= Python code for the SPARQL performance evaluation =
+{{{
+import simplejson as json
+import httplib
+import urllib
+import time
+
+def sparql(host, port, path, query):
+    params = urllib.urlencode({"query": query})
+    headers = { 
+        "Content-type": "application/x-www-form-urlencoded",
+        "Accept": "application/sparql-results+json"}
+    conn = httplib.HTTPConnection(host, port)
+    conn.request('POST', path, params, headers)
+    res = conn.getresponse()
+    if (res.status != 200):
+        print res.status
+        print res.reason
+        print res.read()
+        conn.close()
+        return None
+    else:
+        resultSet = json.load(res)
+        conn.close()
+        return resultSet
+
+query = """
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX chado: <http://purl.org/net/chado/schema/>
+PREFIX fbp: <http://purl.org/net/flybase/property-types/>   
+PREFIX so: <http://purl.org/obo/owl/SO#>
+ 
+SELECT * WHERE {
+  ?feature 
+    chado:uniquename "FBgn0015269"^^xsd:string ;
+    a so:SO_0000704 ;
+    chado:organism <http://openflydata.org/id/flybase/organism/Drosophila_melanogaster> .
+    
+  ?featureloc 
+    chado:feature ?feature ;
+    a chado:Featureloc ;
+    chado:fmin ?fmin ;
+    chado:fmax ?fmax ;
+    chado:locgroup ?locgroup ;
+    chado:strand ?strand ;
+    chado:srcfeature ?srcfeature .
+    
+  ?srcfeature
+    a chado:Feature ;
+    chado:name ?srcfeature_name ;
+    chado:uniquename ?srcfeature_uniquename ;
+    chado:seqlen ?srcfeature_seqlen .
+}
+"""
+elapse = 0
+for i in range (0,10):
+    start = time.clock()
+    resultset = sparql("openflydata.org", 80, "/query/flybase-FB2009_02", query)
+
+#    for binding in resultset["results"]["bindings"]:
+#        feature = binding["feature"]["value"]
+#        uniquename = binding["uniquename"]["value"]
+#        name = binding["name"]["value"]
+#        genus = binding["genus"]["value"]
+#        species = binding["species"]["value"]
+    elapse_per = time.clock() - start
+    elapse = elapse + elapse_per
+    print elapse_per
+
+print "=== Average time === "    
+print elapse/10
+}}}
