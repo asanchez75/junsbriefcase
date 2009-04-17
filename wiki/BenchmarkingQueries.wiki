@@ -44,7 +44,7 @@ SELECT DISTINCT ?uniquename ?name ?accession ?fullname WHERE {
 SELECT distinct f.uniquename, f.name, d.accession, s.name FROM feature f, organism o, feature_dbxref fd, dbxref d, db db, feature_synonym fs, synonym s
 WHERE f.organism_id = o.organism_id and o.genus = 'Drosophila' and o.species = 'melanogaster' and f.name = 'aly' and 
 f.feature_id = fd.feature_id and fd.dbxref_id = d.dbxref_id and d.db_id = db.db_id and db.name='FlyBase Annotation IDs'
-and f.feature_id = fs.feature_id and fs.is_current and fs.synonym_id = s.synonym_id and s.type_id='60037'
+and f.feature_id = fs.feature_id and fs.is_current and fs.synonym_id = s.synonym_id and s.type_id='60037' and f.
 }}}
 
 ||1547||
@@ -133,7 +133,6 @@ SELECT * WHERE {
 }}}
 
 {{{
-select distinct f.feature_id, fl.fmin, fl.fmax, fl.locgroup, fl.strand, fl.scrfeature
 select distinct f.feature_id, f.name, f.uniquename, f.seqlen
 from feature f
 where f.feature_id in (select distinct fl.srcfeature_id from feature f, featureloc fl, organism o
