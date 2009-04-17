@@ -106,6 +106,21 @@ SELECT * WHERE {
 }}}
 
 {{{
+0.75153823933
+0.756381159469
+0.688668168917
+0.670496607156
+0.640806703734
+0.617909842444
+0.743410513494
+0.721768787335
+0.676506106368
+0.6728101353
+=== Average time === 
+0.694029626355
+}}}
+
+{{{
 select distinct feature.uniquename, feature_pub.feature_id, pub.pub_id, pub.title, pub.pyear, pub.pages, pub.volume, pub.issue, pub.miniref
 from feature_pub, pub, feature
 where feature_pub.pub_id = pub.pub_id and feature.feature_id = feature_pub.feature_id and feature.uniquename = 'FBgn0015799'
