@@ -163,6 +163,21 @@ SELECT * WHERE {
 }}}
 
 {{{
+0.408615591671
+0.371720376991
+0.357437790083
+0.427115440919
+0.416945812986
+0.358501214657
+0.440280819997
+0.347036472795
+0.41975194379
+0.442050711088
+=== Average time === 
+0.398945617498
+}}}
+
+{{{
 select distinct f.feature_id, f.name, f.uniquename, f.seqlen
 from feature f
 where f.feature_id in (select distinct fl.srcfeature_id from feature f, featureloc fl, organism o
