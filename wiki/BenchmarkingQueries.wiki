@@ -39,6 +39,21 @@ SELECT DISTINCT ?uniquename ?name ?accession ?fullname WHERE {
 }
 }}}
 
+{{{
+0.367258432863
+0.347984159458
+0.37685516671
+0.329882092173
+0.29467408318
+0.358848389292
+0.33840892929
+0.343710710862
+0.284845738174
+0.360638214142
+=== Average time === 
+0.340310591614
+}}}
+
 
 {{{
 SELECT distinct f.uniquename, f.name, d.accession, s.name FROM feature f, organism o, feature_dbxref fd, dbxref d, db db, feature_synonym fs, synonym s
