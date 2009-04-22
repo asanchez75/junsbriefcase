@@ -12,18 +12,22 @@ infilename = '\\oxford\\svn\\biordf2009_query_federation_case\\tcm-data\\TCM_ing
 infile = codecs.open(infilename, mode='r', encoding='UTF-8')
 
 #outfilename = '/root/workspace/biordf2009_query_federation_case/tcm-data/TCM_gene_disease_associations.ttl'
-outfilename = '\\oxford\\svn\\biordf2009_query_federation_case\\tcm-data\\TCM_ingredient_associations.ttl'
+outfilename = '\\oxford\\svn\\biordf2009_query_federation_case\\tcm-data\\TCM_ingredient_associations_statistics.ttl'
 outfile = codecs.open(outfilename, mode='w', encoding='UTF-8')
 
-medicinename = '<http://tcm.lifescience.ntu.edu.tw/id/medicine/'
-ingredientname = '<http://tcm.lifescience.ntu.edu.tw/id/ingredient/'
-type_ingredient = '<http://tcm.lifescience.ntu.edu.tw/Ingredient>'
-type_medicine = '<http://tcm.lifescience.ntu.edu.tw/Medicine>'
-predicate_ingredient = '<http://tcm.lifescience.ntu.edu.tw/ingredient>'
+namespace = "@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .\n"
+outfile.write(namespace)
+
+medicinename = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/'
+ingredientname = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/'
+type_ingredient = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Ingredient>'
+type_medicine = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Medicine>'
+predicate_ingredient = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/ingredient>'
+t_value = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/medicine_ingredient_association_tvalue>'
 rdfs_label = '<http://www.w3.org/2000/01/rdf-schema#label>'
 
 #reader = csv.DictReader(infile, delimiter="\t")
-reader = csv.reader(open(infilename, "rb"))
+reader = csv.reader(open(infilename, "rb"), delimiter='\t')
 
 def replace_space (string):
     return 
@@ -33,15 +37,16 @@ for row in reader:
     #print "to see what is in a row: " + row[0] + "\n"
     triple = ""
     if i > 0:
-        splits = row[0].split("\t")
-        #print "to see what is the first column in a row: " + splits[0] + "\n"
-        medicineid, ingredientid = splits[0].replace(" ", "_"), splits[1].replace(" ", "_")
+        
+        medicineid, ingredientid, tvalue = row[0].replace(" ", "_"), re.compile('(,| )').sub("_", row[1]), row[len(row)-1].strip()
         
         triple = medicinename + medicineid + ">\ta\t" + type_medicine + " ;\n"
-        triple = triple + "\t" + rdfs_label + "\t\"" + splits[0] + "\" ;\n"
+        triple = triple + "\t" + rdfs_label + "\t\"" + row[0] + "\" ;\n"
         triple = triple + "\t" + predicate_ingredient + "\t" +  ingredientname + ingredientid + "> .\n"
         triple = triple + ingredientname + ingredientid + ">\ta\t" + type_ingredient + " ;\n"
-        triple = triple + "\t" + rdfs_label + "\t\"" + splits[1] + "\" .\n\n"
+        triple = triple + "\t" + rdfs_label + "\t\"" + row[1] + "\" .\n"
+        
+        triple = triple + medicinename + medicineid + ">\t" + t_value + "\t\"" + tvalue + "\"^^xsd:float .\n\n"
     outfile.write(triple)
     outfile.flush()
     i = i + 1
