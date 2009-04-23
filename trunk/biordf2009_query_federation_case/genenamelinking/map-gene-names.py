@@ -5,6 +5,7 @@ import time
 import StringIO
 import sys
 import codecs
+import csv
 
 def sparql(host, port, path, query):
     params = urllib.urlencode({"query": query})
@@ -25,34 +26,39 @@ def sparql(host, port, path, query):
         conn.close()
         return resultSet
 
-#query = """
-#PREFIX sc: <http://purl.org/science/owl/sciencecommons/>
-#select *
-#from <http://purl.org/science/graph/ncbi/gene-info>
-#where {
-#    ?gene sc:ggp_has_symbol "F3" .
-#    ?gene sc:ggp_from_species_described_by  <http://purl.org/commons/record/ncbi_taxonomy/9606> .
-#}"""
-
-query = """
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-select distinct ?gene
+queryPart1 = """
+PREFIX sc: <http://purl.org/science/owl/sciencecommons/>
+select *
+from <http://purl.org/science/graph/ncbi/gene-info>
 where {
-    ?gene rdf:type <http://tcm.lifescience.ntu.edu.tw/Gene> .
-}
-"""
+    ?gene sc:ggp_has_symbol \""""
 
-#resultset = sparql("www.csw.inf.fu-berlin.de", 4039, "/sesame/repositories/tcmgene", query)
-resultset = sparql("lod.openlinksw.com", 80, "/sparql", query)
+queryPart2 = """\" .
+    ?gene sc:ggp_from_species_described_by  <http://purl.org/commons/record/ncbi_taxonomy/9606> .
+}"""
 
-outfilename = '\\oxford\\svn\\biordf2009_query_federation_case\\genenamelinking\\tcm_genes.csv'
+infilename = '\\oxford\\svn\\biordf2009_query_federation_case\\genenamelinking\\tcm_genes.csv'
+infile = codecs.open(infilename, mode='r', encoding='UTF-8')
+
+outfilename = '\\oxford\\svn\\biordf2009_query_federation_case\\genenamelinking\\mapping_extrez_genes.csv'
 outfile = codecs.open(outfilename, mode='w', encoding='UTF-8')
 
-for binding in resultset["results"]["bindings"]:
-    gene = binding["gene"]["value"]
-    print gene
-    gene = gene + "\n"
-    outfile.write(gene)
-    outfile.flush
+# read in the genes
+
+reader = csv.reader(open(infilename, "rb"), delimiter='\n')
+
+for row in reader:
+    tcmgeneid = row[0].strip()
+    
+    query = queryPart1 + tcmgeneid + queryPart2
+
+    resultset = sparql("hcls.deri.org", 80, "/sparql", query)    
+    
+    for binding in resultset["results"]["bindings"]:
+        gene = binding["gene"]["value"]
+        print gene
+        gene = tcmgeneid + "\t" + gene + "\n"
+        outfile.write(gene)
+        outfile.flush
     
 outfile.close()
