@@ -28,7 +28,7 @@ def sparql(host, port, path, query):
 
 queryPart1 = """
 PREFIX sc: <http://purl.org/science/owl/sciencecommons/>
-select *
+select distinct ?gene
 from <http://purl.org/science/graph/ncbi/gene-info>
 where {
     ?gene sc:ggp_has_symbol \""""
@@ -40,7 +40,7 @@ queryPart2 = """\" .
 infilename = '\\oxford\\svn\\biordf2009_query_federation_case\\genenamelinking\\tcm_genes.csv'
 infile = codecs.open(infilename, mode='r', encoding='UTF-8')
 
-outfilename = '\\oxford\\svn\\biordf2009_query_federation_case\\genenamelinking\\mapping_extrez_genes.csv'
+outfilename = '\\oxford\\svn\\biordf2009_query_federation_case\\genenamelinking\\multi_mapping_extrez_genes.csv'
 outfile = codecs.open(outfilename, mode='w', encoding='UTF-8')
 
 # read in the genes
@@ -54,11 +54,20 @@ for row in reader:
 
     resultset = sparql("hcls.deri.org", 80, "/sparql", query)    
     
-    for binding in resultset["results"]["bindings"]:
-        gene = binding["gene"]["value"]
-        print gene
-        gene = tcmgeneid + "\t" + gene + "\n"
-        outfile.write(gene)
-        outfile.flush
+#    print "multiple mapping gene "
     
+    if (len(resultset)>1):
+        print tcmgeneid
+        outfile.write(tcmgeneid + "\t" )
+#        outfile.write(str(len(resultset)))
+        outfile.flush
+
+    
+#    for binding in resultset["results"]["bindings"]:
+#        gene = binding["gene"]["value"]
+#        print gene
+#        gene = tcmgeneid + "\t" + gene + "\n"
+#        outfile.write(gene)
+#        outfile.flush
+#    
 outfile.close()
