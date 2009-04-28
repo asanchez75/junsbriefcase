@@ -7,3 +7,17 @@
 {{{
 ./bin/isql 129.67.24.116:1111 dba dba verbose=on banner=off echo=ON errors=stdout exec="ttlp_mt(file_to_string_output('/root/Desktop/sequence-vanilla-feature.nt'), '', 'http://openflydata.org/flybasegenes-20090402',0);checkpoint;"
 }}}
+
+
+== Load TCM RDF Release 2 into local virtuoso ==
+{{{
+./bin/isql 129.67.24.116:1111 dba dba verbose=on banner=off echo=ON errors=stdout exec="ttlp_mt(file_to_string_output('/root/Desktop/TCM_*statistics.ttl'), '', 'http://purl.org/net/data/tcm/tcm-20090428',0);checkpoint;"
+}}}
+
+{{{
+./bin/isql 129.67.24.116:1111 dba dba verbose=on banner=off echo=ON errors=stdout exec="ttlp_mt(file_to_string_output('/root/Desktop/gene-name-mapping-linkage-run-auto.ttl'), '', 'http://purl.org/net/tcm/id/linkset/1',0);checkpoint;"
+}}}
+
+{{{
+./bin/isql 129.67.24.116:1111 dba dba verbose=on banner=off echo=ON errors=stdout exec="ttlp_mt(file_to_string_output('/root/Desktop/gene-name-mapping-linkage-run-manual.ttl'), '', 'http://purl.org/net/tcm/id/linkset/2',0);checkpoint;"
+}}}
