@@ -3,12 +3,13 @@
 @prefix void:     <http://rdfs.org/ns/> .
 @prefix dcterms:     <http://purl.org/dc/terms/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 <http://purl.org/net/tcm/id/linkset/1>	 rdf:type 	 void:Linkset ;
 	 void:target 	 <http://lod.openlinksw.com/sparql> ;
 	 void:target 	 <http://hcls.deri.org:8080/sparql> ;
 	 void:linkPredicate 	 owl:sameAs .
 
-<http://purl.org/net/tcm/id/linkage_run/1>	 oddlinker:linkage_date 	 "2009-04-27"xsd:date ;
+<http://purl.org/net/tcm/id/linkage_run/1>	 oddlinker:linkage_date 	 "2009-04-27"^^xsd:date ;
 	 oddlinker:linkage_method 	 "SparqlQuery" ;
 	rdf:type	oddlinker:linkage_run .
 
