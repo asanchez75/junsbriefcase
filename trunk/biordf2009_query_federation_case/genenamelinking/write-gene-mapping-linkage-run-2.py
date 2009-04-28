@@ -41,7 +41,7 @@ outfile.write(triple)
 outfile.flush()   
 
 ### linkage_run
-triple = linkagerun + "\t oddlinker:linkage_date \t \"2009-04-28\"xsd:date ;\n"
+triple = linkagerun + "\t oddlinker:linkage_date \t \"2009-04-28\"^^xsd:date ;\n"
 triple = triple + "\t oddlinker:linkage_method \t \"Manual\" ;\n"
 triple = triple + "\trdf:type\toddlinker:linkage_run .\n\n"
 outfile.write(triple)
