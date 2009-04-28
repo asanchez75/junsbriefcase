@@ -26,6 +26,35 @@ See also: http://code.google.com/p/junsbriefcase/wiki/TGDdataset
 || medicine_disease_associated_tvalue ||TCM_disease_associations.tab||
 
 = Example SPARQL Queries =
+== Find all the genes associated with Alzheimer's disease ==
+{{{
+ PREFIX tcm:      <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/>
+ PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ select distinct ?gene
+ where {<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/disease/Alzheimer_Disease> tcm:gene ?gene. }
+}}}
+
+{{{
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IL6
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MAPK1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MAPT
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CREB1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ADAMTS2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TNF
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IL1B
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NFKB1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CASP3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CCND1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ACHE
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/APLP2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ERBB2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AGPS
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/APP
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TTR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/APOE
+}}}
+
+
 == Find all the tcm medicines that can treat Alzheimer's disease ==
 {{{
  PREFIX tcm:      <http://tcm.lifescience.ntu.edu.tw/>
