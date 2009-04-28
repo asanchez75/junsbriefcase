@@ -20,6 +20,7 @@ namespace = namespace + "@prefix oddlinker:     <http://data.linkedmdb.org/resou
 namespace = namespace + "@prefix void:     <http://rdfs.org/ns/> .\n"
 namespace = namespace + "@prefix dcterms:     <http://purl.org/dc/terms/> .\n"
 namespace = namespace + "@prefix owl:     <http://www.w3.org/2002/07/owl#> .\n"
+namespace = namespace + "@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n"
 outfile.write(namespace)
 
 genename = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/'
