@@ -55,6 +55,19 @@ http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TTR
 http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/APOE
 }}}
 
+== Find all the genes and herbs associated with Alzheimer's disease and the t-value of the association ==
+{{{
+PREFIX tcm:      <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/>
+PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select distinct ?gene ?medicine ?tvalue
+where {
+    <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/disease/Alzheimer_Disease> tcm:gene ?gene ; tcm:medicine ?medicine.
+    ?medicine tcm:medicine_gene_disease_association_tvalue ?tvalue .
+}
+order by ?tvalue
+}}}
+
+
 
 == Find all the tcm medicines that can treat Alzheimer's disease ==
 {{{
