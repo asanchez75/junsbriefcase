@@ -9,13 +9,14 @@ See also: http://code.google.com/p/junsbriefcase/wiki/TGDdataset
 ||         || Ingredient||
 ||         || Effect||
 
-||  Object Properties || Domain || Range ||
-|| treatment || Medicine || Disease ||
-|| association || Medicine || Gene ||
-|| medicine || Disease || Medicine ||
-|| gene || Disease || Gene ||
-|| ingredient || Medicine || Ingredient ||
-|| effect || Medicine || Effect ||
+||  Object Properties || Domain || Range || Dataset ||
+|| association || Medicine || Gene || TCM_gene_associations.tab ||
+|| medicine || Disease || Medicine || TCM_gene_disease_associations.tab ||
+|| ingredient || Medicine || Ingredient || TCM_ingredient_associations.tab ||
+|| gene || Disease || Gene || TCM_gene_disease_associations.tab ||
+|| effect || Medicine || Effect || TCM_effect_associations.tab ||
+|| treatment || Medicine || Disease || TCM_disease_associations.tab ||
+
 
 == Modelling the t-value properties ==
 ||  Object Properties || Dataset || 
