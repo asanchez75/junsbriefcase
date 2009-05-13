@@ -26,3 +26,6 @@ SELECT DISTINCT * WHERE {
 LIMIT 100
 
 78 drugs were returned.
+
+= Exhibit Drugs associated with AD =
+http://rodos.zoo.ox.ac.uk/tcmdata/exhibit_drugs/exhibit_medicine.html
