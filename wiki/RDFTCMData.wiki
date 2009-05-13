@@ -26,6 +26,12 @@ See also: http://code.google.com/p/junsbriefcase/wiki/TGDdataset
 || medicine_effect_association_tvalue || TCM_effect_associations.tab||
 || medicine_disease_associated_tvalue ||TCM_disease_associations.tab||
 
+== Data dumps ==
+ * http://purl.oclc.org/NET/tcm/tcm_rdf_data_release2_270409.tar.gz
+ * http://purl.oclc.org/NET/tcm/tcm_rdf_data_release2_270409_ttl.tar.gz
+
+See also http://esw.w3.org/topic/DataSetRDFDumps
+
 = Example SPARQL Queries =
 == Find all the genes associated with Alzheimer's disease ==
 {{{
