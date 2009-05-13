@@ -1,6 +1,6 @@
 #summary One-sentence summary of this page.
 
-= Find alternative medicine for AD =
+= Find alternative medicine for AD and their side effects =
 {{{
 PREFIX tcm: <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -517,6 +517,68 @@ http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Hypericum_perfora
 http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Panax_ginseng 	1.355000019073486
 http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ginkgo_biloba 	1.348999977111816
 }}}
+
+So, the top 10 alternative medicine is:
+{{{
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ginkgo_biloba
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Apis_mellifera
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Salvia_miltiorrhiza
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Curcuma_longa
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Centella_asiatica
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gastrodia_elata
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Hypericum_perforatum
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Panax_ginseng
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cannabis_sativa
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Panax_notoginseng
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Camellia_sinensis
+}}}
+
+== Find any side effect information about these herbs ==
+{{{
+PREFIX tcm: <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select distinct ?medicine ?effect ?effect_tvalue
+where {
+    ?medicine tcm:treatment <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/disease/Alzheimer_Disease> ; tcm:medicine_disease_tvalue ?tvalue ; 
+tcm:effect ?effect ; 
+tcm:medicine_effect_association_tvalue ?effect_tvalue .
+}
+order by desc(?effect_tvalue)
+}}}
+
+There are a lot of effect information associated with the medicine, some of which are positive and others are negative. For example, there are 88 different types of effect associated with Ginkgo biloba. 
+
+{{{
+PREFIX tcm: <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select distinct ?medicine count(distinct ?effect)
+where {
+    ?medicine tcm:treatment <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/disease/Alzheimer_Disease> ; 
+   tcm:medicine_disease_tvalue ?tvalue ; 
+    tcm:effect ?effect ; 
+tcm:medicine_effect_association_tvalue ?effect_tvalue .
+}
+order by desc(?tvalue)
+}}}
+
+{{{
+
+}}}
+
+= Find out the ingredients of these herbal medicine = 
+{{{
+PREFIX tcm: <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select distinct ?medicine ?ingredient
+where {
+   ?medicine tcm:treatment <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/disease/Alzheimer_Disease> ; 
+   tcm:medicine_disease_tvalue ?tvalue ; 
+   tcm:ingredient ?ingredient .
+}
+order by desc(?tvalue)
+}}}
+
+
 
 = Alzheimer's Disease (Diseasesome) =
 
