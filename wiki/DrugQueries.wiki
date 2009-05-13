@@ -1,13 +1,28 @@
 #summary One-sentence summary of this page.
 
-= Introduction =
+= Alzheimer's Disease (Diseasesome) =
 
-Add your content here.
+{{{
+SELECT DISTINCT ?s WHERE {
+  ?s rdfs:label ?label .
+  filter regex(?label, "^Alzheimer") 
+}
+LIMIT 10
+}}}
 
 
-= Details =
+Result:
+{{{
+http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseases/74
+}}}
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+A query about disease/74 also returns genes associated with the disease (diseasome:associatedGene) and possible drugs (diseasome:possibleDrug).
+
+
+= Drugs possibly targeting at this disease (DrugBank)=
+SELECT DISTINCT * WHERE {
+  ?drug drugbank:possibleDiseaseTarget <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseases/74> .
+}
+LIMIT 100
+
+78 drugs were returned.
