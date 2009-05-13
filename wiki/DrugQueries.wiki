@@ -578,6 +578,16 @@ where {
 order by desc(?tvalue)
 }}}
 
+= Find western drugs that possibly target at AD and share the ingredients of an alternative medicine (such as Ginkgo biloba) =
+
+= Find out clinical trial information about the top 10 alternative medicine =
+
+= Find out clinical trial information about the western drugs sharing the ingredients with alternative medicines =
+
+= Find out all the genes associated with the top 10 alternative medicines =
+
+= Find the alternative medicines that are associated with the top 10 AD genes =
+
 
 
 = Alzheimer's Disease (Diseasesome) =
