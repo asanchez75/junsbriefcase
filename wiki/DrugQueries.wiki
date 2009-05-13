@@ -2,7 +2,13 @@
 
 = Find alternative medicine for AD =
 {{{
-
+PREFIX tcm: <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select distinct ?medicine ?tvalue
+where {
+    ?medicine tcm:treatment <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/disease/Alzheimer_Disease> ; tcm:medicine_disease_tvalue ?tvalue .
+}
+order by desc(?tvalue)
 }}}
 
 {{{
