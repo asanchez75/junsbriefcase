@@ -1,11 +1,11 @@
 // create a namespace if not already defined
-lodd.namespace("lodd.tcm");
+admed.namespace("admed.tcm");
 
 
 /**
  * TODO doc me
  */
-lodd.tcm.Service = function (endpointURL) {
+admed.tcm.Service = function (endpointURL) {
 	/**
 	 * @private
 	 */
@@ -14,41 +14,41 @@ lodd.tcm.Service = function (endpointURL) {
 
 
 // extend
-lodd.tcm.Service.prototype = new lodd.sparql.Service();
+admed.tcm.Service.prototype = new admed.sparql.Service();
 
 
 /**
  * TODO doc me
  */
-lodd.tcm.Service.prototype.findGenesByDiseaseName = function( diseaseName, success, failure ) {
-    var _context = "lodd.tcm.Service.prototype.findGenesByDiseaseName";
+admed.tcm.Service.prototype.findGenesByDiseaseName = function( diseaseName, success, failure ) {
+    var _context = "admed.tcm.Service.prototype.findGenesByDiseaseName";
 	try {
-		lodd.info("diseaseName: "+diseaseName, _context);
-        var successChain = lodd.chain(lodd.tcm.Service.responseToGenes, success);	
-		var query = lodd.tcm.Service._buildQueryForFindGenesByDiseaseName(diseaseName);
+		admed.info("diseaseName: "+diseaseName, _context);
+        var successChain = admed.chain(admed.tcm.Service.responseToGenes, success);	
+		var query = admed.tcm.Service._buildQueryForFindGenesByDiseaseName(diseaseName);
 		this.query(query, successChain, failure);
 	}catch (error) {
-        throw new lodd.UnexpectedException(_context, error);
+        throw new admed.UnexpectedException(_context, error);
     }
 };
 
-lodd.tcm.Service.responseToGenes = function( response ) {
-    var _context = "lodd.tcm.Service.responseToGenes";
+admed.tcm.Service.responseToGenes = function( response ) {
+    var _context = "admed.tcm.Service.responseToGenes";
     try {
-        lodd.debug("response status: "+response.status, _context);
-        lodd.debug("try parsing response text as json", _context);
-        lodd.debug("response text: "+response.responseText, _context);
+        admed.debug("response status: "+response.status, _context);
+        admed.debug("try parsing response text as json", _context);
+        admed.debug("response text: "+response.responseText, _context);
         var resultSet = YAHOO.lang.JSON.parse(response.responseText);
-        lodd.debug("convert result set to an array of genes", _context);
-        var genes = lodd.tcm.Gene.newInstancesFromSPARQLResults(resultSet);
+        admed.debug("convert result set to an array of genes", _context);
+        var genes = admed.tcm.Gene.newInstancesFromSPARQLResults(resultSet);
         return genes;
     } catch (e) {
-        lodd.debug("caught "+e.name+", "+e.message, _context);
-        throw new lodd.UnexpectedException(_context, e);
+        admed.debug("caught "+e.name+", "+e.message, _context);
+        throw new admed.UnexpectedException(_context, e);
     }
 };
 
-lodd.tcm.Service._buildQueryForFindGenesByDiseaseName = function( diseaseName ) {
+admed.tcm.Service._buildQueryForFindGenesByDiseaseName = function( diseaseName ) {
 
 	try {
 		var prefixes = 	"PREFIX tcm: <http://purl.org/net/tcm/schema/> " +
@@ -65,11 +65,11 @@ lodd.tcm.Service._buildQueryForFindGenesByDiseaseName = function( diseaseName ) 
 	
 		return query;
 	}catch (error) {
-        throw new lodd.UnexpectedException("lodd.tcm.Service._buildQueryForFindImagesBytcmProbeName", error);
+        throw new admed.UnexpectedException("admed.tcm.Service._buildQueryForFindImagesBytcmProbeName", error);
     }
 };
 
-lodd.tcm.Service._buildQueryForFindImagesByFlybaseGeneID = function( flybaseGeneID ) {
+admed.tcm.Service._buildQueryForFindImagesByFlybaseGeneID = function( flybaseGeneID ) {
 	try {
 		var prefixes = 	"PREFIX tcm: <http://purl.org/net/tcm/schema/> " +
 						"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
@@ -90,37 +90,14 @@ lodd.tcm.Service._buildQueryForFindImagesByFlybaseGeneID = function( flybaseGene
 	
 		return query;
 	}catch (error) {
-        throw new lodd.UnexpectedException("lodd.tcm.Service._buildQueryForFindImagesByFlybaseGeneID", error);
+        throw new admed.UnexpectedException("admed.tcm.Service._buildQueryForFindImagesByFlybaseGeneID", error);
     }
 };
-
-
-
-/**
- * Map a string to a list of strings via a supplied mapping table,
- * returnimng an empty list if the supplied key is not present. 
- * @param {String} key 		a key value to be mapped
- * @param {Object} table 	an object with members that are arrays of strings
- * @return an array of string values, which may be empty if the given key is not found
- * @type [String]
- */
-lodd.tcm.Service.mapNameUsingTable = function ( key, table ) {
-	try {
-		var result = table[key];
-		if (typeof result == "undefined" || !result ) {
-			result = [];
-		}
-		return result;
-	}catch (error) {
-        throw new lodd.UnexpectedException("lodd.tcm.Service.mapNameUsingTable", error);
-    }
-};
-
 
 /**
  * TDO doc me
  */
-lodd.tcm.Image = function () {
+admed.tcm.Image = function () {
 	
 	/**
 	 * @type String
@@ -155,11 +132,11 @@ lodd.tcm.Image = function () {
 /**
  * TODO doc me
  */
-lodd.tcm.Image.newInstancesFromSPARQLResults = function(resultSet){
+admed.tcm.Image.newInstancesFromSPARQLResults = function(resultSet){
 	try {
 		var bindings = resultSet.results.bindings;
-		var imagePool = new lodd.tcm.ImagePool();
-		var probePool = new lodd.tcm.ProbePool();
+		var imagePool = new admed.tcm.ImagePool();
+		var probePool = new admed.tcm.ProbePool();
 		
 		for (var i=0; i<bindings.length; i++) {
 			var binding = bindings[i];
@@ -182,7 +159,7 @@ lodd.tcm.Image.newInstancesFromSPARQLResults = function(resultSet){
 	
 				if (binding.probeLabel) {
 					var probeLabel = binding.probeLabel.value;
-					lodd.util.appendIfNotMember(probe.probeLabels, probeLabel);
+					admed.util.appendIfNotMember(probe.probeLabels, probeLabel);
 				}
 				image.probe = probe;
 			}		
@@ -190,19 +167,19 @@ lodd.tcm.Image.newInstancesFromSPARQLResults = function(resultSet){
 		
 		return imagePool.toArray();
 	}catch (error) {
-        throw new lodd.UnexpectedException("lodd.tcm.Image.newInstancesFromSPARQLResults", error);
+        throw new admed.UnexpectedException("admed.tcm.Image.newInstancesFromSPARQLResults", error);
     }
 };
 
 
-lodd.tcm.ImagePool = function() {
+admed.tcm.ImagePool = function() {
 	/**
 	 * @private
 	 */
 	this._pool = new Object();
 };
 
-lodd.tcm.ImagePool.prototype.toArray = function() {
+admed.tcm.ImagePool.prototype.toArray = function() {
 	try {
 		var array = new Array();
 		for (var key in this._pool) {
@@ -210,35 +187,35 @@ lodd.tcm.ImagePool.prototype.toArray = function() {
 		}
 		return array;
 	} catch (error) {
-        throw new lodd.UnexpectedException("lodd.tcm.ImagePool.prototype.toArray", error);
+        throw new admed.UnexpectedException("admed.tcm.ImagePool.prototype.toArray", error);
     }
 };
 
-lodd.tcm.ImagePool.prototype.get = function( imagepath ) {
+admed.tcm.ImagePool.prototype.get = function( imagepath ) {
 	
 	try {
 		var image = this._pool[imagepath];
 	
 		if ( typeof image == "undefined" || !image ) {
-			image = new lodd.tcm.Image();
+			image = new admed.tcm.Image();
 			image.fullImageURL = imagepath;		
 			this._pool[imagepath] = image;	
 		}
 		
 		return image;
 	} catch (error) {
-        throw new lodd.UnexpectedException("lodd.tcm.ImagePool.prototype.get", error);
+        throw new admed.UnexpectedException("admed.tcm.ImagePool.prototype.get", error);
     }
 };
 
-lodd.tcm.ProbePool = function() {
+admed.tcm.ProbePool = function() {
 	/**
 	 * @private
 	 */
 	this._pool = new Object();
 };
 
-lodd.tcm.ProbePool.prototype.get = function( probeURI ) {
+admed.tcm.ProbePool.prototype.get = function( probeURI ) {
 	
 	try {
 		var probe = this._pool[probeURI];
@@ -251,11 +228,11 @@ lodd.tcm.ProbePool.prototype.get = function( probeURI ) {
 		
 		return probe;
 	} catch (error) {
-        throw new lodd.UnexpectedException("lodd.tcm.ProbePool.prototype.get", error);
+        throw new admed.UnexpectedException("admed.tcm.ProbePool.prototype.get", error);
     }
 };
 
-lodd.tcm.ProbePool.prototype.toArray = function() {
+admed.tcm.ProbePool.prototype.toArray = function() {
 	try {
 		var array = new Array();
 		for (var key in this._pool) {
@@ -263,13 +240,13 @@ lodd.tcm.ProbePool.prototype.toArray = function() {
 		}
 		return array;
 	} catch (error) {
-        throw new lodd.UnexpectedException("lodd.tcm.ProbePool.prototype.toArray", error);
+        throw new admed.UnexpectedException("admed.tcm.ProbePool.prototype.toArray", error);
     }
 };
 
 
-lodd.tcm.Service.transformResponseForFindImagesByFlybaseGeneIDBatch = function( response ) {
-    var _context = "lodd.tcm.Service.transformResponseForFindImagesByFlybaseGeneIDBatch";
+admed.tcm.Service.transformResponseForFindImagesByFlybaseGeneIDBatch = function( response ) {
+    var _context = "admed.tcm.Service.transformResponseForFindImagesByFlybaseGeneIDBatch";
     try {
         
         /* Turn results of query into result object like...
@@ -315,16 +292,16 @@ lodd.tcm.Service.transformResponseForFindImagesByFlybaseGeneIDBatch = function( 
          * }
          */
 
-        lodd.debug("response status: "+response.status, _context);
-        lodd.debug("try parsing response text as json", _context);
-        lodd.debug("parsing response: "+response.responseText, _context);
+        admed.debug("response status: "+response.status, _context);
+        admed.debug("try parsing response text as json", _context);
+        admed.debug("parsing response: "+response.responseText, _context);
 
         var resultSet = YAHOO.lang.JSON.parse(response.responseText);
         
-        lodd.debug("convert result set to a map of fbgns to images indexed by fullImageURL", _context);
+        admed.debug("convert result set to a map of fbgns to images indexed by fullImageURL", _context);
         
         var map = {};
-        var imagePool = new lodd.tcm.ImagePool();
+        var imagePool = new admed.tcm.ImagePool();
         var bindings = resultSet.results.bindings;
         
         for (var i=0; i<bindings.length; i++) {
@@ -332,23 +309,23 @@ lodd.tcm.Service.transformResponseForFindImagesByFlybaseGeneIDBatch = function( 
             var fbgn = binding["fbgn"].value;
          
             var imagepath = binding["fullImageURL"].value;
-            lodd.debug("add image : " + imagepath + " for gene " + fbgn, _context);
+            admed.debug("add image : " + imagepath + " for gene " + fbgn, _context);
 			var image = imagePool.get(imagepath);
 			
-			lodd.debug("get image object: " + image.fullImageURL + " for gene " + fbgn, _context);
+			admed.debug("get image object: " + image.fullImageURL + " for gene " + fbgn, _context);
 			
 			image.thumbnailURL = binding["thumbnailURL"].value;
 			image.tcmURL = binding["tcmURL"].value;
 			image.caption = binding["caption"].value;
 						
             if (typeof map[fbgn] == "undefined" || !map[fbgn]) {
-                lodd.debug("initialising gene label: "+fbgn, _context);
+                admed.debug("initialising gene label: "+fbgn, _context);
                 map[fbgn] = {"images":[]};
             }
                         
             var images = map[fbgn].images;
                         
-            lodd.util.appendIfNotMember(images, image);
+            admed.util.appendIfNotMember(images, image);
                         
         }
             
@@ -356,7 +333,7 @@ lodd.tcm.Service.transformResponseForFindImagesByFlybaseGeneIDBatch = function( 
     
     } 
     catch (unexpected) {
-        lodd.debug("rethrowing "+unexpected.name+", "+unexpected.message, _context);
+        admed.debug("rethrowing "+unexpected.name+", "+unexpected.message, _context);
         throw unexpected;    
     }    
 };
