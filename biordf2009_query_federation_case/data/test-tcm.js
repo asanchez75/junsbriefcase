@@ -55,7 +55,7 @@ var _tests = [
         		" :medicine_gene_disease_association_tvalue ?medicine_gene_disease_association_tvalue ;\n" +
         		" :medicine_ingredient_association_tvalue ?medicine_ingredient_association_tvalue ;\n" +
         		" :medicine_gene_association_tvalue ?medicine_gene_association_tvalue ;\n" +
-        		" :medicine_effect_association_tvalue ?medicine_effect_association_tvalue ;\n" +
+        		" :medicine_effect_association_tvalue ?medicine_effect_association_tvalue " +
         		". \n" +
         		"}",
         expect: true,
