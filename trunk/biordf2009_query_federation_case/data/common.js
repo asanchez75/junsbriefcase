@@ -9,7 +9,7 @@ function testEndpointExistsResponseSuccess( testcase ) {
 		log("Response success");
 		testcase.resume(function() {
 			log("Resumed test runner");
-			Assert.fail("Status code should be 400");
+			Assert.areEqual(200, o.status, "Status code should be 200");
 		});
 	}
 }
@@ -22,10 +22,10 @@ function testEndpointExistsResponseSuccess( testcase ) {
  */
 function testEndpointExistsResponseFailure( testcase ) {
 	return function(o) {
-		log("Response failure, expect 400");
+		log("Response failure, expect 200");
 		testcase.resume(function() {
 			log("Resumed test runner, testing request status code");
-			Assert.areEqual(400, o.status, "Status code should be 400");
+			Assert.areEqual(200, o.status, "Status code should be 200");
 		});
 	}
 }
@@ -165,28 +165,14 @@ function testAskQuery( endpoint, testcase, query, expected, failureMessage) {
 		// define SPARQL query & URL
 		query = sparqlns + query;	
 		
+        var url = endpoint + "?output=json&query=" + escape(query);
+        
         log("Unescaped query: "+query);
-		
-//		var url = endpoint + "?output=json&query=" + escape(query);
-//        var content = null;
-//        var method = "GET";
-
-        var url = endpoint ;
         
-        var content = "";
-        
-        if (url == "pubmed"){
-        	content = "query="+escape(query) + "&format=application%2Fsparql-results%2Bjson";	
-        }else{
-        	content = "query="+escape(query);
-        }      
-        
-        log("escaped query: " + content);
-        
-        var method = "POST";
+        var method = "GET";
 		
 		log("Make the request to "+url);
-		var request = YAHOO.util.Connect.asyncRequest(method, url, callback, content);
+		var request = YAHOO.util.Connect.asyncRequest(method, url, callback, null);
 		
 		log("Suspend the test runner");
 		testcase.wait();
