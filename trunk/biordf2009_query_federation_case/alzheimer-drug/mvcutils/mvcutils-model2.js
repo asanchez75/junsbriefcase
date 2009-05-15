@@ -1,6 +1,6 @@
 
 // create a namespace if not already defined
-lodd.namespace("lodd.mvcutils");
+admed.namespace("admed.mvcutils");
 
 
 /** 
@@ -9,33 +9,33 @@ lodd.namespace("lodd.mvcutils");
  * A generic model class for an MVC widget or application.
  * @constructor
  */
-lodd.mvcutils.GenericModel2 = function() {};
+admed.mvcutils.GenericModel2 = function() {};
 	
 /**
  * @private
  */
-lodd.mvcutils.GenericModel2.prototype._state = null;
+admed.mvcutils.GenericModel2.prototype._state = null;
 	
 /**
  * @private
  */
-lodd.mvcutils.GenericModel2.prototype._events = null;
+admed.mvcutils.GenericModel2.prototype._events = null;
 
 /**
  * @private
  */
-lodd.mvcutils.GenericModel2.prototype._properties = null;
+admed.mvcutils.GenericModel2.prototype._properties = null;
 
 /**
  * @private
  */
-lodd.mvcutils.GenericModel2.prototype._values = null;
+admed.mvcutils.GenericModel2.prototype._values = null;
 
 
 /**
  * TODO doc me
  */
-lodd.mvcutils.GenericModel2.prototype.setDefinition = function( definition ) {
+admed.mvcutils.GenericModel2.prototype.setDefinition = function( definition ) {
 	this._init(definition);	
 }
 
@@ -43,7 +43,7 @@ lodd.mvcutils.GenericModel2.prototype.setDefinition = function( definition ) {
 /**
  * TODO doc me
  */
-lodd.mvcutils.GenericModel2.prototype._init = function( definition ) {
+admed.mvcutils.GenericModel2.prototype._init = function( definition ) {
 
 	if (typeof definition == "object") {
 
@@ -57,23 +57,23 @@ lodd.mvcutils.GenericModel2.prototype._init = function( definition ) {
 				this._events[type] = new YAHOO.util.CustomEvent(type, this);
 			}	
 		}
-		else throw new lodd.mvcutils.GenericModel2.BadDefinition("definition must have 'properties' field with array value");
+		else throw new admed.mvcutils.GenericModel2.BadDefinition("definition must have 'properties' field with array value");
 		
 		// store values
 		if (typeof definition.values == "object") {
 			this._values = definition.values;
 		}
-		else throw new lodd.mvcutils.GenericModel2.BadDefinition("definition must have 'values' field with object value");
+		else throw new admed.mvcutils.GenericModel2.BadDefinition("definition must have 'values' field with object value");
 		
 		// init state
 		this._state = {};
 		if (typeof definition.initialize == "function") {
 			definition.initialize(this._state);
 		}
-		else throw new lodd.mvcutils.GenericModel2.BadDefinition("definition must have 'initialize' field with function value");		
+		else throw new admed.mvcutils.GenericModel2.BadDefinition("definition must have 'initialize' field with function value");		
 		
 	}
-	else throw new lodd.mvcutils.GenericModel2.BadDefinition("definition must be an object");		
+	else throw new admed.mvcutils.GenericModel2.BadDefinition("definition must be an object");		
 	
 }
 
@@ -81,7 +81,7 @@ lodd.mvcutils.GenericModel2.prototype._init = function( definition ) {
 /**
  * TODO doc me
  */
-lodd.mvcutils.GenericModel2.prototype.subscribe = function( property, listener, obj ) {
+admed.mvcutils.GenericModel2.prototype.subscribe = function( property, listener, obj ) {
 
 	// guard condition
 	this._validateProperty(property);
@@ -95,7 +95,7 @@ lodd.mvcutils.GenericModel2.prototype.subscribe = function( property, listener, 
 /**
  * TODO doc me
  */
-lodd.mvcutils.GenericModel2.prototype.subscribeAll = function( listener, obj ) {
+admed.mvcutils.GenericModel2.prototype.subscribeAll = function( listener, obj ) {
 
 	for (var i=0; i<this._properties.length; i++) {
 		var property = this._properties[i];
@@ -109,7 +109,7 @@ lodd.mvcutils.GenericModel2.prototype.subscribeAll = function( listener, obj ) {
 /**
  * TODO doc me
  */
-lodd.mvcutils.GenericModel2.prototype.get = function( property ) {
+admed.mvcutils.GenericModel2.prototype.get = function( property ) {
 
 	// guard condition
 	this._validateProperty(property);
@@ -122,7 +122,7 @@ lodd.mvcutils.GenericModel2.prototype.get = function( property ) {
 /**
  * TODO doc me
  */
-lodd.mvcutils.GenericModel2.prototype.getter = function() {
+admed.mvcutils.GenericModel2.prototype.getter = function() {
     var self = this;
     return function( property ) {
         return self.get(property);
@@ -133,7 +133,7 @@ lodd.mvcutils.GenericModel2.prototype.getter = function() {
 /**
  * TODO doc me
  */
-lodd.mvcutils.GenericModel2.prototype.set = function( property, to ) {
+admed.mvcutils.GenericModel2.prototype.set = function( property, to ) {
 
 	// guard condition
 	this._validatePropertyValue(property, to);
@@ -154,7 +154,7 @@ lodd.mvcutils.GenericModel2.prototype.set = function( property, to ) {
  * TODO doc me
  * @private
  */
-lodd.mvcutils.GenericModel2.prototype._validateProperty = function( property ) {
+admed.mvcutils.GenericModel2.prototype._validateProperty = function( property ) {
 
 	var valid = false;
 
@@ -163,7 +163,7 @@ lodd.mvcutils.GenericModel2.prototype._validateProperty = function( property ) {
 	}
 
 	if (!valid) {
-		throw new lodd.mvcutils.GenericModel2.BadPropertyName("bad property name: "+property);
+		throw new admed.mvcutils.GenericModel2.BadPropertyName("bad property name: "+property);
 	}
 
 }
@@ -173,7 +173,7 @@ lodd.mvcutils.GenericModel2.prototype._validateProperty = function( property ) {
  * TODO doc me
  * @private
  */
-lodd.mvcutils.GenericModel2.prototype._validatePropertyValue = function( property, value ) {
+admed.mvcutils.GenericModel2.prototype._validatePropertyValue = function( property, value ) {
 
 	var valid = false;
 
@@ -195,7 +195,7 @@ lodd.mvcutils.GenericModel2.prototype._validatePropertyValue = function( propert
 	}
 
 	if (!valid) {
-		throw new lodd.mvcutils.GenericModel2.BadPropertyValue("bad property value, property: "+property+", value: "+value);
+		throw new admed.mvcutils.GenericModel2.BadPropertyValue("bad property value, property: "+property+", value: "+value);
 	}
 	
 }
@@ -205,24 +205,24 @@ lodd.mvcutils.GenericModel2.prototype._validatePropertyValue = function( propert
  * TODO doc me
  * @private
  */
-lodd.mvcutils.GenericModel2.prototype._notify = function( property, from, to ) {
+admed.mvcutils.GenericModel2.prototype._notify = function( property, from, to ) {
 
 	// property must already have been checked
 	this._events[property].fire(from, to, this.getter());
 };
 
-lodd.mvcutils.GenericModel2.BadDefinition = function( message ) {
-	this.name = "lodd.mvcutils.GenericModel2.BadDefinition";
+admed.mvcutils.GenericModel2.BadDefinition = function( message ) {
+	this.name = "admed.mvcutils.GenericModel2.BadDefinition";
 	this.message = message;
 };
 
-lodd.mvcutils.GenericModel2.BadPropertyName = function( message ) {
-	this.name = "lodd.mvcutils.GenericModel2.BadPropertyName";
+admed.mvcutils.GenericModel2.BadPropertyName = function( message ) {
+	this.name = "admed.mvcutils.GenericModel2.BadPropertyName";
 	this.message = message;
 };
 
-lodd.mvcutils.GenericModel2.BadPropertyValue = function( message ) {
-	this.name = "lodd.mvcutils.GenericModel2.BadPropertyValue";
+admed.mvcutils.GenericModel2.BadPropertyValue = function( message ) {
+	this.name = "admed.mvcutils.GenericModel2.BadPropertyValue";
 	this.message = message;
 };
 
