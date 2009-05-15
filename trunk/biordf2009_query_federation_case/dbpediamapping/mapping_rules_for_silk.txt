@@ -1,0 +1,86 @@
+1. Disease:
+DBPedia instances of type opencyc:en/DiseaseType or dbpedia-owl:Disease all TCM instances of type http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Disease if tcm:Disease rdfs:label = dbpedia:disease rdfs:label ( xml:lang="en") or
+if tcm:Disease rdfs:label matches dbpedia:disease rdfs:label ( xml:lang="en") (at least 95%)
+
+Example 1
+tcm:Alzheimer_Disease
+	rdf:type	tcm:Disease ;
+	rdfs:label	“Alzheimer Disease” .
+
+dbpedia:Alzheimer's_disease
+	rdf:type	opencyc:en/DiseaseType ;
+	rdfs:label	“Alzheimer's disease (en)” .
+
+Example 2
+tcm:Parkinson_Disease
+	rdf:type	tcm:Disease ;
+	rdfs:label	“Parkinson Disease” .
+
+dbpedia:Parkinson's_Disease
+	rdf:type	opencyc:en/DiseaseType ;
+	rdf:type	dbpedia-owl:Disease ;
+	rdfs:label	“Parkinson's disease (en)” .
+
+Example 3
+tcm:Dermatitis_Atopic
+	rdf:type	tcm:Disease ;
+	rdfs:label	“Dermatitis, Atopic” .
+
+dbpedia:Parkinson's_Disease
+	rdf:type	dbpedia-owl:Disease ;
+	rdfs:label	“Atopic dermatitis (en)” .
+
+
+There are in total 553 diseases in TCM. Let's how many of them can be accurately mapped to DBPedia disease names.
+
+2. Herbs
+
+1.get all Dbpedia instances of type dbpedia-owl:Species
+2.get all TCM instances of type tcm:Medicine
+3.if tcm:Medicine rdfs:label = dbpedia-owl:Species rdfs:label or
+4.if tcm:Medicine rdfs:label matches dbpedia-owl:Species rdfs:label (at least 95%)
+5.optional, we can use  xml:lang="en" as one of the conditions, however, some medicines in TCM are named using other western language, e.g. Papaver somniferum is Spanish name of “Opium poppy”
+
+A possible alternative rule to rule 5 could be:
+-  if tcm: Medicine = dbpedia:redirect (list), w/o underscore
+
+I have tested with all the herbs associated with Alzheimer's Disease (all their rdfs:label without underscore):
+ <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Polygala_tenuifolia>
+ <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Camellia_sinensis>
+ <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Polygonum_multiflorum>
+ <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Panax_notoginseng>
+ <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Papaver_somniferum>
+ <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Carica_papaya>
+ <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lycium_barbarum>
+ <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cannabis_sativa>
+ <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Prunus_persica>
+ <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Apis_mellifera>
+ <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Scutellaria_baicalensis>
+ <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Angelica_gigas>
+ <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Salvia_miltiorrhiza>
+ <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Centella_asiatica>
+ <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Evodia_rutaecarpa>
+ <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Zingiber_officinale>
+ <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Glycyrrhiza_uralensis>
+ <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Panax_ginseng>
+ <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Hypericum_perforatum>
+ <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gastrodia_elata>
+ <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Nardostachys_jatamansi>
+ <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ginkgo_biloba>
+ <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Curcuma_longa>
+
+I cannot find mapping herb in Dbpedia for the following two herbs, but  you can find information about these herbs in dbpedia(zh):
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Evodia_rutaecarpa>
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Nardostachys_jatamansi>
+
+There are in total 848 herb names in TCM.
+
+3.  Ingredients
+There 4379 ingredients in the TCM datasets. I notice that quite a few of them do not have a mapping Dbpedia resource. I suggest to start from Dbpedia instances that are of type dbpedia-owl:ChemicalCompound and of type opencyc:en/PolyCompoundChemicalType to see how many mappings we can get. 
+
+The mapping rule is the same as the one for Disease. We have need case-insensitive label mapping, if that is not by default in Silk.
+
+4. Effect
+The mapping rule is similar to the one for Disease, except that we cannot define the class of the dbpedia instances at all. We have need case-insensitive label mapping and we might need to loose the matching score to lower than 90%.
+
+
