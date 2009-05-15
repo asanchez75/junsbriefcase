@@ -3,26 +3,26 @@
  * This script defines a generic service class for running SPARQL queries.
  * @author <a href="http://purl.org/net/aliman">Alistair Miles</a>
  * @version $Revision:538 $ on $Date: 2008-08-27 09:08:41 +0100 (Wed, 27 Aug 2008) $ by $Author: aliman $
- * @requires lodd.util
- * @requires lodd.sparql.Service
+ * @requires admed.util
+ * @requires admed.sparql.Service
  * @requires YAHOO.util.Connect
- * For license terms see http://lodd.googlecode.com
+ * For license terms see http://admed.googlecode.com
  */
 
 
-lodd.namespace("lodd.sparql");
+admed.namespace("admed.sparql");
 
 
 /**
  * @class
  */
-lodd.sparql.Service = function() {};
+admed.sparql.Service = function() {};
 
 
 /**
  * @param {String} url
  */
-lodd.sparql.Service.prototype.setEndpoint = function( url ) {
+admed.sparql.Service.prototype.setEndpoint = function( url ) {
     this._endpoint = url;
 };
 
@@ -31,7 +31,7 @@ lodd.sparql.Service.prototype.setEndpoint = function( url ) {
  * @private
  * @type String
  */
-lodd.sparql.Service.prototype._endpoint = null;
+admed.sparql.Service.prototype._endpoint = null;
 
 
 /**
@@ -39,12 +39,12 @@ lodd.sparql.Service.prototype._endpoint = null;
  * @param {Function} success
  * @param {Function} failure
  */
-lodd.sparql.Service.prototype.query = function( query, success, failure ) {
-	var _context = "lodd.sparql.Service.prototype.query";
+admed.sparql.Service.prototype.query = function( query, success, failure ) {
+	var _context = "admed.sparql.Service.prototype.query";
 	try {
-	    lodd.info("query: "+query, _context);
+	    admed.info("query: "+query, _context);
     
-	    lodd.debug("define the callback object", _context);
+	    admed.debug("define the callback object", _context);
 	    var callback = {
 	        success: success,
 	        failure: failure
@@ -53,24 +53,24 @@ lodd.sparql.Service.prototype.query = function( query, success, failure ) {
         // output=json not necessary for sparqlite, but keep for compatibility with virtuoso
 	    var url = this._endpoint + "?query="+escape(query)+"&output=json";
 	    
-	    lodd.debug("spike string length, expect 4: "+"abcd".length, _context);
-	    lodd.debug("url length: "+url.length, _context);
-	    lodd.debug("make the request to "+url, _context);
+	    admed.debug("spike string length, expect 4: "+"abcd".length, _context);
+	    admed.debug("url length: "+url.length, _context);
+	    admed.debug("make the request to "+url, _context);
 	    
 		YAHOO.util.Connect.initHeader("Accept", "application/sparql-results+json", true);    
 	    YAHOO.util.Connect.asyncRequest("GET", url, callback);
 	} catch (error) {
-		lodd.debug("wrap and rethrow error to get a stack trace", _context);
-        throw new lodd.UnexpectedException(_context, error);
+		admed.debug("wrap and rethrow error to get a stack trace", _context);
+        throw new admed.UnexpectedException(_context, error);
 	}    
 };
 
-lodd.sparql.Service.prototype.postQuery = function( query, success, failure ) {
-	var _context = "lodd.sparql.Service.prototype.postQuery";
+admed.sparql.Service.prototype.postQuery = function( query, success, failure ) {
+	var _context = "admed.sparql.Service.prototype.postQuery";
 	try {
-        lodd.info("query: "+query, _context);
+        admed.info("query: "+query, _context);
         
-        lodd.debug("define the callback object", _context);
+        admed.debug("define the callback object", _context);
         var callback = {
             success: success,
             failure: failure
@@ -78,17 +78,17 @@ lodd.sparql.Service.prototype.postQuery = function( query, success, failure ) {
                 
         var url = this._endpoint;
         
-        lodd.debug("make the request to "+url, _context);
+        admed.debug("make the request to "+url, _context);
         
         // output=json not necessary for sparqlite, but keep for compatibility with virtuoso
         var content = "query="+escape(query)+"&output=json";
-        lodd.debug("POST content: "+content, _context);        
+        admed.debug("POST content: "+content, _context);        
         YAHOO.util.Connect.initHeader("Accept", "application/sparql-results+json", true);    
         YAHOO.util.Connect.asyncRequest("POST", url, callback, content);
         
 	} catch (error) {
-		lodd.debug("wrap and rethrow error to get a stack trace", _context);
-        throw new lodd.UnexpectedException(_context, error);
+		admed.debug("wrap and rethrow error to get a stack trace", _context);
+        throw new admed.UnexpectedException(_context, error);
 	}
 }
 

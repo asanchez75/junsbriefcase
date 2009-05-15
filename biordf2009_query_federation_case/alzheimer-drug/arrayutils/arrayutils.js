@@ -1,5 +1,5 @@
 // create a namespace if not already defined
-lodd.namespace("lodd.util");
+admed.namespace("admed.util");
 
 
 /**
@@ -7,7 +7,7 @@ lodd.namespace("lodd.util");
  * This class is currently just a trigger to make jsdoc document this module properly.
  * @constructor
  */
-lodd.util.ArrayUtils = function() {}
+admed.util.ArrayUtils = function() {}
 
 
 /**
@@ -17,7 +17,7 @@ lodd.util.ArrayUtils = function() {}
  * @return true if member occurs anywhere in array
  * @type boolean
  */
-lodd.util.isArrayMember = function( array, member ) {
+admed.util.isArrayMember = function( array, member ) {
 	for (var i in array) {
 		if (array[i] == member) {
 			return true;
@@ -32,8 +32,8 @@ lodd.util.isArrayMember = function( array, member ) {
  * @param {Array} array 
  * @param {Object} member
  */
-lodd.util.appendIfNotMember = function( array, member ) {
-	if (!lodd.util.isArrayMember(array, member)) {
+admed.util.appendIfNotMember = function( array, member ) {
+	if (!admed.util.isArrayMember(array, member)) {
 		array[array.length] = member;
 	}
 };
@@ -46,14 +46,14 @@ lodd.util.appendIfNotMember = function( array, member ) {
  * @return true iff all members of A are members of B and vice versa, otherwise false
  * @return boolean
  */
-lodd.util.arrayMembersAreEqual = function( A, B ) { // TODO consider better name e.g arraysHaveSameMembers
+admed.util.arrayMembersAreEqual = function( A, B ) { // TODO consider better name e.g arraysHaveSameMembers
 	for (var i in A) {
-		if (!lodd.util.isArrayMember(B, A[i])) {
+		if (!admed.util.isArrayMember(B, A[i])) {
 			return false;
 		}
 	} 
 	for (var i in B) {
-		if (!lodd.util.isArrayMember(A, B[i])) {
+		if (!admed.util.isArrayMember(A, B[i])) {
 			return false;
 		}
 	}
