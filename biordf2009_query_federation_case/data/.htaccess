@@ -4,7 +4,8 @@ Options +Indexes +MultiViews
 RewriteEngine On
 
 # tcm
-RewriteRule ^tcm(.*) http://lod.openlinksw.com/sparql$1 [proxy]
+#RewriteRule ^tcm(.*) http://lod.openlinksw.com/sparql$1 [proxy]
+RewriteRule ^tcm(.*) http://naxos.zoo.ox.ac.uk/sparql$1 [proxy]
 
 # drugbank
 RewriteRule ^drugbank(.*) http://openflydata.org/sparqlite-0.4-alpha4/endpoint-lax/flybase-FB2009_02$1 [proxy]
