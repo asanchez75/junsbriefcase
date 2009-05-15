@@ -1,0 +1,273 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:dbpedia="http://dbpedia.org/ontology/"
+    xmlns:diseasome="http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:db="http://www4.wiwiss.fu-berlin.de/drugbank/resource/"
+    xmlns:d2r="http://sites.wiwiss.fu-berlin.de/suhl/bizer/d2r-server/config.rdf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:vocabClass="http://www4.wiwiss.fu-berlin.de/drugbank/vocab/resource/class/"
+    xmlns:vocabProperty="http://www4.wiwiss.fu-berlin.de/drugbank/vocab/resource/property/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dailymed="http://www4.wiwiss.fu-berlin.de/dailymed/resource/dailymed/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:map="file:///C:/apps/drugbank/drugbank.n3#"
+    xmlns:drugbank="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/">
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB02911">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB02551">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB01977">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB03476">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB03707">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00062">
+    <drugbank:contraindicationInsert rdf:resource="http://129.128.185.122/drugbank2/drugs/DB00062/inserts/1079/full"/>
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00722">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+    <foaf:page rdf:resource="http://dbpedia.org/page/Lisinopril"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB04223">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB04184">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00155">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB02589">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB02234">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00594">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+    <foaf:page rdf:resource="http://dbpedia.org/page/Amiloride"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB01833">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB03082">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB03782">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00626">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+    <foaf:page rdf:resource="http://dbpedia.org/page/Bacitracin"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB02994">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB01089">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00535">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+    <foaf:page rdf:resource="http://dbpedia.org/page/Cefdinir"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB02335">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB01098">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+    <foaf:page rdf:resource="http://dbpedia.org/page/Rosuvastatin"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB04399">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB03729">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB02473">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB03974">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00584">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+    <foaf:page rdf:resource="http://dbpedia.org/page/Enalapril"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00790">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+    <foaf:page rdf:resource="http://dbpedia.org/page/Perindopril"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB03965">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB04059">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00102">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+    <foaf:page rdf:resource="http://dbpedia.org/page/Becaplermin"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB02027">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB01867">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+    <foaf:page rdf:resource="http://dbpedia.org/page/Ethylene_Glycol"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB03963">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00125">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+    <foaf:page rdf:resource="http://dbpedia.org/page/L-Arginine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB03740">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB01180">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+    <foaf:page rdf:resource="http://dbpedia.org/page/Rescinnamine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB02979">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB03100">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00064">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB02077">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB04172">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB02141">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB03014">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB03918">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB03332">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00013">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+    <foaf:page rdf:resource="http://dbpedia.org/page/Urokinase"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB01821">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB03910">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB02235">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB02692">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00360">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+    <foaf:page rdf:resource="http://dbpedia.org/page/Tetrahydrobiopterin"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB03144">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00881">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+    <foaf:page rdf:resource="http://dbpedia.org/page/Quinapril"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB02032">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB03305">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB01197">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+    <foaf:page rdf:resource="http://dbpedia.org/page/Captopril"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB01686">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+    <foaf:page rdf:resource="http://dbpedia.org/page/Asymmetric_dimethylarginine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB03127">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00542">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+    <foaf:page rdf:resource="http://dbpedia.org/page/Benazepril"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB02048">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00519">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+    <foaf:page rdf:resource="http://dbpedia.org/page/Trandolapril"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB01348">
+    <drugbank:creationDate>2007-06-30 18:15:38 UTC</drugbank:creationDate>
+    <foaf:page rdf:resource="http://dbpedia.org/page/Spirapril"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB03684">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00691">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB02207">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00492">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+    <foaf:page rdf:resource="http://dbpedia.org/page/Fosinopril"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB04559">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB02705">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB03065">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB04534">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB04402">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB02398">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB03046">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB01997">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB02044">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00178">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+    <foaf:page rdf:resource="http://dbpedia.org/page/Ramipril"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB04018">
+    <drugbank:creationDate>2005-06-13 13:24:05 UTC</drugbank:creationDate>
+  </rdf:Description>
+</rdf:RDF>

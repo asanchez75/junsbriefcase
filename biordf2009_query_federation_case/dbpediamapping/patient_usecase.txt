@@ -1,0 +1,32 @@
+﻿A patient who is diagnosed with the Alzheimer's Disease (AD) wants to look for alternative medicines.
+
+1. The patient starts with looking for alternative medicines targetted at AD. The patient also wants to know side effects reported about these alternative medicines.
+
+[The TCM dataset (http://lod.openlinksw.com/sparql)] can be used to search for herbs possibly targetting at AD and to search for effects information about these herbs]
+
+2. The patient then wants to have some clinical trials information about these herbal medicines.
+
+[The LinkedCT dataset (http://data.linkedct.org/sparql) and the DailyMed (http://www4.wiwiss.fu-berlin.de/dailymed/sparql) might provide some information about these herbs.]
+
+[It is possible that little or nothing can be found from LinkedCT or DailyMed about herbal medicines. We might need to extract additional knowledge about these herbs from scientific publications and media reports and incorporate them into our knowledge base.]
+
+3. Nowadays, more patients have advanced medical knowledge. This patient also wants to find out the genes reported being associated with “Ginkgo biloba” for AD, to see whether these genes (aka Ginkgo genes) are also reported in AD medical research community. If these genes not reported as being the top genes associated with AD, the patient wants to know whether these genes have been reported being associated with AD at all and what other diseases these genes have been reported being associated with.
+
+[
+* The TCM dataset (http://lod.openlinksw.com/sparql)] can be used to search for the genes associated with “Ginkgo biloba” for the disease of AD. 
+* The Diseasesome dataset (http://www4.wiwiss.fu-berlin.de/diseasome/sparql) can be used to find out whether the “Ginkgo genes” have been reported being associated with AD at all.
+* The Diseasesome dataset can also be used to search for other diseases associated with the Ginkgo genes.
+]
+
+4. The patient decides that Ginkgo biloba could be a potential alternative drug for AD. The patient then needs to find out all the ingredients of Ginkgo biloba, in order to be sure that he/she is not allergic to any of the ingredients.
+
+[The TCM dataset (http://lod.openlinksw.com/sparql)] can be used to find out the ingredients of “Ginkgo biloba”. ]
+
+========================================================================
+Possible help we can get from aTags
+========================================================================
+
+1.For step 1, we need to process the TCM dataset to articulate that: some of the herbs target at *curing* AD, while others actually *cause* AD.
+2.Also for step 1, we need to process the TCM dataset to articulate whether some effects are negative for patients while others are positive effects [The SIDER dataset might also provide useful information about this??]
+3.For step 2, we need to annotate clinical trials of the herbal medicines reported in publications and other web pages to exact knowledge that is not present in any of the drug / clinical trial databases, which mainly target at western drugs.
+
