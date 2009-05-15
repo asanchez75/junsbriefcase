@@ -1,0 +1,91 @@
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head> 
+        <title>flyui.flyatlas Module Test Runner </title>
+        
+        <!-- basic style foundations -->
+        <link rel="stylesheet" type="text/css" href="../../../lib-yui/yui_2.5.1/build/reset-fonts-grids/reset-fonts-grids.css"/>
+        <link rel="stylesheet" type="text/css" href="../../../lib-yui/yui_2.5.1/build/base/base-min.css"/>
+
+        <!-- YUI dependencies -->
+        <script type="text/javascript" src="../../../lib-yui/yui_2.5.1/build/yahoo/yahoo-min.js"></script>
+        <script type="text/javascript" src="../../../lib-yui/yui_2.5.1/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+        <script type="text/javascript" src="../../../lib-yui/yui_2.5.1/build/connection/connection-min.js"></script>
+        <script type="text/javascript" src="../../../lib-yui/yui_2.5.1/build/json/json-min.js"></script>
+        
+        <!-- logger dependencies -->
+        <link type="text/css" rel="stylesheet" href="../../../lib-yui/yui_2.5.1/build/logger/assets/skins/sam/logger.css"/>
+        <script type="text/javascript" src="../../../lib-yui/yui_2.5.1/build/logger/logger-min.js"></script>
+
+        <!-- custom logger style -->
+        <link rel="stylesheet" type="text/css" href="../../testutils/logger.css"/>
+                
+        <!-- testing dependencies -->
+        <script type="text/javascript" src="../../../lib-yui/yui_2.5.1/build/yuitest/yuitest-min.js"></script>
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="../../../lib-yui/jquery-1.2.6.min.js"></script>
+                
+        <!-- flyui dependencies -->
+        <script type="text/javascript" src="../../utils/admed.js"></script>
+        <script type="text/javascript" src="../../arrayutils/arrayutils.js"></script>
+        <script type="text/javascript" src="../../mvcutils/mvcutils-model2.js"></script>
+        <script type="text/javascript" src="../../sparql/sparql-service.js"></script>
+        
+        <!-- Module under test -->
+        <script type="text/javascript" src="../tcm-service.js"></script>
+        <!--script type="text/javascript" src="../tcm-widget.js"></script-->
+        
+        <!-- Test script -->
+        <script type="text/javascript" src="test-tcm-service.js"></script>
+        <!--script type="text/javascript" src="test-tcm-widget.js"></script-->
+        
+        <!-- Initialisation script -->
+        <script type="text/javascript">
+            YAHOO.util.Event.onDOMReady(function() {
+                var loggerConfig = {
+                    thresholdMax : 100000,
+                    thresholdMin : 100000
+                };
+                var loggerContainer = document.getElementById("logger");
+                var testLogger = new YAHOO.tool.TestLogger(loggerContainer, loggerConfig);
+                admed.tcm.Service.runTests("../../../data/tcm");
+            });
+            function testAll() {
+                var url = "../../../data/tcm";
+                YAHOO.tool.TestRunner.clear();
+                YAHOO.tool.TestRunner.add(admed.tcm.Service.TestSuite(url));
+                //YAHOO.tool.TestRunner.add(admed.tcm.Widget.TestSuite(url));
+                YAHOO.tool.TestRunner.run();
+            }
+        </script>
+        
+    </head>
+    
+    <body>
+        <div id="doc3">
+            
+            <div id="hd">
+                <!-- header -->
+                <h1>admed.tcm Module Test Runner </h1>
+            </div>  
+            
+            <div id="bd">
+                <!-- body -->
+                <p>This page runs the test suite for the <code>admed.tcm</code> module.</p>
+                <ul>
+                    <li><a href="javascript:testAll()">test all</a></li>
+                    <li><a href="javascript:admed.tcm.Service.runTests('../../../data/tcm')">service tests</a></li>
+                    <li><a href="javascript:admed.tcm.Widget.runTests('../../../data/tcm')">widget tests</a></li>
+                </ul>
+            </div>  
+            
+            <div id="ft" class="yui-skin-sam">
+                <!-- footer -->
+                <div id="logger"></div>
+            </div>  
+            
+        </div> 
+    </body>
+    
+</html>
