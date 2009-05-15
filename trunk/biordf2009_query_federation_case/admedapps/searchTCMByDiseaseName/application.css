@@ -1,0 +1,14 @@
+.yui-skin-sam .yui-log {
+    width: 60em;
+    font-size: 1em;
+}
+
+#tcmWidget {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.result {
+    display: inline-table;
+    border-spacing: 1px 1px;
+}
