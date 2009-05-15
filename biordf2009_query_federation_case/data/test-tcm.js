@@ -60,7 +60,17 @@ var _tests = [
         		"}",
         expect: true,
         message:"endpoint has no instances of :Medicine with all expected props"
-    }          
+    },
+    {   name: "test has disease with all props", 
+        query:  "ASK { \n" +
+        		"?s a :Disease ;\n" +
+        		" :gene ?gene ;\n" +
+        		" :medicine ?medicine " +
+        		". \n" +
+        		"}",
+        expect: true,
+        message:"endpoint has no instances of :Medicine with all expected props"
+    }              
 ];
 
 var _testCase = {
