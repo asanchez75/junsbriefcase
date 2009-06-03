@@ -1,0 +1,13 @@
+#labels minutes
+#Using Ontologies for Visualizing Design Heterogeneity in Human Studies
+
+Abstract: The human studyome is the totality of all human studies
+worldwide, encompassing all interventional, observational and qualitative
+research on human subjects. The human studyome is one of the most valuable
+sources of knowledge for advancing the understanding of diseases and
+treatments. Dr. Sim will discuss her NCBO Driving Biological Project that
+sought to use ontologies to visualize design heterogeneity in randomized
+trials for comparative effectiveness researchers. She will also discuss
+some observations on the benefits and challenges of applying ontologies
+and ontology tools to computerizing the human studyome and to clinical
+research in general.
