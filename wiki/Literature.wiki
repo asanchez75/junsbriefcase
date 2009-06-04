@@ -1,0 +1,13 @@
+#summary One-sentence summary of this page.
+
+= Biology use case for integrating dataset =
+
+== within a single organisam, with different types of data ==
+
+ * [http://www.ncbi.nlm.nih.gov/pubmed/11522820?dopt=Abstract&holding=f1000,f1000m,isrctn A relationship between gene expression and protein interactions on the proteome scale: analysis of the bacteriophage T7 and the yeast Saccharomyces cerevisiae.]
+
+Grigoriev A.
+
+GPC Biotech, Fraunhoferstrasse 20, Martinsried 82152, Germany. andrei.grigoriev@gpc-biotech.com
+
+The relationship between the similarity of expression patterns for a pair of genes and interaction of the proteins they encode is demonstrated both for the simple genome of the bacteriophage T7 and the considerably more complex genome of the yeast Saccharomyces cerevisiae. Statistical analysis of large-scale gene expression and protein interaction data shows that protein pairs encoded by co-expressed genes interact with each other more frequently than with random proteins. Furthermore, the mean similarity of expression profiles is significantly higher for respective interacting protein pairs than for random ones. Such coupled analysis of gene expression and protein interaction data may allow evaluation of the results of large-scale gene expression and protein interaction screens as demonstrated for several publicly available datasets. The role of this link between expression and interaction in the evolution from monomeric to oligomeric protein structures is also discussed.
