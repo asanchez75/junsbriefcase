@@ -4,10 +4,31 @@
 
 == within a single organisam, with different types of data ==
 
- * [http://www.ncbi.nlm.nih.gov/pubmed/11522820?dopt=Abstract&holding=f1000,f1000m,isrctn A relationship between gene expression and protein interactions on the proteome scale: analysis of the bacteriophage T7 and the yeast Saccharomyces cerevisiae.]
+ * [http://www.ncbi.nlm.nih.gov/pubmed/11522820 A relationship between gene expression and protein interactions on the proteome scale: analysis of the bacteriophage T7 and the yeast Saccharomyces cerevisiae.]
 
 Grigoriev A.
 
 GPC Biotech, Fraunhoferstrasse 20, Martinsried 82152, Germany. andrei.grigoriev@gpc-biotech.com
 
 The relationship between the similarity of expression patterns for a pair of genes and interaction of the proteins they encode is demonstrated both for the simple genome of the bacteriophage T7 and the considerably more complex genome of the yeast Saccharomyces cerevisiae. Statistical analysis of large-scale gene expression and protein interaction data shows that protein pairs encoded by co-expressed genes interact with each other more frequently than with random proteins. Furthermore, the mean similarity of expression profiles is significantly higher for respective interacting protein pairs than for random ones. Such coupled analysis of gene expression and protein interaction data may allow evaluation of the results of large-scale gene expression and protein interaction screens as demonstrated for several publicly available datasets. The role of this link between expression and interaction in the evolution from monomeric to oligomeric protein structures is also discussed.
+
+ * [http://www.ncbi.nlm.nih.gov/pubmed/11779829 Relating whole-genome expression data with protein-protein interactions.]
+ * [http://www.ncbi.nlm.nih.gov/pubmed/12049748 Protein interaction verification and functional annotation by integrated analysis of genome-scale data.]
+ * [http://genomebiology.com/pubmed/16082366  Probabilistic model of the human protein-protein interaction network]
+
+== Cross Organism ==
+ * [http://genomebiology.com/pubmed/11731503 Identification of potential interaction networks using sequence-based searches for conserved protein-protein interactions or "interologs"]
+
+= Informatique =
+== Datawarehousing ==
+ * [http://www.cis.upenn.edu/~db/sue/IBMSystemsJournal.pdf K2/Kleisli and GUS: experiments in Integrated Access to Genomic Data Sources]
+ * [http://genomebiology.com/pubmed/14707178  EnsMart: a generic system for fast and flexible access to biological data]
+ * [http://genomebiology.com/pubmed/16480510 BioZon:a system for unification, management and analysis of heterogeneous biological data]
+ * [http://dx.doi.org/10.1186/1471-2105-7-170  BioWarehouse: a bioinformatics database warehouse toolkit]
+ * [http://genomebiology.com/pubmed/14618567  GIMS: an integrated data storage and analysis environment for genomic and functional data (N. Paton)]
+ * [http://dx.doi.org/10.1186/1471-2105-6-34 Atlas – a data warehouse for integrative bioinformatics]
+ 
+= Background =
+ * [http://genomebiology.com/2005/6/5/R44 The Sequence Ontology: a tool for the unification of genome annotations]
+
+ 
