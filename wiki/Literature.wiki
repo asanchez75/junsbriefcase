@@ -51,7 +51,7 @@ The performance is really good. However, the query results are presented in a ve
 Click on the link of "Embed" in each Template page will lead you to the URL of the web service  (Restful style). The results are returned as tab-delimited data.
 
 === Interesting templates for querying the life cycle expression data ===
- [TODO ]still need to figure out how the query results can be visualized
+ [TODO] still need to figure out how the query results can be visualized
 
 
  
