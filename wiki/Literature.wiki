@@ -31,4 +31,21 @@ The relationship between the similarity of expression patterns for a pair of gen
 = Background =
  * [http://genomebiology.com/2005/6/5/R44 The Sequence Ontology: a tool for the unification of genome annotations]
 
+= System Evaluation =
+== FlyMine ==
+ * Search for FlyAtlas gene expression for a batch of genes
+
+A list of Template queries can be found at http://www.flymine.org/release-16.0/templates.do.
+
+Template http://www.flymine.org/release-16.0/template.do?name=Gene_FlyAtlas&scope=all can be used to search for flyatlas gene expression data for a given gene or a given set of genes. However, the presentation of the query results is rather crude.
+
+Other interesting templates related to search for FlyAtlas include:
+ * search for gene expression data for a given gene and adjacent genes/upstream/downstream genes
+ * search for gene expression data for a given gene and GO annotations about that gene
+
+The performance is really good. However, the query results are presented in a very crude format. I suspect that a lot of following visualization and analysis are needed in order to interpret the query results.
+
+ * Programmatic access of these template queries
+
+
  
