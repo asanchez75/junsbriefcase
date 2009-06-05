@@ -43,10 +43,15 @@ Other interesting templates related to search for FlyAtlas include:
  * search for gene expression data for a given gene and adjacent genes/upstream/downstream genes
  * search for gene expression data for a given gene and GO annotations about that gene
 
-The performance is really good. However, the query results are presented in a very crude format. I suspect that a lot of following visualization and analysis are needed in order to interpret the query results.
+The performance is really good. However, the query results are presented in a very crude format. To visualize the query results, we need to save the results as a List. On the list details page, you can find different widgets that visualize the results.
+
+ [TODO] how the external software systems are embedded as widget.
 
 === Programmatic access of these template queries ===
- * Send off email to Gos.
+Click on the link of "Embed" in each Template page will lead you to the URL of the web service  (Restful style). The results are returned as tab-delimited data.
+
+=== Interesting templates for querying the life cycle expression data ===
+ [TODO ]still need to figure out how the query results can be visualized
 
 
  
