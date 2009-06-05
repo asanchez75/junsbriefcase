@@ -22,6 +22,9 @@
 ./bin/isql 129.67.24.116:1111 dba dba verbose=on banner=off echo=ON errors=stdout exec="ttlp_mt(file_to_string_output('/root/Desktop/gene-name-mapping-linkage-run-manual.ttl'), '', 'http://purl.org/net/tcm/id/linkset/2',0);checkpoint;"
 }}}
 
+== Load Data Mapping to TCM into loacl virtuoso ==
+
+
 
 = Alzheimer's Disease (Diseasesome) =
 
