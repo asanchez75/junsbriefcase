@@ -8,7 +8,7 @@ function initialiseApplication() {
 	var logReader = new YAHOO.widget.LogReader("logger");
 	
 	log("instantiate a service for the tcm widget");
-	var service = new admed.tcm.Service("../../data/tcm");
+	var service = new admed.tcm.Service("../../alzheimer-drug/data/tcm");
 	
 	log("instantiate a renderer for the tcm widget");
 	var renderPane = document.getElementById("tcmWidget");
