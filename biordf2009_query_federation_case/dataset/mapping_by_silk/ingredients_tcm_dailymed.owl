@@ -1,0 +1,207 @@
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix oddlinker:     <http://data.linkedmdb.org/resource/oddlinker/> .
+@prefix void:     <http://rdfs.org/ns/> .
+@prefix silk:     <http://www4.wiwiss.fu-berlin.de/bizer/silk/spec/> .
+@prefix dcterms:     <http://purl.org/dc/terms/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+<http://purl.org/net/tcm/id/linkset/3>	 rdf:type 	 void:Linkset ;
+	 void:target 	 <http://lod.openlinksw.com/sparql> ;
+	 void:target 	 <http://hcls.deri.org:8080/sparql> ;
+	 void:linkPredicate 	 owl:sameAs .
+
+<http://purl.org/net/tcm/id/linkage_run/3>	 oddlinker:linkage_date 	 "2009-05-27"^^xsd:date ;
+	 oddlinker:linkage_method 	 :silk ;
+	rdf:type	oddlinker:linkage_run .
+
+:silk 	 foaf:homepage 	 <http://www4.wiwiss.fu-berlin.de/bizer/silk/> .
+
+<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/Alcohol>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/alcohol> .
+<http://purl.org/net/tcm/id/interlink/945>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/Alcohol> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/alcohol> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/testosterone>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/testosterone> .
+<http://purl.org/net/tcm/id/interlink/946>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/testosterone> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/testosterone> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/progesterone>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/progesterone> .
+<http://purl.org/net/tcm/id/interlink/947>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/progesterone> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/progesterone> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/folic_acid>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/folic_acid> .
+<http://purl.org/net/tcm/id/interlink/948>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/folic_acid> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/folic_acid> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/caffeine>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/caffeine> .
+<http://purl.org/net/tcm/id/interlink/949>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/caffeine> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/caffeine> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/nicotine>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/nicotine> .
+<http://purl.org/net/tcm/id/interlink/950>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/nicotine> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/nicotine> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/Leucine>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/leucine> .
+<http://purl.org/net/tcm/id/interlink/951>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/Leucine> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/leucine> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/copper>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/copper> .
+<http://purl.org/net/tcm/id/interlink/952>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/copper> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/copper> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/adenosine>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/adenosine> .
+<http://purl.org/net/tcm/id/interlink/953>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/adenosine> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/adenosine> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/Mannitol>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/mannitol> .
+<http://purl.org/net/tcm/id/interlink/954>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/Mannitol> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/mannitol> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/ASPARAGINASE>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/asparagine> .
+<http://purl.org/net/tcm/id/interlink/955>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/ASPARAGINASE> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/asparagine> ;
+	 silk:confidence 	"0.966666666667" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/scopolamine>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/scopolamine> .
+<http://purl.org/net/tcm/id/interlink/956>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/scopolamine> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/scopolamine> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/ESTRADIOL>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/estradiol> .
+<http://purl.org/net/tcm/id/interlink/957>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/ESTRADIOL> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/estradiol> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/Sorbitol>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/sorbitol> .
+<http://purl.org/net/tcm/id/interlink/958>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/Sorbitol> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/sorbitol> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/Valine>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/valine> .
+<http://purl.org/net/tcm/id/interlink/959>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/Valine> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/valine> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/Acetic_Acid>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/acetic_acid> .
+<http://purl.org/net/tcm/id/interlink/960>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/Acetic_Acid> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/acetic_acid> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/Isoleucine>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/isoleucine> .
+<http://purl.org/net/tcm/id/interlink/961>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/Isoleucine> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/isoleucine> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/Atropine>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/atropine> .
+<http://purl.org/net/tcm/id/interlink/962>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/Atropine> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/atropine> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/Lysine>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/lysine> .
+<http://purl.org/net/tcm/id/interlink/963>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/Lysine> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/lysine> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/Lactulose>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/lactose> .
+<http://purl.org/net/tcm/id/interlink/964>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/Lactulose> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/lactose> ;
+	 silk:confidence 	"0.955555555556" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/Histidine>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/histidine> .
+<http://purl.org/net/tcm/id/interlink/965>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/dailymed/resource/ingredient/Histidine> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/histidine> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
