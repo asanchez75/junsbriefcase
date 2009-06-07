@@ -7,11 +7,11 @@ import sys
 import codecs
 import csv
 
-infilename = '\\oxford\\svn\\biordf2009_query_federation_case\\genenamelinking\\results_using_deri\\manually_corrected_multi_mapping_tcm_genes.csv'
+infilename = '\\oxford\\svn\\biordf2009_query_federation_case\\dataset\\genenamelinking\\results_using_deri\\manually_corrected_multi_mapping_tcm_genes.csv'
 #infilename = '/root/workspace/biordf2009_query_federation_case/genenamelinking/tcm_genes.csv'
 infile = codecs.open(infilename, mode='r', encoding='UTF-8')
 
-outfilename = '\\oxford\\svn\\biordf2009_query_federation_case\\genenamelinking\\results_using_deri\\gene-name-mapping-linkage-run-manual.ttl'
+outfilename = '\\oxford\\svn\\biordf2009_query_federation_case\\dataset\\genenamelinking\\results_using_deri\\gene-name-mapping-linkage-run-manual.ttl'
 #outfilename = '/root/workspace/biordf2009_query_federation_case/genenamelinking/unique_mapping_tcm_genes.csv'
 outfile = codecs.open(outfilename, mode='w', encoding='UTF-8')
 
@@ -48,10 +48,10 @@ outfile.write(triple)
 outfile.flush()   
 
 ### interlinking
-i = 1
+i = 850
 for row in reader:
     triple = ""
-    
+   
     tcmgenename, entrezgeneid = row[0].replace(" ", "_"), row[1]
     
     triple = genename + tcmgenename + ">\t owl:sameAs \t<" + entrezgeneid + "> .\n"
@@ -61,8 +61,8 @@ for row in reader:
     triple = triple + "\t oddlinker:linkage_run \t" + linkagerun + ";\n"
     triple = triple + "\t dcterms:isPartOf \t" + voidlinkset + ";\n"
     triple = triple + "\t rdf:type \t oddlinker:interlink .\n\n"
+    i = i + 1
     outfile.write(triple)
     outfile.flush()
-    i = i + 1
-    
+        
 outfile.close()
