@@ -61,8 +61,9 @@ for row in reader:
     triple = triple + "\t oddlinker:linkage_run \t" + linkagerun + ";\n"
     triple = triple + "\t dcterms:isPartOf \t" + voidlinkset + ";\n"
     triple = triple + "\t rdf:type \t oddlinker:interlink .\n\n"
+    i = i + 1
     outfile.write(triple)
     outfile.flush()
-    i = i + 1
+    
     
 outfile.close()
