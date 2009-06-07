@@ -49,10 +49,10 @@
                 };
                 var loggerContainer = document.getElementById("logger");
                 var testLogger = new YAHOO.tool.TestLogger(loggerContainer, loggerConfig);
-                admed.tcm.Service.runTests("../../../data/tcm");
+                admed.tcm.Service.runTests("../../data/tcm");
             });
             function testAll() {
-                var url = "../../../data/tcm";
+                var url = "../../data/tcm";
                 YAHOO.tool.TestRunner.clear();
                 YAHOO.tool.TestRunner.add(admed.tcm.Service.TestSuite(url));
                 //YAHOO.tool.TestRunner.add(admed.tcm.Widget.TestSuite(url));
@@ -75,8 +75,8 @@
                 <p>This page runs the test suite for the <code>admed.tcm</code> module.</p>
                 <ul>
                     <li><a href="javascript:testAll()">test all</a></li>
-                    <li><a href="javascript:admed.tcm.Service.runTests('../../../data/tcm')">service tests</a></li>
-                    <li><a href="javascript:admed.tcm.Widget.runTests('../../../data/tcm')">widget tests</a></li>
+                    <li><a href="javascript:admed.tcm.Service.runTests('../../data/tcm')">service tests</a></li>
+                    <li><a href="javascript:admed.tcm.Widget.runTests('../../data/tcm')">widget tests</a></li>
                 </ul>
             </div>  
             
