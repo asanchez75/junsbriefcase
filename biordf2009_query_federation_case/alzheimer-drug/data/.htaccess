@@ -1,0 +1,23 @@
+Options +Indexes +MultiViews
+
+# turn on rewrite engine
+RewriteEngine On
+
+# tcm
+#RewriteRule ^tcm(.*) http://lod.openlinksw.com/sparql$1 [proxy]
+RewriteRule ^tcm(.*) http://naxos.zoo.ox.ac.uk/sparql$1 [proxy]
+
+# drugbank
+RewriteRule ^drugbank(.*) http://openflydata.org/sparqlite-0.4-alpha4/endpoint-lax/flybase-FB2009_02$1 [proxy]
+
+# Diseasesome
+RewriteRule ^diseasesome(.*) http://www4.wiwiss.fu-berlin.de/diseasome/sparql$1 [proxy]
+
+# LinkedCT
+RewriteRule ^linkedct(.*) http://data.linkedct.org/sparql$1 [proxy]
+
+# dailyMed
+RewriteRule ^dailymed(.*) http://www4.wiwiss.fu-berlin.de/dailymed/sparql$1 [proxy]
+
+# sider
+RewriteRule ^sider(.*) http://www4.wiwiss.fu-berlin.de/sider/sparql$1 [proxy]

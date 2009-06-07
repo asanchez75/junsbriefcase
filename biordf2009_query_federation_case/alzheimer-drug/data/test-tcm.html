@@ -1,0 +1,61 @@
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head> 
+        <title>Alzheimer Medicial study // Test TCM</title>
+        
+        <!-- basic style foundations -->
+        <link rel="stylesheet" type="text/css" href="../lib-yui/yui_2.5.1/build/reset-fonts-grids/reset-fonts-grids.css"/>
+        <link rel="stylesheet" type="text/css" href="../lib-yui/yui_2.5.1/build/base/base-min.css"/>
+        
+        <!-- logger dependencies -->
+        <link type="text/css" rel="stylesheet" href="../lib-yui/yui_2.5.1/build/logger/assets/skins/sam/logger.css"/>
+        <script type="text/javascript" src="../lib-yui/yui_2.5.1/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+        <script type="text/javascript" src="../lib-yui/yui_2.5.1/build/logger/logger-min.js"></script>
+        
+        <!-- testing dependencies -->
+        <script type="text/javascript" src="../lib-yui/yui_2.5.1/build/yuitest/yuitest-min.js"></script>
+        
+        <!-- connection manager dependencies -->
+        <script type="text/javascript" src="../lib-yui/yui_2.5.1/build/yahoo/yahoo-min.js"></script>
+        <script type="text/javascript" src="../lib-yui/yui_2.5.1/build/connection/connection-min.js"></script>
+        
+        <!-- JSON dependency -->
+        <script type="text/javascript" src="../lib-yui/yui_2.5.1/build/json/json-min.js"></script>
+        
+        <!-- Testing scripts -->
+        <script type="text/javascript" src="common.js"></script>
+        <script type="text/javascript" src="test-tcm.js"></script>
+        
+        <!-- custom style -->
+        <link rel="stylesheet" type="text/css" href="../alzheimer-drug/testutils/logger.css"/>
+        <style type="text/css">
+#query {
+    margin-top: 10px;
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+    padding: 5px 0 5px 0;
+    }
+        </style>
+    </head>
+    <body>
+        <div id="doc3">
+            <div id="hd">
+                <!-- header -->
+                <h1>Alzheimer Medical Study Data Sources // Test TCM</h1>
+            </div>  
+            <div id="bd">
+                <!-- body -->
+                <p>This page runs tests against the TCM SPARQL endpoint.</p>
+                <p><input type="button" onclick="runTests()" value="run all"></input></p>
+                <p><select id="selecttest"><option>populating...</option></select> <input type="button" value="run test" onclick="runSelected()"></input></p>
+            </div>  
+            <div id="ft" class="yui-skin-sam">
+                <!-- footer -->
+                <div id="logger"></div>
+                <pre id="query">
+                    
+                </pre>
+            </div>  
+        </div> 
+    </body>
+</html>
