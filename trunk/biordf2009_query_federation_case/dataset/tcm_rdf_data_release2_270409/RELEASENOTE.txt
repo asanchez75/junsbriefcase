@@ -7,7 +7,7 @@ Documentation and example queries to this dataset can be found at: http://code.g
 New feature since R1:
 * Updated URIs in the dataset with a new domain name: http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw
 * Updated the dataset with the statistic confidence value of the association between entities
-* Released the mapping of TCM gene names and their linking to Entrez gene ids using Diseasesome dataset hosted by Freie University Berlin
+* Released the mapping of TCM gene names and their linking to Entrez gene ids
 
 
 Future development:
