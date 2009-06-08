@@ -1,0 +1,775 @@
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix oddlinker:     <http://data.linkedmdb.org/resource/oddlinker/> .
+@prefix void:     <http://rdfs.org/ns/> .
+@prefix dcterms:     <http://purl.org/dc/terms/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+<http://purl.org/net/tcm/id/linkset/2>	 rdf:type 	 void:Linkset ;
+	 void:target 	 <http://lod.openlinksw.com/sparql> ;
+	 void:target 	 <http://hcls.deri.org:8080/sparql> ;
+	 void:linkPredicate 	 owl:sameAs .
+
+<http://purl.org/net/tcm/id/linkage_run/2>	 oddlinker:linkage_date 	 "2009-04-28"^^xsd:date ;
+	 oddlinker:linkage_method 	 "Manual" ;
+	rdf:type	oddlinker:linkage_run .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AR>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/367> .
+<http://purl.org/net/tcm/id/interlink/850>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AR> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/367> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PC>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/5091> .
+<http://purl.org/net/tcm/id/interlink/851>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PC> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/5091> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IF>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/3426> .
+<http://purl.org/net/tcm/id/interlink/852>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IF> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/3426> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/F3>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/2152> .
+<http://purl.org/net/tcm/id/interlink/853>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/F3> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/2152> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FY>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/2532> .
+<http://purl.org/net/tcm/id/interlink/854>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FY> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/2532> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/RALBP1>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/10928> .
+<http://purl.org/net/tcm/id/interlink/855>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/RALBP1> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/10928> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CDKN1A>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/1026> .
+<http://purl.org/net/tcm/id/interlink/856>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CDKN1A> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/1026> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SLA>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/6503> .
+<http://purl.org/net/tcm/id/interlink/857>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SLA> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/6503> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GPT>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/2875> .
+<http://purl.org/net/tcm/id/interlink/858>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GPT> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/2875> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PAM>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/5066> .
+<http://purl.org/net/tcm/id/interlink/859>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PAM> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/5066> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AVP>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/551> .
+<http://purl.org/net/tcm/id/interlink/860>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AVP> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/551> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HBB>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/3043> .
+<http://purl.org/net/tcm/id/interlink/861>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HBB> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/3043> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SPR>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/6697> .
+<http://purl.org/net/tcm/id/interlink/862>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SPR> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/6697> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ME1>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/4199> .
+<http://purl.org/net/tcm/id/interlink/863>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ME1> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/4199> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CAT>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/847> .
+<http://purl.org/net/tcm/id/interlink/864>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CAT> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/847> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HRG>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/3273> .
+<http://purl.org/net/tcm/id/interlink/865>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HRG> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/3273> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FAS>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/355> .
+<http://purl.org/net/tcm/id/interlink/866>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FAS> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/355> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SP3>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/6670> .
+<http://purl.org/net/tcm/id/interlink/867>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SP3> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/6670> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CPD>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/1362> .
+<http://purl.org/net/tcm/id/interlink/868>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CPD> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/1362> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MCP>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/4179> .
+<http://purl.org/net/tcm/id/interlink/869>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MCP> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/4179> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AGT>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/183> .
+<http://purl.org/net/tcm/id/interlink/870>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AGT> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/183> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AFP>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/174> .
+<http://purl.org/net/tcm/id/interlink/871>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AFP> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/174> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SDS>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/10993> .
+<http://purl.org/net/tcm/id/interlink/872>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SDS> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/10993> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HK1>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/3098> .
+<http://purl.org/net/tcm/id/interlink/873>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HK1> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/3098> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MAG>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/4099> .
+<http://purl.org/net/tcm/id/interlink/874>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MAG> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/4099> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GSS>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/2937> .
+<http://purl.org/net/tcm/id/interlink/875>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GSS> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/2937> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CIT>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/11113> .
+<http://purl.org/net/tcm/id/interlink/876>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CIT> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/11113> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/REN>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/5972> .
+<http://purl.org/net/tcm/id/interlink/877>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/REN> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/5972> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HGF>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/3082> .
+<http://purl.org/net/tcm/id/interlink/878>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HGF> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/3082> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MYC>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/4609> .
+<http://purl.org/net/tcm/id/interlink/879>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MYC> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/4609> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SRM>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/6723> .
+<http://purl.org/net/tcm/id/interlink/880>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SRM> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/6723> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PGD>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/5226> .
+<http://purl.org/net/tcm/id/interlink/881>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PGD> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/5226> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/EPO>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/2056> .
+<http://purl.org/net/tcm/id/interlink/882>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/EPO> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/2056> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ERF>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/2077> .
+<http://purl.org/net/tcm/id/interlink/883>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ERF> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/2077> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TNC>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/3371> .
+<http://purl.org/net/tcm/id/interlink/884>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TNC> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/3371> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SAG>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/6295> .
+<http://purl.org/net/tcm/id/interlink/885>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SAG> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/6295> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PBP>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/5037> .
+<http://purl.org/net/tcm/id/interlink/886>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PBP> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/5037> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PDC>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/5132> .
+<http://purl.org/net/tcm/id/interlink/887>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PDC> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/5132> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CRP>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/1401> .
+<http://purl.org/net/tcm/id/interlink/888>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CRP> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/1401> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DAP>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/1611> .
+<http://purl.org/net/tcm/id/interlink/889>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DAP> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/1611> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GLS>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/2744> .
+<http://purl.org/net/tcm/id/interlink/890>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GLS> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/2744> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/APS>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/10603> .
+<http://purl.org/net/tcm/id/interlink/891>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/APS> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/10603> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MPI>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/4351> .
+<http://purl.org/net/tcm/id/interlink/892>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MPI> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/4351> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MAL>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/4118> .
+<http://purl.org/net/tcm/id/interlink/893>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MAL> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/4118> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GPI>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/2821> .
+<http://purl.org/net/tcm/id/interlink/894>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GPI> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/2821> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ND1>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/4535> .
+<http://purl.org/net/tcm/id/interlink/895>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ND1> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/4535> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/VIP>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/7432> .
+<http://purl.org/net/tcm/id/interlink/896>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/VIP> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/7432> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SCT>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/6343> .
+<http://purl.org/net/tcm/id/interlink/897>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SCT> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/6343> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HLA-DRB1>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/3123> .
+<http://purl.org/net/tcm/id/interlink/898>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HLA-DRB1> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/3123> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CEACAM3>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/1084> .
+<http://purl.org/net/tcm/id/interlink/899>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CEACAM3> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/1084> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CHAT>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/1103> .
+<http://purl.org/net/tcm/id/interlink/900>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CHAT> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/1103> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRDX6>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/9588> .
+<http://purl.org/net/tcm/id/interlink/901>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRDX6> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/9588> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CEBPZ>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/10153> .
+<http://purl.org/net/tcm/id/interlink/902>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CEBPZ> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/10153> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRF1>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/5551> .
+<http://purl.org/net/tcm/id/interlink/903>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRF1> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/5551> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CD1A>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/909> .
+<http://purl.org/net/tcm/id/interlink/904>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CD1A> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/909> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ACAT1>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/38> .
+<http://purl.org/net/tcm/id/interlink/905>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ACAT1> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/38> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/G6PD>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/2539> .
+<http://purl.org/net/tcm/id/interlink/906>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/G6PD> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/2539> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CDH1>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/999> .
+<http://purl.org/net/tcm/id/interlink/907>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CDH1> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/999> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PVALB>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/5816> .
+<http://purl.org/net/tcm/id/interlink/908>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PVALB> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/5816> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ODC1>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/4953> .
+<http://purl.org/net/tcm/id/interlink/909>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ODC1> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/4953> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NOS3>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/4846> .
+<http://purl.org/net/tcm/id/interlink/910>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NOS3> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/4846> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GYPA>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/2993> .
+<http://purl.org/net/tcm/id/interlink/911>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GYPA> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/2993> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FAAH>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/2166> .
+<http://purl.org/net/tcm/id/interlink/912>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FAAH> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/2166> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DMC1>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/11144> .
+<http://purl.org/net/tcm/id/interlink/913>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DMC1> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/11144> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MLL2>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/8085> .
+<http://purl.org/net/tcm/id/interlink/914>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MLL2> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/8085> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABP1>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/26> .
+<http://purl.org/net/tcm/id/interlink/915>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABP1> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/26> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CAPG>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/822> .
+<http://purl.org/net/tcm/id/interlink/916>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CAPG> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/822> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NAT1>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/9> .
+<http://purl.org/net/tcm/id/interlink/917>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NAT1> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/9> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CDC2>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/983> .
+<http://purl.org/net/tcm/id/interlink/918>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CDC2> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/983> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CNR2>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/1269> .
+<http://purl.org/net/tcm/id/interlink/919>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CNR2> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/1269> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CNR1>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/1268> .
+<http://purl.org/net/tcm/id/interlink/920>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CNR1> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/1268> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TNNC1>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/7134> .
+<http://purl.org/net/tcm/id/interlink/921>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TNNC1> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/7134> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GOT1>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/2805> .
+<http://purl.org/net/tcm/id/interlink/922>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GOT1> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/2805> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PPOX>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/5498> .
+<http://purl.org/net/tcm/id/interlink/923>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PPOX> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/5498> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DSC3>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/1825> .
+<http://purl.org/net/tcm/id/interlink/924>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DSC3> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/1825> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CSN2>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/1447> .
+<http://purl.org/net/tcm/id/interlink/925>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CSN2> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/1447> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CD14>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/929> .
+<http://purl.org/net/tcm/id/interlink/926>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CD14> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/929> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/COX2>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/4513> .
+<http://purl.org/net/tcm/id/interlink/927>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/COX2> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/4513> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FKBP9>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/11328> .
+<http://purl.org/net/tcm/id/interlink/928>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FKBP9> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/11328> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CLK1>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/1195> .
+<http://purl.org/net/tcm/id/interlink/929>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CLK1> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/1195> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AMY2B>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/280> .
+<http://purl.org/net/tcm/id/interlink/930>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AMY2B> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/280> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NOS1>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/4842> .
+<http://purl.org/net/tcm/id/interlink/931>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NOS1> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/4842> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CAST>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/831> .
+<http://purl.org/net/tcm/id/interlink/932>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CAST> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/831> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LAP3>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/51056> .
+<http://purl.org/net/tcm/id/interlink/933>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LAP3> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/51056> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/KLK3>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/354> .
+<http://purl.org/net/tcm/id/interlink/934>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/KLK3> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/354> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LIPA>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/3988> .
+<http://purl.org/net/tcm/id/interlink/935>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LIPA> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/3988> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ARG1>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/383> .
+<http://purl.org/net/tcm/id/interlink/936>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ARG1> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/383> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRB1>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/5542> .
+<http://purl.org/net/tcm/id/interlink/937>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRB1> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/5542> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PAK2>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/5062> .
+<http://purl.org/net/tcm/id/interlink/938>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PAK2> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/5062> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PPAT>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/5471> .
+<http://purl.org/net/tcm/id/interlink/939>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PPAT> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/5471> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CDS1>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/1040> .
+<http://purl.org/net/tcm/id/interlink/940>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CDS1> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/1040> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DRB1>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/129831> .
+<http://purl.org/net/tcm/id/interlink/941>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DRB1> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/129831> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/RIP>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/3267> .
+<http://purl.org/net/tcm/id/interlink/942>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/RIP> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/3267> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/XIST>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/7503> .
+<http://purl.org/net/tcm/id/interlink/943>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/XIST> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/7503> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HSPCA>	 owl:sameAs 	<http://purl.org/commons/record/ncbi_gene/3320> .
+<http://purl.org/net/tcm/id/interlink/944>	 oddlinker:link_source	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HSPCA> ;
+	 oddlinker:link_target 	<http://purl.org/commons/record/ncbi_gene/3320> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/2>;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/2>;
+	 rdf:type 	 oddlinker:interlink .
+
