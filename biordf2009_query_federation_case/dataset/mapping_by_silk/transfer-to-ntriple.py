@@ -17,11 +17,13 @@ outfile = codecs.open(outfilename, mode='w', encoding='UTF-8')
 
 namespace = "@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .\n"
 namespace = namespace + "@prefix oddlinker:     <http://data.linkedmdb.org/resource/oddlinker/> .\n"
+namespace = namespace + "@prefix foaf:    <http://xmlns.com/foaf/0.1/> .\n"
 namespace = namespace + "@prefix void:     <http://rdfs.org/ns/> .\n"
 namespace = namespace + "@prefix silk:     <http://www4.wiwiss.fu-berlin.de/bizer/silk/spec/> .\n"
 namespace = namespace + "@prefix dcterms:     <http://purl.org/dc/terms/> .\n"
 namespace = namespace + "@prefix owl:     <http://www.w3.org/2002/07/owl#> .\n"
 namespace = namespace + "@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n"
+namespace = namespace + "@prefix :    <http://purl.org/net/tcm/> .\n"
 outfile.write(namespace)
 
 reader = csv.reader(open(infilename, "rb"))
