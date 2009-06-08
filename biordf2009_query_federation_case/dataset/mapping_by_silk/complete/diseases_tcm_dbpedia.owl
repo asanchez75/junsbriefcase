@@ -1,10 +1,12 @@
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 @prefix oddlinker:     <http://data.linkedmdb.org/resource/oddlinker/> .
+@prefix foaf:	<http://xmlns.com/foaf/0.1/> .
 @prefix void:     <http://rdfs.org/ns/> .
 @prefix silk:     <http://www4.wiwiss.fu-berlin.de/bizer/silk/spec/> .
 @prefix dcterms:     <http://purl.org/dc/terms/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix :	<http://purl.org/net/tcm/> .
 <http://purl.org/net/tcm/id/linkset/3>	 rdf:type 	 void:Linkset ;
 	 void:target 	 <http://lod.openlinksw.com/sparql> ;
 	 void:target 	 <http://hcls.deri.org:8080/sparql> ;
