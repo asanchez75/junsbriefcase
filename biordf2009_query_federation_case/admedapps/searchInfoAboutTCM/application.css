@@ -30,6 +30,15 @@
     display: inline-table;
 }
 
+#geneWidget {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border:double 2px;
+    padding: 1em;
+    display: inline-table;
+}
+
+
 #effectTcmWidget resultsPane {
     display: block;
 }
