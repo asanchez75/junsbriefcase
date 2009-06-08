@@ -11,6 +11,7 @@ function initialiseApplication() {
 	var service = new admed.tcm.Service("../../alzheimer-drug/data/tcm");
 	var effectService = new admed.effecttcm.Service("../../alzheimer-drug/data/tcm");
 	var trialService = new admed.linkedct.Service("../../alzheimer-drug/data/linkedct");
+	var geneService = new admed.genetcm.Service("../../alzheimer-drug/data/tcm");
 	
 	log("instantiate a renderer for the tcm widget");
 	var renderPane = document.getElementById("tcmWidget");
@@ -27,6 +28,11 @@ function initialiseApplication() {
 	var trialRenderer = new admed.linkedct.Widget.DefaultRenderer();
 	trialRenderer.setCanvas(trialRenderPane);
 	
+	log("instantiate a renderer for the gene widget");
+	var geneRenderPane = document.getElementById("geneWidget");
+	var geneRenderer = new admed.genetcm.Widget.DefaultRenderer();
+	geneRenderer.setCanvas(geneRenderPane);
+	
 	log("instantiate a tcm widget");
 	widget = new admed.tcm.Widget(service, renderer);
 	
@@ -35,6 +41,9 @@ function initialiseApplication() {
 	
 	log("instantiate a trial widget");
 	trialWidget = new admed.linkedct.Widget(trialService, trialRenderer);
+	
+	log("instantiate a gene widget");
+	geneWidget = new admed.genetcm.Widget(geneService, geneRenderer);
 	
 	log("hook form submission to widget call");
 	YAHOO.util.Event.addListener("queryForm", "submit", onFormSubmit);
@@ -53,6 +62,7 @@ function onFormSubmit(event) {
 	widget.findMedicineFromDbpedia(query);
 	effectWidget.findEffectByMedicineName(query);
 	trialWidget.findTrialsForMedicine(query);
+	geneWidget.findGenesAssociatedWithMedicine(query);
 }
 
 YAHOO.util.Event.onDOMReady(initialiseApplication);
