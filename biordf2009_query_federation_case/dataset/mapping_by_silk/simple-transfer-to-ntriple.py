@@ -7,12 +7,12 @@ import optparse
 import logging
 
 # TODO set this to file path
-#infilename = '/root/workspace/biordf2009_query_federation_case/TCM_gene_disease_associations.tab'
-infilename = '\\oxford\\svn\\biordf2009_query_federation_case\\dataset\\mapping_by_silk\\genes_tcm_drugbank.nt'
+infilename = '/root/workspace/biordf2009_query_federation_case/dataset/mapping_by_silk/herbspecies_tcm_dbpedia.nt'
+#infilename = '\\oxford\\svn\\biordf2009_query_federation_case\\dataset\\mapping_by_silk\\herbspecies_tcm_dbpedia.nt'
 infile = codecs.open(infilename, mode='r', encoding='UTF-8')
 
-#outfilename = '/root/workspace/biordf2009_query_federation_case/tcm-data/TCM_gene_disease_associations.ttl'
-outfilename = '\\oxford\\svn\\biordf2009_query_federation_case\\dataset\\mapping_by_silk\\genes_tcm_drugbank_simple.owl'
+outfilename = '/root/workspace/biordf2009_query_federation_case/dataset/mapping_by_silk/herbspecies_tcm_dbpedia_simple.owl'
+#outfilename = '\\oxford\\svn\\biordf2009_query_federation_case\\dataset\\mapping_by_silk\\herbspecies_tcm_dbpedia_simple.nt'
 outfile = codecs.open(outfilename, mode='w', encoding='UTF-8')
 
 reader = csv.reader(open(infilename, "rb"))
