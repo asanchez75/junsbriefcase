@@ -7,12 +7,12 @@ import optparse
 import logging
 
 # TODO set this to file path
-#infilename = '/root/workspace/biordf2009_query_federation_case/TCM_gene_disease_associations.tab'
-infilename = '\\oxford\\svn\\biordf2009_query_federation_case\\dataset\\mapping_by_silk\\ingredients_tcm_dailymed.nt'
+infilename = '/root/workspace/biordf2009_query_federation_case/dataset/mapping_by_silk/genes_tcm_drugbank.nt'
+#infilename = '\\oxford\\svn\\biordf2009_query_federation_case\\dataset\\mapping_by_silk\\diseases_tcm_dbpedia.nt'
 infile = codecs.open(infilename, mode='r', encoding='UTF-8')
 
-#outfilename = '/root/workspace/biordf2009_query_federation_case/tcm-data/TCM_gene_disease_associations.ttl'
-outfilename = '\\oxford\\svn\\biordf2009_query_federation_case\\dataset\\mapping_by_silk\\ingredients_tcm_to_dailymed.owl'
+outfilename = '/root/workspace/biordf2009_query_federation_case/dataset/mapping_by_silk/genes_tcm_drugbank.owl'
+#outfilename = '\\oxford\\svn\\biordf2009_query_federation_case\\dataset\\mapping_by_silk\\diseases_tcm_dbpedia.owl'
 outfile = codecs.open(outfilename, mode='w', encoding='UTF-8')
 
 namespace = "@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .\n"
@@ -50,7 +50,7 @@ triple = ":silk \t foaf:homepage \t <http://www4.wiwiss.fu-berlin.de/bizer/silk/
 outfile.write(triple)
 outfile.flush()   
 
-i = 945
+i = 2153
 for row in reader:
     triple = ""
     #print "to see what is in a row: " + row[0] + "\n"
