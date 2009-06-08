@@ -23,8 +23,9 @@
 }}}
 
 == Load Data Mapping to TCM into loacl virtuoso ==
-
-
+{{{
+./bin/isql 129.67.24.116:1111 dba dba verbose=on banner=off echo=ON errors=stdout exec="ttlp_mt(file_to_string_output('/root/Desktop/diseases_tcm_dbpedia.owl'), '', 'http://purl.org/net/tcm/id/linkset/3',0);checkpoint;"
+}}}
 
 = Alzheimer's Disease (Diseasesome) =
 
