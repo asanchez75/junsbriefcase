@@ -41,6 +41,7 @@ See also http://esw.w3.org/topic/DataSetRDFDumps
  * Mapping genes to Diseasesome: 96 links
  * Mapping genes to Drugbank: 238 links
  * Mapping ingredient names to Dailymed: 21 links
+ * Mapping herb/specie names to DBpedia: 438 links
 
 = Example SPARQL Queries =
 == Find all the genes associated with Alzheimer's disease ==
