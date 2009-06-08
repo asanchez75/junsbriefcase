@@ -1,0 +1,882 @@
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix oddlinker:     <http://data.linkedmdb.org/resource/oddlinker/> .
+@prefix void:     <http://rdfs.org/ns/> .
+@prefix silk:     <http://www4.wiwiss.fu-berlin.de/bizer/silk/spec/> .
+@prefix dcterms:     <http://purl.org/dc/terms/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+<http://purl.org/net/tcm/id/linkset/3>	 rdf:type 	 void:Linkset ;
+	 void:target 	 <http://lod.openlinksw.com/sparql> ;
+	 void:target 	 <http://hcls.deri.org:8080/sparql> ;
+	 void:linkPredicate 	 owl:sameAs .
+
+<http://purl.org/net/tcm/id/linkage_run/3>	 oddlinker:linkage_date 	 "2009-05-27"^^xsd:date ;
+	 oddlinker:linkage_method 	 :silk ;
+	rdf:type	oddlinker:linkage_run .
+
+:silk 	 foaf:homepage 	 <http://www4.wiwiss.fu-berlin.de/bizer/silk/> .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/VPS13B>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/VPS13B> .
+<http://purl.org/net/tcm/id/interlink/2057>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/VPS13B> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/VPS13B> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BAX>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/BAX> .
+<http://purl.org/net/tcm/id/interlink/2058>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BAX> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/BAX> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SCN5A>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SCN5A> .
+<http://purl.org/net/tcm/id/interlink/2059>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SCN5A> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SCN5A> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CRYGC>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CRYGC> .
+<http://purl.org/net/tcm/id/interlink/2060>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CRYGC> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CRYGC> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TTR>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TTR> .
+<http://purl.org/net/tcm/id/interlink/2061>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TTR> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TTR> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ERCC8>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ERCC8> .
+<http://purl.org/net/tcm/id/interlink/2062>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ERCC8> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ERCC8> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TP73L>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TP73L> .
+<http://purl.org/net/tcm/id/interlink/2063>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TP73L> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TP73L> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ERCC2>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ERCC2> .
+<http://purl.org/net/tcm/id/interlink/2064>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ERCC2> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ERCC2> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DES>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DES> .
+<http://purl.org/net/tcm/id/interlink/2065>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DES> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DES> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRKAR1A>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRKAR1A> .
+<http://purl.org/net/tcm/id/interlink/2066>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRKAR1A> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRKAR1A> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FAS>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FAS> .
+<http://purl.org/net/tcm/id/interlink/2067>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FAS> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FAS> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TNNI3>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TNNI3> .
+<http://purl.org/net/tcm/id/interlink/2068>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TNNI3> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TNNI3> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MYC>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MYC> .
+<http://purl.org/net/tcm/id/interlink/2069>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MYC> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MYC> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SERPINC1>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SERPINC1> .
+<http://purl.org/net/tcm/id/interlink/2070>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SERPINC1> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SERPINC1> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACHE>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ACHE> .
+<http://purl.org/net/tcm/id/interlink/2071>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACHE> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ACHE> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NOS3>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NOS3> .
+<http://purl.org/net/tcm/id/interlink/2072>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NOS3> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NOS3> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RUNX2>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/RUNX2> .
+<http://purl.org/net/tcm/id/interlink/2073>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RUNX2> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/RUNX2> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SGCD>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SGCD> .
+<http://purl.org/net/tcm/id/interlink/2074>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SGCD> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SGCD> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IFNG>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IFNG> .
+<http://purl.org/net/tcm/id/interlink/2075>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IFNG> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IFNG> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CR1>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CR1> .
+<http://purl.org/net/tcm/id/interlink/2076>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CR1> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CR1> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SOD1>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SOD1> .
+<http://purl.org/net/tcm/id/interlink/2077>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SOD1> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SOD1> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DNAI1>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DNAI1> .
+<http://purl.org/net/tcm/id/interlink/2078>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DNAI1> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DNAI1> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALB>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ALB> .
+<http://purl.org/net/tcm/id/interlink/2079>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALB> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ALB> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABCD1>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABCD1> .
+<http://purl.org/net/tcm/id/interlink/2080>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABCD1> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABCD1> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CAT>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CAT> .
+<http://purl.org/net/tcm/id/interlink/2081>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CAT> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CAT> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APC>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/APC> .
+<http://purl.org/net/tcm/id/interlink/2082>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APC> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/APC> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CDH1>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CDH1> .
+<http://purl.org/net/tcm/id/interlink/2083>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CDH1> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CDH1> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TITF1>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TITF1> .
+<http://purl.org/net/tcm/id/interlink/2084>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TITF1> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TITF1> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BDNF>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/BDNF> .
+<http://purl.org/net/tcm/id/interlink/2085>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BDNF> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/BDNF> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PKLR>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PKLR> .
+<http://purl.org/net/tcm/id/interlink/2086>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PKLR> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PKLR> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NDRG1>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NDRG1> .
+<http://purl.org/net/tcm/id/interlink/2087>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NDRG1> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NDRG1> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ERBB2>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ERBB2> .
+<http://purl.org/net/tcm/id/interlink/2088>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ERBB2> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ERBB2> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APP>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/APP> .
+<http://purl.org/net/tcm/id/interlink/2089>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APP> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/APP> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PLAU>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PLAU> .
+<http://purl.org/net/tcm/id/interlink/2090>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PLAU> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PLAU> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NQO1>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NQO1> .
+<http://purl.org/net/tcm/id/interlink/2091>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NQO1> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NQO1> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RB1>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/RB1> .
+<http://purl.org/net/tcm/id/interlink/2092>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RB1> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/RB1> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/POLG>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/POLG> .
+<http://purl.org/net/tcm/id/interlink/2093>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/POLG> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/POLG> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GCNT2>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GCNT2> .
+<http://purl.org/net/tcm/id/interlink/2094>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GCNT2> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GCNT2> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/OPN1MW>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/OPN1MW> .
+<http://purl.org/net/tcm/id/interlink/2095>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/OPN1MW> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/OPN1MW> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IL12B>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IL12B> .
+<http://purl.org/net/tcm/id/interlink/2096>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IL12B> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IL12B> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABCB7>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABCB7> .
+<http://purl.org/net/tcm/id/interlink/2097>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABCB7> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABCB7> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABCB1>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABCB1> .
+<http://purl.org/net/tcm/id/interlink/2098>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABCB1> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABCB1> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TERT>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TERT> .
+<http://purl.org/net/tcm/id/interlink/2099>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TERT> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TERT> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GFAP>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GFAP> .
+<http://purl.org/net/tcm/id/interlink/2100>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GFAP> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GFAP> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GJA8>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GJA8> .
+<http://purl.org/net/tcm/id/interlink/2101>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GJA8> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GJA8> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SLC4A1>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SLC4A1> .
+<http://purl.org/net/tcm/id/interlink/2102>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SLC4A1> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SLC4A1> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPT1>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PPT1> .
+<http://purl.org/net/tcm/id/interlink/2103>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPT1> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PPT1> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TYR>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TYR> .
+<http://purl.org/net/tcm/id/interlink/2104>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TYR> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TYR> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MAOA>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MAOA> .
+<http://purl.org/net/tcm/id/interlink/2105>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MAOA> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MAOA> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LYZ>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LYZ> .
+<http://purl.org/net/tcm/id/interlink/2106>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LYZ> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LYZ> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LMNA>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LMNA> .
+<http://purl.org/net/tcm/id/interlink/2107>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LMNA> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LMNA> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LIPA>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LIPA> .
+<http://purl.org/net/tcm/id/interlink/2108>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LIPA> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LIPA> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CD8A>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CD8A> .
+<http://purl.org/net/tcm/id/interlink/2109>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CD8A> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CD8A> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ARG1>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ARG1> .
+<http://purl.org/net/tcm/id/interlink/2110>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ARG1> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ARG1> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CSRP3>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CSRP3> .
+<http://purl.org/net/tcm/id/interlink/2111>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CSRP3> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CSRP3> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CXCL12>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CXCL12> .
+<http://purl.org/net/tcm/id/interlink/2112>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CXCL12> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CXCL12> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PIK3CA>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PIK3CA> .
+<http://purl.org/net/tcm/id/interlink/2113>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PIK3CA> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PIK3CA> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GSN>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GSN> .
+<http://purl.org/net/tcm/id/interlink/2114>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GSN> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GSN> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CASP8>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CASP8> .
+<http://purl.org/net/tcm/id/interlink/2115>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CASP8> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CASP8> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APOE>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/APOE> .
+<http://purl.org/net/tcm/id/interlink/2116>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APOE> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/APOE> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABO>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABO> .
+<http://purl.org/net/tcm/id/interlink/2117>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABO> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABO> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DAF>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DAF> .
+<http://purl.org/net/tcm/id/interlink/2118>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DAF> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DAF> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FBN1>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FBN1> .
+<http://purl.org/net/tcm/id/interlink/2119>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FBN1> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FBN1> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SCGB1A1>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SCGB1A1> .
+<http://purl.org/net/tcm/id/interlink/2120>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SCGB1A1> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SCGB1A1> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GYPA>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GYPA> .
+<http://purl.org/net/tcm/id/interlink/2121>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GYPA> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GYPA> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GYPC>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GYPC> .
+<http://purl.org/net/tcm/id/interlink/2122>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GYPC> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GYPC> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GYPB>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GYPB> .
+<http://purl.org/net/tcm/id/interlink/2123>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GYPB> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GYPB> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/EGFR>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/EGFR> .
+<http://purl.org/net/tcm/id/interlink/2124>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/EGFR> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/EGFR> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP2D6>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CYP2D6> .
+<http://purl.org/net/tcm/id/interlink/2125>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP2D6> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CYP2D6> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BLM>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/BLM> .
+<http://purl.org/net/tcm/id/interlink/2126>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BLM> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/BLM> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TNNC1>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TNNC1> .
+<http://purl.org/net/tcm/id/interlink/2127>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TNNC1> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TNNC1> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HTR2A>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HTR2A> .
+<http://purl.org/net/tcm/id/interlink/2128>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HTR2A> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HTR2A> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACE>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ACE> .
+<http://purl.org/net/tcm/id/interlink/2129>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACE> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ACE> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GLO1>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GLO1> .
+<http://purl.org/net/tcm/id/interlink/2130>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GLO1> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GLO1> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MPZ>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MPZ> .
+<http://purl.org/net/tcm/id/interlink/2131>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MPZ> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MPZ> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ATM>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ATM> .
+<http://purl.org/net/tcm/id/interlink/2132>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ATM> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ATM> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP27A1>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CYP27A1> .
+<http://purl.org/net/tcm/id/interlink/2133>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP27A1> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CYP27A1> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RHCE>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/RHCE> .
+<http://purl.org/net/tcm/id/interlink/2134>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RHCE> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/RHCE> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALOX5>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ALOX5> .
+<http://purl.org/net/tcm/id/interlink/2135>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALOX5> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ALOX5> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DDC>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DDC> .
+<http://purl.org/net/tcm/id/interlink/2136>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DDC> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DDC> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MPI>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MPI> .
+<http://purl.org/net/tcm/id/interlink/2137>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MPI> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MPI> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CHIT1>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CHIT1> .
+<http://purl.org/net/tcm/id/interlink/2138>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CHIT1> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CHIT1> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MPO>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MPO> .
+<http://purl.org/net/tcm/id/interlink/2139>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MPO> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MPO> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TNF>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TNF> .
+<http://purl.org/net/tcm/id/interlink/2140>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TNF> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TNF> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AR>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AR> .
+<http://purl.org/net/tcm/id/interlink/2141>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AR> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AR> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ADA>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ADA> .
+<http://purl.org/net/tcm/id/interlink/2142>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ADA> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ADA> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PSEN1>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PSEN1> .
+<http://purl.org/net/tcm/id/interlink/2143>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PSEN1> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PSEN1> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TGFB1>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TGFB1> .
+<http://purl.org/net/tcm/id/interlink/2144>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TGFB1> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TGFB1> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GNAS>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GNAS> .
+<http://purl.org/net/tcm/id/interlink/2145>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GNAS> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GNAS> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IF>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IF> .
+<http://purl.org/net/tcm/id/interlink/2146>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IF> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IF> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LYST>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LYST> .
+<http://purl.org/net/tcm/id/interlink/2147>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LYST> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LYST> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/POR>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/POR> .
+<http://purl.org/net/tcm/id/interlink/2148>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/POR> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/POR> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TP53>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TP53> .
+<http://purl.org/net/tcm/id/interlink/2149>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TP53> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TP53> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APOA1>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/APOA1> .
+<http://purl.org/net/tcm/id/interlink/2150>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APOA1> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/APOA1> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACAT1>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ACAT1> .
+<http://purl.org/net/tcm/id/interlink/2151>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACAT1> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ACAT1> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IGHM>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IGHM> .
+<http://purl.org/net/tcm/id/interlink/2152>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IGHM> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IGHM> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+
