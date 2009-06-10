@@ -50,4 +50,8 @@ CADIO share
  * late binding, the semantics of data is not given until the last moment it is needed; interpret on the run time
  * execute ontologies as workflows
  
+Ontologies are reasoned
+SPARQL queries invoke workflows
+Ontologies == hypotheses too
+
  
