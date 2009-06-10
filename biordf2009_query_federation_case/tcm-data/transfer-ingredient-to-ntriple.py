@@ -20,10 +20,12 @@ outfile.write(namespace)
 
 medicinename = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/'
 ingredientname = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/'
+statistics = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/statistics/'
+type_statistics = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Statistics>'
 type_ingredient = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Ingredient>'
 type_medicine = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Medicine>'
 predicate_ingredient = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/ingredient>'
-t_value = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/medicine_ingredient_association_tvalue>'
+predicate_tvalue = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/medicine_ingredient_association_tvalue>'
 rdfs_label = '<http://www.w3.org/2000/01/rdf-schema#label>'
 
 #reader = csv.DictReader(infile, delimiter="\t")
@@ -32,7 +34,7 @@ reader = csv.reader(open(infilename, "rb"), delimiter='\t')
 def replace_space (string):
     return 
 
-i = 0
+i = X
 for row in reader:
     #print "to see what is in a row: " + row[0] + "\n"
     triple = ""
@@ -46,7 +48,13 @@ for row in reader:
         triple = triple + ingredientname + ingredientid + ">\ta\t" + type_ingredient + " ;\n"
         triple = triple + "\t" + rdfs_label + "\t\"" + row[1] + "\" .\n"
         
-        triple = triple + medicinename + medicineid + ">\t" + t_value + "\t\"" + tvalue + "\"^^xsd:float .\n\n"
+        # updated model for describing statistics
+        triple = triple + statistic + str(i) + "\ta\t" + type_statistic + " ;\n"
+        triple = triple + "\t" + predicate_source + "\t" + medicinename + medicineid + "> ;\n"
+        triple = triple + "\t" + predicate_source + "\t" + ingredientname + ingredientid + "> ;\n"
+        triple = triple + "\t" + predicate_tvalue + "\t\"" + tvalue + "\"^^xsd:float .\n\n"
+        
+        #triple = triple + medicinename + medicineid + ">\t" + t_value + "\t\"" + tvalue + "\"^^xsd:float .\n\n"
     outfile.write(triple)
     outfile.flush()
     i = i + 1
