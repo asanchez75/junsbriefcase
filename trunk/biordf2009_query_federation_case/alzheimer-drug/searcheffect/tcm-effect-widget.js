@@ -242,7 +242,7 @@ admed.effecttcm.Widget.DefaultRenderer.prototype.setCanvas = function( canvas ) 
  */
 admed.effecttcm.Widget.DefaultRenderer.prototype._initCanvas = function() {
 	try {
-	    YAHOO.util.Dom.addClass(this._canvas, "tcmWidget");
+	    YAHOO.util.Dom.addClass(this._canvas, "effectWidget");
 	    
 	    // set up the pending pane
         this._pendingPane = document.createElement("p");
@@ -451,8 +451,7 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._renderResultsSummary = functio
 	    content += count;
 	    content += "</span> matching effect";
 	    content += (count == 0 || count > 1) ? "s " : " ";
-	    content += "from <a href='http://code.google.com/p/junsbriefcase/wiki/RDFTCMData'>RDF TCMGeneDIT</a> for ";
-	    content += "herb <span>'"+query+"'</span>";
+	    content += "from <a href='http://code.google.com/p/junsbriefcase/wiki/RDFTCMData'>RDF TCMGeneDIT</a>";
 	    	    
 	    this._resultsSummaryPane.innerHTML = content;
 	    

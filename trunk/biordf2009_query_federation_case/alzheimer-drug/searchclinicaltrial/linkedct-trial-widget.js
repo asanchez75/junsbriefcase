@@ -242,11 +242,11 @@ admed.linkedct.Widget.DefaultRenderer.prototype.setCanvas = function( canvas ) {
  */
 admed.linkedct.Widget.DefaultRenderer.prototype._initCanvas = function() {
 	try {
-	    YAHOO.util.Dom.addClass(this._canvas, "tcmWidget");
+	    YAHOO.util.Dom.addClass(this._canvas, "trialWidget");
 	    
 	    // set up the pending pane
         this._pendingPane = document.createElement("p");
-        this._pendingPane.innerHTML = "pending...";
+        this._pendingPane.innerHTML = "Searching for trials from LinkedCT...";
         this._canvas.appendChild(this._pendingPane);
         YAHOO.util.Dom.addClass(this._pendingPane, "pendingPane");
         admed.mvcutils.hide(this._pendingPane);

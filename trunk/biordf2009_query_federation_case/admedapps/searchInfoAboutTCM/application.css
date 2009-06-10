@@ -7,11 +7,7 @@
 }
 
 #tcmWidget {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    border:double 2px;
-    padding: 1em;
-    display: inline-table;
+    visibility:hidden;
 }
 
 #effectTcmWidget {
@@ -20,6 +16,7 @@
     border:double 2px;
     padding: 1em;
     display: inline-table;
+    width: 10%;
 }
 
 #trialWidget {
@@ -28,6 +25,7 @@
     border:double 2px;
     padding: 1em;
     display: inline-table;
+    width: 50%;
 }
 
 #geneWidget {
@@ -38,7 +36,19 @@
     display: inline-table;
 }
 
+#dbpediaHerbWidget {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border:double 2px;
+    padding: 1em;
+    display: inline-table;
+    width: 35%;
+}
 
+img.herb {
+    width: 15%;
+    height: 15%;
+}
 #effectTcmWidget resultsPane {
     display: block;
 }
