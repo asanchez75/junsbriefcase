@@ -153,7 +153,7 @@ admed.genetcm.Widget.Controller.prototype.findGenesAssociatedWithMedicine = func
 		// pass through to private implementation
 		this._findGenesAssociatedWithMedicine(medicineName, this._findGenesSuccess, this._findGenesFailure);
 	}catch (error) {
-        	throw new admed.UnexpectedException("admed.genetcm.Widget.Controller.prototype.findEffectByMedicineName", error);
+        	throw new admed.UnexpectedException("admed.genetcm.Widget.Controller.prototype._findGenesAssociatedWithMedicine", error);
     }
 };
 
