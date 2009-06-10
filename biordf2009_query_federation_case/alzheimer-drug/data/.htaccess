@@ -15,7 +15,7 @@ RewriteRule ^dbpedia(.*)  http://dbpedia.org/sparql$1 [proxy]
 RewriteRule ^drugbank(.*) http://openflydata.org/sparqlite-0.4-alpha4/endpoint-lax/flybase-FB2009_02$1 [proxy]
 
 # Diseasesome
-RewriteRule ^diseasesome(.*) http://www4.wiwiss.fu-berlin.de/diseasome/sparql$1 [proxy]
+RewriteRule ^diseasome(.*) http://www4.wiwiss.fu-berlin.de/diseasome/sparql$1 [proxy]
 
 # LinkedCT
 RewriteRule ^linkedct(.*) http://data.linkedct.org/sparql$1 [proxy]
