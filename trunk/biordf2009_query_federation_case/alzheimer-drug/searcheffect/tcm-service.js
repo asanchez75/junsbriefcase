@@ -48,17 +48,15 @@ admed.effecttcm.Service.responseToMedicine = function( response ) {
     }
 };
 
-admed.effecttcm.Service._buildQueryForFindEffectByMedicineName = function( medicineName ) {
+admed.effecttcm.Service._buildQueryForFindEffectByMedicineName = function( medicine ) {
 
 	try {
 		var prefixes = 	"PREFIX tcm: <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/> " +
 						"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
 						"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ";
 						
-		var body = 		"SELECT DISTINCT ?effect ?medicine ?effectname WHERE { " +
-							"?medicine rdfs:label ?medicineName . " +
-							" filter regex(?medicineName, \"^" + medicineName + "\")." +
-							"?medicine tcm:effect ?effect . ?effect rdfs:label ?effectname" +
+		var body = 		"SELECT DISTINCT ?effect ?effectname WHERE { " +
+							"<" + medicine + "> tcm:effect ?effect . ?effect rdfs:label ?effectname" +
 						"}limit 10";
 							
 		var query = prefixes + body;
