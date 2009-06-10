@@ -102,10 +102,10 @@ function onHerbsFound(type, args){
 	var herb = 	herbs[0].fullmedicineURL;
 	var herbname = herbs[0].herbname;
 	var dbherb = herbs[0].herbFromDbpedia;
-	effectWidget.findEffectByMedicineName(herb);
-	trialWidget.findTrialsForMedicine(herbname);
+//	effectWidget.findEffectByMedicineName(herb);
+//	trialWidget.findTrialsForMedicine(herbname);
 	geneWidget.findGenesAssociatedWithMedicine(herb);
-	dbpediaHerbWidget.findMedicineFromDbpedia(dbherb);
+//	dbpediaHerbWidget.findMedicineFromDbpedia(dbherb);
 }
 
 YAHOO.util.Event.onDOMReady(initialiseApplication);
