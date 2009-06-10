@@ -54,10 +54,13 @@ admed.effecttcm.Service._buildQueryForFindEffectByMedicineName = function( medic
 		var prefixes = 	"PREFIX tcm: <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/> " +
 						"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
 						"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ";
-						
-		var body = 		"SELECT DISTINCT ?effect ?effectname WHERE { " +
-							"<" + medicine + "> tcm:effect ?effect . ?effect rdfs:label ?effectname" +
-						"}limit 10";
+		//TODO						
+		var body = 		"SELECT DISTINCT ?effect ?effectname ?tvalue WHERE { " +
+							"?statistics tcm:medicine_effect_association_tvalue ?tvalue ." +
+							"filter (?tvalue > 13)." +
+							"?statistics tcm:source <" + medicine + "> ; tcm:source ?effect ." +
+							"?effect rdfs:label ?effectname" +
+						"}order by ?tvalue";
 							
 		var query = prefixes + body;
 	
@@ -80,6 +83,7 @@ admed.effecttcm.Effect = function () {
 	 */
 	this.name = null;
 	
+	this.tvalue = 0;
 
 };
 
@@ -98,9 +102,15 @@ admed.effecttcm.Effect.newInstancesFromSPARQLResults = function(resultSet){
 			
 			var effectURL = binding.effect.value;
 			
+			var tvalue = binding.tvalue.value;
+			
 			admed.debug ("effect  " + effectURL);
 			//TODO
 			var effect = effectPool.get(effectURL);
+			
+			if (effect.tvalue < tvalue)
+				effect.tvalue = tvalue
+			
 			effect.name = binding.effectname.value;						
 	}
 		
@@ -124,6 +134,13 @@ admed.effecttcm.EffectPool.prototype.toArray = function() {
 		for (var key in this._pool) {
 			array[array.length] = this._pool[key];
 		}
+		
+		function effectsort(x,y) {
+            if (x.tvalue < y.effect) return 1;
+            else return -1;
+        }
+        array.sort(effectsort);
+        
 		return array;
 	} catch (error) {
         throw new admed.UnexpectedException("admed.effecttcm.effectPool.prototype.toArray", error);
