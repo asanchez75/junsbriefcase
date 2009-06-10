@@ -52,6 +52,17 @@ function initGeneWidget(){
 	geneWidget = new admed.genetcm.Widget(geneService, geneRenderer);
 };
 
+function initDbpediaHerbWidget(){
+	var dbpediaHerbService = new admed.dbherb.Service("../../alzheimer-drug/data/dbpedia");
+	log("instantiate a renderer for the dbpediaHerb widget");
+	var dbpediaHerbRenderPane = document.getElementById("dbpediaHerbWidget");
+	var dbpediaHerbRenderer = new admed.dbherb.Widget.DefaultRenderer();
+	dbpediaHerbRenderer.setCanvas(dbpediaHerbRenderPane);
+	
+	log("instantiate a dbpediaHerb widget");
+	dbpediaHerbWidget = new admed.dbherb.Widget(dbpediaHerbService, dbpediaHerbRenderer);
+};
+
 function initialiseApplication() {
 	
 	var logReader = new YAHOO.widget.LogReader("logger");
@@ -62,6 +73,10 @@ function initialiseApplication() {
 	
 	initTrialWidget();
 	
+	initDbpediaHerbWidget();
+	
+	initGeneWidget();
+		
 	widget.subscribe("HERBSFOUND", onHerbsFound, null);
 	
 	log("hook form submission to widget call");
@@ -86,9 +101,11 @@ function onHerbsFound(type, args){
 	log ("Find herb " + herbs[0].fullmedicineURL);
 	var herb = 	herbs[0].fullmedicineURL;
 	var herbname = herbs[0].herbname;
+	var dbherb = herbs[0].herbFromDbpedia;
 	effectWidget.findEffectByMedicineName(herb);
 	trialWidget.findTrialsForMedicine(herbname);
 	geneWidget.findGenesAssociatedWithMedicine(herb);
+	dbpediaHerbWidget.findMedicineFromDbpedia(dbherb);
 }
 
 YAHOO.util.Event.onDOMReady(initialiseApplication);

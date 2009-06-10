@@ -242,7 +242,7 @@ admed.genetcm.Widget.DefaultRenderer.prototype.setCanvas = function( canvas ) {
  */
 admed.genetcm.Widget.DefaultRenderer.prototype._initCanvas = function() {
 	try {
-	    YAHOO.util.Dom.addClass(this._canvas, "tcmWidget");
+	    YAHOO.util.Dom.addClass(this._canvas, "geneWidget");
 	    
 	    // set up the pending pane
         this._pendingPane = document.createElement("p");
