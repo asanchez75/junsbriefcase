@@ -32,8 +32,13 @@ admed.tcm.Widget = function( service, renderer ) {
 		this._renderer = null;
     
     	this._service = null;
+    	
+    	this._herbFoundEvent = null;
 		
 		this._init = function() {
+			
+			this._herbFoundEvent = new YAHOO.util.CustomEvent("HERBSELECTED", this);
+			
 			// create a model
 			var model = new admed.mvcutils.GenericModel2();
 			model.setDefinition(admed.tcm.Widget.modelDefinition);
@@ -64,6 +69,17 @@ admed.tcm.Widget.prototype.findMedicineFromDbpedia = function( medicineName ) {
 	}catch (error) {
         throw new admed.UnexpectedException("admed.tcm.Widget.prototype.findMedicineFromDbpedia", error);
     }
+};
+
+admed.tcm.Widget.prototype.subscribe = function(type, listener, obj) {
+    var _context = "admed.tcm.Widget.prototype.subscribe";
+    try {
+        if (type == "HERBSFOUND") {
+            this._herbFoundEvent.subscribe(listener, obj);
+        }
+    } catch (e) {
+    	throw new admed.UnexpectedException("admed.tcm.Widget.prototype.subscribe", error);
+    }    
 };
 
 
@@ -108,15 +124,25 @@ admed.tcm.Widget.Controller = function( model, service, widget ) {
 	 * Success case callback.
 	 * @param {Array<admed.tcm.Image>} images
 	 */	
-	this._findMedicinesSuccess = function( Medicines ) {
+	this._findMedicinesSuccess = function( medicines ) {
 		try {
+			var _context = "admed.tcm.Controller this._findMedicinesSuccess";
+			
 			admed.info("request success");
 		
 			// set the results
-			that._model.set("RESULTS", Medicines);
+			that._model.set("RESULTS", medicines);
 			
 			// set the state
 			that._model.set("STATE", "READY");
+			
+			 // fire event
+            admed.info("firing HERBSFOUND event", _context);
+            
+            var _event = that._parent._herbFoundEvent;
+            admed.debug("event: "+_event, _context);
+            _event.fire(medicines);
+            
 		}catch (error) {
         	throw new admed.UnexpectedException("_findMedicinesSuccess", error);
     	}
