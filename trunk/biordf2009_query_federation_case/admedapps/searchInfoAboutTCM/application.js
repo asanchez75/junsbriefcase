@@ -9,14 +9,14 @@ function initialiseApplication() {
 	var logReader = new YAHOO.widget.LogReader("logger");
 	
 	log("instantiate service for the widget");
-	var service = new admed.tcm.Service("../../alzheimer-drug/data/tcm");
+	var service = new admed.herbtcm.Service("../../alzheimer-drug/data/tcm");
 	var effectService = new admed.effecttcm.Service("../../alzheimer-drug/data/tcm");
 	var trialService = new admed.linkedct.Service("../../alzheimer-drug/data/linkedct");
 	var geneService = new admed.genetcm.Service("../../alzheimer-drug/data/tcm");
 	
 	log("instantiate a renderer for the tcm widget");
 	var renderPane = document.getElementById("tcmWidget");
-	var renderer = new admed.tcm.Widget.DefaultRenderer();
+	var renderer = new admed.herbtcm.Widget.DefaultRenderer();
 	renderer.setCanvas(renderPane);
 	
 	log("instantiate a renderer for the effect-tcm widget");
@@ -35,7 +35,7 @@ function initialiseApplication() {
 	geneRenderer.setCanvas(geneRenderPane);
 	
 	log("instantiate a tcm widget");
-	widget = new admed.tcm.Widget(service, renderer);
+	widget = new admed.herbtcm.Widget(service, renderer);
 	
 	log("instantiate a effect-tcm widget");
 	effectWidget = new admed.effecttcm.Widget(effectService, effectRenderer);
@@ -72,7 +72,10 @@ function onHerbsFound(type, args){
 	var herbs = args[0];
 	log ("Find herb " + herbs[0].fullmedicineURL);
 	var herb = 	herbs[0].fullmedicineURL;
+	var herbname = herbs[0].herbname;
 	effectWidget.findEffectByMedicineName(herb);
+	trialWidget.findTrialsForMedicine(herbname);
+	geneWidget.findGenesAssociatedWithMedicine(herb);
 }
 
 YAHOO.util.Event.onDOMReady(initialiseApplication);
