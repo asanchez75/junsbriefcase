@@ -25,6 +25,7 @@ type_statistics = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Statistic
 type_medicine = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Medicine>'
 type_effect = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Effect>'
 predicate_effect = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/effect>'
+predicate_source = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/source>'
 predicate_tvalue = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/medicine_effect_association_tvalue>'
 rdfs_label = '<http://www.w3.org/2000/01/rdf-schema#label>'
 
