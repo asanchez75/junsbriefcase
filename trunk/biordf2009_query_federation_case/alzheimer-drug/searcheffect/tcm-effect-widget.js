@@ -496,7 +496,7 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._effectToDivHTML = function( ef
 	    var content =   "<div class=\"effect\">";
 	    content +=          "<p><a href=\"" + effect.effectURL + "\">";
 	    content +=              effect.name;
-	    content +=          "</a></p>"; 
+	    content +=          "</a>; " + effect.tvalue + "</p>"; 
 	    content +=      "</div>";
 	    
 	    return content;
