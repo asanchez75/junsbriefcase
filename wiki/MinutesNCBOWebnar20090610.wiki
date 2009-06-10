@@ -28,3 +28,26 @@ incentive for the community to move toward these richer ontological
 descriptions. 
 
 Bioinformaticians just do not have the same level of domain knowledge as biologists. So what can we do?
+
+SADI:
+ * most bioinformatics services have implicit semantic relationship between inputs and outputs of web service -> SADI to make it explicit
+ * 
+
+Demo (Knowledge explorer)
+ * find the genes 
+ * what can SADI find for me for these two genes
+  * what these genes encode 
+ * SADI, what can you tell me about these proteins
+  * 3-D structure, GO terms, etc
+ * Get the Go terms
+
+Demo: Share, the application to SADI
+ * use a SPARQL endpoint
+ * find answers by finding the right web services and invoke these services
+
+CADIO share
+ * make SADI accessible to cadio researchers
+ * late binding, the semantics of data is not given until the last moment it is needed; interpret on the run time
+ * execute ontologies as workflows
+ 
+ 
