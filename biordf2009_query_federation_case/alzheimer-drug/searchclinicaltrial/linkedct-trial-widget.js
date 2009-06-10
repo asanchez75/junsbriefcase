@@ -449,7 +449,7 @@ admed.linkedct.Widget.DefaultRenderer.prototype._renderResultsSummary = function
 		admed.debug("building results summary content", _context);
         var content = "found <span>";
 	    content += count;
-	    content += "</span> matching trials";
+	    content += "</span> matching trial";
 	    content += (count == 0 || count > 1) ? "s " : " ";
 	    content += "from <a href='http://data.linkedct.org/'>LinkedCT</a> for ";
 	    content += "medicine <span>'"+query+"'</span>";
