@@ -447,12 +447,12 @@ admed.genetcm.Widget.DefaultRenderer.prototype._renderResultsSummary = function(
 	try {
 	    	    
 		admed.debug("building results summary content", _context);
-        var content = "Top <span>";
+        var content = "Find <span>";
 	    content += count;
-	    content += "</span> matching genes";
+	    content += "</span> matching gene";
 	    content += (count == 0 || count > 1) ? "s " : " ";
 	    content += "from <a href='http://code.google.com/p/junsbriefcase/wiki/RDFTCMData'>RDF TCMGeneDIT</a> for ";
-	    content += "disease <span>'"+query+"'</span>";
+	    content += "herb <span>'"+query+"'</span>";
 	    	    
 	    this._resultsSummaryPane.innerHTML = content;
 	    
