@@ -21,12 +21,15 @@ outfile.write(namespace)
 medicinename = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/'
 genename = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/'
 diseasename = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/disease/'
+statistic = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/statistic/'
 type_disease = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Disease>'
 type_medicine = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Medicine>'
 type_gene = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Gene>'
+type_statistic = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Statistic>'
 predicate_medicine = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/medicine>'
 predicate_gene = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/gene>'
-t_value = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/medicine_gene_disease_association_tvalue>'
+predicate_source = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/source>'
+predicate_tvalue = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/medicine_gene_disease_association_tvalue>'
 rdfs_label = '<http://www.w3.org/2000/01/rdf-schema#label>'
 
 
@@ -36,7 +39,7 @@ reader = csv.reader(open(infilename, "rb"), delimiter='\t')
 def replace_space (string):
     return 
 
-i = 0
+i = X
 for row in reader:
     #print "to see what is in a row: " + row[0] + "\n"
     triple = ""
@@ -51,7 +54,14 @@ for row in reader:
         triple = triple + "\t" + rdfs_label + "\t\"" + row[0] + "\" .\n"
         triple = triple + genename + geneid + ">\ta\t" + type_gene + " ;\n"
         triple = triple + "\t" + rdfs_label + "\t\"" + row[1] + "\" .\n"
-        triple = triple + medicinename + medicineid + ">\t" + t_value + "\t\"" + tvalue + "\"^^xsd:float .\n\n" 
+        # updated model for describing statistics
+        triple = triple + statistic + str(i) + "\ta\t" + type_statistic + " ;\n"
+        triple = triple + "\t" + predicate_source + "\t" + medicinename + medicineid + "> ;\n"
+        triple = triple + "\t" + predicate_source + "\t" + diseasename + diseaseid + "> ;\n"
+        triple = triple + "\t" + predicate_source + "\t" + genename + geneid + "> ;\n"
+        triple = triple + "\t" + predicate_tvalue + "\t\"" + tvalue + "\"^^xsd:float .\n\n" 
+        
+        #triple = triple + medicinename + medicineid + ">\t" + t_value + "\t\"" + tvalue + "\"^^xsd:float .\n\n" 
     outfile.write(triple)
     outfile.flush()
     i = i + 1
