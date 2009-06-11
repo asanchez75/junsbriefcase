@@ -26,7 +26,9 @@ admed.genesome.Service.ServiceTests.testFindDiseasesByGeneID_twoMapping = functi
 			assert.areEqual("http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IL6", keys[0], "the key is not right");
 			
 			var values = _diseaseArray.valSet();
-			assert.areEqual(2, values.length, "the value is not right");
+			assert.areEqual(2, values[0].length, "the value is not right");
+			
+			admed.debug("first value " + values[0][0].diseaseURL, _context);
 		});
 			
 	};
