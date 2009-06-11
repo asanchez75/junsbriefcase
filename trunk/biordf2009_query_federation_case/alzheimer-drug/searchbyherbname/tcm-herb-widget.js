@@ -37,7 +37,7 @@ admed.herbtcm.Widget = function( service, renderer ) {
 		
 		this._init = function() {
 			
-			this._herbFoundEvent = new YAHOO.util.CustomEvent("HERBSELECTED", this);
+			this._herbFoundEvent = new YAHOO.util.CustomEvent("HERBSFOUND", this);
 			
 			// create a model
 			var model = new admed.mvcutils.GenericModel2();
