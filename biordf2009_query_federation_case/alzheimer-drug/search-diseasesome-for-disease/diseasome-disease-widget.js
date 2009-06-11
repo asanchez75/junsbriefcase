@@ -474,7 +474,7 @@ admed.genesome.Widget.DefaultRenderer.prototype._diseasesToDivHTML = function( d
 	    admed.debug("build div content for diseases "+diseases.length);
 	    var content = "";
 	    content += "<table>";
-	    content += "<tr><th>Predicted associated diseases</th><th>isSubTypeOf</th><th>is associated with Alzheimer</tr>";
+	    content += "<tr><th>Predicted associated diseases</th><th>isSubTypeOf</th><th>is associated with Alzheimer</th></tr>";
 	    
 	    for ( var i in diseases ) {
 	        
@@ -499,24 +499,25 @@ admed.genesome.Widget.DefaultRenderer.prototype._diseaseToDivHTML = function( di
 	    
 	    var content =   "<div class=\"disease\">";
 	    content +=          "<tr><td><a href=\"" + disease.diseaseURL + "\">";
-	    content +=              disease.diseasename + "</a></td>";
-	    content += 			"<td>";
-//	    if (disease.entrezdisease ) {
-//	    	content +=          "<a href=\"" + disease.entrezdisease + "\">" + disease.diseasename + "</a>";
+	    content +=              disease.diseaseName + "</a></td>";
+	    
+	    if (disease.superdiseases ) {
+	    	content += "<td>";
+	    	for (var i in disease.superdiseases) {
+	    		var superdisease = disease.superdiseases[i];
+	    		content +=          "<a href=\"" + superdisease.diseaseURL + "\">" + superdisease.diseaseName + "</a>";
+	    	}
+	    	content += "</td>";	
+	    }
+	    
+//	    if (disease.subdiseases ) {
+//	     	content += "<td>";
+//	    	for (var i in disease.subdiseases) {
+//	    		var subdisease = disease.subdiseases[i];
+//	    		content +=          "<p><a href=\"" + subdisease.diseaseURL + "\">" + subdisease.diseaseName + "</a></p>";
+//	    	}	
+//	    	content += "</td>";
 //	    }
-//	    content += 			"</td><td>";
-//	    if (disease.dbpediadisease ) {
-//	    	content +=			"<a href=\"" + disease.dbpediadisease + "\">DBpedia Gene</a>";
-//	    }
-//	    content += 			"</td><td>";
-//	    if (disease.drugbankdisease ) {
-//	    	content +=			"<a href=\"" + disease.drugbankdisease + "\">More info from Drugbank</a>";
-//	    }
-//	    content += 			"</td><td>";
-//	    if (disease.diseasesomedisease) {
-//	    	content +=			"<a href=\"" + disease.diseasesomedisease + "\">More info from Diseasesome</a>";
-//	    }
-	    content += 			"</td>";
 		content +=	    	"</tr>"; 
 	    content +=      "</div>";
 	    
