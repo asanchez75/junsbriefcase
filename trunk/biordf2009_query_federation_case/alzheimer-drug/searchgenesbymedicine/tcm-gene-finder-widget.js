@@ -16,7 +16,7 @@ admed.namespace("admed.genetcm");
  * @param {admed.genetcm.Service} service the service to use to fetch data
  * @param {admed.genetcm.DefaultRenderer} renderer the renderer to use
  */
-admed.genetcm.Widget = function( service, renderer ) {
+admed.genetcm.GeneWidget = function( service, renderer ) {
 
 	try {
 		var that = this;
@@ -41,10 +41,10 @@ admed.genetcm.Widget = function( service, renderer ) {
 			
 			// create a model
 			var model = new admed.mvcutils.GenericModel2();
-			model.setDefinition(admed.genetcm.Widget.modelDefinition);
+			model.setDefinition(admed.genetcm.GeneWidget.modelDefinition);
 			
 			// instantiate the controller
-			this._controller = new admed.genetcm.Widget.Controller(model, service, this);
+			this._controller = new admed.genetcm.GeneWidget.Controller(model, service, this);
 			
 			// connect the renderer to the model
 			renderer.connect(model);
@@ -53,18 +53,18 @@ admed.genetcm.Widget = function( service, renderer ) {
     	// do initialisation
     	this._init(service, renderer);
     } catch (error) {
-        throw new admed.UnexpectedException("admed.genetcm.Widget", error);
+        throw new admed.UnexpectedException("admed.genetcm.GeneWidget", error);
     }	
 };
 
-admed.genetcm.Widget.prototype.subscribe = function(type, listener, obj) {
-    var _context = "admed.genetcm.Widget.prototype.subscribe";
+admed.genetcm.GeneWidget.prototype.subscribe = function(type, listener, obj) {
+    var _context = "admed.genetcm.GeneWidget.prototype.subscribe";
     try {
         if (type == "GENEFOUND") {
             this._geneFoundEvent.subscribe(listener, obj);
         }
     } catch (e) {
-    	throw new admed.UnexpectedException("admed.genetcm.Widget.prototype.subscribe", error);
+    	throw new admed.UnexpectedException("admed.genetcm.GeneWidget.prototype.subscribe", error);
     }    
 };
 
@@ -73,12 +73,12 @@ admed.genetcm.Widget.prototype.subscribe = function(type, listener, obj) {
  * Find medicines by disease names
  * @param {String} diseaseName 
  */
-admed.genetcm.Widget.prototype.findGenesAssociatedWithMedicine = function( medicineName ) {
+admed.genetcm.GeneWidget.prototype.findGenesAssociatedWithMedicine = function( medicineName ) {
 	// pass through to controller
 	try {
 		this._controller.findGenesAssociatedWithMedicine(medicineName);
 	}catch (error) {
-        throw new admed.UnexpectedException("admed.genetcm.Widget.prototype.findGenesAssociatedWithMedicine", error);
+        throw new admed.UnexpectedException("admed.genetcm.GeneWidget.prototype.findGenesAssociatedWithMedicine", error);
     }
 };
 
@@ -97,9 +97,9 @@ admed.genetcm.Widget.prototype.findGenesAssociatedWithMedicine = function( medic
  * @constructor
  * @param {admed.mvcutils.GenericModel2} model the model to store widget state data
  * @param {admed.genetcm.Service} service the service to use to fetch data
- * @param {admed.genetcm.Widget} widget the widget to control
+ * @param {admed.genetcm.GeneWidget} widget the widget to control
  */
-admed.genetcm.Widget.Controller = function( model, service, widget ) {
+admed.genetcm.GeneWidget.Controller = function( model, service, widget ) {
 	
 	var that = this;
 	
@@ -171,12 +171,12 @@ admed.genetcm.Widget.Controller = function( model, service, widget ) {
 };
 
 
-admed.genetcm.Widget.Controller.prototype.findGenesAssociatedWithMedicine = function( medicineName ) {
+admed.genetcm.GeneWidget.Controller.prototype.findGenesAssociatedWithMedicine = function( medicineName ) {
 	try {
 		// pass through to private implementation
 		this._findGenesAssociatedWithMedicine(medicineName, this._findGenesSuccess, this._findGenesFailure);
 	}catch (error) {
-        	throw new admed.UnexpectedException("admed.genetcm.Widget.Controller.prototype._findGenesAssociatedWithMedicine", error);
+        	throw new admed.UnexpectedException("admed.genetcm.GeneWidget.Controller.prototype._findGenesAssociatedWithMedicine", error);
     }
 };
 
@@ -188,9 +188,9 @@ admed.genetcm.Widget.Controller.prototype.findGenesAssociatedWithMedicine = func
  * @param {Function} success success case callback
  * @param {Function} failure failure case callback
  */
-admed.genetcm.Widget.Controller.prototype._findGenesAssociatedWithMedicine = function( medicineName, success, failure ) {
+admed.genetcm.GeneWidget.Controller.prototype._findGenesAssociatedWithMedicine = function( medicineName, success, failure ) {
 	try {
-		admed.info("admed.genetcm.Widget.Controller._findGenesAssociatedWithMedicine :: request: "+medicineName);
+		admed.info("admed.genetcm.GeneWidget.Controller._findGenesAssociatedWithMedicine :: request: "+medicineName);
 		
 		// set the model pending
 		this._model.set("STATE", "PENDING");
@@ -201,7 +201,7 @@ admed.genetcm.Widget.Controller.prototype._findGenesAssociatedWithMedicine = fun
 		// kick off the request
 		this._service.findGenesAssociatedWithMedicine(medicineName, success, failure);
 	}catch (error) {
-        	throw new admed.UnexpectedException("admed.genetcm.Widget.Controller.prototype._findGenesAssociatedWithMedicine", error);
+        	throw new admed.UnexpectedException("admed.genetcm.GeneWidget.Controller.prototype._findGenesAssociatedWithMedicine", error);
     }
 };
 
@@ -215,7 +215,7 @@ admed.genetcm.Widget.Controller.prototype._findGenesAssociatedWithMedicine = fun
 /**
  * Definition of flyted Widget model.
  */
-admed.genetcm.Widget.modelDefinition = {
+admed.genetcm.GeneWidget.modelDefinition = {
 
 	properties : [ "STATE", "RESULTS", "QUERY", "ERRORMESSAGE" ],
 	
@@ -243,18 +243,18 @@ admed.genetcm.Widget.modelDefinition = {
 /**
  * TODO doc me
  */
-admed.genetcm.Widget.DefaultRenderer = function() {};
+admed.genetcm.GeneWidget.DefaultRenderer = function() {};
 
 
 /**
  * TODO doc me
  */
-admed.genetcm.Widget.DefaultRenderer.prototype.setCanvas = function( canvas ) {
+admed.genetcm.GeneWidget.DefaultRenderer.prototype.setCanvas = function( canvas ) {
     try {
 	    this._canvas = canvas;
 	    this._initCanvas();
 	}catch (error) {
-        	throw new admed.UnexpectedException("admed.genetcm.Widget.DefaultRenderer.prototype.setCanvas", error);
+        	throw new admed.UnexpectedException("admed.genetcm.GeneWidget.DefaultRenderer.prototype.setCanvas", error);
     }
 };
 
@@ -263,7 +263,7 @@ admed.genetcm.Widget.DefaultRenderer.prototype.setCanvas = function( canvas ) {
  * @private
  * TODO doc me
  */
-admed.genetcm.Widget.DefaultRenderer.prototype._initCanvas = function() {
+admed.genetcm.GeneWidget.DefaultRenderer.prototype._initCanvas = function() {
 	try {
 	    YAHOO.util.Dom.addClass(this._canvas, "geneWidget");
 	    
@@ -294,34 +294,34 @@ admed.genetcm.Widget.DefaultRenderer.prototype._initCanvas = function() {
 	    admed.mvcutils.hide(this._resultsPane);
 	    
 	}catch (error) {
-        	throw new admed.UnexpectedException("admed.genetcm.Widget.DefaultRenderer.prototype._initCanvas", error);
+        	throw new admed.UnexpectedException("admed.genetcm.GeneWidget.DefaultRenderer.prototype._initCanvas", error);
     }
 };
 
 /**
  * @private
  */
-admed.genetcm.Widget.DefaultRenderer.prototype._canvas = null;
+admed.genetcm.GeneWidget.DefaultRenderer.prototype._canvas = null;
 
 /**
  * @private
  */
-admed.genetcm.Widget.DefaultRenderer.prototype._pendingPane = null;
+admed.genetcm.GeneWidget.DefaultRenderer.prototype._pendingPane = null;
 
 /**
  * @private
  */
-admed.genetcm.Widget.DefaultRenderer.prototype._resultsPane = null;
+admed.genetcm.GeneWidget.DefaultRenderer.prototype._resultsPane = null;
 
 /**
  * @private
  */
-admed.genetcm.Widget.DefaultRenderer.prototype._resultsSummaryPane = null;
+admed.genetcm.GeneWidget.DefaultRenderer.prototype._resultsSummaryPane = null;
 
 /**
  * @private
  */
-admed.genetcm.Widget.DefaultRenderer.prototype._messagePane = null;
+admed.genetcm.GeneWidget.DefaultRenderer.prototype._messagePane = null;
 
 
 /**
@@ -331,7 +331,7 @@ admed.genetcm.Widget.DefaultRenderer.prototype._messagePane = null;
  * @param {Array} args the callback args
  * @param {admed.genefinder.DefaultRenderer} self a self reference, to work around callback issues
  */
-admed.genetcm.Widget.DefaultRenderer.prototype._onModelChanged = function(type, args, self) {
+admed.genetcm.GeneWidget.DefaultRenderer.prototype._onModelChanged = function(type, args, self) {
     try {
 	    var handlers = {
 	        "STATE":"_onStateChanged",
@@ -344,7 +344,7 @@ admed.genetcm.Widget.DefaultRenderer.prototype._onModelChanged = function(type, 
 	    // call the handler
 	    self[handler](args[0], args[1], args[2]);
 	}catch (error) {
-        	throw new admed.UnexpectedException("admed.genetcm.Widget.DefaultRenderer.prototype._onModelChanged", error);
+        	throw new admed.UnexpectedException("admed.genetcm.GeneWidget.DefaultRenderer.prototype._onModelChanged", error);
     }
 };
 
@@ -353,8 +353,8 @@ admed.genetcm.Widget.DefaultRenderer.prototype._onModelChanged = function(type, 
  * @private
  * TODO doc me
  */
-admed.genetcm.Widget.DefaultRenderer.prototype._onStateChanged = function( from, to, get ) {
-    var _context = "admed.genetcm.Widget.DefaultRenderer.prototype._onStateChanged";
+admed.genetcm.GeneWidget.DefaultRenderer.prototype._onStateChanged = function( from, to, get ) {
+    var _context = "admed.genetcm.GeneWidget.DefaultRenderer.prototype._onStateChanged";
     try {
 	    if ( to == "PENDING" ) {
 		    admed.mvcutils.show(this._pendingPane);
@@ -382,7 +382,7 @@ admed.genetcm.Widget.DefaultRenderer.prototype._onStateChanged = function( from,
 		} 
 		else {
 		    // this should never happen
-	    	throw {name:"admed.genetcm.Widget.UnexpectedStateError", message:"Invalid state: "+newState};
+	    	throw {name:"admed.genetcm.GeneWidget.UnexpectedStateError", message:"Invalid state: "+newState};
 		}
 	} catch (error) {
         	throw new admed.UnexpectedException(_context, error);
@@ -394,12 +394,12 @@ admed.genetcm.Widget.DefaultRenderer.prototype._onStateChanged = function( from,
  * @private
  * TODO doc me
  */
-admed.genetcm.Widget.DefaultRenderer.prototype._onQueryChanged = function( from, to ) {
+admed.genetcm.GeneWidget.DefaultRenderer.prototype._onQueryChanged = function( from, to ) {
 	try {
     	// store query
     	this._query = to;
     }catch (error) {
-        	throw new admed.UnexpectedException("admed.genetcm.Widget.DefaultRenderer.prototype._onQueryChanged", error);
+        	throw new admed.UnexpectedException("admed.genetcm.GeneWidget.DefaultRenderer.prototype._onQueryChanged", error);
     }
 };
 
@@ -408,8 +408,8 @@ admed.genetcm.Widget.DefaultRenderer.prototype._onQueryChanged = function( from,
  * @private
  * TODO doc me
  */
-admed.genetcm.Widget.DefaultRenderer.prototype._onResultsChanged = function( from, to ) {
-    var _context = "admed.genetcm.Widget.DefaultRenderer.prototype._onResultsChanged";	
+admed.genetcm.GeneWidget.DefaultRenderer.prototype._onResultsChanged = function( from, to ) {
+    var _context = "admed.genetcm.GeneWidget.DefaultRenderer.prototype._onResultsChanged";	
 	try {
         admed.debug("empty results summary pane");
         this._resultsPane.innerHTML = "";
@@ -439,11 +439,11 @@ admed.genetcm.Widget.DefaultRenderer.prototype._onResultsChanged = function( fro
 /**
  * @private
  */
-admed.genetcm.Widget.DefaultRenderer.prototype._onErrorMessageChanged = function( from, to) {
+admed.genetcm.GeneWidget.DefaultRenderer.prototype._onErrorMessageChanged = function( from, to) {
     try {
     	this._messagePane.innerHTML = to;
     }catch (error) {
-        	throw new admed.UnexpectedException("admed.genetcm.Widget.DefaultRenderer.prototype._onErrorMessageChanged", error);
+        	throw new admed.UnexpectedException("admed.genetcm.GeneWidget.DefaultRenderer.prototype._onErrorMessageChanged", error);
     }
 };
 
@@ -451,11 +451,11 @@ admed.genetcm.Widget.DefaultRenderer.prototype._onErrorMessageChanged = function
 /**
  * TODO doc me
  */
-admed.genetcm.Widget.DefaultRenderer.prototype.connect = function( model ) {
+admed.genetcm.GeneWidget.DefaultRenderer.prototype.connect = function( model ) {
 	try {
     	model.subscribeAll(this._onModelChanged, this);
     }catch (error) {
-        	throw new admed.UnexpectedException("admed.genetcm.Widget.DefaultRenderer.prototype.connect", error);
+        	throw new admed.UnexpectedException("admed.genetcm.GeneWidget.DefaultRenderer.prototype.connect", error);
     }
 
 };
@@ -465,8 +465,8 @@ admed.genetcm.Widget.DefaultRenderer.prototype.connect = function( model ) {
  * @private
  * TODO doc me
  */
-admed.genetcm.Widget.DefaultRenderer.prototype._renderResultsSummary = function( query, count ) {
-    var _context = "admed.genetcm.Widget.DefaultRenderer.prototype._renderResultsSummary";
+admed.genetcm.GeneWidget.DefaultRenderer.prototype._renderResultsSummary = function( query, count ) {
+    var _context = "admed.genetcm.GeneWidget.DefaultRenderer.prototype._renderResultsSummary";
 	try {
 	    	    
 		admed.debug("building results summary content", _context);
@@ -489,15 +489,15 @@ admed.genetcm.Widget.DefaultRenderer.prototype._renderResultsSummary = function(
  * @private
  * TODO doc me
  */
-admed.genetcm.Widget.DefaultRenderer.prototype._genesToDivHTML = function( genes ) {
+admed.genetcm.GeneWidget.DefaultRenderer.prototype._genesToDivHTML = function( genes ) {
 
     try {
 	    // build the divs
 	    
 	    admed.debug("build div content for effects "+genes.length);
 	    var content = "";
-	    content += "<table>";
-	    content += "<tr><th>Associated TCM gene</th><th>Extrez Gene Record</th><th>Link to DBPedia</th><th>Link to Drugbank</th><th>Link to Diseasesome</th></tr>";
+//	    content += "<table>";
+//	    content += "<tr><th>Associated TCM gene</th></tr>";
 	    
 	    for ( var i in genes ) {
 	        
@@ -507,7 +507,7 @@ admed.genetcm.Widget.DefaultRenderer.prototype._genesToDivHTML = function( genes
 	    
 	    return content;
 	}catch (error) {
-        	throw new admed.UnexpectedException("admed.genetcm.Widget.DefaultRenderer.prototype._genesToDivHTML", error);
+        	throw new admed.UnexpectedException("admed.genetcm.GeneWidget.DefaultRenderer.prototype._genesToDivHTML", error);
     }
 };
 
@@ -516,21 +516,19 @@ admed.genetcm.Widget.DefaultRenderer.prototype._genesToDivHTML = function( genes
  * @private
  * TODO doc me
  */
-admed.genetcm.Widget.DefaultRenderer.prototype._geneToDivHTML = function( gene ) {
+admed.genetcm.GeneWidget.DefaultRenderer.prototype._geneToDivHTML = function( gene ) {
   	try {
 	    admed.debug("build content for gene "+gene.genename);
 	    
 	    var content =   "<div class=\"gene\">";
-	    content +=          "<tr><td><a href=\"" + gene.geneURL + "\">";
+	    content +=          "<p><a href=\"" + gene.geneURL + "\">";
 	    content +=              gene.genename + "</a></td>";
-	    content += 			"<td>";
-	    content += 			"</td>";
-		content +=	    	"</tr>"; 
+		content +=	    	"</p>"; 
 	    content +=      "</div>";
 	    
 	    return content;
 	}catch (error) {
-        	throw new admed.UnexpectedException("admed.genetcm.Widget.DefaultRenderer.prototype._genesToDivHTML", error);
+        	throw new admed.UnexpectedException("admed.genetcm.GeneWidget.DefaultRenderer.prototype._genesToDivHTML", error);
     }
 };
 
