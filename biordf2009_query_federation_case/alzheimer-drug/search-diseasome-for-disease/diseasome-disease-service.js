@@ -16,6 +16,8 @@ admed.genesome.Service = function (endpointURL) {
 // extend
 admed.genesome.Service.prototype = new admed.sparql.Service();
 
+//admed.genesome.Service.prototype._diseaseArray = new admed.maputil.MapUtils();
+
 
 /**
  * TODO doc me
@@ -32,6 +34,18 @@ admed.genesome.Service.prototype.findDiseaseAssociatedWithGene = function( gene,
     }
 };
 
+//admed.genesome.Service.prototype.findDiseaseAssociatedWithGeneBatch = function( genes, success, failure ) {
+//    var _context = "admed.genesome.Service.prototype.findDiseaseAssociatedWithGeneBatch";
+//	try {
+//		admed.info("genes: "+genes, _context);
+//        var successChain = admed.chain(admed.genesome.Service.responseToDiseases, success);	
+//		var query = admed.genesome.Service._buildQueryForDiseaseAssociatedWithGene(gene);
+//		this.query(query, successChain, failure);
+//	}catch (error) {
+//        throw new admed.UnexpectedException(_context, error);
+//    }
+//};
+
 admed.genesome.Service.responseToDisease = function( response ) {
     var _context = "admed.genesome.Service.responseToDisease";
     try {
@@ -47,6 +61,28 @@ admed.genesome.Service.responseToDisease = function( response ) {
         throw new admed.UnexpectedException(_context, e);
     }
 };
+
+//admed.genesome.Service.responseToDiseases = function( gene, response ) {
+//    var _context = "admed.genesome.Service.responseToDisease";
+//    try {
+//        admed.debug("response status: "+response.status, _context);
+//        admed.debug("try parsing response text as json", _context);
+//        admed.debug("response text: "+response.responseText, _context);
+//        
+//        var resultSet = YAHOO.lang.JSON.parse(response.responseText);
+//        admed.debug("convert result set to an array of disease", _context);
+//        
+//        var diseases = admed.genesome.Disease.newInstancesFromSPARQLResults(resultSet);
+//        
+//        admed.maputil.put(gene, diseases);
+//                
+//        return diseaseArray;
+//        
+//    } catch (e) {
+//        admed.debug("caught "+e.name+", "+e.message, _context);
+//        throw new admed.UnexpectedException(_context, e);
+//    }
+//};
 
 admed.genesome.Service._buildQueryForDiseaseAssociatedWithGene = function( gene ) {
 

@@ -32,8 +32,13 @@ admed.genesome.Widget = function( service, renderer ) {
 		this._renderer = null;
     
     	this._service = null;
+    	
+    	this._diseasesFoundEvent = null;
 		
 		this._init = function() {
+			
+			this._diseasesFoundEvent = new YAHOO.util.CustomEvent("DISEASESFOUND", this);
+			
 			// create a model
 			var model = new admed.mvcutils.GenericModel2();
 			model.setDefinition(admed.genesome.Widget.modelDefinition);
@@ -50,6 +55,17 @@ admed.genesome.Widget = function( service, renderer ) {
     } catch (error) {
         throw new admed.UnexpectedException("admed.genesome.Widget", error);
     }	
+};
+
+admed.genesome.Widget.prototype.subscribe = function(type, listener, obj) {
+    var _context = "admed.genesome.Widget.prototype.subscribe";
+    try {
+        if (type == "DISEASESFOUND") {
+            this._diseasesFoundEvent.subscribe(listener, obj);
+        }
+    } catch (e) {
+    	throw new admed.UnexpectedException("admed.genesome.Widget.prototype.subscribe", error);
+    }    
 };
 
 
@@ -110,6 +126,8 @@ admed.genesome.Widget.Controller = function( model, service, widget ) {
 	 */	
 	this._findDiseasesSuccess = function( diseases ) {
 		try {
+			var _context = "admed.genesome.Controller this._findDiseasesSuccess";
+			
 			admed.info("request success");
 		
 			// set the results
@@ -117,6 +135,11 @@ admed.genesome.Widget.Controller = function( model, service, widget ) {
 			
 			// set the state
 			that._model.set("STATE", "READY");
+			
+			var _event = that._parent._diseasesFoundEvent;
+            admed.debug("event: "+_event, _context);
+            _event.fire(diseases);
+            
 		}catch (error) {
         	throw new admed.UnexpectedException("_findDiseasesSuccess", error);
     	}
@@ -473,9 +496,9 @@ admed.genesome.Widget.DefaultRenderer.prototype._diseasesToDivHTML = function( d
 	    
 	    admed.debug("build div content for diseases "+diseases.length);
 	    var content = "";
-	    content += "<table>";
-	    content += "<tr><th>Predicted associated diseases</th><th>isSubTypeOf</th><th>is associated with Alzheimer</th></tr>";
-	    
+//	    content += "<table>";
+//	    content += "<tr><th>Predicted associated diseases</th><th>isSubTypeOf</th><th>is associated with Alzheimer</th></tr>";
+//	    
 	    for ( var i in diseases ) {
 	        
 	        content += this._diseaseToDivHTML(diseases[i]);
@@ -498,17 +521,17 @@ admed.genesome.Widget.DefaultRenderer.prototype._diseaseToDivHTML = function( di
 	    admed.debug("build content for disease "+disease.diseasename);
 	    
 	    var content =   "<div class=\"disease\">";
-	    content +=          "<tr><td><a href=\"" + disease.diseaseURL + "\">";
-	    content +=              disease.diseaseName + "</a></td>";
+	    content +=          "<a href=\"" + disease.diseaseURL + "\">";
+	    content +=              disease.diseaseName + "</a>";
 	    
-	    if (disease.superdiseases ) {
-	    	content += "<td>";
-	    	for (var i in disease.superdiseases) {
-	    		var superdisease = disease.superdiseases[i];
-	    		content +=          "<a href=\"" + superdisease.diseaseURL + "\">" + superdisease.diseaseName + "</a>";
-	    	}
-	    	content += "</td>";	
-	    }
+//	    if (disease.superdiseases ) {
+//	    	content += "<td>";
+//	    	for (var i in disease.superdiseases) {
+//	    		var superdisease = disease.superdiseases[i];
+//	    		content +=          "<a href=\"" + superdisease.diseaseURL + "\">" + superdisease.diseaseName + "</a>";
+//	    	}
+//	    	content += "</td>";	
+//	    }
 	    
 //	    if (disease.subdiseases ) {
 //	     	content += "<td>";
@@ -518,7 +541,7 @@ admed.genesome.Widget.DefaultRenderer.prototype._diseaseToDivHTML = function( di
 //	    	}	
 //	    	content += "</td>";
 //	    }
-		content +=	    	"</tr>"; 
+//		content +=	    	"</tr>"; 
 	    content +=      "</div>";
 	    
 	    return content;
