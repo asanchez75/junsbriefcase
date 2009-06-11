@@ -10,14 +10,28 @@ admed.genesome.Service = function (endpointURL) {
 	 * @private
 	 */
 	this._endpoint = endpointURL;
+	
 };
 
 
 // extend
 admed.genesome.Service.prototype = new admed.sparql.Service();
 
-//admed.genesome.Service.prototype._diseaseArray = new admed.maputil.MapUtils();
+var queryString = null;
 
+var _diseaseArray = new admed.maputil.MapUtils();
+
+//admed.genesome.Service.prototype._diseaseArray = new admed.maputil.MapUtils();
+//
+//admed.genesome.Service.prototype._query = null;
+//
+//admed.genesome.Service.prototype.setQuery = function (query){
+//	this._query = query;
+//};
+//
+//admed.genesome.Service.prototype.getQuery = function (){
+//	return this._query;
+//};
 
 /**
  * TODO doc me
@@ -29,22 +43,66 @@ admed.genesome.Service.prototype.findDiseaseAssociatedWithGene = function( gene,
         var successChain = admed.chain(admed.genesome.Service.responseToDisease, success);	
 		var query = admed.genesome.Service._buildQueryForDiseaseAssociatedWithGene(gene);
 		this.query(query, successChain, failure);
+		
 	}catch (error) {
         throw new admed.UnexpectedException(_context, error);
     }
 };
 
-//admed.genesome.Service.prototype.findDiseaseAssociatedWithGeneBatch = function( genes, success, failure ) {
-//    var _context = "admed.genesome.Service.prototype.findDiseaseAssociatedWithGeneBatch";
-//	try {
-//		admed.info("genes: "+genes, _context);
-//        var successChain = admed.chain(admed.genesome.Service.responseToDiseases, success);	
-//		var query = admed.genesome.Service._buildQueryForDiseaseAssociatedWithGene(gene);
-//		this.query(query, successChain, failure);
-//	}catch (error) {
-//        throw new admed.UnexpectedException(_context, error);
-//    }
-//};
+
+
+admed.genesome.Service.prototype.findDiseaseAssociatedWithGeneBatch = function( genes, success, failure ) {
+    var _context = "admed.genesome.Service.prototype.findDiseaseAssociatedWithGeneBatch";
+	try {
+		admed.info("genes: "+genes.length, _context);
+		
+		for (var i in genes){
+			var gene = genes[i];
+			admed.info("the query gene: "+gene, _context);
+			
+			var successChain = admed.chain(admed.genesome.Service.responseToDiseaseBatch, success);
+			var query = admed.genesome.Service._buildQueryForDiseaseAssociatedWithGene(gene);
+			
+			queryString = gene;
+			
+			this.query(query, successChain, failure);
+			
+			admed.info("the global query variable: "+queryString, _context);
+		}
+        
+	}catch (error) {
+        throw new admed.UnexpectedException(_context, error);
+    }
+};
+
+admed.genesome.Service.responseToDiseaseBatch = function( response ) {
+    var _context = "admed.genesome.Service.responseToDiseaseBatch";
+    try {
+    	
+        admed.debug("response status: "+response.status, _context);
+        admed.debug("try parsing response text as json", _context);
+        admed.debug("response text: "+response.responseText, _context);
+        
+        var resultSet = YAHOO.lang.JSON.parse(response.responseText);
+        admed.debug("convert result set to an array of disease", _context);
+        
+        var diseases = admed.genesome.Disease.newInstancesFromSPARQLResults(resultSet);
+        
+        admed.debug("return how many diseases " + diseases.length, _context);
+        
+//        var _diseaseArray = new admed.maputil.MapUtils();
+        admed.debug("create a hash map object " + _diseaseArray.size(), _context);
+        
+        admed.info("the global query variable: "+queryString, _context);
+        _diseaseArray.put(queryString, diseases);
+        admed.debug("put in an element into a hash map object " + + queryString + " size " + _diseaseArray.size(), _context);        
+        return _diseaseArray;
+        
+    } catch (e) {
+        admed.debug("caught "+e.name+", "+e.message, _context);
+        throw new admed.UnexpectedException(_context, e);
+    }
+};
 
 admed.genesome.Service.responseToDisease = function( response ) {
     var _context = "admed.genesome.Service.responseToDisease";
@@ -62,31 +120,12 @@ admed.genesome.Service.responseToDisease = function( response ) {
     }
 };
 
-//admed.genesome.Service.responseToDiseases = function( gene, response ) {
-//    var _context = "admed.genesome.Service.responseToDisease";
-//    try {
-//        admed.debug("response status: "+response.status, _context);
-//        admed.debug("try parsing response text as json", _context);
-//        admed.debug("response text: "+response.responseText, _context);
-//        
-//        var resultSet = YAHOO.lang.JSON.parse(response.responseText);
-//        admed.debug("convert result set to an array of disease", _context);
-//        
-//        var diseases = admed.genesome.Disease.newInstancesFromSPARQLResults(resultSet);
-//        
-//        admed.maputil.put(gene, diseases);
-//                
-//        return diseaseArray;
-//        
-//    } catch (e) {
-//        admed.debug("caught "+e.name+", "+e.message, _context);
-//        throw new admed.UnexpectedException(_context, e);
-//    }
-//};
+
 
 admed.genesome.Service._buildQueryForDiseaseAssociatedWithGene = function( gene ) {
 
 	try {
+		
 		var prefixes = 	"PREFIX dis: <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/> " +
 						"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
 						"PREFIX owl: <http://www.w3.org/2002/07/owl#> " +
