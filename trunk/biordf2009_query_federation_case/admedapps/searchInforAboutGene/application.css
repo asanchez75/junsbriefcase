@@ -1,0 +1,65 @@
+.yui-skin-sam .yui-log {
+    width: 60em;
+    font-size: 1em;
+}
+#queryForm {
+    text-align: center;
+}
+
+#tcmWidget {
+    visibility:hidden;
+}
+
+#effectTcmWidget {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border:double 2px;
+    padding: 1em;
+    display: inline-table;
+    width: 10%;
+}
+
+#trialWidget {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border:double 2px;
+    padding: 1em;
+    display: inline-table;
+    width: 50%;
+}
+
+#geneWidget {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border:double 2px;
+    padding: 1em;
+    display: inline-table;
+}
+
+#dbpediaHerbWidget {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border:double 2px;
+    padding: 1em;
+    display: inline-table;
+    width: 35%;
+}
+
+img.herb {
+    width: 15%;
+    height: 15%;
+}
+#effectTcmWidget resultsPane {
+    display: block;
+}
+
+.result {
+    display: inline;
+    background-color: #eee;
+    color:black;
+    border-bottom: 1px solid #aaa; 
+/*    width: 25%;*/
+/*    border: 1px #ddd solid;*/
+    margin: 0em 0.5em 0.5em 0;
+    padding: 0.5em 0.5em 0 0.5em;
+}
