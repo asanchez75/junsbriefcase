@@ -505,6 +505,8 @@ admed.genesome.Widget.DefaultRenderer.prototype._diseasesToDivHTML = function( d
 	        admed.debug("Generate the disease div" + content); 
 	    }
 	    
+	    content += "<hr/>";
+	   
 	    return content;
 	}catch (error) {
         	throw new admed.UnexpectedException("admed.diseasesome.Widget.DefaultRenderer.prototype._diseasesToDivHTML", error);
