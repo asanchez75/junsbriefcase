@@ -1,0 +1,93 @@
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head> 
+        <title>admed.genebatch Module Test Runner </title>
+        
+        <!-- basic style foundations -->
+        <link rel="stylesheet" type="text/css" href="../../../../lib/yui_2.5.1/build/reset-fonts-grids/reset-fonts-grids.css"/>
+        <link rel="stylesheet" type="text/css" href="../../../../lib/yui_2.5.1/build/base/base-min.css"/>
+        
+        <!-- basic style foundations -->
+        <link rel="stylesheet" type="text/css" href="../../lib-yui/yui_2.5.1/build/reset-fonts-grids/reset-fonts-grids.css"/>
+        <link rel="stylesheet" type="text/css" href="../../lib-yui/yui_2.5.1/build/base/base-min.css"/>
+
+        <!-- YUI dependencies -->
+        <script type="text/javascript" src="../../lib-yui/yui_2.5.1/build/yahoo/yahoo-min.js"></script>
+        <script type="text/javascript" src="../../lib-yui/yui_2.5.1/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+        <script type="text/javascript" src="../../lib-yui/yui_2.5.1/build/connection/connection-min.js"></script>
+        <script type="text/javascript" src="../../lib-yui/yui_2.5.1/build/json/json-min.js"></script>
+        <script type="text/javascript" src="../../lib-yui/yui_2.5.1/build/selector/selector-beta-min.js"></script>
+        
+        <!-- logger dependencies -->
+        <link type="text/css" rel="stylesheet" href="../../lib-yui/yui_2.5.1/build/logger/assets/skins/sam/logger.css"/>
+        <script type="text/javascript" src="../../lib-yui/yui_2.5.1/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+        <script type="text/javascript" src="../../lib-yui/yui_2.5.1/build/logger/logger-min.js"></script>
+
+        <!-- custom logger style -->
+        <link rel="stylesheet" type="text/css" href="../../testutils/logger.css"/>
+        
+        <!-- testing dependencies -->
+        <script type="text/javascript" src="../../lib-yui/yui_2.5.1/build/yuitest/yuitest-min.js"></script>
+        
+        <!-- admed dependencies -->
+        <script type="text/javascript" src="../../utils/admed.js"></script>
+        <script type="text/javascript" src="../../arrayutils/arrayutils.js"></script>
+        <script type="text/javascript" src="../../maputils/maputils.js"></script>
+        <script type="text/javascript" src="../../mvcutils/mvcutils-model2.js"></script>
+        <script type="text/javascript" src="../../mvcutils/mvcutils-showhide.js"></script>
+        <script type="text/javascript" src="../../sparql/sparql-service.js"></script>
+        <script type="text/javascript" src="../../mvcutils/mvcutils.js"></script>
+        <script type="text/javascript" src="../../searchgenesbymedicine/tcm-gene-service.js"></script>
+                
+        <!-- Modules under test -->
+        <script type="text/javascript" src="../batch-gene-widget.js"></script>
+        
+        <!-- Test scripts -->
+        <script type="text/javascript" src="test-genebatch-widget.js"></script>
+        
+        
+        <!-- Initialisation script -->
+        <script type="text/javascript">
+			YAHOO.util.Event.onDOMReady(function() {
+                var loggerConfig = {
+                    thresholdMax : 100000,
+                    thresholdMin : 100000
+                };
+                var loggerContainer = document.getElementById("logger");
+                var testLogger = new YAHOO.tool.TestLogger(loggerContainer, loggerConfig);
+			});
+            function testAll() {
+				var url = "../../data/diseasome";
+                YAHOO.tool.TestRunner.clear();
+              	YAHOO.tool.TestRunner.add(admed.genebatch.GeneBatchWidget.TestSuite(url));
+              	YAHOO.tool.TestRunner.run();
+            }
+        </script>
+        
+    </head>
+    
+    <body>
+        <div id="doc3">
+            
+            <div id="hd">
+                <!-- header -->
+                <h1>admed.genebatch Module Test Runner </h1>
+            </div>  
+            
+            <div id="bd">
+                <!-- body -->
+                <p>This page runs the test suite for the <code>admed.genebatch</code> modules.</p>
+                <ul>                	
+                	<li><a href="javascript:testAll()">widget tests</a></li>
+                </ul>
+            </div>  
+            
+            <div id="ft" class="yui-skin-sam">
+                <!-- footer -->
+                <div id="logger"></div>
+            </div>  
+            
+        </div> 
+    </body>
+    
+</html>
