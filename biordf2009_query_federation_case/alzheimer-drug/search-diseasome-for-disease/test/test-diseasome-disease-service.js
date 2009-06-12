@@ -5,7 +5,7 @@ admed.genesome.Service.ServiceTests = function(){};
 
 var pause = 300;
 
-admed.genesome.Service.ServiceTests.testFindDiseasesByGeneID_twoMapping = function( testCase, endpointURL, geneIDs ) {
+admed.genesome.Service.ServiceTests.testFindDiseasesByGeneID = function( testCase, endpointURL, geneID, expected ) {
 
 	log("Test \"==== admed.genesome.Service ServiceTests :: testFindImagesByFlybaseGeneID_noMapping ====\" started.");
 	var _context = "Test \"==== admed.genesome.Service ServiceTests :: testFindImagesByFlybaseGeneID_noMapping ====\" started.";
@@ -13,22 +13,12 @@ admed.genesome.Service.ServiceTests.testFindDiseasesByGeneID_twoMapping = functi
 	//var flybaseID = "foo"; 
 	var service = new admed.genesome.Service(endpointURL);
 
-	var testOnSuccess = function( _diseaseArray ) {
+	var testOnSuccess = function( diseases ) {
 		
 		testCase.resume(function() {
 
-			admed.debug("size of the results " + _diseaseArray.size(), _context);
-			assert.areEqual(1, _diseaseArray.size(), "expect empty array of diseases if no mapping");
-		
-			var keys = _diseaseArray.keySet();
-			assert.areEqual(1, keys.length, "the key is not right");
-			admed.info("keys " + keys[0], _context);
-			assert.areEqual("http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IL6", keys[0], "the key is not right");
-			
-			var values = _diseaseArray.valSet();
-			assert.areEqual(2, values[0].length, "the value is not right");
-			
-			admed.debug("first value " + values[0][0].diseaseURL, _context);
+			admed.debug("size of the results " + diseases.length, _context);
+			assert.areEqual(expected, diseases.length, "expect number of diseases no mapping");
 		});
 			
 	};
@@ -38,9 +28,8 @@ admed.genesome.Service.ServiceTests.testFindDiseasesByGeneID_twoMapping = functi
 	};
 
 	log("initiate request", "test");
-	service.findDiseaseAssociatedWithGeneBatch(geneIDs, testOnSuccess, testOnFailure);
+	service.findDiseaseAssociatedWithGene(geneID, testOnSuccess, testOnFailure);
 
-	// N.B. this is not asynchronous as expect service to respond immediately if no mappings are available
 	// 
 	// log("suspend test case (if test runner hangs here, something is wrong)", "test");
 	testCase.wait();	
@@ -49,22 +38,54 @@ admed.genesome.Service.ServiceTests.testFindDiseasesByGeneID_twoMapping = functi
 admed.genesome.Service.ServiceTestCase = function (endpointURL){
 	var testCase = new YAHOO.tool.TestCase({
 		
-		testFindDiseasesByGeneID_noMapping_for_IL6 : function() {
-			log("Test \"==== admed.genesome.Service ServiceTests :: testFindImagesByFlybaseGeneID_noMapping ====\" started.");
+		testFindDiseasesByGeneID_for_ACHE : function() {
+			log("Test \"==== admed.genesome.Service ServiceTests :: testFindDiseasesByGeneID_for_ACHE ====\" started.");
             var tc = this;
-            var genes = new Array();
-            admed.util.appendIfNotMember(genes,"http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IL6");
-            tc.wait(function() {admed.genesome.Service.ServiceTests.testFindDiseasesByGeneID_twoMapping(tc, endpointURL, genes);}, pause);
+            var geneID = "http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACHE";
+            tc.wait(function() {admed.genesome.Service.ServiceTests.testFindDiseasesByGeneID(tc, endpointURL, geneID, 2);}, pause);
 		},
 		
-//		testFindDiseasesByGeneID_noMapping_batch : function() {
-//			log("Test \"==== admed.genesome.Service ServiceTests :: testFindDiseasesByGeneID_noMapping_batch ====\" started.");
-//            var tc = this;
-//            var genes = new Array();
-//            admed.util.appendIfNotMember(genes,"http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IL6");
-//            admed.util.appendIfNotMember(genes,"http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MAPK1");
-//            tc.wait(function() {admed.genesome.Service.ServiceTests.testFindDiseasesByGeneID_noMapping(tc, endpointURL, genes);}, pause);
-//		},
+		testFindDiseasesByGeneID_for_AGPS : function() {
+			log("Test \"==== admed.genesome.Service ServiceTests :: testFindDiseasesByGeneID_for_AGPS ====\" started.");
+            var tc = this;
+            var geneID = "http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AGPS";
+            tc.wait(function() {admed.genesome.Service.ServiceTests.testFindDiseasesByGeneID(tc, endpointURL, geneID, 2);}, pause);
+		},
+		
+		testFindDiseasesByGeneID_for_MAPT : function() {
+			log("Test \"==== admed.genesome.Service ServiceTests :: testFindDiseasesByGeneID_for_MAPT ====\" started.");
+            var tc = this;
+            var geneID = "http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MAPT";
+            tc.wait(function() {admed.genesome.Service.ServiceTests.testFindDiseasesByGeneID(tc, endpointURL, geneID, 10);}, pause);
+		},
+		
+		testFindDiseasesByGeneID_for_APOE : function() {
+			log("Test \"==== admed.genesome.Service ServiceTests :: testFindDiseasesByGeneID_for_APOE ====\" started.");
+            var tc = this;
+            var geneID = "http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APOE";
+            tc.wait(function() {admed.genesome.Service.ServiceTests.testFindDiseasesByGeneID(tc, endpointURL, geneID, 8);}, pause);
+		},
+		
+		testFindDiseasesByGeneID_for_APP : function() {
+			log("Test \"==== admed.genesome.Service ServiceTests :: testFindDiseasesByGeneID_for_APP ====\" started.");
+            var tc = this;
+            var geneID = "http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APP";
+            tc.wait(function() {admed.genesome.Service.ServiceTests.testFindDiseasesByGeneID(tc, endpointURL, geneID, 6);}, pause);
+		},
+		
+		testFindDiseasesByGeneID_for_ADAMTS2 : function() {
+			log("Test \"==== admed.genesome.Service ServiceTests :: testFindDiseasesByGeneID_for_ADAMTS2 ====\" started.");
+            var tc = this;
+            var geneID = "http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ADAMTS2";
+            tc.wait(function() {admed.genesome.Service.ServiceTests.testFindDiseasesByGeneID(tc, endpointURL, geneID, 2);}, pause);
+		},
+		
+		testFindDiseasesByGeneID_for_TTR : function() {
+			log("Test \"==== admed.genesome.Service ServiceTests :: testFindDiseasesByGeneID_for_TTR ====\" started.");
+            var tc = this;
+            var geneID = "http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TTR";
+            tc.wait(function() {admed.genesome.Service.ServiceTests.testFindDiseasesByGeneID(tc, endpointURL, geneID, 8);}, pause);
+		},
 	});
 	
 	return testCase;
