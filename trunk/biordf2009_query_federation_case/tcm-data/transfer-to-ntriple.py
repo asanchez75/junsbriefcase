@@ -31,6 +31,7 @@ type_statistics = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Statistic
 predicate_medicine = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/medicine>'
 predicate_gene = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/gene>'
 predicate_contextAssociation = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/contextAssociation>'
+predicate_diseaseAssociation = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/diseaseAssociation>'
 predicate_source = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/source>'
 predicate_tvalue = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/medicine_gene_disease_association_tvalue>'
 rdfs_label = '<http://www.w3.org/2000/01/rdf-schema#label>'
@@ -56,7 +57,9 @@ for row in reader:
     triple = triple + "\t" + rdfs_label + "\t\"" + row[0] + "\" .\n"
     triple = triple + genename + geneid + ">\ta\t" + type_gene + " ;\n"
     triple = triple + "\t" + rdfs_label + "\t\"" + row[1] + "\" ;\n"
-    triple = triple + "\t" + predicate_contextAssociation + "\t" +  medicinename + medicineid + "> .\n"
+    triple = triple + "\t" + predicate_contextAssociation + "\t" +  medicinename + medicineid + "> ;\n"
+    triple = triple + "\t" + predicate_diseaseAssociation + "\t" +  diseasename + diseaseid + "> .\n"
+    
     
     # updated model for describing statistics
     triple = triple + statistics + str(i) + ">\ta\t" + type_statistics + " ;\n"
