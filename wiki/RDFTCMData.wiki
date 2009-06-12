@@ -12,6 +12,7 @@ See also: http://code.google.com/p/junsbriefcase/wiki/TGDdataset
 ||  Object Properties || Domain || Range || Dataset ||
 || gene || Disease || Gene || TCM_gene_disease_associations.tab ||
 || medicine || Disease || Medicine || TCM_gene_disease_associations.tab ||
+|| contextAssociation|| Medicine|| Gene|| TCM_gene_disease_associations.tab ||
 || ingredient || Medicine || Ingredient || TCM_ingredient_associations.tab ||
 || association || Medicine || Gene || TCM_gene_associations.tab ||
 || effect || Medicine || Effect || TCM_effect_associations.tab ||
