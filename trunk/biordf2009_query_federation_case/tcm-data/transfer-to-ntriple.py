@@ -53,10 +53,11 @@ for row in reader:
     triple = triple + "\t" + predicate_medicine + "\t" +  medicinename + medicineid + "> ;\n"
     triple = triple + "\t" + predicate_gene + "\t" +  genename + geneid + "> .\n"
     triple = triple + medicinename + medicineid + ">\ta\t" + type_medicine + " ;\n"
-    triple = triple + "\t" + rdfs_label + "\t\"" + row[0] + "\" ;\n"
-    triple = triple + "\t" + predicate_contextAssociation + "\t" +  genename + geneid + "> .\n"
+    triple = triple + "\t" + rdfs_label + "\t\"" + row[0] + "\" .\n"
     triple = triple + genename + geneid + ">\ta\t" + type_gene + " ;\n"
-    triple = triple + "\t" + rdfs_label + "\t\"" + row[1] + "\" .\n"
+    triple = triple + "\t" + rdfs_label + "\t\"" + row[1] + "\" ;\n"
+    triple = triple + "\t" + predicate_contextAssociation + "\t" +  medicinename + medicineid + "> .\n"
+    
     # updated model for describing statistics
     triple = triple + statistics + str(i) + ">\ta\t" + type_statistics + " ;\n"
     triple = triple + "\t" + predicate_source + "\t" + medicinename + medicineid + "> ;\n"
