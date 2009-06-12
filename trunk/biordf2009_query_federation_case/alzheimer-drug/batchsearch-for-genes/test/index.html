@@ -38,6 +38,7 @@
         <script type="text/javascript" src="../../sparql/sparql-service.js"></script>
         <script type="text/javascript" src="../../mvcutils/mvcutils.js"></script>
         <script type="text/javascript" src="../../searchgenesbymedicine/tcm-gene-service.js"></script>
+        <script type="text/javascript" src="../../search-diseasome-for-disease/diseasome-disease-service.js"></script>
                 
         <!-- Modules under test -->
         <script type="text/javascript" src="../batch-gene-widget.js"></script>
@@ -57,9 +58,10 @@
                 var testLogger = new YAHOO.tool.TestLogger(loggerContainer, loggerConfig);
 			});
             function testAll() {
-				var url = "../../data/diseasome";
+				var url = "../../data/tcm";
+				var url2 = "../../data/diseasome";
                 YAHOO.tool.TestRunner.clear();
-              	YAHOO.tool.TestRunner.add(admed.genebatch.GeneBatchWidget.TestSuite(url));
+              	YAHOO.tool.TestRunner.add(admed.genebatch.GeneBatchWidget.TestSuite(url, url2));
               	YAHOO.tool.TestRunner.run();
             }
         </script>

@@ -5,7 +5,7 @@ var assert = YAHOO.util.Assert;
 admed.genebatch.GeneBatchWidget.ControllerTests = function() {};
  //
 
-admed.genebatch.GeneBatchWidget.ControllerTests.setUpTest = function( endpointURL, testCase ) {
+admed.genebatch.GeneBatchWidget.ControllerTests.setUpTest = function( endpointURL, endpointURL2, testCase ) {
 	log("Test \"==== admed.genebatch.GeneBatchWidget.ControllerTests.setUpTest ====\" started.");
 		// create a model
 	testCase.model = new admed.mvcutils.GenericModel2();
@@ -13,12 +13,13 @@ admed.genebatch.GeneBatchWidget.ControllerTests.setUpTest = function( endpointUR
 
 	// create a service
 	testCase.service = new admed.genetcm.Service(endpointURL);
+	testCase.service2 = new admed.genesome.Service(endpointURL2);
 	
 	// create a dummy widget
 	testCase.dummyWidget = {};
 	
 	// create a new controller instance
-	testCase.controller = new admed.genebatch.GeneBatchWidget.Controller(testCase.model, testCase.service, testCase.dummyWidget);
+	testCase.controller = new admed.genebatch.GeneBatchWidget.Controller(testCase.model, testCase.service, testCase.service2, testCase.dummyWidget);
 	
 };
 
@@ -41,7 +42,7 @@ admed.genebatch.GeneBatchWidget.ControllerTests.testInit = function( testCase ) 
 };
 
 
-admed.genebatch.GeneBatchWidget.ControllerTestCase = function(endpointURL){
+admed.genebatch.GeneBatchWidget.ControllerTestCase = function(endpointURL, endpointURL2){
 	//TODO
 	admed.info("== admed.genebatch.GeneBatchWidget ControllerTestCase ==");
 	
@@ -51,7 +52,7 @@ admed.genebatch.GeneBatchWidget.ControllerTestCase = function(endpointURL){
 		
 		setUp : function() {
 			log("Test \"==== admed.genebatch.GeneBatchWidget.ControllerTests.setUpTest ====\" started.");
-			admed.genebatch.GeneBatchWidget.ControllerTests.setUpTest(endpointURL, this);
+			admed.genebatch.GeneBatchWidget.ControllerTests.setUpTest(endpointURL, endpointURL2, this);
 		},
 		
 		tearDown : function() {
@@ -69,22 +70,22 @@ admed.genebatch.GeneBatchWidget.ControllerTestCase = function(endpointURL){
 	return testCase;
 };
 
-admed.genebatch.GeneBatchWidget.TestSuite = function(endpointURL) {
+admed.genebatch.GeneBatchWidget.TestSuite = function(endpointURL, endpointURL2) {
 	
 	var suite = new YAHOO.tool.TestSuite("== admed.genebatch.GeneBatchWidget Test Suite ==");
 	
-	suite.add(admed.genebatch.GeneBatchWidget.ControllerTestCase(endpointURL));
+	suite.add(admed.genebatch.GeneBatchWidget.ControllerTestCase(endpointURL, endpointURL2));
 	
 	return suite;
 	
 };
 
 
-admed.genebatch.GeneBatchWidget.runTests = function(endpointURL) {
+admed.genebatch.GeneBatchWidget.runTests = function(endpointURL, endpointURL2) {
 	
 	admed.info("admed.genebatch.GeneBatchWidget :: running tests");
 	YAHOO.tool.TestRunner.clear();
-	YAHOO.tool.TestRunner.add(admed.genebatch.GeneBatchWidget.TestSuite(endpointURL));
+	YAHOO.tool.TestRunner.add(admed.genebatch.GeneBatchWidget.TestSuite(endpointURL, endpointURL2));
 	YAHOO.tool.TestRunner.run();
 	
 };
