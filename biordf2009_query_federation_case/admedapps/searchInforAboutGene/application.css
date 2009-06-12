@@ -8,20 +8,28 @@
 
 #geneFinderWidget {
     margin-top: 1em;
-    margin-bottom: 1em;
-    border:double 2px;
-    padding: 1em;
-    display: inline-table;
+    margin-bottom: 1em;    
+    padding: 1em;  
     width: 20%;
+    display: inline-table;
+}
+
+div.gene {
+    text-align: left;   
 }
 
 #diseaseWidget {
     margin-top: 1em;
     margin-bottom: 1em;
-    border:double 2px;
-    padding: 1em;
+    padding: 1em;    
     display: inline-table;
-    width: 50%;
+    width: 70%;
+}
+
+div.disease {
+    display: inline-table;
+    padding: 3px;
+    
 }
 
 .result {
