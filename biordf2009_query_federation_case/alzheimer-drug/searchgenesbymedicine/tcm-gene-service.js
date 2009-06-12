@@ -56,15 +56,16 @@ admed.genetcm.Service._buildQueryForFindGenesAssociatedWithMedicine = function( 
 						"PREFIX owl: <http://www.w3.org/2002/07/owl#> " +
 						"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ";
 						
-		var body = 		"SELECT DISTINCT ?gene ?genename ?entrezgene ?externalgene WHERE { " +
+		var body = 		"SELECT DISTINCT ?gene ?genename ?externalgene ?entrezgene WHERE { " +
 							"?disease rdfs:label ?diseasename . " +
 							" filter regex(?diseasename, \"^Alzheimer\")." +
 							"?association tcm:contextAssociation ?disease ; tcm:contextAssociation <" + medicine + "> ; tcm:contextAssociation ?gene ." +
 							"?gene rdf:type tcm:Gene ; rdfs:label ?genename ." +
-							"optional {?gene owl:sameAs ?entrezgene .}" +
-							"optional {?externalgene owl:sameAs ?gene .}" +
+							"optional {?externalgene owl:sameAs ?gene } ." +
+							"optional {?gene owl:sameAs ?entrezgene} ." +
 						"}limit 100";
-							
+		
+		admed.info(query, "admed.genetcm.Service._buildQueryForFindGenesAssociatedWithMedicine");					
 		var query = prefixes + body;
 	
 		return query;
@@ -115,17 +116,20 @@ admed.genetcm.Gene.newInstancesFromSPARQLResults = function(resultSet){
 			admed.debug ("gene  " + geneURL);
 			//TODO
 			var gene = genePool.get(geneURL);
-			gene.genename = binding.genename.value;	
-			gene.entrezgene = binding.entrezgene.value;
-			
-			var external = binding.externalgene.value; 
-			if (external.indexOf("http://dbpedia.org/resource/") != -1) {
-				gene.dbpediagene = external;
-			}else if (external.indexOf("http://www4.wiwiss.fu-berlin.de/drugbank/resource/targets/") != -1) {
-				gene.drugbankgene = external;
-			}else if (external.indexOf("diseasome") != -1) {
-				gene.diseasesomegene = external;
-			} 					
+			gene.genename = binding.genename.value;
+			if (binding.entrezgene) {	
+				gene.entrezgene = binding.entrezgene.value;
+			}
+			if (binding.externalgene) {
+				var external = binding.externalgene.value; 
+				if (external.indexOf("http://dbpedia.org/resource/") != -1) {
+					gene.dbpediagene = external;
+				}else if (external.indexOf("http://www4.wiwiss.fu-berlin.de/drugbank/resource/targets/") != -1) {
+					gene.drugbankgene = external;
+				}else if (external.indexOf("diseasome") != -1) {
+					gene.diseasesomegene = external;
+				} 					
+			}
 	}
 		
 		return genePool.toArray();
