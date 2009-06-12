@@ -1,0 +1,43 @@
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix oddlinker:     <http://data.linkedmdb.org/resource/oddlinker/> .
+@prefix foaf:	<http://xmlns.com/foaf/0.1/> .
+@prefix void:     <http://rdfs.org/ns/> .
+@prefix silk:     <http://www4.wiwiss.fu-berlin.de/bizer/silk/spec/> .
+@prefix dcterms:     <http://purl.org/dc/terms/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix :	<http://purl.org/net/tcm/> .
+
+<http://purl.org/net/tcm/id/linkset/4>	 rdf:type 	 void:Linkset ;
+	 void:target 	 <http://lod.openlinksw.com/sparql> ;
+	 void:target 	 <http://hcls.deri.org:8080/sparql> ;
+	 void:linkPredicate 	 owl:sameAs .
+
+<http://purl.org/net/tcm/id/linkage_run/4>	 oddlinker:linkage_date 	 "2009-06-12"^^xsd:date ;
+	oddlinker:linkage_method 	 "manual" ;
+	rdf:type	oddlinker:linkage_run .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/VPS13B>	 owl:sameAs 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/VPS13B> .
+<http://purl.org/net/tcm/id/interlink/2057>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/VPS13B> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/VPS13B> ;
+	 silk:confidence 	"1" ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/3> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/3> ;
+	 rdf:type 	 oddlinker:interlink .
+	 
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AGPS>	 <http://www.w3.org/2002/07/owl#sameAs> 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AGPS> .
+<http://purl.org/net/tcm/id/interlink/3658>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AGPS> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AGPS> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/4> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/4> ;
+	 rdf:type 	 oddlinker:interlink .
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ADAMTS2>	 <http://www.w3.org/2002/07/owl#sameAs> 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ADAMTS2> .
+<http://purl.org/net/tcm/id/interlink/3659>	 oddlinker:link_source	<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ADAMTS2> ;
+	 oddlinker:link_target 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ADAMTS2> ;
+	 oddlinker:link_type 	 owl:sameAs ;
+	 oddlinker:linkage_run 	<http://purl.org/net/tcm/id/linkage_run/4> ;
+	 dcterms:isPartOf 	<http://purl.org/net/tcm/id/linkset/4> ;
+	 rdf:type 	 oddlinker:interlink .
