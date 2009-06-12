@@ -59,9 +59,10 @@ admed.genetcm.Service._buildQueryForFindGenesAssociatedWithMedicine = function( 
 		var body = 		"SELECT DISTINCT ?gene ?genename ?entrezgene ?externalgene WHERE { " +
 							"?disease rdfs:label ?diseasename . " +
 							" filter regex(?diseasename, \"^Alzheimer\")." +
-							"?disease tcm:gene ?gene . <" + medicine + "> tcm:association ?gene ." +
-							"?gene rdfs:label ?genename ; owl:sameAs ?entrezgene ." +
-							"?externalgene owl:sameAs ?gene ." +
+							"?association tcm:contextAssociation ?disease ; tcm:contextAssociation <" + medicine + "> ; tcm:contextAssociation ?gene ." +
+							"?gene rdf:type tcm:Gene ; rdfs:label ?genename ." +
+							"optional {?gene owl:sameAs ?entrezgene .}" +
+							"optional {?externalgene owl:sameAs ?gene .}" +
 						"}limit 100";
 							
 		var query = prefixes + body;
