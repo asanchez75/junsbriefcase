@@ -1,17 +1,17 @@
 var log = YAHOO.log;
 var assert = YAHOO.util.Assert;
 
-admed.tcmgene.Service.ServiceTests = function(){};
+admed.genetcm.Service.ServiceTests = function(){};
 
 var pause = 300;
 
-admed.tcmgene.Service.ServiceTests.testFindGenesByHerbID = function( testCase, endpointURL, herbID, expected ) {
+admed.genetcm.Service.ServiceTests.testFindGenesByHerbID = function( testCase, endpointURL, herbID, expected ) {
 
-	log("Test \"==== admed.tcmgene.Service ServiceTests :: testFindGenesByHerbID ====\" started.");
-	var _context = "Test \"==== admed.tcmgene.Service ServiceTests :: testFindGenesByHerbID ====\" started.";
+	log("Test \"==== admed.genetcm.Service ServiceTests :: testFindGenesByHerbID ====\" started.");
+	var _context = "Test \"==== admed.genetcm.Service ServiceTests :: testFindGenesByHerbID ====\" started.";
 
 	//var flybaseID = "foo"; 
-	var service = new admed.tcmgene.Service(endpointURL);
+	var service = new admed.genetcm.Service(endpointURL);
 
 	var testOnSuccess = function( genes ) {
 		
@@ -28,27 +28,27 @@ admed.tcmgene.Service.ServiceTests.testFindGenesByHerbID = function( testCase, e
 	};
 
 	log("initiate request", "test");
-	service.findDiseaseAssociatedWithGeneBatch(geneIDs, testOnSuccess, testOnFailure);
+	service.findGenesAssociatedWithMedicine(herbID, testOnSuccess, testOnFailure);
 
 	// N.B. this is not asynchronous as expect service to respond immediately if no mappings are available
 	testCase.wait();	
 };
 
-admed.tcmgene.Service.ServiceTestCase = function (endpointURL){
+admed.genetcm.Service.ServiceTestCase = function (endpointURL){
 	var testCase = new YAHOO.tool.TestCase({
 		
 		testFindGenesByHerbID_Ginkgo : function() {
-			log("Test \"==== admed.tcmgene.Service ServiceTests :: testFindGenesByHerbID_Ginkgo ====\" started.");
+			log("Test \"==== admed.genetcm.Service ServiceTests :: testFindGenesByHerbID_Ginkgo ====\" started.");
             var tc = this;
             var herbID = "http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ginkgo_biloba";
-            tc.wait(function() {admed.tcmgene.Service.ServiceTests.testFindGenesByHerbID(tc, endpointURL, herbID, 11);}, pause);
+            tc.wait(function() {admed.genetcm.Service.ServiceTests.testFindGenesByHerbID(tc, endpointURL, herbID, 11);}, pause);
 		},
 		
 		testFindGenesByHerbID_ : function() {
-			log("Test \"==== admed.tcmgene.Service ServiceTests :: testFindGenesByHerbID_Polygala ====\" started.");
+			log("Test \"==== admed.genetcm.Service ServiceTests :: testFindGenesByHerbID_Polygala ====\" started.");
             var tc = this;
             var herbID = "http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Polygala_tenuifolia";
-            tc.wait(function() {admed.tcmgene.Service.ServiceTests.testFindGenesByHerbID(tc, endpointURL, herbID, 0);}, pause);
+            tc.wait(function() {admed.genetcm.Service.ServiceTests.testFindGenesByHerbID(tc, endpointURL, herbID, 0);}, pause);
 		}
 		
 	});
@@ -56,19 +56,19 @@ admed.tcmgene.Service.ServiceTestCase = function (endpointURL){
 	return testCase;
 };
 
-admed.tcmgene.Service.TestSuite = function(endpointURL) {
-	var suite = new YAHOO.tool.TestSuite("== admed.tcmgene.Service Test Suite ==");
-	suite.add(admed.tcmgene.Service.ServiceTestCase(endpointURL));
+admed.genetcm.Service.TestSuite = function(endpointURL) {
+	var suite = new YAHOO.tool.TestSuite("== admed.genetcm.Service Test Suite ==");
+	suite.add(admed.genetcm.Service.ServiceTestCase(endpointURL));
 	return suite;
 };
 
 /** 
- * Run the admed.tcmgene.Service test suite.
+ * Run the admed.genetcm.Service test suite.
  * @param {String} endpointURL URL of service
  */
-admed.tcmgene.Service.runTests = function(endpointURL) {
-	YAHOO.log("admed.tcmgene.Service :: running tests", "test");
+admed.genetcm.Service.runTests = function(endpointURL) {
+	YAHOO.log("admed.genetcm.Service :: running tests", "test");
     YAHOO.tool.TestRunner.clear();
-	YAHOO.tool.TestRunner.add(admed.tcmgene.Service.TestSuite(endpointURL));
+	YAHOO.tool.TestRunner.add(admed.genetcm.Service.TestSuite(endpointURL));
 	YAHOO.tool.TestRunner.run();
 }
