@@ -41,6 +41,32 @@ admed.genebatch.GeneBatchWidget.ControllerTests.testInit = function( testCase ) 
 	
 };
 
+admed.genebatch.GeneBatchWidget.ControllerTests.testFindDiseaseAssociatedWithGene_success = function (testCase) {
+	admed.info("Test \"==== admed.genebatch.GeneBatchWidget.ControllerTests.testFindDiseaseAssociatedWithGene_success ====\" started.");
+
+	// convenience variables
+	var controller = testCase.controller;
+	var model = testCase.model;
+	
+	// fake up the state as pending
+	model.set("STATE", "PENDING");
+	
+	// fake up a result set
+	var genes = [];
+	
+	// make the callback
+	controller._findGenesSuccess(genes);
+	
+	// check the state
+	assert.areEqual("PENDING", model.get("STATE"));
+	
+	// check the results
+	var results = model.get("RESULTS");
+	assert.isUndefined(results);
+	assert.isUndefined(results.length);
+	
+};
+
 
 admed.genebatch.GeneBatchWidget.ControllerTestCase = function(endpointURL, endpointURL2){
 	//TODO
@@ -63,7 +89,13 @@ admed.genebatch.GeneBatchWidget.ControllerTestCase = function(endpointURL, endpo
 		testInit : function(){
 			log("Test \"==== admed.genebatch.GeneBatchWidget.ControllerTests.testInit ====\" started.");
 			admed.genebatch.GeneBatchWidget.ControllerTests.testInit(this);
+		},
+		
+		testFindDiseaseAssociatedWithGene_success : function(){
+			log("Test \"==== admed.genebatch.GeneBatchWidget.ControllerTests.testFindDiseaseAssociatedWithGene_success ====\" started.");
+			admed.genebatch.GeneBatchWidget.ControllerTests.testFindDiseaseAssociatedWithGene_success(this);
 		}
+		
 		
 	});
 	
