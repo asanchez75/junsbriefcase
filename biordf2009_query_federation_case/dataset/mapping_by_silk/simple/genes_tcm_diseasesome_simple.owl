@@ -94,3 +94,5 @@
 <http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APOA1>	 <http://www.w3.org/2002/07/owl#sameAs> 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/APOA1> .
 <http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACAT1>	 <http://www.w3.org/2002/07/owl#sameAs> 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ACAT1> .
 <http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IGHM>	 <http://www.w3.org/2002/07/owl#sameAs> 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IGHM> .
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AGPS>	 <http://www.w3.org/2002/07/owl#sameAs> 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AGPS> .
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ADAMTS2>	 <http://www.w3.org/2002/07/owl#sameAs> 	<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ADAMTS2> .
