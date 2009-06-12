@@ -5,10 +5,10 @@ admed.tcmgene.Service.ServiceTests = function(){};
 
 var pause = 300;
 
-admed.tcmgene.Service.ServiceTests.testFindGenesByHerbID_Ginkgo = function( testCase, endpointURL, herbID ) {
+admed.tcmgene.Service.ServiceTests.testFindGenesByHerbID = function( testCase, endpointURL, herbID, expected ) {
 
-	log("Test \"==== admed.tcmgene.Service ServiceTests :: testFindGenesByHerbID_Ginkgo ====\" started.");
-	var _context = "Test \"==== admed.tcmgene.Service ServiceTests :: testFindGenesByHerbID_Ginkgo ====\" started.";
+	log("Test \"==== admed.tcmgene.Service ServiceTests :: testFindGenesByHerbID ====\" started.");
+	var _context = "Test \"==== admed.tcmgene.Service ServiceTests :: testFindGenesByHerbID ====\" started.";
 
 	//var flybaseID = "foo"; 
 	var service = new admed.tcmgene.Service(endpointURL);
@@ -17,18 +17,8 @@ admed.tcmgene.Service.ServiceTests.testFindGenesByHerbID_Ginkgo = function( test
 		
 		testCase.resume(function() {
 
-			admed.debug("size of the results " + _diseaseArray.size(), _context);
-			assert.areEqual(11, genes.length, "expect number of genes no mapping");
-		
-			var keys = _diseaseArray.keySet();
-			assert.areEqual(1, keys.length, "the key is not right");
-			admed.info("keys " + keys[0], _context);
-			assert.areEqual("http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IL6", keys[0], "the key is not right");
-			
-			var values = _diseaseArray.valSet();
-			assert.areEqual(2, values[0].length, "the value is not right");
-			
-			admed.debug("first value " + values[0][0].diseaseURL, _context);
+//			admed.debug("size of the results " + genes.length, _context);
+			assert.areEqual(expected, genes.length, "expect number of genes no mapping");
 		});
 			
 	};
@@ -41,8 +31,6 @@ admed.tcmgene.Service.ServiceTests.testFindGenesByHerbID_Ginkgo = function( test
 	service.findDiseaseAssociatedWithGeneBatch(geneIDs, testOnSuccess, testOnFailure);
 
 	// N.B. this is not asynchronous as expect service to respond immediately if no mappings are available
-	// 
-	// log("suspend test case (if test runner hangs here, something is wrong)", "test");
 	testCase.wait();	
 };
 
@@ -53,7 +41,14 @@ admed.tcmgene.Service.ServiceTestCase = function (endpointURL){
 			log("Test \"==== admed.tcmgene.Service ServiceTests :: testFindGenesByHerbID_Ginkgo ====\" started.");
             var tc = this;
             var herbID = "http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ginkgo_biloba";
-            tc.wait(function() {admed.tcmgene.Service.ServiceTests.testFindGenesByHerbID_Ginkgo(tc, endpointURL, herbID);}, pause);
+            tc.wait(function() {admed.tcmgene.Service.ServiceTests.testFindGenesByHerbID(tc, endpointURL, herbID, 11);}, pause);
+		},
+		
+		testFindGenesByHerbID_ : function() {
+			log("Test \"==== admed.tcmgene.Service ServiceTests :: testFindGenesByHerbID_Polygala ====\" started.");
+            var tc = this;
+            var herbID = "http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Polygala_tenuifolia";
+            tc.wait(function() {admed.tcmgene.Service.ServiceTests.testFindGenesByHerbID(tc, endpointURL, herbID, 0);}, pause);
 		}
 		
 	});
