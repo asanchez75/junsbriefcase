@@ -521,9 +521,8 @@ admed.genetcm.GeneWidget.DefaultRenderer.prototype._geneToDivHTML = function( ge
 	    admed.debug("build content for gene "+gene.genename);
 	    
 	    var content =   "<div class=\"gene\">";
-	    content +=          "<p><a href=\"" + gene.geneURL + "\">";
-	    content +=              gene.genename + "</a></td>";
-		content +=	    	"</p>"; 
+	    content +=          "<a href=\"" + gene.geneURL + "\">";
+	    content +=              gene.genename + "</a>";
 	    content +=      "</div>";
 	    
 	    return content;
