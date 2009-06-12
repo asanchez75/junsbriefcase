@@ -5,7 +5,7 @@ admed.genetcm.Service.ServiceTests = function(){};
 
 var pause = 300;
 
-admed.genetcm.Service.ServiceTests.testFindGenesByHerbID = function( testCase, endpointURL, herbID, expected ) {
+admed.genetcm.Service.ServiceTests.testFindGenesByHerbID = function( testCase, endpointURL, herbID, expected, expectedDis ) {
 
 	log("Test \"==== admed.genetcm.Service ServiceTests :: testFindGenesByHerbID ====\" started.");
 	var _context = "Test \"==== admed.genetcm.Service ServiceTests :: testFindGenesByHerbID ====\" started.";
@@ -19,6 +19,18 @@ admed.genetcm.Service.ServiceTests.testFindGenesByHerbID = function( testCase, e
 
 //			admed.debug("size of the results " + genes.length, _context);
 			assert.areEqual(expected, genes.length, "expect number of genes no mapping");
+			
+			var mappingToDiseasome = 0;
+			
+			for (var i in genes){
+				var gene = genes[i];
+				if (gene.diseasesomegene){
+					mappingToDiseasome ++;		
+				}
+			}
+			
+			assert.areEqual(expectedDis, mappingToDiseasome, "expect number of mappingToDiseasome no mapping");
+			
 		});
 			
 	};
@@ -41,14 +53,14 @@ admed.genetcm.Service.ServiceTestCase = function (endpointURL){
 			log("Test \"==== admed.genetcm.Service ServiceTests :: testFindGenesByHerbID_Ginkgo ====\" started.");
             var tc = this;
             var herbID = "http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ginkgo_biloba";
-            tc.wait(function() {admed.genetcm.Service.ServiceTests.testFindGenesByHerbID(tc, endpointURL, herbID, 11);}, pause);
+            tc.wait(function() {admed.genetcm.Service.ServiceTests.testFindGenesByHerbID(tc, endpointURL, herbID, 11, 4);}, pause);
 		},
 		
 		testFindGenesByHerbID_ : function() {
 			log("Test \"==== admed.genetcm.Service ServiceTests :: testFindGenesByHerbID_Polygala ====\" started.");
             var tc = this;
             var herbID = "http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Polygala_tenuifolia";
-            tc.wait(function() {admed.genetcm.Service.ServiceTests.testFindGenesByHerbID(tc, endpointURL, herbID, 0);}, pause);
+            tc.wait(function() {admed.genetcm.Service.ServiceTests.testFindGenesByHerbID(tc, endpointURL, herbID, 2,1);}, pause);
 		}
 		
 	});
