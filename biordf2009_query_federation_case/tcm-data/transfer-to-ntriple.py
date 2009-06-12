@@ -14,7 +14,7 @@ infile = codecs.open(infilename, mode='r', encoding='UTF-8')
 
 #outfilename = '/root/workspace/biordf2009_query_federation_case/tcm-data/TCM_gene_disease_associations.ttl'
 #outfilename = '\\oxford\\svn\\biordf2009_query_federation_case\\tcm-data\\TCM_gene_disease_associations_statistics.ttl'
-outfilename = '\\workspaces\\zhaoj\\biordf2009_query_federation_case\\tcm-data\\TCM_gene_disease_associations.ttl'
+outfilename = '\\workspaces\\zhaoj\\biordf2009_query_federation_case\\tcm-data\\TCM_gene_disease_associations_statistics.ttl'
 outfile = codecs.open(outfilename, mode='w', encoding='UTF-8')
 
 namespace = "@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .\n"
