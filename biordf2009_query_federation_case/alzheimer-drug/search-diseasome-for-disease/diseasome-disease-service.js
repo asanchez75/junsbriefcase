@@ -59,11 +59,17 @@ admed.genesome.Service.prototype.findDiseaseAssociatedWithGeneBatch = function( 
 //		for (var i in genes){
 //			var gene = genes[i];
 //			admed.info("the query gene: "+gene, _context);
+
+		var map = new admed.maputil.MapUtils();
+	        
+        for (var i in genes){
+        	map.put(genes[i], []);
+        }
 			
-			var successChain = admed.chain(admed.genesome.Service.responseToDiseaseBatch, success);
-			var query = admed.genesome.Service._buildQueryForDiseaseAssociatedWithGeneBatch(genes);
-			
-			this.post(query, successChain, failure);
+		var successChain = admed.chain(admed.genesome.Service.responseToDiseaseBatch(map), success);
+		var query = admed.genesome.Service._buildQueryForDiseaseAssociatedWithGeneBatch(genes);
+		
+		this.postQuery(query, successChain, failure);
 //		}
         
 	}catch (error) {
@@ -71,33 +77,33 @@ admed.genesome.Service.prototype.findDiseaseAssociatedWithGeneBatch = function( 
     }
 };
 
-admed.genesome.Service.responseToDiseaseBatch = function( response ) {
+admed.genesome.Service.responseToDiseaseBatch = function( map ) {
     var _context = "admed.genesome.Service.responseToDiseaseBatch";
-    try {
+    return function (response){
+    	try {
     	
-        admed.debug("response status: "+response.status, _context);
-        admed.debug("try parsing response text as json", _context);
-        admed.debug("response text: "+response.responseText, _context);
-        
-        var resultSet = YAHOO.lang.JSON.parse(response.responseText);
-        admed.debug("convert result set to an array of disease", _context);
-        
-        var diseases = admed.genesome.Disease.newInstancesFromSPARQLResults(resultSet);
-        
-        admed.debug("return how many diseases " + diseases.length, _context);
-        
-//        var _diseaseArray = new admed.maputil.MapUtils();
-        admed.debug("create a hash map object " + _diseaseArray.size(), _context);
-        
-        admed.info("the global query variable: "+queryString, _context);
-        _diseaseArray.put(queryString, diseases);
-        admed.debug("put in an element into a hash map object " + + queryString + " size " + _diseaseArray.size(), _context);        
-        return _diseaseArray;
-        
-    } catch (e) {
-        admed.debug("caught "+e.name+", "+e.message, _context);
-        throw new admed.UnexpectedException(_context, e);
+	        admed.debug("response status: "+response.status, _context);
+	        admed.debug("try parsing response text as json", _context);
+	        admed.debug("response text: "+response.responseText, _context);
+	        
+	        var resultSet = YAHOO.lang.JSON.parse(response.responseText);
+	        admed.debug("convert result set to an array of disease", _context);
+	        
+	        var diseases = admed.genesome.Disease.newInstancesFromSPARQLResults(resultSet);
+	        
+	        admed.debug("return how many diseases " + diseases.length, _context);
+	        
+	//        var _diseaseArray = new admed.maputil.MapUtils();
+	        admed.debug("create a hash map object ", _context);
+	        
+	        return map;
+	        
+	    } catch (e) {
+	        admed.debug("caught "+e.name+", "+e.message, _context);
+	        throw new admed.UnexpectedException(_context, e);
+	    }
     }
+    
 };
 
 admed.genesome.Service.responseToDisease = function( gene ) {
@@ -159,19 +165,19 @@ admed.genesome.Service._buildQueryForDiseaseAssociatedWithGeneBatch = function( 
 						
 		var body = 		"SELECT DISTINCT ?disease ?diseasename ?superdisease ?supername ?subdisease ?subname WHERE { \n";
 		
-		var body_start = "{\n " +
+		var body_union = "{\n " +
 							"{\n" +
-								"?disease dis:associatedGene <" + genes[0] + ">\n" +
+								"?disease dis:associatedGene <" + genes[0] + "> .\n" +
 							"}\n";
-		var body_union = "";
 		
-		for (var i=1 in genes){
+		for (var i=1; i<genes.length; i++) {
 			body_union += "union \n"+
 						  	"{\n" +
 								"?disease dis:associatedGene <" + genes[i] + ">\n" +
 							"}\n";
 		}
-		var body_union_end = "}\n";
+		
+		body_union += "}\n";
 		
 		var body_main = "{\n" +
 							"?disease dis:name ?diseasename . " +
@@ -179,7 +185,7 @@ admed.genesome.Service._buildQueryForDiseaseAssociatedWithGeneBatch = function( 
 						 	"optional {?subdisease dis:diseaseSubtypeOf ?disease . ?subdisease dis:name ?subname .}" +
 						"}}\n";
 							
-		var query = prefixes + body_start + body_union + body_union_end + body_main;
+		var query = prefixes + body + body_union + body_main;
 	
 		return query;
 	}catch (error) {

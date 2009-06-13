@@ -5,10 +5,10 @@ admed.genesome.Service.ServiceTests = function(){};
 
 var pause = 300;
 
-admed.genesome.Service.ServiceTests.testFindDiseasesByGeneID = function( testCase, endpointURL, geneID, expected ) {
+admed.genesome.Service.ServiceTests.testFindDiseasesByGeneIDs = function( testCase, endpointURL, geneIDs ) {
 
-	log("Test \"==== admed.genesome.Service ServiceTests :: testFindImagesByFlybaseGeneID_noMapping ====\" started.");
-	var _context = "Test \"==== admed.genesome.Service ServiceTests :: testFindImagesByFlybaseGeneID_noMapping ====\" started.";
+	log("Test \"==== admed.genesome.Service ServiceTests :: testFindDiseasesByGeneIDs ====\" started.");
+	var _context = "Test \"==== admed.genesome.Service ServiceTests :: testFindDiseasesByGeneIDs ====\" started.";
 
 	//var flybaseID = "foo"; 
 	var service = new admed.genesome.Service(endpointURL);
@@ -17,20 +17,53 @@ admed.genesome.Service.ServiceTests.testFindDiseasesByGeneID = function( testCas
 		
 		testCase.resume(function() {
 
-			assert.isNotUndefined(map, "map should be defined");
-			
-//			admed.debug("map element", map.keySet());
-			
+			assert.isNotUndefined(map, "map should be defined");	
 			var keys = map.keySet();
 			
 			for (var i in keys){
 				admed.debug("map keys ", keys[i]);
 			}
-			
 			var values = map.get(keys[0]);
+			assert.areEqual(1, keys.length, "expect number of keys not mapping");
 			
-//			admed.debug("size of the results " + map.size(), _context);
-			assert.areEqual(1, keys.length, "expect number of diseases no mapping");
+//			assert.areEqual(expected, values.length, "expect number of diseases no mapping");
+		});
+			
+	};
+
+	var testOnFailure = function( response ) {
+		assert.fail("request failed: "+response.status+" "+response.statusText+" "+response.responseText);			
+	};
+
+	log("initiate request", "test");
+	service.findDiseaseAssociatedWithGeneBatch(geneIDs, testOnSuccess, testOnFailure);
+
+	// 
+	// log("suspend test case (if test runner hangs here, something is wrong)", "test");
+	testCase.wait();	
+};
+
+
+admed.genesome.Service.ServiceTests.testFindDiseasesByGeneID = function( testCase, endpointURL, geneID, expected ) {
+
+	log("Test \"==== admed.genesome.Service ServiceTests :: testFindDiseasesByGeneID ====\" started.");
+	var _context = "Test \"==== admed.genesome.Service ServiceTests :: testFindDiseasesByGeneID ====\" started.";
+
+	//var flybaseID = "foo"; 
+	var service = new admed.genesome.Service(endpointURL);
+
+	var testOnSuccess = function( map ) {
+		
+		testCase.resume(function() {
+
+			assert.isNotUndefined(map, "map should be defined");	
+			var keys = map.keySet();
+			
+			for (var i in keys){
+				admed.debug("map keys ", keys[i]);
+			}
+			var values = map.get(keys[0]);
+			assert.areEqual(1, keys.length, "expect number of keys no mapping");
 			
 			assert.areEqual(expected, values.length, "expect number of diseases no mapping");
 		});
@@ -100,6 +133,15 @@ admed.genesome.Service.ServiceTestCase = function (endpointURL){
             var geneID = "http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TTR";
             tc.wait(function() {admed.genesome.Service.ServiceTests.testFindDiseasesByGeneID(tc, endpointURL, geneID, 8);}, pause);
 		},
+		
+		testFindDiseasesByGeneIDs : function(){
+			log("Test \"==== admed.genesome.Service ServiceTests :: testFindDiseasesByGeneIDs ====\" started.");
+			var tc = this;
+			var genes = new Array();
+			genes.push("http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACHE");
+			
+			tc.wait(function() {admed.genesome.Service.ServiceTests.testFindDiseasesByGeneIDs(tc, endpointURL, genes);}, pause);	
+		}
 	});
 	
 	return testCase;
