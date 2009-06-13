@@ -35,11 +35,11 @@ admed.genebatch.GeneBatchWidget = function( tcmgeneservice, diseasomeservice, re
     	
     	this._diseasomeservice = null;
     	
-    	this._geneFoundEvent = null;
+    	this._loopDoneEvent = null;
 		
 		this._init = function() {
 			
-			this._geneFoundEvent = new YAHOO.util.CustomEvent("GENEFOUND", this);
+			this._loopDoneEvent = new YAHOO.util.CustomEvent("LOOPDONE", this);
 			
 			// create a model
 			var model = new admed.mvcutils.GenericModel2();
@@ -58,6 +58,18 @@ admed.genebatch.GeneBatchWidget = function( tcmgeneservice, diseasomeservice, re
         throw new admed.UnexpectedException("admed.genebatch.GeneBatchWidget", error);
     }	
 };
+
+//admed.genebatch.GeneBatchWidget.prototype.subscribe = function(type, listener, obj) {
+//    var _context = "admed.genebatch.GeneBatchWidget.prototype.subscribe";
+//    try {
+//        if (type == "LOOPDONE") {
+//            this._loopDoneEvent.subscribe(listener, obj);
+//        }
+//    } catch (e) {
+//    	throw new admed.UnexpectedException("admed.genebatch.GeneBatchWidget.prototype.subscribe", error);
+//    }    
+//};
+
 
 
 /**
@@ -126,15 +138,20 @@ admed.genebatch.GeneBatchWidget.Controller = function( model, tcmgeneservice,dis
 			// set the state
 			that._model.set("STATE", "PENDING");
 			
+			var j = 0;
 			for (var i in genes){
 				var gene = genes [i];
 				var diseasomeGene = gene.diseasesomegene;
 				that._controller.findDiseaseAssociatedWithGene(gene);
+				j = j + 1;
 			}	
 			
-			//TODO
-			
-//			that._model.set("STATE", "READY");
+			if (j == genes.length){
+				var _event = that._parent._loopDoneEvent;
+//				that._model.set("STATE", "READY");
+				admed.debug("event: "+_event, _context);
+				_event.fire(genes);
+			}
 			
             
 		}catch (error) {

@@ -14,9 +14,10 @@ admed.genebatch.GeneBatchWidget.ControllerTests.setUpTest = function( endpointUR
 	// create a service
 	testCase.service = new admed.genetcm.Service(endpointURL);
 	testCase.service2 = new admed.genesome.Service(endpointURL2);
-	
+		
 	// create a dummy widget
 	testCase.dummyWidget = {};
+	testCase.dummyWidget._loopDoneEvent = new YAHOO.util.CustomEvent("LOOPDONE", testCase.dummyWidget);
 	
 	// create a new controller instance
 	testCase.controller = new admed.genebatch.GeneBatchWidget.Controller(testCase.model, testCase.service, testCase.service2, testCase.dummyWidget);
@@ -46,6 +47,8 @@ admed.genebatch.GeneBatchWidget.ControllerTests.testFindDiseaseAssociatedWithGen
 
 	// convenience variables
 	var controller = testCase.controller;
+	admed.info("parent of the controller " + controller._parent);
+	admed.info("parent event of the controller " + controller._parent._loopDoneEvent);
 	var model = testCase.model;
 	
 	// fake up the state as pending
