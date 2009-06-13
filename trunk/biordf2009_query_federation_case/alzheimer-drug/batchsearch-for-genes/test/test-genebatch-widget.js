@@ -62,9 +62,7 @@ admed.genebatch.GeneBatchWidget.ControllerTests.testFindDiseaseAssociatedWithGen
 	
 	// check the results
 	var results = model.get("RESULTS");
-	assert.isUndefined(results);
-	assert.isUndefined(results.length);
-	
+	assert.isNull(results, "no results yet");	
 };
 
 
