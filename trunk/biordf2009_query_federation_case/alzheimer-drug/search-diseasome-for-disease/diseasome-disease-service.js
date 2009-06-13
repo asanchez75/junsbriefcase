@@ -56,19 +56,15 @@ admed.genesome.Service.prototype.findDiseaseAssociatedWithGeneBatch = function( 
 	try {
 		admed.info("genes: "+genes.length, _context);
 		
-		for (var i in genes){
-			var gene = genes[i];
-			admed.info("the query gene: "+gene, _context);
+//		for (var i in genes){
+//			var gene = genes[i];
+//			admed.info("the query gene: "+gene, _context);
 			
 			var successChain = admed.chain(admed.genesome.Service.responseToDiseaseBatch, success);
-			var query = admed.genesome.Service._buildQueryForDiseaseAssociatedWithGene(gene);
+			var query = admed.genesome.Service._buildQueryForDiseaseAssociatedWithGeneBatch(genes);
 			
-			queryString = gene;
-			
-			this.query(query, successChain, failure);
-			
-			admed.info("the global query variable: "+queryString, _context);
-		}
+			this.post(query, successChain, failure);
+//		}
         
 	}catch (error) {
         throw new admed.UnexpectedException(_context, error);
@@ -149,6 +145,45 @@ admed.genesome.Service._buildQueryForDiseaseAssociatedWithGene = function( gene 
 		return query;
 	}catch (error) {
         throw new admed.UnexpectedException("admed.genesome.Service._buildQueryForDiseaseAssociatedWithGene", error);
+    }
+};
+
+admed.genesome.Service._buildQueryForDiseaseAssociatedWithGeneBatch = function( genes ) {
+
+	try {
+		
+		var prefixes = 	"PREFIX dis: <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/> " +
+						"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
+						"PREFIX owl: <http://www.w3.org/2002/07/owl#> " +
+						"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ";
+						
+		var body = 		"SELECT DISTINCT ?disease ?diseasename ?superdisease ?supername ?subdisease ?subname WHERE { \n";
+		
+		var body_start = "{\n " +
+							"{\n" +
+								"?disease dis:associatedGene <" + genes[0] + ">\n" +
+							"}\n";
+		var body_union = "";
+		
+		for (var i=1 in genes){
+			body_union += "union \n"+
+						  	"{\n" +
+								"?disease dis:associatedGene <" + genes[i] + ">\n" +
+							"}\n";
+		}
+		var body_union_end = "}\n";
+		
+		var body_main = "{\n" +
+							"?disease dis:name ?diseasename . " +
+						 	"optional {?disease dis:diseaseSubtypeOf ?superdisease . ?superdisease dis:name ?supername .}" +
+						 	"optional {?subdisease dis:diseaseSubtypeOf ?disease . ?subdisease dis:name ?subname .}" +
+						"}}\n";
+							
+		var query = prefixes + body_start + body_union + body_union_end + body_main;
+	
+		return query;
+	}catch (error) {
+        throw new admed.UnexpectedException("admed.genesome.Service._buildQueryForDiseaseAssociatedWithGeneBatch", error);
     }
 };
 
