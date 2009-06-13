@@ -13,12 +13,26 @@ admed.genesome.Service.ServiceTests.testFindDiseasesByGeneID = function( testCas
 	//var flybaseID = "foo"; 
 	var service = new admed.genesome.Service(endpointURL);
 
-	var testOnSuccess = function( diseases ) {
+	var testOnSuccess = function( map ) {
 		
 		testCase.resume(function() {
 
-			admed.debug("size of the results " + diseases.length, _context);
-			assert.areEqual(expected, diseases.length, "expect number of diseases no mapping");
+			assert.isNotUndefined(map, "map should be defined");
+			
+//			admed.debug("map element", map.keySet());
+			
+			var keys = map.keySet();
+			
+			for (var i in keys){
+				admed.debug("map keys ", keys[i]);
+			}
+			
+			var values = map.get(keys[0]);
+			
+//			admed.debug("size of the results " + map.size(), _context);
+			assert.areEqual(1, keys.length, "expect number of diseases no mapping");
+			
+			assert.areEqual(expected, values.length, "expect number of diseases no mapping");
 		});
 			
 	};
