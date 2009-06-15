@@ -91,14 +91,16 @@ admed.genesome.Service.responseToDiseaseBatch = function( map ) {
 	        
 	        var bindings = resultSet.results.bindings;
 	        
+	        var pool = new admed.genesome.DiseasePool();
+	        
 	        for (var i=0; i<bindings.length; i++) {
-	        	var geneURL = bindings[i].gene.value;
-	        	
-	        	var disease = new admed.genesome.Disease();
-	        	
 	        	var binding = bindings[i];
 	        	
-	        	disease.diseaseURL = binding.disease.value;
+	        	var geneURL = binding.gene.value;
+	        	
+	        	var diseaseURL = binding.disease.value;
+	        	
+	        	var disease = pool.get(diseaseURL);
 	        	
 	        	disease.diseaseName = binding.diseasename.value;
 				
