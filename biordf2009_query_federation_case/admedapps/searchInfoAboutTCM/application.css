@@ -10,13 +10,23 @@
     visibility:hidden;
 }
 
+
+#dbpediaHerbWidget {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border:double 2px;
+    padding: 1em;
+    display: inline-table;
+    width: 35%;
+}
+
 #effectTcmWidget {
     margin-top: 1em;
     margin-bottom: 1em;
     border:double 2px;
     padding: 1em;
     display: inline-table;
-    width: 10%;
+    width: 30%;
 }
 
 #trialWidget {
@@ -25,7 +35,7 @@
     border:double 2px;
     padding: 1em;
     display: inline-table;
-    width: 50%;
+    
 }
 
 #geneFinderWidget {
@@ -40,15 +50,6 @@ div.gene {
     text-align: left; 
     display: inline;
     padding: 4px;
-}
-
-#dbpediaHerbWidget {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    border:double 2px;
-    padding: 1em;
-    display: inline-table;
-    width: 35%;
 }
 
 img.herb {
