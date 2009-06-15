@@ -26,7 +26,7 @@
     border:double 2px;
     padding: 1em;
     display: inline-table;
-    width: 30%;
+    
 }
 
 #trialWidget {
@@ -76,4 +76,8 @@ div.disease {
 div.result{
     display: inline;
     padding: 4px;
+}
+
+div.queryTableContainer {
+    display:inline;
 }
