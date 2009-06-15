@@ -104,9 +104,7 @@ admed.genesome.Service.responseToDiseaseBatch = function( map ) {
 	        	
 	        	disease.diseaseName = binding.diseasename.value;
 	        	
-	        	if (disease.diseaseName.substr("Alzheimer"))
-					disease.isAlzheimer = true;
-				
+	        	
 				if (binding.superdisease){
 					var superdiseaseURL = binding.superdisease.value;
 					
@@ -120,8 +118,7 @@ admed.genesome.Service.responseToDiseaseBatch = function( map ) {
 		
 					admed.util.appendIfNotMember(disease.superdiseases, superdisease);
 					
-					if (supername.substr("Alzheimer"))
-						disease.isAlzheimer = true;
+					
 				}	
 				
 				if (binding.subdisease){
@@ -265,7 +262,7 @@ admed.genesome.Disease = function () {
 	
 	this.subdiseases = new Array();
 	
-	this.isAlzheimer = false;
+	
 
 };
 
@@ -289,9 +286,6 @@ admed.genesome.Disease.newInstancesFromSPARQLResults = function(resultSet){
 			var disease = diseasePool.get(diseaseURL);
 			disease.diseaseName = binding.diseasename.value;
 			
-			if (disease.diseaseName.substr("Alzheimer"))
-				disease.isAlzheimer = true;
-			
 			if (binding.superdisease){
 				var superdiseaseURL = binding.superdisease.value;
 				
@@ -303,9 +297,7 @@ admed.genesome.Disease.newInstancesFromSPARQLResults = function(resultSet){
 				
 				superdisease.diseaseName = supername;
 				
-				if (supername.substr("Alzheimer"))
-					disease.isAlzheimer = true;
-	
+				
 				admed.util.appendIfNotMember(disease.superdiseases, superdisease);
 			}	
 			
