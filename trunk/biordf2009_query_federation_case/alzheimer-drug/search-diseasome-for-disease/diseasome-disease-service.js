@@ -40,7 +40,7 @@ admed.genesome.Service.prototype.findDiseaseAssociatedWithGene = function( gene,
     var _context = "admed.genesome.Service.prototype.findDiseaseAssociatedWithMedicine";
 	try {
 		admed.info("gene: "+gene, _context);
-        var successChain = admed.chain(admed.genesome.Service.responseToDisease(gene), success);	
+        var successChain = admed.chain(admed.genesome.Service.responseToDisease, success);	
 		var query = admed.genesome.Service._buildQueryForDiseaseAssociatedWithGene(gene);
 		this.query(query, successChain, failure);
 		
@@ -145,25 +145,24 @@ admed.genesome.Service.responseToDiseaseBatch = function( map ) {
     
 };
 
-admed.genesome.Service.responseToDisease = function( gene ) {
+admed.genesome.Service.responseToDisease = function( response ) {
     var _context = "admed.genesome.Service.responseToDisease";
-    return function( response){
-    	try {
-	        admed.debug("response status: "+response.status, _context);
-	        admed.debug("try parsing response text as json", _context);
-	        admed.debug("response text: "+response.responseText, _context);
-	        var resultSet = YAHOO.lang.JSON.parse(response.responseText);
-	        admed.debug("convert result set to an array of disease", _context);
-	        
-	        var map = new admed.maputil.MapUtils();           
-	        var diseases = admed.genesome.Disease.newInstancesFromSPARQLResults(resultSet);
-	        map.put(gene, diseases);
-	        return map;
-	        
-	    } catch (e) {
-	        admed.debug("caught "+e.name+", "+e.message, _context);
-	        throw new admed.UnexpectedException(_context, e);
-	    }
+    
+	try {
+        admed.debug("response status: "+response.status, _context);
+        admed.debug("try parsing response text as json", _context);
+        admed.debug("response text: "+response.responseText, _context);
+        var resultSet = YAHOO.lang.JSON.parse(response.responseText);
+        admed.debug("convert result set to an array of disease", _context);
+        
+                   
+        var diseases = admed.genesome.Disease.newInstancesFromSPARQLResults(resultSet);
+        
+        return diseases;
+        
+    } catch (e) {
+        admed.debug("caught "+e.name+", "+e.message, _context);
+        throw new admed.UnexpectedException(_context, e);
     }
 };
 

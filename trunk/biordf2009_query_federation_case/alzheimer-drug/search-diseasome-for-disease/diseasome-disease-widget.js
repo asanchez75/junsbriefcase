@@ -136,9 +136,9 @@ admed.genesome.Widget.Controller = function( model, service, widget ) {
 			// set the state
 			that._model.set("STATE", "READY");
 			
-			var _event = that._parent._diseasesFoundEvent;
-            admed.debug("event: "+_event, _context);
-            _event.fire(diseases);
+//			var _event = that._parent._diseasesFoundEvent;
+//            admed.debug("event: "+_event, _context);
+//            _event.fire(diseases);
             
 		}catch (error) {
         	throw new admed.UnexpectedException("_findDiseasesSuccess", error);
