@@ -10,12 +10,13 @@
     margin-top: 1em;
     margin-bottom: 1em;    
     padding: 1em;  
-    width: 20%;
-    display: inline-table;
+    display: inline;
 }
 
 div.gene {
-    text-align: left;   
+    text-align: left; 
+    display: inline;
+    padding: 4px;
 }
 
 #diseaseWidget {
@@ -23,8 +24,7 @@ div.gene {
     margin-bottom: 1em;
     padding: 1em;    
     display: inline-table;
-    width: 70%;
-}
+} 
 
 div.disease {
     display: inline-table;
@@ -32,13 +32,7 @@ div.disease {
     
 }
 
-.result {
+div.result{
     display: inline;
-    background-color: #eee;
-    color:black;
-    border-bottom: 1px solid #aaa; 
-/*    width: 25%;*/
-/*    border: 1px #ddd solid;*/
-    margin: 0em 0.5em 0.5em 0;
-    padding: 0.5em 0.5em 0 0.5em;
+    padding: 4px;
 }
