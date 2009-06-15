@@ -23,9 +23,21 @@ admed.effecttcm.Service.prototype = new admed.sparql.Service();
 admed.effecttcm.Service.prototype.findEffectByMedicineName = function( medicineName, success, failure ) {
     var _context = "admed.effecttcm.Service.prototype.findEffectByMedicineName";
 	try {
-		admed.info("diseaseName: "+medicineName, _context);
+		admed.info("herbname: "+medicineName, _context);
         var successChain = admed.chain(admed.effecttcm.Service.responseToMedicine, success);	
 		var query = admed.effecttcm.Service._buildQueryForFindEffectByMedicineName(medicineName);
+		this.query(query, successChain, failure);
+	}catch (error) {
+        throw new admed.UnexpectedException(_context, error);
+    }
+};
+
+admed.effecttcm.Service.prototype.findEffectByMedicineNameWithConfidence = function( tvalue, herbURL, success, failure ) {
+    var _context = "admed.effecttcm.Service.prototype.findEffectByMedicineNameWithConfidence";
+	try {
+		admed.info("herbname: "+herbURL + "with tvalue " + tvalue, _context);
+        var successChain = admed.chain(admed.effecttcm.Service.responseToMedicine, success);	
+		var query = admed.effecttcm.Service._buildQueryForFindEffectByMedicineNameWithConfidence(tvalue, herbURL);
 		this.query(query, successChain, failure);
 	}catch (error) {
         throw new admed.UnexpectedException(_context, error);
@@ -58,6 +70,40 @@ admed.effecttcm.Service._buildQueryForFindEffectByMedicineName = function( medic
 		var body = 		"SELECT DISTINCT ?effect ?effectname ?tvalue WHERE { " +
 							"?statistics tcm:medicine_effect_association_tvalue ?tvalue ." +
 							"filter (?tvalue > 2.576)." +
+							"?statistics tcm:source <" + medicine + "> ; tcm:source ?effect ." +
+							"?effect rdf:type tcm:Effect ; rdfs:label ?effectname" +
+						"}order by desc(?tvalue)";
+							
+		var query = prefixes + body;
+	
+		return query;
+	}catch (error) {
+        throw new admed.UnexpectedException("admed.effecttcm.Service._buildQueryForFindEffectByMedicineName", error);
+    }
+};
+
+admed.effecttcm.Service._buildQueryForFindEffectByMedicineNameWithConfidence = function( inputT, medicine ) {
+
+	try {
+		var prefixes = 	"PREFIX tcm: <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/> " +
+						"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
+						"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ";
+		
+		var tvalue = 2.576;
+		
+		if (inputT == "97.5%")
+			tvalue = 2.326;
+		else if (inputT == "99%")
+			tvalue = 2.576;
+		else if (inputT == "95%")
+			tvalue = 1.960;
+		else if (inputT == "all")
+			tvalue = 1;
+				
+		//TODO						
+		var body = 		"SELECT DISTINCT ?effect ?effectname ?tvalue WHERE { " +
+							"?statistics tcm:medicine_effect_association_tvalue ?tvalue ." +
+							"filter (?tvalue > " + tvalue + ")." +
 							"?statistics tcm:source <" + medicine + "> ; tcm:source ?effect ." +
 							"?effect rdf:type tcm:Effect ; rdfs:label ?effectname" +
 						"}order by desc(?tvalue)";
