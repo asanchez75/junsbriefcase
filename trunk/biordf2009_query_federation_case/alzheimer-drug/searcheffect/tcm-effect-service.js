@@ -57,7 +57,7 @@ admed.effecttcm.Service._buildQueryForFindEffectByMedicineName = function( medic
 		//TODO						
 		var body = 		"SELECT DISTINCT ?effect ?effectname ?tvalue WHERE { " +
 							"?statistics tcm:medicine_effect_association_tvalue ?tvalue ." +
-							"filter (?tvalue > 2)." +
+							"filter (?tvalue > 2.576)." +
 							"?statistics tcm:source <" + medicine + "> ; tcm:source ?effect ." +
 							"?effect rdf:type tcm:Effect ; rdfs:label ?effectname" +
 						"}order by desc(?tvalue)";
