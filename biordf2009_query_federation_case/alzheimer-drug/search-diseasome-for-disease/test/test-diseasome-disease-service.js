@@ -95,20 +95,10 @@ admed.genesome.Service.ServiceTests.testFindDiseasesByGeneID = function( testCas
 	//var flybaseID = "foo"; 
 	var service = new admed.genesome.Service(endpointURL);
 
-	var testOnSuccess = function( map ) {
+	var testOnSuccess = function( diseases ) {
 		
-		testCase.resume(function() {
-
-			assert.isNotUndefined(map, "map should be defined");	
-			var keys = map.keySet();
-			
-			for (var i in keys){
-				admed.debug("map keys ", keys[i]);
-			}
-			var values = map.get(keys[0]);
-			assert.areEqual(1, keys.length, "expect number of keys no mapping");
-			
-			assert.areEqual(expected, values.length, "expect number of diseases no mapping");
+		testCase.resume(function() {			
+			assert.areEqual(expected, diseases.length, "expect number of diseases no mapping");
 		});
 			
 	};

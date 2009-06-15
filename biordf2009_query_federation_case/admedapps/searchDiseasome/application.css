@@ -12,3 +12,7 @@
     display: inline-table;
     border-spacing: 1px 1px;
 }
+
+.input {
+    width: 250px;
+}
