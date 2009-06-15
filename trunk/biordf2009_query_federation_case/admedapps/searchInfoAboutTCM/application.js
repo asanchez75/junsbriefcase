@@ -138,7 +138,7 @@ function onHerbsFound(type, args){
 	var herb = 	herbs[0].fullmedicineURL;
 	var herbname = herbs[0].herbname;
 	var dbherb = herbs[0].herbFromDbpedia;
-//	effectWidget.findEffectByMedicineName(herb);
+	effectWidget.findEffectByMedicineName(herb);
 	trialWidget.findTrialsForMedicine(herbname);
 	geneFinderwidget.findGenesAssociatedWithMedicine(herb);
 //	dbpediaHerbWidget.findMedicineFromDbpedia(dbherb);
