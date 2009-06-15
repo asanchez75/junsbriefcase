@@ -16,6 +16,16 @@ function initHerbFinder() {
 };
 
 function initEffectWidget(){
+	var content = "<option>99%</option>";
+	content += "<option>97.5%</option>";
+	content += "<option>95%</option>";
+	content += "<option>all</option>";
+		
+	var queryTableContainer = document.getElementById("queryTableContainer");
+	
+	queryTableContainer.innerHTML = content;
+	
+	
 	var effectService = new admed.effecttcm.Service("../../alzheimer-drug/data/tcm");
 	
 	log("instantiate a renderer for the effect-tcm widget");
@@ -85,15 +95,15 @@ function initialiseApplication() {
 	
 	initEffectWidget();
 	
-	initTrialWidget();
-	
-	initDbpediaHerbWidget();
-	
-	initGeneFinder();
-	
-	initDiseaseWidget();
-	
-	geneFinderwidget.subscribe("GENEFOUND", onGeneFound, null);	
+//	initTrialWidget();
+//	
+//	initDbpediaHerbWidget();
+//	
+//	initGeneFinder();
+//	
+//	initDiseaseWidget();
+//	
+//	geneFinderwidget.subscribe("GENEFOUND", onGeneFound, null);	
 	widget.subscribe("HERBSFOUND", onHerbsFound, null);
 	
 	
@@ -139,8 +149,8 @@ function onHerbsFound(type, args){
 	var herbname = herbs[0].herbname;
 	var dbherb = herbs[0].herbFromDbpedia;
 	effectWidget.findEffectByMedicineName(herb);
-	trialWidget.findTrialsForMedicine(herbname);
-	geneFinderwidget.findGenesAssociatedWithMedicine(herb);
+//	trialWidget.findTrialsForMedicine(herbname);
+//	geneFinderwidget.findGenesAssociatedWithMedicine(herb);
 //	dbpediaHerbWidget.findMedicineFromDbpedia(dbherb);
 }
 
