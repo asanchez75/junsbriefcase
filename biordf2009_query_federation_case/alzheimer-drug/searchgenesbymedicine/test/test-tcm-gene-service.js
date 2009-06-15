@@ -56,7 +56,7 @@ admed.genetcm.Service.ServiceTestCase = function (endpointURL){
             tc.wait(function() {admed.genetcm.Service.ServiceTests.testFindGenesByHerbID(tc, endpointURL, herbID, 11, 4);}, pause);
 		},
 		
-		testFindGenesByHerbID_ : function() {
+		testFindGenesByHerbID_Polygala : function() {
 			log("Test \"==== admed.genetcm.Service ServiceTests :: testFindGenesByHerbID_Polygala ====\" started.");
             var tc = this;
             var herbID = "http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Polygala_tenuifolia";
