@@ -20,7 +20,7 @@ function initDiseaseWidget(){
 	var diseaseService = new admed.genesome.Service("../../alzheimer-drug/data/diseasome");
 	
 	log("instantiate a renderer for the disease widget");
-	var diseaseRenderPane = document.getElementById("diseaseWidget");
+	var diseaseRenderPane = document.getElementById("batchDiseaseWidget");
 	var diseaseRenderer = new admed.genesome.BatchWidget.DefaultRenderer();
 	diseaseRenderer.setCanvas(diseaseRenderPane);
 	
@@ -84,7 +84,7 @@ function onGeneFound(type, args){
 		}
 	}
 	
-	diseaseBatchWidget.findDiseaseAssociatedWithGeneBatch(diseasomeGeneIDs);
+//	diseaseBatchWidget.findDiseaseAssociatedWithGeneBatch(diseasomeGeneIDs);
 	
 //	for (var i in genes){
 //		var gene = genes[i];
