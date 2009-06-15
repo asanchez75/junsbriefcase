@@ -16,14 +16,6 @@ function initHerbFinder() {
 };
 
 function initEffectWidget(){
-//	var content = "<option>99%</option>";
-//	content += "<option>97.5%</option>";
-//	content += "<option>95%</option>";
-//	content += "<option>all</option>";
-//		
-//	var queryTableContainer = document.getElementById("queryTableContainer");
-	
-//	queryTableContainer.innerHTML = content;
 		
 	var effectService = new admed.effecttcm.Service("../../alzheimer-drug/data/tcm");
 	
@@ -105,10 +97,10 @@ function initialiseApplication() {
 //	geneFinderwidget.subscribe("GENEFOUND", onGeneFound, null);	
 	widget.subscribe("HERBSFOUND", onHerbsFound, null);
 	
-	
 	log("hook form submission to widget call");
+	YAHOO.util.Event.addListener("effectQueryForm", "submit", onEffectFormSubmit);
 	YAHOO.util.Event.addListener("queryForm", "submit", onFormSubmit);
-	
+		
 	log("application loaded, showing main pane");
 	admed.mvcutils.hide(document.getElementById("loadingPane"));
 	admed.mvcutils.show(document.getElementById("applicationPane"));
@@ -121,6 +113,16 @@ function onFormSubmit(event) {
 	log("query: "+query);
 	
 	widget.findMedicineFromDbpedia(query);
+}
+
+function onEffectFormSubmit(event){
+	log("effect form submitted");
+	var select = document.getElementById("queryTableContainer").value;
+	
+	log("effect query: "+select + " for herb : " + herb);
+	
+	// call the effect widget service
+	effectWidget.findEffectByMedicineNameWithConfidence(select, herb);
 }
 
 function onGeneFound(type, args){
@@ -144,7 +146,7 @@ function onGeneFound(type, args){
 function onHerbsFound(type, args){
 	var herbs = args[0];
 	log ("Find herb " + herbs[0].fullmedicineURL);
-	var herb = 	herbs[0].fullmedicineURL;
+	herb = 	herbs[0].fullmedicineURL;
 	var herbname = herbs[0].herbname;
 	var dbherb = herbs[0].herbFromDbpedia;
 	effectWidget.findEffectByMedicineName(herb);
