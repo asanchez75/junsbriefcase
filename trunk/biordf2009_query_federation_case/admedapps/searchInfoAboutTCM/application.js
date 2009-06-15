@@ -41,15 +41,16 @@ function initTrialWidget(){
 };
 
 
-function initGeneWidget(){
-	var geneService = new admed.genetcm.Service("../../alzheimer-drug/data/tcm");
-	log("instantiate a renderer for the gene widget");
-	var geneRenderPane = document.getElementById("geneWidget");
-	var geneRenderer = new admed.genetcm.Widget.DefaultRenderer();
-	geneRenderer.setCanvas(geneRenderPane);
+function initGeneFinder() {
+	log("instantiate service for the gene-finder widget");
+	var service = new admed.genetcm.Service("../../alzheimer-drug/data/tcm");
+	log("instantiate a renderer for the tcm widget");
+	var renderPane = document.getElementById("geneFinderWidget");
+	var renderer = new admed.genetcm.GeneWidget.DefaultRenderer();
+	renderer.setCanvas(renderPane);
 	
-	log("instantiate a gene widget");
-	geneWidget = new admed.genetcm.Widget(geneService, geneRenderer);
+	log("instantiate a tcm gene-finder widget");
+	geneFinderwidget = new admed.genetcm.GeneWidget(service, renderer);	
 };
 
 function initDbpediaHerbWidget(){
@@ -61,6 +62,19 @@ function initDbpediaHerbWidget(){
 	
 	log("instantiate a dbpediaHerb widget");
 	dbpediaHerbWidget = new admed.dbherb.Widget(dbpediaHerbService, dbpediaHerbRenderer);
+};
+
+function initDiseaseWidget(){
+	log("instantiate service for the disease widget");
+	var diseaseService = new admed.genesome.Service("../../alzheimer-drug/data/diseasome");
+	
+	log("instantiate a renderer for the disease widget");
+	var diseaseRenderPane = document.getElementById("batchDiseaseWidget");
+	var diseaseRenderer = new admed.genesome.BatchWidget.DefaultRenderer();
+	diseaseRenderer.setCanvas(diseaseRenderPane);
+	
+	diseaseBatchWidget = new admed.genesome.BatchWidget(diseaseService, diseaseRenderer);
+	
 };
 
 function initialiseApplication() {
@@ -75,9 +89,13 @@ function initialiseApplication() {
 	
 	initDbpediaHerbWidget();
 	
-	initGeneWidget();
-		
+	initGeneFinder();
+	
+	initDiseaseWidget();
+	
+	geneFinderwidget.subscribe("GENEFOUND", onGeneFound, null);	
 	widget.subscribe("HERBSFOUND", onHerbsFound, null);
+	
 	
 	log("hook form submission to widget call");
 	YAHOO.util.Event.addListener("queryForm", "submit", onFormSubmit);
@@ -96,6 +114,24 @@ function onFormSubmit(event) {
 	widget.findMedicineFromDbpedia(query);
 }
 
+function onGeneFound(type, args){
+	var genes = args[0];
+	log ("Find gene " + genes[0].geneURL);
+	
+	var diseasomeGeneIDs = new Array();
+	
+	for (var i in genes){
+		
+		var diseasomegene = genes[i].diseasesomegene;
+		if (diseasomegene){
+			log ("Append a gene " + genes[i].diseasesomegene);
+			admed.util.appendIfNotMember(diseasomeGeneIDs, genes[i].diseasesomegene);
+		}
+	}
+	
+	diseaseBatchWidget.findDiseaseAssociatedWithGeneBatch(diseasomeGeneIDs);
+}
+
 function onHerbsFound(type, args){
 	var herbs = args[0];
 	log ("Find herb " + herbs[0].fullmedicineURL);
@@ -103,8 +139,8 @@ function onHerbsFound(type, args){
 	var herbname = herbs[0].herbname;
 	var dbherb = herbs[0].herbFromDbpedia;
 //	effectWidget.findEffectByMedicineName(herb);
-//	trialWidget.findTrialsForMedicine(herbname);
-	geneWidget.findGenesAssociatedWithMedicine(herb);
+	trialWidget.findTrialsForMedicine(herbname);
+	geneFinderwidget.findGenesAssociatedWithMedicine(herb);
 //	dbpediaHerbWidget.findMedicineFromDbpedia(dbherb);
 }
 
