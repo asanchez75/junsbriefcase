@@ -26,7 +26,7 @@
     border:double 2px;
     padding: 1em;
     display: inline-table;
-    
+    width: 40%;
 }
 
 #trialWidget {
@@ -56,9 +56,6 @@ img.herb {
     width: 15%;
     height: 15%;
 }
-#effectTcmWidget resultsPane {
-    display: block;
-}
 
 #diseaseWidget {
     margin-top: 1em;
@@ -76,8 +73,4 @@ div.disease {
 div.result{
     display: inline;
     padding: 4px;
-}
-
-div.queryTableContainer {
-    display:inline;
 }
