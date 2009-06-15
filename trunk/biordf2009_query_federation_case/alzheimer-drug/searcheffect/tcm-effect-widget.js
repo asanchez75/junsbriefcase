@@ -451,7 +451,16 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._renderResultsSummary = functio
 	    content += count;
 	    content += "</span> matching effect";
 	    content += (count == 0 || count > 1) ? "s " : " ";
-	    content += "from <a href='http://code.google.com/p/junsbriefcase/wiki/RDFTCMData'>RDF TCMGeneDIT</a>";
+	    content += "from <a href='http://code.google.com/p/junsbriefcase/wiki/RDFTCMData'>TCMGeneDIT</a>";
+	    content += "<form id=\"effectQueryForm\" action=\"javascript:void(0)\">" +
+	                "Select the level of confidence in the association <select id=\"queryTableContainer\" class=\"confidence\"" +
+	                "<option>99%</option>" + 
+					"<option>97.5%</option>" +
+					"<option>95%</option>" +
+					"<option>all</option>" +
+	                "/>" +	                        
+                    "<input type=\"submit\" id=\"querySubmit\" value=\"Go\"/>"+                 
+	                "</form>";
 	    	    
 	    this._resultsSummaryPane.innerHTML = content;
 	    
@@ -471,12 +480,14 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._effectsToDivHTML = function( e
 	    // build the divs
 	    
 	    admed.debug("build div content for effects "+effects.length);
-	    var content = "";
+	    var content = "<table><tr><th>Putative effect</th><th>t-value</th></tr>";
 	    for ( var i in effects ) {
 	        
 	        content += this._effectToDivHTML(effects[i]);
 	        admed.debug("Generate the eff div" + content); 
 	    }
+	    
+	    content += "</table>";
 	    
 	    return content;
 	}catch (error) {
@@ -494,9 +505,9 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._effectToDivHTML = function( ef
 	    admed.debug("build content for effect "+effect.name);
 	    
 	    var content =   "<div class=\"effect\">";
-	    content +=          "<p><a href=\"" + effect.effectURL + "\">";
+	    content +=          "<tr><td><a href=\"" + effect.effectURL + "\">";
 	    content +=              effect.name;
-	    content +=          "</a>; " + effect.tvalue + "</p>"; 
+	    content +=          "</a></td><td>" + effect.tvalue + "</td></tr>"; 
 	    content +=      "</div>";
 	    
 	    return content;

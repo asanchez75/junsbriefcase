@@ -16,16 +16,15 @@ function initHerbFinder() {
 };
 
 function initEffectWidget(){
-	var content = "<option>99%</option>";
-	content += "<option>97.5%</option>";
-	content += "<option>95%</option>";
-	content += "<option>all</option>";
+//	var content = "<option>99%</option>";
+//	content += "<option>97.5%</option>";
+//	content += "<option>95%</option>";
+//	content += "<option>all</option>";
+//		
+//	var queryTableContainer = document.getElementById("queryTableContainer");
+	
+//	queryTableContainer.innerHTML = content;
 		
-	var queryTableContainer = document.getElementById("queryTableContainer");
-	
-	queryTableContainer.innerHTML = content;
-	
-	
 	var effectService = new admed.effecttcm.Service("../../alzheimer-drug/data/tcm");
 	
 	log("instantiate a renderer for the effect-tcm widget");
