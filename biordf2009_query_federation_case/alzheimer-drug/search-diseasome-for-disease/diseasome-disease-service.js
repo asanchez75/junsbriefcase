@@ -60,10 +60,9 @@ admed.genesome.Service.prototype.findDiseaseAssociatedWithGeneBatch = function( 
 //			var gene = genes[i];
 //			admed.info("the query gene: "+gene, _context);
 
-		var map = new admed.maputil.MapUtils();
-	        
-        for (var i in genes){
-        	map.put(genes[i], []);
+		var map = {};
+        for (var i=0; i<genes.length; i++) {
+            map[genes[i]] = new Array();
         }
 			
 		var successChain = admed.chain(admed.genesome.Service.responseToDiseaseBatch(map), success);
@@ -88,14 +87,52 @@ admed.genesome.Service.responseToDiseaseBatch = function( map ) {
 	        
 	        var resultSet = YAHOO.lang.JSON.parse(response.responseText);
 	        admed.debug("convert result set to an array of disease", _context);
-	        
-	        var diseases = admed.genesome.Disease.newInstancesFromSPARQLResults(resultSet);
-	        
-	        admed.debug("return how many diseases " + diseases.length, _context);
-	        
-	//        var _diseaseArray = new admed.maputil.MapUtils();
 	        admed.debug("create a hash map object ", _context);
 	        
+	        var bindings = resultSet.results.bindings;
+	        
+	        for (var i=0; i<bindings.length; i++) {
+	        	var geneURL = bindings[i].gene.value;
+	        	
+	        	var disease = new admed.genesome.Disease();
+	        	
+	        	var binding = bindings[i];
+	        	
+	        	disease.diseaseURL = binding.disease.value;
+	        	
+	        	disease.diseaseName = binding.diseasename.value;
+				
+				if (binding.superdisease){
+					var superdiseaseURL = binding.superdisease.value;
+					
+					var supername = binding.supername.value;
+									
+					var superdisease = new admed.genesome.Disease();
+					
+					superdisease.diseaseURL = superdiseaseURL;
+					
+					superdisease.diseaseName = supername;
+		
+					admed.util.appendIfNotMember(disease.superdiseases, superdisease);
+				}	
+				
+				if (binding.subdisease){
+					var subdiseaseURL = binding.subdisease.value;
+					
+					var subname = binding.subname.value;
+									
+					var subdisease = new admed.genesome.Disease();
+					
+					subdisease.diseaseURL = subdiseaseURL;
+					
+					subdisease.diseaseName = subname;
+		
+					admed.util.appendIfNotMember(disease.subdiseases, subdisease);
+				}
+				
+				admed.util.appendIfNotMember(map[geneURL], disease);
+	        }
+	        admed.debug("return map", _context);
 	        return map;
 	        
 	    } catch (e) {
@@ -163,21 +200,32 @@ admed.genesome.Service._buildQueryForDiseaseAssociatedWithGeneBatch = function( 
 						"PREFIX owl: <http://www.w3.org/2002/07/owl#> " +
 						"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ";
 						
-		var body = 		"SELECT DISTINCT ?disease ?diseasename ?superdisease ?supername ?subdisease ?subname WHERE { \n";
+		var body = 		"SELECT DISTINCT ?gene ?disease ?diseasename ?superdisease ?supername ?subdisease ?subname WHERE { \n";
 		
-		var body_union = "{\n " +
-							"{\n" +
-								"?disease dis:associatedGene <" + genes[0] + "> .\n" +
-							"}\n";
+		if (genes.length == 1)
+		{
+			var body_union = "{\n" +
+								"?gene rdf:type dis:genes . filter regex(str(?gene), \"" + genes[0] + "\").\n" +
+								"?disease dis:associatedGene ?gene .\n" +
+							 "}\n";
+		}else{
 		
-		for (var i=1; i<genes.length; i++) {
-			body_union += "union \n"+
-						  	"{\n" +
-								"?disease dis:associatedGene <" + genes[i] + ">\n" +
-							"}\n";
+			var body_union = "{\n " +
+								"{\n" +
+									"?gene rdf:type dis:genes . filter regex(str(?gene), \"" + genes[0] + "\").\n" +
+									"?disease dis:associatedGene ?gene .\n" +
+								"}\n";
+			
+			for (var i=1; i<genes.length; i++) {
+				body_union += "union \n"+
+							  	"{\n" +
+									"?gene rdf:type dis:genes . filter regex(str(?gene), \"" + genes[i] + "\").\n" +
+									"?disease dis:associatedGene ?gene .\n" +
+								"}\n";
+			}
+		
+			body_union += "}\n";
 		}
-		
-		body_union += "}\n";
 		
 		var body_main = "{\n" +
 							"?disease dis:name ?diseasename . " +
