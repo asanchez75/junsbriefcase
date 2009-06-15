@@ -47,6 +47,9 @@ admed.effecttcm.Widget = function( service, renderer ) {
 			
 			// connect the renderer to the model
 			renderer.connect(model);
+			
+			// instantiate a user event handler and pass to renderer
+			renderer.setUserEventHandler(new admed.effecttcm.UserEventHandler(this._controller));
 		};
 				
     	// do initialisation
@@ -97,6 +100,28 @@ admed.effecttcm.Widget.prototype.findEffectByMedicineNameWithConfidence = functi
  * CONTROLLER
  * --------------------------------------------------
  */
+
+admed.effecttcm.UserEventHandler = function( controller ) {
+
+    /**
+     * @private
+     * Handle a mouse click on a result.
+     * @param event the browser event
+     * @param {Number} index the index of the result clicked
+     */
+	this._onTvalueChanged = function( event, index ) {
+	    var _context = "admed.effecttcm.UserEventHandler this._onTvalueChanged";
+	    try {
+            admed.info("received submit event, call the controller to set tvalue: "+index, _context);
+            controller.findEffectByMedicineNameWithConfidence(index, "http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ginkgo_biloba");                   
+        } catch (e) {
+            admed.debug("caught "+e.name, ", "+e.message, _context);
+            throw new admed.UnexpectedException(_context, e);
+        }    
+	};	
+	
+};
+
 
 
 /**
@@ -344,7 +369,13 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._initCanvas = function() {
 	    this._canvas.appendChild(this._resultsSummaryPane);
 	    YAHOO.util.Dom.addClass(this._resultsSummaryPane, "resultsSummaryPane");
 	    admed.mvcutils.hide(this._resultsSummaryPane);
-	    
+	    this._confidenceSelection = document.createElement("form");
+	    this._confidenceSelection.setAttribute("id", "effectqueryForm");
+		this._confidenceSelection.setAttribute("action", "javascript:void(0)");
+	    this._canvas.appendChild(this._confidenceSelection);
+	    YAHOO.util.Dom.addClass(this._confidenceSelection, "confidenceSelection");
+	    admed.mvcutils.hide(this._confidenceSelection);
+	    	    
 	    // setup results pane
 	    this._resultsPane = document.createElement("div");
 	    this._canvas.appendChild(this._resultsPane);
@@ -376,11 +407,18 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._resultsPane = null;
  */
 admed.effecttcm.Widget.DefaultRenderer.prototype._resultsSummaryPane = null;
 
+admed.effecttcm.Widget.DefaultRenderer.prototype._confidenceSelection = null;
+
 /**
  * @private
  */
 admed.effecttcm.Widget.DefaultRenderer.prototype._messagePane = null;
 
+admed.effecttcm.Widget.DefaultRenderer.prototype._userEventHandler = null;
+
+admed.effecttcm.Widget.DefaultRenderer.prototype.setUserEventHandler = function( handler ) {
+	this._userEventHandler = handler;
+};
 
 /**
  * @private
@@ -418,6 +456,7 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._onStateChanged = function( fro
 		    admed.mvcutils.show(this._pendingPane);
 		    admed.mvcutils.hide(this._messagePane);
 		    admed.mvcutils.hide(this._resultsSummaryPane);
+		    admed.mvcutils.hide(this._confidenceSelection);
 		    admed.mvcutils.hide(this._resultsPane);
             
 		} 
@@ -425,6 +464,7 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._onStateChanged = function( fro
 		    admed.mvcutils.hide(this._pendingPane);
 		    admed.mvcutils.hide(this._messagePane);
 		    admed.mvcutils.show(this._resultsSummaryPane);
+		    admed.mvcutils.show(this._confidenceSelection);
 		    var results = get("RESULTS");
 		    admed.debug("results: "+results, _context);
 		    admed.debug("results length: "+results.length, _context)
@@ -436,6 +476,7 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._onStateChanged = function( fro
 		    admed.mvcutils.hide(this._pendingPane);
 		    admed.mvcutils.show(this._messagePane);
 		    admed.mvcutils.hide(this._resultsSummaryPane);
+		    admed.mvcutils.hide(this._confidenceSelection);
 		    admed.mvcutils.hide(this._resultsPane);         
 		} 
 		else {
@@ -472,7 +513,8 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._onResultsChanged = function( f
         admed.debug("empty results summary pane");
         this._resultsPane.innerHTML = "";
         this._resultsSummaryPane.innerHTML = "";
-		
+        this._confidenceSelection.innerHTML = "";
+        		
 	    admed.debug("render the results summary", _context);
 	    this._renderResultsSummary(this._query, to.length);
 	    
@@ -532,18 +574,67 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._renderResultsSummary = functio
 	    content += count;
 	    content += "</span> matching effect";
 	    content += (count == 0 || count > 1) ? "s " : " ";
-	    content += "from <a href='http://code.google.com/p/junsbriefcase/wiki/RDFTCMData'>TCMGeneDIT</a>";
-	    content += "<form id=\"effectQueryForm\" action=\"javascript:void(0)\">" +
-	                "Select the level of confidence in the association <select id=\"queryTableContainer\" class=\"confidence\"" +
-	                "<option>99%</option>" + 
-					"<option>97.5%</option>" +
-					"<option>95%</option>" +
-					"<option>all</option>" +
-	                "/>" +	                        
-                    "<input type=\"submit\" id=\"querySubmit\" value=\"Go\"/>"+                 
-	                "</form>";
-	    	    
+	    content += "from <a href='http://code.google.com/p/junsbriefcase/wiki/RDFTCMData'>TCMGeneDIT</a> ";
+//	    content += "<form id=\"effectQueryForm\" action=\"javascript:void(0)\">" +
+//	                "Select the level of confidence in the association <select id=\"queryTableContainer\" class=\"confidence\"" +
+//	                "<option>99%</option>" + 
+//					"<option>97.5%</option>" +
+//					"<option>95%</option>" +
+//					"<option>all</option>" +
+//	                "/>" +	                        
+//                    "<input type=\"submit\" id=\"querySubmit\" value=\"Go\"/>"+                 
+//	                "</form>";
+	                
+	                
+	    var effectQueryForm = document.createElement("select");
+		effectQueryForm.setAttribute("id", "effectqueryForm");
+//		effectQueryForm.setAttribute("onchange", "javascript:void(0)");
+//		effectQueryForm.setAttribute("type", "multiple");
+		
+//		var tvalueSelection = document.createElement("select");
+//		tvalueSelection.setAttribute("id", "queryTableContainer");
+//		tvalueSelection.setAttribute("class", "confidence");
+//		
+		var selectionOption = document.createElement("option");
+		selectionOption.text="97.5%";
+		selectionOption.value="97.5%";
+		
+//		tvalueSelection.appendChild(selectionOption_1);
+		effectQueryForm.appendChild(selectionOption);
+		selectionOption = document.createElement("option");
+		selectionOption.text="99%";
+		selectionOption.value="99%";
+		effectQueryForm.appendChild(selectionOption);
+		
+		admed.info("debug the query form " + effectQueryForm.innerHTML, _context);
+		admed.debug("debug the query form " + effectQueryForm.innerHTML, _context);
+		admed.info("kick off the submit", _context);
+		
+		this._confidenceSelection.appendChild(effectQueryForm);
+		
+		var inputForm = document.createElement("input");
+		inputForm.setAttribute("type", "submit");
+		inputForm.setAttribute("id", "querySubmit");
+		inputForm.setAttribute("value", "Go");
+		this._confidenceSelection.appendChild(inputForm);
+		admed.info("options of the selection " + effectQueryForm.options[0].text);
+		admed.info("options of the selection " + effectQueryForm.options[1].text);
+		admed.info("selected option of the selection " + effectQueryForm.options[effectQueryForm.selectedIndex].text);
+		
+		var effectQueryFormElement = document.getElementById("effectqueryForm");
+	    
+	    YAHOO.util.Event.addListener(effectQueryFormElement, "submit", this._userEventHandler._onTvalueChanged, effectQueryForm.options[effectQueryForm.selectedIndex].value);
+	    
+//		selectionOption = document.createElement("option");
+//		selectionOption.text="97.5%";
+//		tvalueSelection.appendChild(selectionOption);
+//		
+//		effectQueryForm.appendChild(tvalueSelection);
+		
+					    	    
 	    this._resultsSummaryPane.innerHTML = content;
+	    
+	    
 	    
 	    
 	} catch (error) {
