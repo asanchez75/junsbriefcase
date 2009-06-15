@@ -20,13 +20,15 @@ admed.genesome.Service.ServiceTests.testFindDiseasesByGeneIDs = function( testCa
 			assert.isNotUndefined(map, "map should be defined");	
 			
 			var actualSize = 0;
-			for (var keys in map){
+			for (var key in map){
 				actualSize++;
+				assert.areEqual("http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACHE", key, "expected key value not mapping");
+				
+				assert.areEqual(2, map[key].length, "expected number of diseases not mapping");
 			}
 						
 			assert.areEqual(1, actualSize, "expect number of keys not mapping");
 			
-//			assert.areEqual(expected, values.length, "expect number of diseases no mapping");
 		});
 			
 	};
@@ -63,6 +65,9 @@ admed.genesome.Service.ServiceTests.testFindDiseasesByTwoGeneIDs = function( tes
 			}						
 			
 			assert.areEqual(2, actualSize, "expect number of keys not mapping");
+			
+			assert.areEqual(2, map["http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACHE"].length, "expected number of diseases not mapping");
+			assert.areEqual(8, map["http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TTR"].length, "expected number of diseases not mapping");
 			
 //			assert.areEqual(expected, values.length, "expect number of diseases no mapping");
 		});
