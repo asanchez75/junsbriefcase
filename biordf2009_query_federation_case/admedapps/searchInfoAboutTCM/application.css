@@ -28,12 +28,18 @@
     width: 50%;
 }
 
-#geneWidget {
+#geneFinderWidget {
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 1em;    
     border:double 2px;
-    padding: 1em;
+    padding: 1em;  
     display: inline-table;
+}
+
+div.gene {
+    text-align: left; 
+    display: inline;
+    padding: 4px;
 }
 
 #dbpediaHerbWidget {
@@ -53,13 +59,20 @@ img.herb {
     display: block;
 }
 
-.result {
+#diseaseWidget {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;    
+    display: inline-table;
+} 
+
+div.disease {
+    display: inline-table;
+    padding: 3px;
+    
+}
+
+div.result{
     display: inline;
-    background-color: #eee;
-    color:black;
-    border-bottom: 1px solid #aaa; 
-/*    width: 25%;*/
-/*    border: 1px #ddd solid;*/
-    margin: 0em 0.5em 0.5em 0;
-    padding: 0.5em 0.5em 0 0.5em;
+    padding: 4px;
 }
