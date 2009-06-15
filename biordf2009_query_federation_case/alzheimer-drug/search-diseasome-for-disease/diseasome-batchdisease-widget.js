@@ -653,7 +653,7 @@ admed.genesome.BatchWidget.DefaultRenderer.prototype._renderResults = function( 
         
         var content = "<table>";
 
-        content += "<thead><tr><th>gene</th><th>associated diseases</th></tr></thead><tbody>";
+        content += "<thead><tr><th>gene</th><th>associated diseases</th><th>Alzheimer's gene</th></tr></thead><tbody>";
         
         for (var keyGene in results) {
             admed.debug("counting diseases for "+keyGene, _context);
@@ -669,10 +669,10 @@ admed.genesome.BatchWidget.DefaultRenderer.prototype._renderResults = function( 
             	admed.debug("found disease "+disease+" in result for gene "+keyGene, _context);
             	admed.debug("found disease "+diseaseURL+" in result for gene "+keyGene, _context);
             	content +=   "<div class=\"result\">";
-	    		content +=          "<p><a href=\"" + keyGene + "\">" + diseasename + "</a></p>";
+	    		content +=          "<a href=\"" + keyGene + "\">" + diseasename + "</a>";
 			    content +=      "</div>";
             } 
-            content += "</td></tr>";
+            content += "</td><td>" + disease.isAlzheimer + "</td></tr>";
         }
         
         content += "</tbody></table>";

@@ -84,7 +84,7 @@ function onGeneFound(type, args){
 		}
 	}
 	
-//	diseaseBatchWidget.findDiseaseAssociatedWithGeneBatch(diseasomeGeneIDs);
+	diseaseBatchWidget.findDiseaseAssociatedWithGeneBatch(diseasomeGeneIDs);
 	
 //	for (var i in genes){
 //		var gene = genes[i];
