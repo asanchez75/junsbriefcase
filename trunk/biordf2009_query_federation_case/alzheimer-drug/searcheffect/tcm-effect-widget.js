@@ -32,8 +32,12 @@ admed.effecttcm.Widget = function( service, renderer ) {
 		this._renderer = null;
     
     	this._service = null;
+    	
+    	this._tvalueChangedEvent = null;
 		
 		this._init = function() {
+			
+			this._tvalueChangedEvent = new YAHOO.util.CustomEvent("TVALUECHANGED", this);
 			// create a model
 			var model = new admed.mvcutils.GenericModel2();
 			model.setDefinition(admed.effecttcm.Widget.modelDefinition);
@@ -52,6 +56,17 @@ admed.effecttcm.Widget = function( service, renderer ) {
     }	
 };
 
+admed.effecttcm.Widget.prototype.subscribe = function(type, listener, obj) {
+    var _context = "admed.effecttcm.Widget.prototype.subscribe";
+    try {
+        if (type == "TVALUECHANGED") {
+            this.t_tvalueChangedEvent.subscribe(listener, obj);
+        }
+    } catch (e) {
+    	throw new admed.UnexpectedException("admed.effecttcm.Widget.prototype.subscribe", error);
+    }    
+};
+
 
 /**
  * Find medicines by disease names
@@ -63,6 +78,16 @@ admed.effecttcm.Widget.prototype.findEffectByMedicineName = function( medicineNa
 		this._controller.findEffectByMedicineName(medicineName);
 	}catch (error) {
         throw new admed.UnexpectedException("admed.effecttcm.Widget.prototype.findEffectByMedicineName", error);
+    }
+};
+
+admed.effecttcm.Widget.prototype.findEffectByMedicineNameWithConfidence = function( tvalue, medicineURL) {
+	try {
+		var _context = "admed.effecttcm.Widget.prototype.findEffectByMedicineNameWithConfidence";
+		admed.info("call the widget function with query " + tvalue + " for " + medicineURL, _context );
+		this._controller.findEffectByMedicineNameWithConfidence(tvalue, medicineURL);
+	}catch (error) {
+        throw new admed.UnexpectedException("admed.effecttcm.Widget.prototype.findEffectByMedicineNameWithConfidence", error);
     }
 };
 
@@ -123,6 +148,20 @@ admed.effecttcm.Widget.Controller = function( model, service, widget ) {
 
 	};
 	
+	this._findEffectsWithConfidenceSuccess = function(effects) {
+		try {
+			admed.info("request success");
+		
+			// set the results
+			that._model.set("RESULTS", effects);
+			
+			// set the state
+			that._model.set("STATE", "READY");
+		}catch (error) {
+        	throw new admed.UnexpectedException("_findEffectsWithConfidenceSuccess", error);
+    	}
+	}
+	
 	
 	/**
 	 * @private
@@ -145,6 +184,22 @@ admed.effecttcm.Widget.Controller = function( model, service, widget ) {
     	}		
 	};
 	
+	this._findEffectsWithConfidenceFailure  = function( response ) {
+		try {
+			admed.err("request failed, status "+response.status+" "+response.statusText);
+			
+			// set an error message
+			var msg = "There was an error retrieving data from TCM, see the logs for more info.";		
+	
+			that._model.set("ERRORMESSAGE", msg);
+	
+			// set the state
+			that._model.set("STATE", "SERVERERROR");
+		}catch (error) {
+        	throw new admed.UnexpectedException("_findEffectsWithConfidenceFailure", error);
+    	}		
+	};
+	
 };
 
 
@@ -154,6 +209,32 @@ admed.effecttcm.Widget.Controller.prototype.findEffectByMedicineName = function(
 		this._findEffectByMedicineName(medicineName, this._findEffectsSuccess, this._findEffectsFailure);
 	}catch (error) {
         	throw new admed.UnexpectedException("admed.effecttcm.Widget.Controller.prototype.findEffectByMedicineName", error);
+    }
+};
+
+admed.effecttcm.Widget.Controller.prototype.findEffectByMedicineNameWithConfidence = function ( tvalue, herbURL ) {
+	try {
+		// pass through to private implementation
+		this._findEffectByMedicineNameWithConfidence(tvalue, herbURL, this._findEffectsWithConfidenceSuccess, this._findEffectsWithConfidenceFailure);
+	}catch (error) {
+        	throw new admed.UnexpectedException("admed.effecttcm.Widget.Controller.prototype.findEffectByMedicineNameWithConfidence", error);
+    }
+};
+
+admed.effecttcm.Widget.Controller.prototype._findEffectByMedicineNameWithConfidence = function(tvalue, herbURL, success, failure){
+	try {
+		admed.info("admed.effecttcm.Widget.Controller._findEffectByMedicineNameWithConfidence :: request: "+herbURL);
+		
+		// set the model pending
+		this._model.set("STATE", "PENDING");
+		
+		// set the query property
+		this._model.set("QUERY", [tvalue, herbURL]);
+		
+		// kick off the request
+		this._service.findEffectByMedicineNameWithConfidence(tvalue, herbURL, success, failure);
+	}catch (error) {
+        	throw new admed.UnexpectedException("admed.effecttcm.Widget.Controller.prototype._findEffectByMedicineNameWithConfidence", error);
     }
 };
 
