@@ -653,26 +653,33 @@ admed.genesome.BatchWidget.DefaultRenderer.prototype._renderResults = function( 
         
         var content = "<table>";
 
-        content += "<thead><tr><th>gene</th><th>associated diseases</th><th>Alzheimer's gene</th></tr></thead><tbody>";
+        content += "<thead><tr><th>Mapping Diseasome gene</th><th>associated diseases</th><th>Alzheimer's gene</th></tr></thead><tbody>";
         
         for (var keyGene in results) {
-            admed.debug("counting diseases for "+keyGene, _context);
-            content += "<tr><td>" + keyGene + "</td><td>";
+            
+            content += "<tr><td><a href=\"" + keyGene + "\">" + keyGene.substr(57, keyGene.length) + "</a></td><td>";
             
             var diseases = results[keyGene];
+            admed.debug("counting diseases for "+keyGene + ": " + diseases.length, _context);
+            var isAlzheimer = false;
             
             for (var i=0; i < diseases.length; i++){
             	var disease = diseases[i];
             	var diseasename = disease.diseaseName;
+            	
+            	if (diseasename.match("Alzheimer")){
+            		admed.debug("Alzheimer "+diseasename + "for gene : " + keyGene, _context);
+            		isAlzheimer = true;
+            	}
             	var diseaseURL = disease.diseaseURL;
             	
             	admed.debug("found disease "+disease+" in result for gene "+keyGene, _context);
             	admed.debug("found disease "+diseaseURL+" in result for gene "+keyGene, _context);
             	content +=   "<div class=\"result\">";
-	    		content +=          "<a href=\"" + keyGene + "\">" + diseasename + "</a>";
+	    		content +=          "<a href=\"" + diseaseURL + "\">" + diseasename + "</a>";
 			    content +=      "</div>";
             } 
-            content += "</td><td>" + disease.isAlzheimer + "</td></tr>";
+            content += "</td><td>" + isAlzheimer + "</td></tr>";
         }
         
         content += "</tbody></table>";
