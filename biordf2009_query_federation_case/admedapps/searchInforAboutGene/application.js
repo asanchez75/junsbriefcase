@@ -21,11 +21,11 @@ function initDiseaseWidget(){
 	
 	log("instantiate a renderer for the disease widget");
 	var diseaseRenderPane = document.getElementById("diseaseWidget");
-	var diseaseRenderer = new admed.genesome.Widget.DefaultRenderer();
+	var diseaseRenderer = new admed.genesome.BatchWidget.DefaultRenderer();
 	diseaseRenderer.setCanvas(diseaseRenderPane);
 	
-	log("instantiate a disease widget");
-	diseaseWidget = new admed.genesome.Widget(diseaseService, diseaseRenderer);
+//	log("instantiate a disease widget");
+	diseaseBatchWidget = new admed.genesome.BatchWidget(diseaseService, diseaseRenderer);
 	
 };
 
@@ -37,7 +37,7 @@ function initialiseApplication() {
 	
 	initGeneFinder();
 	
-//	initDiseaseWidget();
+	initDiseaseWidget();
 	
 	log("subscribe to the widget-level listerner");
 	
@@ -73,23 +73,36 @@ function onGeneFound(type, args){
 	var genes = args[0];
 	log ("Find gene " + genes[0].geneURL);
 	
+	var diseasomeGeneIDs = new Array();
+	
 	for (var i in genes){
-		var gene = genes[i];
-		var diseasomeGene = gene.diseasesomegene;
-		if (diseasomeGene){
-			log("instantiate service for the disease widget");
-			var diseaseService = new admed.genesome.Service("../../alzheimer-drug/data/diseasome");
-			
-			log("instantiate a renderer for the disease widget");
-			var diseaseRenderPane = document.getElementById("diseaseWidget");
-			var diseaseRenderer = new admed.genesome.Widget.DefaultRenderer();
-			diseaseRenderer.setCanvas(diseaseRenderPane);
-			
-			log("instantiate a disease widget");
-			diseaseWidget = new admed.genesome.Widget(diseaseService, diseaseRenderer);
-			diseaseWidget.findDiseaseAssociatedWithGene(diseasomeGene);
+		
+		var diseasomegene = genes[i].diseasesomegene;
+		if (diseasomegene){
+			log ("Append a gene " + genes[i].diseasesomegene);
+			admed.util.appendIfNotMember(diseasomeGeneIDs, genes[i].diseasesomegene);
 		}
-	}	
+	}
+	
+	diseaseBatchWidget.findDiseaseAssociatedWithGeneBatch(diseasomeGeneIDs);
+	
+//	for (var i in genes){
+//		var gene = genes[i];
+//		var diseasomeGene = gene.diseasesomegene;
+//		if (diseasomeGene){
+//			log("instantiate service for the disease widget");
+//			var diseaseService = new admed.genesome.Service("../../alzheimer-drug/data/diseasome");
+//			
+//			log("instantiate a renderer for the disease widget");
+//			var diseaseRenderPane = document.getElementById("diseaseWidget");
+//			var diseaseRenderer = new admed.genesome.Widget.DefaultRenderer();
+//			diseaseRenderer.setCanvas(diseaseRenderPane);
+//			
+//			log("instantiate a disease widget");
+//			diseaseWidget = new admed.genesome.Widget(diseaseService, diseaseRenderer);
+//			diseaseWidget.findDiseaseAssociatedWithGene(diseasomeGene);
+//		}
+//	}	
 }
 
 YAHOO.util.Event.onDOMReady(initialiseApplication);
