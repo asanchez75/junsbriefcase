@@ -10,14 +10,13 @@
     visibility:hidden;
 }
 
-
 #dbpediaHerbWidget {
     margin-top: 1em;
     margin-bottom: 1em;
     border:double 2px;
     padding: 1em;
     display: inline-table;
-    width: 35%;
+    width: 20px;
 }
 
 #effectTcmWidget {
@@ -26,7 +25,7 @@
     border:double 2px;
     padding: 1em;
     display: inline-table;
-    width: 40%;
+    width: 25%;
 }
 
 #trialWidget {
@@ -35,7 +34,6 @@
     border:double 2px;
     padding: 1em;
     display: inline-table;
-    
 }
 
 #geneFinderWidget {

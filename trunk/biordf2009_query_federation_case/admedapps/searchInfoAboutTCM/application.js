@@ -86,15 +86,15 @@ function initialiseApplication() {
 	
 	initEffectWidget();
 	
-//	initTrialWidget();
+	initTrialWidget();
 //	
-//	initDbpediaHerbWidget();
+	initDbpediaHerbWidget();
+	
+	initGeneFinder();
+	
+	initDiseaseWidget();
 //	
-//	initGeneFinder();
-//	
-//	initDiseaseWidget();
-//	
-//	geneFinderwidget.subscribe("GENEFOUND", onGeneFound, null);	
+	geneFinderwidget.subscribe("GENEFOUND", onGeneFound, null);	
 	widget.subscribe("HERBSFOUND", onHerbsFound, null);
 	effectWidget.subscribe("TVALUECHANGED", onTvalueChanged, null);
 		
@@ -159,9 +159,9 @@ function onHerbsFound(type, args){
 	var herbname = herbs[0].herbname;
 	var dbherb = herbs[0].herbFromDbpedia;
 	effectWidget.findEffectByMedicineName(herb);
-//	trialWidget.findTrialsForMedicine(herbname);
-//	geneFinderwidget.findGenesAssociatedWithMedicine(herb);
-//	dbpediaHerbWidget.findMedicineFromDbpedia(dbherb);
+	trialWidget.findTrialsForMedicine(herbname);
+	geneFinderwidget.findGenesAssociatedWithMedicine(herb);
+	dbpediaHerbWidget.findMedicineFromDbpedia(dbherb);
 }
 
 YAHOO.util.Event.onDOMReady(initialiseApplication);
