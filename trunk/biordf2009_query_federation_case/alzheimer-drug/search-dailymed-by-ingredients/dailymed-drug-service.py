@@ -77,18 +77,18 @@ fp = open("ginkgo_side_effect.ttl", "wb")
         
 resultset = sparql("naxos.zoo.ox.ac.uk", "/sparql", queryTCMForIngredients)
 if (len(resultset["results"]["bindings"])>0):
-#    c = pycurl.Curl()
+    #curl = pycurl.Curl()
     count = 0
     for binding in resultset["results"]["bindings"]:
         ingredient = binding["ingredient"]["value"]
         
         count = count + 1
         print "Start downloading " + ingredient
-#        c.setopt(pycurl.URL, ingredient)
-#        c.setopt(pycurl.WRITEDATA, fp)
-#        c.perform()
+        #curl.setopt(pycurl.URL, ingredient)
+        #curl.setopt(pycurl.WRITEDATA, fp)
+        #curl.perform()
     print "Total drugs from Drugbank "
     print count 
-#    curl.close()
-#    fp.close()
+    #curl.close()
+    #fp.close()
     sys.stdout.flush()
