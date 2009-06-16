@@ -9,7 +9,9 @@ See also: http://code.google.com/p/junsbriefcase/wiki/TGDdataset
 ||         || Ingredient||
 ||         || Effect||
 ||         || Statistics (added for R3) ||
+||         || Association(added for R3) ||
 
+Object properties as by Release 2.
 ||  Object Properties || Domain || Range || Dataset ||
 || gene || Disease || Gene || TCM_gene_disease_associations.tab ||
 || medicine || Disease || Medicine || TCM_gene_disease_associations.tab ||
@@ -18,10 +20,17 @@ See also: http://code.google.com/p/junsbriefcase/wiki/TGDdataset
 || association || Medicine || Gene || TCM_gene_associations.tab ||
 || effect || Medicine || Effect || TCM_effect_associations.tab ||
 || treatment || Medicine || Disease || TCM_disease_associations.tab ||
+
+
+Object properties as in Release 3.
+||  Object Properties || Domain || Range || Dataset ||
+|| contextAssociation || Association || Gene/Disease/Medicne || TCM_gene_disease_associations.tab ||
+|| contextAssociation|| Medicine|| Gene|| TCM_gene_disease_associations.tab ||
+|| ingredient || Medicine || Ingredient || TCM_ingredient_associations.tab ||
+|| association || Medicine || Gene || TCM_gene_associations.tab ||
+|| effect || Medicine || Effect || TCM_effect_associations.tab ||
+|| treatment || Medicine || Disease || TCM_disease_associations.tab ||
 || source || Statistics || Ingredient/Gene/Disease/Medicne/Effect || All ||
-
-The last object property tcm:source is added to TCM RDF Release 3.
-
 
 == Modelling the t-value properties ==
 ||  Object Properties || Dataset || 
@@ -31,7 +40,7 @@ The last object property tcm:source is added to TCM RDF Release 3.
 || medicine_effect_association_tvalue || TCM_effect_associations.tab||
 || medicine_disease_tvalue ||TCM_disease_associations.tab||
 
-Since R3, the domain of these properties is tcm:Statistics and the range is a xsd:float value.
+Since R3, the domain of these properties is tcm:Statistics and the range is a xsd:float value. 
 
 == Data dumps ==
  * http://purl.oclc.org/NET/tcm/tcm_rdf_data_release2_270409.tar.gz
