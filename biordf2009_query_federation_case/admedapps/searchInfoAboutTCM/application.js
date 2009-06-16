@@ -96,9 +96,10 @@ function initialiseApplication() {
 //	
 //	geneFinderwidget.subscribe("GENEFOUND", onGeneFound, null);	
 	widget.subscribe("HERBSFOUND", onHerbsFound, null);
-	
+	effectWidget.subscribe("TVALUECHANGED", onTvalueChanged, null);
+		
 	log("hook form submission to widget call");
-	YAHOO.util.Event.addListener("effectQueryForm", "submit", onEffectFormSubmit);
+	YAHOO.util.Event.addListener("effectqueryForm", "submit", onEffectFormSubmit);
 	YAHOO.util.Event.addListener("queryForm", "submit", onFormSubmit);
 		
 	log("application loaded, showing main pane");
@@ -117,12 +118,20 @@ function onFormSubmit(event) {
 
 function onEffectFormSubmit(event){
 	log("effect form submitted");
-	var select = document.getElementById("queryTableContainer").value;
+	var select = document.getElementById("effectSelection").value;
 	
 	log("effect query: "+select + " for herb : " + herb);
 	
 	// call the effect widget service
-	effectWidget.findEffectByMedicineNameWithConfidence(select, herb);
+	effectWidget.setSelectTvalue(select);
+}
+
+function onTvalueChanged (type, args){
+	log("effect value changed");
+	var value = args[0];
+	log ("new effect value: " + value);
+	effectWidget.findEffectByMedicineNameWithConfidence(value, herb);
+	
 }
 
 function onGeneFound(type, args){
