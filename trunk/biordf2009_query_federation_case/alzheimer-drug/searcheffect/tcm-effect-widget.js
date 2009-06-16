@@ -63,7 +63,7 @@ admed.effecttcm.Widget.prototype.subscribe = function(type, listener, obj) {
     var _context = "admed.effecttcm.Widget.prototype.subscribe";
     try {
         if (type == "TVALUECHANGED") {
-            this.t_tvalueChangedEvent.subscribe(listener, obj);
+            this._tvalueChangedEvent.subscribe(listener, obj);
         }
     } catch (e) {
     	throw new admed.UnexpectedException("admed.effecttcm.Widget.prototype.subscribe", error);
@@ -94,6 +94,16 @@ admed.effecttcm.Widget.prototype.findEffectByMedicineNameWithConfidence = functi
     }
 };
 
+admed.effecttcm.Widget.prototype.setSelectTvalue = function (tvalue){
+	try{
+		var _context = "admed.effecttcm.Widget.prototype.setSelectTvalue";
+		this._controller.setSelectTvalue(tvalue);
+		
+	}catch (error) {
+        throw new admed.UnexpectedException("admed.effecttcm.Widget.prototype.findEffectByMedicineNameWithConfidence", error);
+    }
+};
+
 
 /*
  * --------------------------------------------------
@@ -109,11 +119,12 @@ admed.effecttcm.UserEventHandler = function( controller ) {
      * @param event the browser event
      * @param {Number} index the index of the result clicked
      */
-	this._onTvalueChanged = function( event, index ) {
+	this._onTvalueChanged = function( event, newTvalue ) {
 	    var _context = "admed.effecttcm.UserEventHandler this._onTvalueChanged";
 	    try {
-            admed.info("received submit event, call the controller to set tvalue: "+index, _context);
-            controller.findEffectByMedicineNameWithConfidence(index, "http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ginkgo_biloba");                   
+            admed.info("received submit event, call the controller to set tvalue: "+newTvalue, _context);
+            controller.setSelectTvalue(newTvalue);                 
+//            controller.findEffectByMedicineNameWithConfidence (newTvalue, "http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ginkgo_biloba"); 
         } catch (e) {
             admed.debug("caught "+e.name, ", "+e.message, _context);
             throw new admed.UnexpectedException(_context, e);
@@ -167,6 +178,10 @@ admed.effecttcm.Widget.Controller = function( model, service, widget ) {
 			
 			// set the state
 			that._model.set("STATE", "READY");
+			
+			admed.info("change the tvalue to 99%", "this_findEffectsSuccess");
+			that._model.set("SELECTIONTVALUE", "99%");
+			
 		}catch (error) {
         	throw new admed.UnexpectedException("_findEffectsSuccess", error);
     	}
@@ -182,6 +197,9 @@ admed.effecttcm.Widget.Controller = function( model, service, widget ) {
 			
 			// set the state
 			that._model.set("STATE", "READY");
+			
+			this._model.set("SELECTIONTVALUE", tvalue);
+			
 		}catch (error) {
         	throw new admed.UnexpectedException("_findEffectsWithConfidenceSuccess", error);
     	}
@@ -246,6 +264,24 @@ admed.effecttcm.Widget.Controller.prototype.findEffectByMedicineNameWithConfiden
     }
 };
 
+admed.effecttcm.Widget.Controller.prototype.setSelectTvalue = function( tvalue){
+	//TODO
+	try{
+		var _context = "admed.effecttcm.Widget.Controller.prototype.setSelectTvalue";
+		
+		if (tvalue){
+			admed.info ("try to set the tvalue " + tvalue, _context);	
+			
+			var event = this._parent._tvalueChangedEvent;
+			event.fire(tvalue);
+		}
+		
+	}catch (error) {
+        	throw new admed.UnexpectedException("admed.effecttcm.Widget.Controller.prototype.findEffectByMedicineNameWithConfidence", error);
+    }
+	
+};
+
 admed.effecttcm.Widget.Controller.prototype._findEffectByMedicineNameWithConfidence = function(tvalue, herbURL, success, failure){
 	try {
 		admed.info("admed.effecttcm.Widget.Controller._findEffectByMedicineNameWithConfidence :: request: "+herbURL);
@@ -300,7 +336,7 @@ admed.effecttcm.Widget.Controller.prototype._findEffectByMedicineName = function
  */
 admed.effecttcm.Widget.modelDefinition = {
 
-	properties : [ "STATE", "RESULTS", "QUERY", "ERRORMESSAGE" ],
+	properties : [ "STATE", "RESULTS", "QUERY", "ERRORMESSAGE", "SELECTIONTVALUE" ],
 	
 	values : {
 		"STATE" : [ "PENDING", "READY", "SERVERERROR", "UNEXPECTEDERROR" ]
@@ -311,6 +347,7 @@ admed.effecttcm.Widget.modelDefinition = {
 		data["RESULTS"] = null;
 		data["QUERY"] = null;
 		data["ERRORMESSAGE"] = null;
+		data["SELECTIONTVALUE"] = null;
 	}
 
 };
@@ -364,17 +401,19 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._initCanvas = function() {
 	    YAHOO.util.Dom.addClass(this._messagePane, "messagePane");
 	    admed.mvcutils.hide(this._messagePane);
 	    
-	    // setup results summary pane
-	    this._resultsSummaryPane = document.createElement("p");
-	    this._canvas.appendChild(this._resultsSummaryPane);
-	    YAHOO.util.Dom.addClass(this._resultsSummaryPane, "resultsSummaryPane");
-	    admed.mvcutils.hide(this._resultsSummaryPane);
+	    // set up the selection form pane
 	    this._confidenceSelection = document.createElement("form");
 	    this._confidenceSelection.setAttribute("id", "effectqueryForm");
 		this._confidenceSelection.setAttribute("action", "javascript:void(0)");
 	    this._canvas.appendChild(this._confidenceSelection);
 	    YAHOO.util.Dom.addClass(this._confidenceSelection, "confidenceSelection");
 	    admed.mvcutils.hide(this._confidenceSelection);
+	    	    
+	    // setup results summary pane
+	    this._resultsSummaryPane = document.createElement("p");
+	    this._canvas.appendChild(this._resultsSummaryPane);
+	    YAHOO.util.Dom.addClass(this._resultsSummaryPane, "resultsSummaryPane");
+	    admed.mvcutils.hide(this._resultsSummaryPane);
 	    	    
 	    // setup results pane
 	    this._resultsPane = document.createElement("div");
@@ -433,7 +472,8 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._onModelChanged = function(type
 	        "STATE":"_onStateChanged",
 	        "QUERY":"_onQueryChanged",
 	        "RESULTS":"_onResultsChanged",
-	        "ERRORMESSAGE":"_onErrorMessageChanged"
+	        "ERRORMESSAGE":"_onErrorMessageChanged",
+	        "SELECTIONTVALUE": "_onSelectionTvalueChanged",
 	    };
 	    var handler = handlers[type];
 	    admed.debug("handler: "+handler);
@@ -444,6 +484,79 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._onModelChanged = function(type
     }
 };
 
+admed.effecttcm.Widget.DefaultRenderer.prototype._onSelectionTvalueChanged = function(from, to) {
+	var _context = "admed.effecttcm.Widget.DefaultRenderer.prototype._onSelectionTvalueChanged";
+	try {
+		admed.info("the tvalue is changed from " + from + " to " + to, _context);
+		//TODO
+		this._confidenceSelection.innerHTML = "";
+	    var tvalueSelection = document.createElement("select");
+		tvalueSelection.setAttribute("id", "effectSelection");	
+
+//		var tvalueSelection = "<select id=\"effectSelection\"><option value=\"97.5%\">97.5</option><option value=\"99%\">99%</option><option value=\"99%\">95%</option></select>";
+	
+        var options = new Array();
+        options[0]= "99%";
+        options[1]= "97.5%";
+        options[2]= "95%";
+        options[3]= "all";
+        
+        if (to != null) {
+        	for (var i=0; i < options.length; i++){
+//        		if (options[i] == to){
+//        			// set the selection
+//		            var selectedOption = document.createElement("option");
+//					selectedOption.setAttribute("selected", "selected");
+//					selectedOption.text=to;
+//					selectedOption.value=to;
+//					
+//					tvalueSelection.appendChild(selectedOption);							
+//        		}else{
+        			var selectionOption = document.createElement("option");
+        			selectionOption.text = options[i];
+					selectionOption.value = options[i];
+					tvalueSelection.appendChild(selectionOption);		
+//        		}
+        	}            
+		
+//            var tvalueSelection =  document.getElementById("effectSelection");
+//            admed.info("find the selection object " + tvalueSelection.innerHTML, _context);
+//            var selectedIndex = 0;
+//            if (to == "99%")
+//            	selectedIndex = 1;
+//            else if (to == "97.5%")
+//            	selectedIndex = 0;
+//            admed.info("the selection index is changed to " + selectedIndex + " with value " + to, _context);	
+//            tvalueSelection.setAttribute("selectedIndex",selectedIndex);
+        }
+        
+        this._confidenceSelection.appendChild(tvalueSelection);
+		
+		 var inputForm = document.createElement("input");
+		inputForm.setAttribute("type", "submit");
+		inputForm.setAttribute("id", "querySubmit");
+		inputForm.setAttribute("value", "Go");
+		this._confidenceSelection.appendChild(inputForm); 
+		
+		admed.info("debug the query form " + this._confidenceSelection.innerHTML, _context);
+		admed.debug("debug the query form " + this._confidenceSelection.innerHTML, _context);
+		admed.info("kick off the submit", _context);
+						
+		var effectSelection = document.getElementById("effectqueryForm");
+	    admed.info("the selection object " + effectSelection.innerHTML, _context);  
+	    
+	    var select = document.getElementById("effectSelection");
+	    var value = select.options[select.selectedIndex].value;
+//		admed.info("the selection value " + value, _context);
+//		admed.info("the selection value " + select.options[select.selectedIndex].value, _context);
+						
+	    
+//        YAHOO.util.Event.addListener(this._confidenceSelection, "submit", this._userEventHandler._onTvalueChanged, value);   
+        
+	}catch (error) {
+        	throw new admed.UnexpectedException(_context, error);
+    }
+};
 
 /**
  * @private
@@ -513,7 +626,7 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._onResultsChanged = function( f
         admed.debug("empty results summary pane");
         this._resultsPane.innerHTML = "";
         this._resultsSummaryPane.innerHTML = "";
-        this._confidenceSelection.innerHTML = "";
+        
         		
 	    admed.debug("render the results summary", _context);
 	    this._renderResultsSummary(this._query, to.length);
@@ -529,6 +642,8 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._onResultsChanged = function( f
 //	        admed.mvcutils.hide(this._resultsPane);
 //            admed.mvcutils.hide(this._explanationPane);
 	    }
+	    
+	    
 	} catch (error) {
         	throw new admed.UnexpectedException(_context, error);
     }
@@ -584,54 +699,8 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._renderResultsSummary = functio
 //	                "/>" +	                        
 //                    "<input type=\"submit\" id=\"querySubmit\" value=\"Go\"/>"+                 
 //	                "</form>";
-	                
-	                
-	    var effectQueryForm = document.createElement("select");
-		effectQueryForm.setAttribute("id", "effectqueryForm");
-//		effectQueryForm.setAttribute("onchange", "javascript:void(0)");
-//		effectQueryForm.setAttribute("type", "multiple");
-		
-//		var tvalueSelection = document.createElement("select");
-//		tvalueSelection.setAttribute("id", "queryTableContainer");
-//		tvalueSelection.setAttribute("class", "confidence");
-//		
-		var selectionOption = document.createElement("option");
-		selectionOption.text="97.5%";
-		selectionOption.value="97.5%";
-		
-//		tvalueSelection.appendChild(selectionOption_1);
-		effectQueryForm.appendChild(selectionOption);
-		selectionOption = document.createElement("option");
-		selectionOption.text="99%";
-		selectionOption.value="99%";
-		effectQueryForm.appendChild(selectionOption);
-		
-		admed.info("debug the query form " + effectQueryForm.innerHTML, _context);
-		admed.debug("debug the query form " + effectQueryForm.innerHTML, _context);
-		admed.info("kick off the submit", _context);
-		
-		this._confidenceSelection.appendChild(effectQueryForm);
-		
-		var inputForm = document.createElement("input");
-		inputForm.setAttribute("type", "submit");
-		inputForm.setAttribute("id", "querySubmit");
-		inputForm.setAttribute("value", "Go");
-		this._confidenceSelection.appendChild(inputForm);
-		admed.info("options of the selection " + effectQueryForm.options[0].text);
-		admed.info("options of the selection " + effectQueryForm.options[1].text);
-		admed.info("selected option of the selection " + effectQueryForm.options[effectQueryForm.selectedIndex].text);
-		
-		var effectQueryFormElement = document.getElementById("effectqueryForm");
-	    
-	    YAHOO.util.Event.addListener(effectQueryFormElement, "submit", this._userEventHandler._onTvalueChanged, effectQueryForm.options[effectQueryForm.selectedIndex].value);
-	    
-//		selectionOption = document.createElement("option");
-//		selectionOption.text="97.5%";
-//		tvalueSelection.appendChild(selectionOption);
-//		
-//		effectQueryForm.appendChild(tvalueSelection);
-		
-					    	    
+	   
+							    	    
 	    this._resultsSummaryPane.innerHTML = content;
 	    
 	    
