@@ -149,7 +149,7 @@ for herb in queryHerbs:
                                 for binding in siderResultSet["results"]["bindings"]:
                                     effect = binding["effect"]["value"]
                                     effectname = binding["effectname"]["value"]
-                                    triple = "<" + drug + ">" + "\t<http://www4.wiwiss.fu-berlin.de/sider/resource/sider/sideEffect>\t<" + effect + "> ;"
+                                    triple = "<" + drug + ">" + "\t<http://www4.wiwiss.fu-berlin.de/sider/resource/sider/sideEffect>\t<" + effect + "> .\n"
                                     triple += "<" + effect + ">\t<http://www.w3.org/2000/01/rdf-schema#label>\t\"" + effectname + "\" . \n"
                                     outfile.write(triple)
                                     outfile.flush()
