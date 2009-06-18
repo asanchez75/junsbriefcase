@@ -13,12 +13,12 @@ The top 10 herbs associated with AD as reported in TCMGeneDIT are:
 Among the ingredients of these herbs, we found that:
  * ingredients Estradiol and Isoleucine are active ingredients of 20 and 16 western drugs respectively, as reported in Dailymed. None of these drugs have reported side effects from Sider (before the mapping of drugs(sider->dailymed) is produced). It could be interesting to find out more about these western drugs, whether they are used for treating the same type of diseases or similar type of diseases as AD. Notably, Estradiol is an ingredient of 5 different herbs, including Ginkgo_biloba, Curcuma_longa, Polygonum_multiflorum, Panax_notoginseng, and Hypericum_perforatum; and Isoleucine is an ingredient of only one herb Apis_mellifera.
  * there are 7 different ingredients of these herbs, which are found in 7 different western drugs with reported side-effects. These are
- || ingredient || drug || herb ||
- || adenosine || Adenosine || all but Polygonum_multiflorum and Centella_asiatica ||
- || Acetic_acid || Acetic Acid || all but Polygala_tenuifolia ||
- || folic_acid || folic acid || Ginkgo_biloba ||
- || Mannitol || Mannitol  || Ginkgo_biloba ||
- || Lactulose || Lactulose || Panax_ginseng ||
+ || ingredient   || drug         || herb ||
+ || adenosine    || Adenosine    || all but Polygonum_multiflorum and Centella_asiatica ||
+ || Acetic_acid  || Acetic Acid  || all but Polygala_tenuifolia ||
+ || folic_acid   || folic acid   || Ginkgo_biloba ||
+ || Mannitol     || Mannitol     || Ginkgo_biloba ||
+ || Lactulose    || Lactulose    || Panax_ginseng ||
  || testosterone || testosterone || Ginkgo_biloba, Curcuma_longa, and Panax_ginseng ||
  || progesterone || progesterone || Ginkgo_biloba and Panax_ginseng ||
  
