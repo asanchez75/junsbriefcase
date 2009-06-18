@@ -27,7 +27,17 @@ def sparql(host, path, query):
         conn.close()
         return resultSet
 
-queryHerbs = ["http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ginkgo_biloba"]
+queryHerbs = ["http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ginkgo_biloba", 
+              "http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Curcuma_longa",
+              "http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Polygala_tenuifolia",
+              "http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Scutellaria_baicalensis",
+              "http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Panax_ginseng",
+              "http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Polygonum_multiflorum",
+              "http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Centella_asiatica",
+              "http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Panax_notoginseng",
+              "http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Hypericum_perforatum",
+              "http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Apis_mellifera"
+              ]
 
 queryTCMForIngredients_part1 = """
 PREFIX tcm:      <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/>
@@ -67,7 +77,7 @@ where {
 
 mappingSider_part2 = """\", "i"). }LIMIT 100""" 
 
-outfilename = 'ginkgo_side_effect.n3'
+outfilename = 'ginkgo_side_effect_batch.n3'
 outfile = codecs.open(outfilename, mode='w', encoding='UTF-8')
 
 for herb in queryHerbs:
