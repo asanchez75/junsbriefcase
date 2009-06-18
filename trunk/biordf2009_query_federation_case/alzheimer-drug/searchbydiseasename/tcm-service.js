@@ -55,11 +55,14 @@ admed.tcm.Service._buildQueryForFindMedicineByDiseaseName = function( diseaseNam
 						"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
 						"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ";
 						
-		var body = 		"SELECT DISTINCT ?disease ?medicine ?medicinename ?ingredient ?effect WHERE { " +
+		var body = 		"SELECT DISTINCT ?disease ?medicine ?medicinename WHERE { " +
 							"?disease rdfs:label ?diseasename . " +
 							" filter regex(?diseasename, \"^" + diseaseName + "\")." +
-							"?medicine tcm:treatment ?disease ; rdfs:label ?medicinename ; tcm:ingredient ?ingredient ; tcm:effect ?effect ." +
-						"}limit 7000";
+							"?statistics tcm:source ?disease ; tcm:medicine_disease_tvalue ?tvalue ." +
+							"filter (?tvalue > 1.645) . " +
+							"?statistics tcm:source ?medicine . ?medicine rdf:type tcm:Medicine ." +
+							"?medicine rdfs:label ?medicinename ." +
+						"}order by desc(?tvalue) limit 7000";
 							
 		var query = prefixes + body;
 	
@@ -87,16 +90,6 @@ admed.tcm.Medicine = function () {
 	 */
 	this.targetDisease = null;
 
-	
-	/**
-	 * @type array
-	 */
-	this.ingredient = null;
-	
-	/**
-	 * @type array
-	 */
-	this.effects = null;
 	
 
 };
