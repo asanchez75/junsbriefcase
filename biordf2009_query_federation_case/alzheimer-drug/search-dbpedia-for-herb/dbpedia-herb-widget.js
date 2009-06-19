@@ -267,7 +267,7 @@ admed.dbherb.Widget.DefaultRenderer.prototype._initCanvas = function() {
 	    // setup results pane
 	    this._resultsPane = document.createElement("div");
 	    this._canvas.appendChild(this._resultsPane);
-	    YAHOO.util.Dom.addClass(this._resultsPane, "resultsPane");
+	    YAHOO.util.Dom.addClass(this._resultsPane, "herbResultsPane");
 	    admed.mvcutils.hide(this._resultsPane);
 	    
 	}catch (error) {
@@ -472,7 +472,7 @@ admed.dbherb.Widget.DefaultRenderer.prototype._medicinesToDivHTML = function( qu
 	    // build the divs
 	    
 	    admed.debug("build div content for Medicines "+medicines.length);
-	    var content = "<table class=\"dbpedia\">";
+	    var content = "<table class=\"herbResults\">";
 	    for ( var i in medicines ) {
 	        
 	        content += this._medicineToDivHTML(medicines[i]);
@@ -499,79 +499,79 @@ admed.dbherb.Widget.DefaultRenderer.prototype._medicineToDivHTML = function( med
 	    var content = "";
 	    
 	    if (medicine.authority){
-		    content +=   "<tr><th><div class=\"medicine\">dbpedia:authority</th>";
+		    content +=   "<tr><th>dbpedia:authority</th>";
 		    content +=          "<td><a href=\"" + medicine.authority + "\">";
 		    content +=              medicine.authority;
 		    content +=          "</a></td>"; 
-		    content +=      "</div></tr>";
+		    content +=      "</tr>";
 	    }
 	    
 	    if (medicine.classis){
-		    content +=   "<tr><th><div class=\"medicine\">dbpedia:classis</th>";
+		    content +=   "<tr><th>dbpedia:classis</th>";
 		    content +=          "<td><a href=\"" + medicine.classis + "\">";
 		    content +=              medicine.classis;
 		    content +=          "</a></td>"; 
-		    content +=      "</div></tr>";
+		    content +=      "</tr>";
 	    }
 	    
 	    if (medicine.division){
-		    content +=   "<tr><th><div class=\"medicine\">dbpedia:division</th>";
+		    content +=   "<tr><th>dbpedia:division</th>";
 		    content +=          "<td><a href=\"" + medicine.division + "\">";
 		    content +=              medicine.division;
 		    content +=          "</a></td>"; 
-		    content +=      "</div></tr>";
+		    content +=      "</tr>";
 	    }
 	    
 	    if (medicine.family){
-		    content +=   "<tr><th><div class=\"medicine\">dbpedia:family</th>";
+		    content +=   "<tr><th>dbpedia:family</th>";
 		    content +=          "<td><a href=\"" + medicine.family + "\">";
 		    content +=              medicine.family;
 		    content +=          "</a></td>"; 
-		    content +=      "</div></tr>";
+		    content +=      "</tr>";
 	    }
 	    
 	    
 	    if (medicine.genus){
-		    content +=   "<tr><th><div class=\"medicine\">dbpedia:genus</th>";
+		    content +=   "<tr><th>dbpedia:genus</th>";
 		    content +=          "<td><a href=\"" + medicine.genus + "\">";
 		    content +=              medicine.genus;
 		    content +=          "</a></td>"; 
-		    content +=      "</div></tr>";
+		    content +=      "</tr>";
 	    }
 	    
 	    
 	    if (medicine.kingdom){
-		    content +=   "<tr><th><div class=\"medicine\">dbpedia:kingdom</th>";
+		    content +=   "<tr><th>dbpedia:kingdom</th>";
 		    content +=          "<td><a href=\"" + medicine.kingdom + "\">";
 		    content +=              medicine.kingdom;
 		    content +=          "</a></td>"; 
-		    content +=      "</div></tr>";
+		    content +=      "</tr>";
 	    }
 	    
 	    
 	    if (medicine.order){
-		    content +=   "<tr><th><div class=\"medicine\">dbpedia:order</th>";
+		    content +=   "<tr><th>dbpedia:order</th>";
 		    content +=          "<td><a href=\"" + medicine.order + "\">";
 		    content +=              medicine.order;
 		    content +=          "</a></td>"; 
-		    content +=      "</div></tr>";
+		    content +=      "</tr>";
 	    }
 	    
 	    
 	    if (medicine.species){
-		    content +=   "<tr><th><div class=\"medicine\">dbpedia:species</th>";
+		    content +=   "<tr><th>dbpedia:species</th>";
 		    content +=          "<td><a href=\"" + medicine.species + "\">";
 		    content +=              medicine.species;
 		    content +=          "</a></td>"; 
-		    content +=      "</div></tr>";
+		    content +=      "</tr>";
 	    }
 	    
 	    
 	    if (medicine.img){
-		    content +=   "<tr><th><div class=\"medicine\">dbpedia:img</th>";
+		    content +=   "<tr><th>dbpedia:img</th>";
 		    content +=          "<td><a href=\"" + medicine.img + "\"><img class=\"herb\"  src=\"" + medicine.img + "\"/></a>";
 		    content +=          "</td>"; 
-		    content +=      "</div></tr>";
+		    content +=      "</tr>";
 	    }
 	    
 	    
