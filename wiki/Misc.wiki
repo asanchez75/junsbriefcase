@@ -1,5 +1,12 @@
 #summary One-sentence summary of this page.
 
+= Load data into Virtuoso RDF Store at Rodos =
+
+== Load TCM RDF Release 3 into local virtuoso ==
+{{{
+./bin/isql 129.67.24.46:1111 dba dba verbose=on banner=off echo=ON errors=stdout exec="ttlp_mt(file_to_string_output('/root/Desktop/TCM_*statistics.ttl'), '', 'http://purl.org/net/data/tcm/tcm-20090619',0);checkpoint;"
+}}}
+
 = Load data into Virtuoso RDF Store at Naxos =
 
 == Load FlyBase gene names ==
