@@ -389,7 +389,7 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._initCanvas = function() {
 	    
 	    // set up the pending pane
         this._pendingPane = document.createElement("p");
-        this._pendingPane.innerHTML = "pending...";
+        this._pendingPane.innerHTML = "Searching for putative effects ...";
         this._canvas.appendChild(this._pendingPane);
         YAHOO.util.Dom.addClass(this._pendingPane, "pendingPane");
         admed.mvcutils.hide(this._pendingPane);
