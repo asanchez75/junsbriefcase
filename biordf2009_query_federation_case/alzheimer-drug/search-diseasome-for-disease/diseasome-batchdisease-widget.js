@@ -422,7 +422,7 @@ admed.genesome.BatchWidget.DefaultRenderer.prototype._initCanvas = function() {
 	    
 	    // set up the pending pane
         this._pendingPane = document.createElement("p");
-        this._pendingPane.innerHTML = "pending...";
+        this._pendingPane.innerHTML = "Searching for diseases ...";
         this._canvas.appendChild(this._pendingPane);
         YAHOO.util.Dom.addClass(this._pendingPane, "pendingPane");
         admed.mvcutils.hide(this._pendingPane);
@@ -651,13 +651,13 @@ admed.genesome.BatchWidget.DefaultRenderer.prototype._renderResults = function( 
         
        
         
-        var content = "<table>";
+        var content = "<table class=\"diseaseResults\">";
 
         content += "<thead><tr><th>Mapping Diseasome gene</th><th>associated diseases</th><th>Alzheimer's gene</th></tr></thead><tbody>";
         
         for (var keyGene in results) {
             
-            content += "<tr><td><a href=\"" + keyGene + "\">" + keyGene.substr(57, keyGene.length) + "</a></td><td>";
+            content += "<tr><td><a href=\"" + keyGene + "\">" + keyGene.substr(57, keyGene.length) + "</a></td><td class=\"diseases\">";
             
             var diseases = results[keyGene];
             admed.debug("counting diseases for "+keyGene + ": " + diseases.length, _context);
