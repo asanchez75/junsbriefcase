@@ -18,7 +18,7 @@
         <div id="doc3">
             <div id="hd">
                 <!-- header -->
-                <h1>Test Application for the TCM Widget</h1>
+                <h1>Search for Information about Herb from <a href="http://tcm.lifescience.ntu.edu.tw">TCMGeneDIT</a>, <a href="http://www4.wiwiss.fu-berlin.de/diseasome/">Diseasome</a>, <a href="http://www.linkedct.org/">LinkedCT</a>, and <a href="http://dbpedia.org//">DBpedia</a></h1>
             </div>
             <div id="bd">
                 
@@ -32,32 +32,45 @@
                         
                         <input type="text" id="queryInput"/>
                         <input type="submit" value="Go"/>
-                        Query by TCM herb name
+                        Query by a TCM herb name (e.g. Ginkgo biloba)
                     </form>
                     
                     <hr/>
                     
                     <div id="tcmWidget" class="invisible"></div>
-                    <div id="basics">
-                    	<div id="dbpediaHerbWidget"></div>
                     
-                    	<div id="effectTcmWidget"></div>
+                    <div id="yui-gb" class="yui-g">
                     
-                    	<div id="trialWidget"></div>
-                    </div>
-                    
-                    <div id="geneFinderWidget"></div>
-                    
-                    <div id="batchDiseaseWidget"></div>
-                    
-                    <hr/>
+	                  	<div id="dbpediaPane" class="yui-u first">
+	                  		<h2>Info about this herb from <a href="http://dbpedia.org">DBpedia</a></h2>
+	                  		<hr>
+	                  		<div id="dbpediaHerbWidget"></div>
+	                  		<h2>Clinical trials of this herb from <a href="http://www.linkedct.org/">LinkedCT</a></h2>
+	                  		<hr>
+	                    	<div id="trialWidget"></div>
+	                    
+	                  	</div>
+	                    
+	                    <div id="effectTcmWidgetPane" class="yui-u">
+	                    	<h2>Putative effects of this herb reported by <a href="http://tcm.lifescience.ntu.edu.tw">TCMGeneDIT</a></h2>
+	                    	<hr>
+	                  		<div id="effectTcmWidget"></div>
+	                  		<h2>Genetic info about this herb reported by <a href="http://www4.wiwiss.fu-berlin.de/diseasome/">Diseasome</a></h2>
+	                  		<hr>
+	                  		<div id="geneFinderWidget"></div>
+	                    
+	                    	<div id="batchDiseaseWidget"></div>
+	                  	</div>
+	                  	
+	                  	
+	                                    
                     
                 </div>
                 
             </div>
             
             <div id="ft" class="yui-skin-sam">
-                <div id="logger"></div>
+                <div id="logger" class="invisible"></div>
             </div>
         </div>
         

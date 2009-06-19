@@ -2,6 +2,7 @@
     width: 60em;
     font-size: 1em;
 }
+
 #queryForm {
     text-align: center;
 }
@@ -10,39 +11,68 @@
     visibility:hidden;
 }
 
-#dbpediaHerbWidget {
+/*#dbpediaHerbWidget {
     margin-top: 1em;
     margin-bottom: 1em;
-    border:double 2px;
+    margin-right:2px;
+    border:double 1px;
     padding: 1em;
-    display: inline-table;
-    width: 20px;
+    width: 400px;
+    float:left;
+}*/
+
+table.herbResults {
+    max-width: 400px;
+}
+
+table.herbResults td{
+    max-width: 100px;
+}
+
+table.herbResults td{
+    max-width: 300px;
+    
+}
+
+#effectTcmWidget p.resultsSummaryPane {
+    max-width: 400px;
+    float:left;
+    margin-right:1em;
 }
 
 #effectTcmWidget {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    border:double 2px;
-    padding: 1em;
-    display: inline-table;
-    width: 25%;
+    overflow:auto; 
+    max-height:400px;
+    
+    /*margin-bottom: 1em;
+    margin-right:2px;
+    border:double 1px;    
+    width: 400px;
+    max-width:400px;
+    float:left;
+    text-align:left;
+    position:relative;
+    display:inline;
+   */
 }
 
-#trialWidget {
-    margin-top: 1em;
+/*#trialWidget {
     margin-bottom: 1em;
-    border:double 2px;
-    padding: 1em;
-    display: inline-table;
-}
+    border:double 1px;
+    padding: 2em;
+    text-align: left;
+    overflow:auto; 
+    max-height:400px;
+}*/
 
-#geneFinderWidget {
+/*#geneFinderWidget {
     margin-top: 1em;
     margin-bottom: 1em;    
-    border:double 2px;
+    border:double 1px;
     padding: 1em;  
     display: inline-table;
-}
+    float:left;
+}*/
 
 div.gene {
     text-align: left; 
@@ -55,20 +85,26 @@ img.herb {
     height: 15%;
 }
 
-#diseaseWidget {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    padding: 1em;    
-    display: inline-table;
-} 
-
-div.disease {
-    display: inline-table;
-    padding: 3px;
-    
+/*#diseaseWidget {
+    max-width: 500px;
 }
 
-div.result{
-    display: inline;
+table.diseaseResults {
+    max-width: 500px;
+}
+
+table.diseaseResults td.diseases{
+    max-width: 300px;
+}*/
+
+/*    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+    float:left;
+   display: inline-table;
+} */
+
+
+div.result{    
     padding: 4px;
 }
