@@ -123,8 +123,7 @@ admed.effecttcm.UserEventHandler = function( controller ) {
 	    var _context = "admed.effecttcm.UserEventHandler this._onTvalueChanged";
 	    try {
             admed.info("received submit event, call the controller to set tvalue: "+newTvalue, _context);
-            controller.setSelectTvalue(newTvalue);                 
-//            controller.findEffectByMedicineNameWithConfidence (newTvalue, "http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ginkgo_biloba"); 
+            controller.setSelectTvalue(newTvalue);                  
         } catch (e) {
             admed.debug("caught "+e.name, ", "+e.message, _context);
             throw new admed.UnexpectedException(_context, e);
@@ -400,6 +399,12 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._initCanvas = function() {
 	    this._canvas.appendChild(this._messagePane);
 	    YAHOO.util.Dom.addClass(this._messagePane, "messagePane");
 	    admed.mvcutils.hide(this._messagePane);
+	   
+	    // setup results summary pane
+	    this._resultsSummaryPane = document.createElement("p");
+	    this._canvas.appendChild(this._resultsSummaryPane);
+	    YAHOO.util.Dom.addClass(this._resultsSummaryPane, "resultsSummaryPane");
+	    admed.mvcutils.hide(this._resultsSummaryPane);
 	    
 	    // set up the selection form pane
 	    this._confidenceSelection = document.createElement("form");
@@ -408,12 +413,6 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._initCanvas = function() {
 	    this._canvas.appendChild(this._confidenceSelection);
 	    YAHOO.util.Dom.addClass(this._confidenceSelection, "confidenceSelection");
 	    admed.mvcutils.hide(this._confidenceSelection);
-	    	    
-	    // setup results summary pane
-	    this._resultsSummaryPane = document.createElement("p");
-	    this._canvas.appendChild(this._resultsSummaryPane);
-	    YAHOO.util.Dom.addClass(this._resultsSummaryPane, "resultsSummaryPane");
-	    admed.mvcutils.hide(this._resultsSummaryPane);
 	    	    
 	    // setup results pane
 	    this._resultsPane = document.createElement("div");
@@ -492,8 +491,6 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._onSelectionTvalueChanged = fun
 		this._confidenceSelection.innerHTML = "";
 	    var tvalueSelection = document.createElement("select");
 		tvalueSelection.setAttribute("id", "effectSelection");	
-
-//		var tvalueSelection = "<select id=\"effectSelection\"><option value=\"97.5%\">97.5</option><option value=\"99%\">99%</option><option value=\"99%\">95%</option></select>";
 	
         var options = new Array();
         options[0]= "99%";
@@ -503,31 +500,12 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._onSelectionTvalueChanged = fun
         
         if (to != null) {
         	for (var i=0; i < options.length; i++){
-//        		if (options[i] == to){
-//        			// set the selection
-//		            var selectedOption = document.createElement("option");
-//					selectedOption.setAttribute("selected", "selected");
-//					selectedOption.text=to;
-//					selectedOption.value=to;
-//					
-//					tvalueSelection.appendChild(selectedOption);							
-//        		}else{
-        			var selectionOption = document.createElement("option");
-        			selectionOption.text = options[i];
-					selectionOption.value = options[i];
-					tvalueSelection.appendChild(selectionOption);		
-//        		}
+    			var selectionOption = document.createElement("option");
+    			selectionOption.text = options[i];
+				selectionOption.value = options[i];
+				tvalueSelection.appendChild(selectionOption);		
         	}            
 		
-//            var tvalueSelection =  document.getElementById("effectSelection");
-//            admed.info("find the selection object " + tvalueSelection.innerHTML, _context);
-//            var selectedIndex = 0;
-//            if (to == "99%")
-//            	selectedIndex = 1;
-//            else if (to == "97.5%")
-//            	selectedIndex = 0;
-//            admed.info("the selection index is changed to " + selectedIndex + " with value " + to, _context);	
-//            tvalueSelection.setAttribute("selectedIndex",selectedIndex);
         }
         
         this._confidenceSelection.appendChild(tvalueSelection);
@@ -547,12 +525,6 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._onSelectionTvalueChanged = fun
 	    
 	    var select = document.getElementById("effectSelection");
 	    var value = select.options[select.selectedIndex].value;
-//		admed.info("the selection value " + value, _context);
-//		admed.info("the selection value " + select.options[select.selectedIndex].value, _context);
-						
-	    
-//        YAHOO.util.Event.addListener(this._confidenceSelection, "submit", this._userEventHandler._onTvalueChanged, value);   
-        
 	}catch (error) {
         	throw new admed.UnexpectedException(_context, error);
     }
@@ -690,22 +662,7 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._renderResultsSummary = functio
 	    content += "</span> matching effect";
 	    content += (count == 0 || count > 1) ? "s " : " ";
 	    content += "from <a href='http://code.google.com/p/junsbriefcase/wiki/RDFTCMData'>TCMGeneDIT</a> ";
-//	    content += "<form id=\"effectQueryForm\" action=\"javascript:void(0)\">" +
-//	                "Select the level of confidence in the association <select id=\"queryTableContainer\" class=\"confidence\"" +
-//	                "<option>99%</option>" + 
-//					"<option>97.5%</option>" +
-//					"<option>95%</option>" +
-//					"<option>all</option>" +
-//	                "/>" +	                        
-//                    "<input type=\"submit\" id=\"querySubmit\" value=\"Go\"/>"+                 
-//	                "</form>";
-	   
-							    	    
 	    this._resultsSummaryPane.innerHTML = content;
-	    
-	    
-	    
-	    
 	} catch (error) {
         	throw new admed.UnexpectedException(_context, error);
     }
