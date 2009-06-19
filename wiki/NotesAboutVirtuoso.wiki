@@ -59,6 +59,15 @@ make check
 }}}
 This takes about an hour on a 2GHz machine and requires approximately 1 GB of free disk space.
 
+== Post-installation ==
+See Also http://www.openlinksw.com/dataspace/dav/wiki/Main/VirtInstallationEC2
+=== Change default passwords ===
+ # Open the location http://your-ec2-instance/conductor/ in a web browser. 
+ # Log in as dba/dba 
+ # Select System Admin from the menu and then User Accounts from the second level menu. 
+ # Click Edit beside the dba user. 
+ # Enter replacement passwords in both boxes and press the Save button at the bottom to return to the user-list.
+
 == Get started ==
 Start the server in the background:
 {{{
@@ -70,6 +79,28 @@ Start the server in the background:
 The first time it's run, it will create the empty database (no special commands required) and install the Conductor VAD package. From here, you can access http://localhost:8890/ and http://localhost:8890/conductor/ and use the System Administration / Packages page to install other packages such as Demo and the ODS suite (addressbook, weblog, feeds manager and other applications) etc.
 
 The default login is `dba' with a password of `dba' for the Conductor and isql (for DAV functions, the default login is `dav' with a password of `dav').
+
+== Safeguarding Your SPARQL End-point ==
+See also http://www.openlinksw.com/dataspace/dav/wiki/Main/VirtInstallationEC2
+
+The following section should be added to the Virtuoso configuration file (/opt/virtuoso/database/virtuoso.ini) to control and safeguard your SPARQL end-point against excessive usage:
+
+{{{
+[SPARQL]
+MaxCacheExpiration         = 1    ; Cache Expiration time in seconds that overrides Sponger's default cache invalidation scheme
+ExternalQuerySource        = 1
+ExternalXsltSource         = 1
+ResultSetMaxRows           = 100000
+;DefaultGraph               = http://demo.openlinksw.com/dataspace/person/demo
+MaxQueryCostEstimationTime = 10000    ; in seconds
+MaxQueryExecutionTime      = 30    ; in seconds
+;ImmutableGraphs            = http://unknown:8890/dataspace
+;PingService                = http://rpc.pingthesemanticweb.com/
+DefaultQuery               = select distinct ?URI ?ObjectType where {?URI a ?ObjectType} limit 50
+DeferInferenceRulesInit    = 1  ;  Defer Loading of inference rules at start up
+}}}
+
+Details about these settings can be found in the [http://docs.openlinksw.com/virtuoso/ Virtuoso Online Documentation] in the [http://docs.openlinksw.com/virtuoso/dbadm.html#ini_SPARQL SPARQL Configuration File section]. The "DeferInferenceRulesInit = 1" setting is particularly important when hosting large RDF data sets such as DBpedia, as it defers the load of the inference rules which can take quite some time (up to an hour) during server startup.
 
 == Insert OWL ==
 == Insert RDF ==
