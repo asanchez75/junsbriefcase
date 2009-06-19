@@ -68,6 +68,9 @@ See Also http://www.openlinksw.com/dataspace/dav/wiki/Main/VirtInstallationEC2
  # Click Edit beside the dba user. 
  # Enter replacement passwords in both boxes and press the Save button at the bottom to return to the user-list.
 
+=== Change the server setting ===
+Modify the virtuoso.ini file in var/lib/virtuoso/db directory. Change the parameter of ServerPort, and the sections about HTTPServer and URIQA.
+
 == Get started ==
 Start the server in the background:
 {{{
