@@ -57,39 +57,19 @@ table.herbResults td{
 
 #effectTcmWidget div.resultsPane{
     overflow:auto; 
-    max-height:400px;
+    max-height:388px;
     padding-top:2px; 
     padding-left:2px;
     clear:left;
-    /*margin-bottom: 1em;
-    margin-right:2px;
-    border:double 1px;    
-    width: 400px;
-    max-width:400px;
-    float:left;
-    text-align:left;
-    position:relative;
-    display:inline;
-   */
 }
 
-/*#trialWidget {
-    margin-bottom: 1em;
-    border:double 1px;
-    padding: 2em;
-    text-align: left;
-    overflow:auto; 
-    max-height:400px;
-}*/
+#trialWidget {
+    vertical-align: text-top;
+}
 
-/*#geneFinderWidget {
-    margin-top: 1em;
-    margin-bottom: 1em;    
-    border:double 1px;
-    padding: 1em;  
-    display: inline-table;
-    float:left;
-}*/
+#geneFinderWidget {
+    vertical-align: text-top;
+}
 
 div.gene {
     text-align: left; 
