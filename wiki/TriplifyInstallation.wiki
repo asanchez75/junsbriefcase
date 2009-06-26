@@ -1,0 +1,15 @@
+#summary One-sentence summary of this page.
+
+= Fix the php-pgsql driver problem =
+Run
+{{{
+yum update php5
+yum install php-pgsql
+}}}
+
+Configure /etc/php.ini, add
+{{{
+extension=pgsql.so
+}}}
+
+The pgsql.so file is installed at /usr/lib/php/modules/ together with mysql.so.
