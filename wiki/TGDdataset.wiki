@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Description about the RDF-TCMGeneDIT
 
 = Introduction =
 
@@ -12,7 +12,6 @@ There are five datasets from TCMGeneDIT (http://tcm.lifescience.ntu.edu.tw/):
 Othe data sources available on the web site but not as dump are:
  * protein-protein interaction data, from HPRD and IntAct
  * pathway information, from HPRD, KEGG and CCAP
-
 
 All of them are available as tab delimited data files.
 
@@ -59,7 +58,7 @@ For "alzheimer's disease",
 || Polygala tenuifolia  || APP   ||  Alzheimer Disease  ||     1.414 ||
 || Prunus persica       ||  ACHE ||   Alzheimer Disease ||      1.414 ||
 
-There are further information about the effect of a TCM ingredient, which might be interesting. For example, for "Ginkgo_biloba", one can fine information from the TCM_ingredient_associations.tab. Some example data are copied below.
+There are further information about the effect of a TCM ingredient, which might be interesting. For example, for "Ginkgo_biloba", one can find information from the TCM_ingredient_associations.tab. Some example data are copied below.
 
 || *TCM_name* || *Effect* || *t-value* ||
 ||Ginkgo biloba	||ginkgolide ||	12.910 ||
@@ -75,3 +74,6 @@ There are further information about the effect of a TCM ingredient, which might 
 ||Ginkgo biloba	||flavone ||	6.063 ||
 ||Ginkgo biloba	||lactone ||	6.059 ||
 ||Ginkgo biloba	||terpenoid ||	5.817||
+
+= RDFizing TCMGeneDIT =
+This can be found at http://code.google.com/p/junsbriefcase/wiki/RDFTCMData
