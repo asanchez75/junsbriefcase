@@ -43,6 +43,11 @@ Object properties as in Release 3.
 Since R3, the domain of these properties is tcm:Statistics and the range is a xsd:float value. 
 
 == Data dumps ==
+Notice: there is a server move on the weeks of  26 June - 3 July, 2009
+=== Release 3 ===
+ * http://www.open-biomed.org.uk/tcmdata/tcm_rdf_data_release3_190609_ttl.tar.gz
+
+=== Release 2 ===
  * http://purl.oclc.org/NET/tcm/tcm_rdf_data_release2_270409.tar.gz
  * http://purl.oclc.org/NET/tcm/tcm_rdf_data_release2_270409_ttl.tar.gz
 
