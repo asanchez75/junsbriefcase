@@ -56,11 +56,11 @@ See also http://esw.w3.org/topic/DataSetRDFDumps
 = Link Datasets =
  * Mapping genes to Extrez genes: 944 links
  * Mapping disease names to DBpedia: 255 links
- * Mapping disease names to Diseasesome: 38 links
- * Mapping disease names to Sideeffect: 149 links
+ * Mapping disease names to Diseasesome: 63 (from 38 links)
+ * Mapping disease names to Sideeffect: 171 (from 149 links)
  * Mapping genes to DBpedia: 649 links
- * Mapping genes to Diseasesome: 96 links
- * Mapping genes to Drugbank: 238 links
+ * Mapping genes to Diseasesome: 313 (from 96 links)
+ * Mapping genes to Drugbank: 384 (from 238 links)
  * Mapping ingredient names to Dailymed: 21 links
  * Mapping herb/specie names to DBpedia: 438 links
 
