@@ -204,7 +204,8 @@ admed.genesome.Service._buildQueryForDiseaseAssociatedWithGeneBatch = function( 
 						"PREFIX owl: <http://www.w3.org/2002/07/owl#> " +
 						"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ";
 						
-		var body = 		"SELECT DISTINCT ?gene ?disease ?diseasename ?superdisease ?supername ?subdisease ?subname WHERE { \n";
+//		var body = 		"SELECT DISTINCT ?gene ?disease ?diseasename ?superdisease ?supername ?subdisease ?subname WHERE { \n";
+		var body = 		"SELECT DISTINCT ?gene ?disease ?diseasename WHERE { \n";
 		
 		if (genes.length == 1)
 		{
@@ -233,8 +234,8 @@ admed.genesome.Service._buildQueryForDiseaseAssociatedWithGeneBatch = function( 
 		
 		var body_main = "{\n" +
 							"?disease dis:name ?diseasename . " +
-						 	"optional {?disease dis:diseaseSubtypeOf ?superdisease . ?superdisease dis:name ?supername .}" +
-						 	"optional {?subdisease dis:diseaseSubtypeOf ?disease . ?subdisease dis:name ?subname .}" +
+//						 	"optional {?disease dis:diseaseSubtypeOf ?superdisease . ?superdisease dis:name ?supername .}" +
+//						 	"optional {?subdisease dis:diseaseSubtypeOf ?disease . ?subdisease dis:name ?subname .}" +
 						"}}\n";
 							
 		var query = prefixes + body + body_union + body_main;
@@ -258,9 +259,9 @@ admed.genesome.Disease = function () {
 	 */
 	this.diseaseName = null;
 	
-	this.superdiseases = new Array();
-	
-	this.subdiseases = new Array();
+//	this.superdiseases = new Array();
+//	
+//	this.subdiseases = new Array();
 	
 	
 
@@ -286,34 +287,34 @@ admed.genesome.Disease.newInstancesFromSPARQLResults = function(resultSet){
 			var disease = diseasePool.get(diseaseURL);
 			disease.diseaseName = binding.diseasename.value;
 			
-			if (binding.superdisease){
-				var superdiseaseURL = binding.superdisease.value;
-				
-				var supername = binding.supername.value;
-								
-				var superdisease = new admed.genesome.Disease();
-				
-				superdisease.diseaseURL = superdiseaseURL;
-				
-				superdisease.diseaseName = supername;
-				
-				
-				admed.util.appendIfNotMember(disease.superdiseases, superdisease);
-			}	
-			
-			if (binding.subdisease){
-				var subdiseaseURL = binding.subdisease.value;
-				
-				var subname = binding.subname.value;
-								
-				var subdisease = new admed.genesome.Disease();
-				
-				subdisease.diseaseURL = subdiseaseURL;
-				
-				subdisease.diseaseName = subname;
-	
-				admed.util.appendIfNotMember(disease.subdiseases, subdisease);
-			}
+//			if (binding.superdisease){
+//				var superdiseaseURL = binding.superdisease.value;
+//				
+//				var supername = binding.supername.value;
+//								
+//				var superdisease = new admed.genesome.Disease();
+//				
+//				superdisease.diseaseURL = superdiseaseURL;
+//				
+//				superdisease.diseaseName = supername;
+//				
+//				
+//				admed.util.appendIfNotMember(disease.superdiseases, superdisease);
+//			}	
+//			
+//			if (binding.subdisease){
+//				var subdiseaseURL = binding.subdisease.value;
+//				
+//				var subname = binding.subname.value;
+//								
+//				var subdisease = new admed.genesome.Disease();
+//				
+//				subdisease.diseaseURL = subdiseaseURL;
+//				
+//				subdisease.diseaseName = subname;
+//	
+//				admed.util.appendIfNotMember(disease.subdiseases, subdisease);
+//			}
 			
 				
 			
