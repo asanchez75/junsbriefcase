@@ -9,12 +9,12 @@ import logging
 # TODO set this to file path
 #infilename = '/root/workspace/biordf2009_query_federation_case/dataset/mapping_by_silk/genes_tcm_diseasesome.nt'
 #infilename = '\\oxford\\svn\\biordf2009_query_federation_case\\dataset\\mapping_by_silk\\diseases_tcm_dbpedia.nt'
-infilename = '\\workspaces\\zhaoj\\biordf2009_query_federation_case\\dataset\\mapping_by_silk\\genes_tcm_drugbank.nt'
+infilename = '\\workspaces\\zhaoj\\biordf2009_query_federation_case\\dataset\\mapping_by_silk\\genes_tcm_diseasesome.nt'
 infile = codecs.open(infilename, mode='r', encoding='UTF-8')
 
 #outfilename = '/root/workspace/biordf2009_query_federation_case/dataset/mapping_by_silk/genes_tcm_diseasesome.owl'
 #outfilename = '\\oxford\\svn\\biordf2009_query_federation_case\\dataset\\mapping_by_silk\\diseases_tcm_dbpedia.owl'
-outfilename = '\\workspaces\\zhaoj\\biordf2009_query_federation_case\\dataset\\mapping_by_silk\\genes_tcm_drugbank.owl'
+outfilename = '\\workspaces\\zhaoj\\biordf2009_query_federation_case\\dataset\\mapping_by_silk\\genes_tcm_diseasesome.owl'
 outfile = codecs.open(outfilename, mode='w', encoding='UTF-8')
 
 namespace = "@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .\n"
@@ -57,7 +57,7 @@ outfile.flush()
 
 ### IMPORTANT!!!
 ### ALWAYS CHANGE THE I WHEN CONVERTING A NEW MAPPING FILE
-i = 314
+i = 1
 for row in reader:
     triple = ""
     #print "to see what is in a row: " + row[0] + "\n"
@@ -70,7 +70,7 @@ for row in reader:
     
     triple = triple + interlink + str(i) + ">\t oddlinker:link_source\t" + url1 + " ;\n"
     triple = triple + "\t oddlinker:link_target \t" + url2 + " ;\n"
-    triple = triple + "\t silk:confidence \t\"" + tvalue + "\" ;\n"
+    triple = triple + "\t silk:confidence \t\"" + tvalue + "\"^^xsd:float ;\n"
     triple = triple + "\t oddlinker:link_type \t owl:sameAs ;\n"
     triple = triple + "\t oddlinker:linkage_run \t" + linkagerun + " ;\n"
     triple = triple + "\t dcterms:isPartOf \t" + voidlinkset + " ;\n"
