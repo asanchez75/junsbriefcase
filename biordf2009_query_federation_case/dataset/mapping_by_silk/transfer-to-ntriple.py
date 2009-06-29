@@ -7,12 +7,14 @@ import optparse
 import logging
 
 # TODO set this to file path
-infilename = '/root/workspace/biordf2009_query_federation_case/dataset/mapping_by_silk/herbspecies_tcm_dbpedia.nt'
+#infilename = '/root/workspace/biordf2009_query_federation_case/dataset/mapping_by_silk/genes_tcm_diseasesome.nt'
 #infilename = '\\oxford\\svn\\biordf2009_query_federation_case\\dataset\\mapping_by_silk\\diseases_tcm_dbpedia.nt'
+infilename = '\\workspaces\\zhaoj\\biordf2009_query_federation_case\\dataset\\mapping_by_silk\\genes_tcm_drugbank.nt'
 infile = codecs.open(infilename, mode='r', encoding='UTF-8')
 
-outfilename = '/root/workspace/biordf2009_query_federation_case/dataset/mapping_by_silk/herbspecies_tcm_dbpedia.owl'
+#outfilename = '/root/workspace/biordf2009_query_federation_case/dataset/mapping_by_silk/genes_tcm_diseasesome.owl'
 #outfilename = '\\oxford\\svn\\biordf2009_query_federation_case\\dataset\\mapping_by_silk\\diseases_tcm_dbpedia.owl'
+outfilename = '\\workspaces\\zhaoj\\biordf2009_query_federation_case\\dataset\\mapping_by_silk\\genes_tcm_drugbank.owl'
 outfile = codecs.open(outfilename, mode='w', encoding='UTF-8')
 
 namespace = "@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .\n"
@@ -29,19 +31,20 @@ outfile.write(namespace)
 reader = csv.reader(open(infilename, "rb"))
 
 interlink = '<http://purl.org/net/tcm/id/interlink/'
-linkagerun = '<http://purl.org/net/tcm/id/linkage_run/3>'
-voidlinkset = '<http://purl.org/net/tcm/id/linkset/3>'
+linkagerun = '<http://purl.org/net/tcm/id/linkage_run/4>'
+voidlinkset = '<http://purl.org/net/tcm/id/linkset/4>'
 
+### IMPORTANT, CHANGE THIS
 ### void
 triple = voidlinkset + "\t rdf:type \t void:Linkset ;\n"
-triple = triple + "\t void:target \t <http://lod.openlinksw.com/sparql> ;\n"
-triple = triple + "\t void:target \t <http://hcls.deri.org:8080/sparql> ;\n"
+triple = triple + "\t void:target \t <http://www4.wiwiss.fu-berlin.de/drugbank/sparql> ;\n"
+triple = triple + "\t void:target \t <http://www.open-biomed.org.uk/sparql> ;\n"
 triple = triple + "\t void:linkPredicate \t owl:sameAs .\n\n"
 outfile.write(triple)
 outfile.flush()  
 
 ### linkage_run
-triple = linkagerun + "\t oddlinker:linkage_date \t \"2009-05-27\"^^xsd:date ;\n"
+triple = linkagerun + "\t oddlinker:linkage_date \t \"2009-06-19\"^^xsd:date ;\n"
 triple = triple + "\t oddlinker:linkage_method \t :silk ;\n"
 triple = triple + "\trdf:type\toddlinker:linkage_run .\n\n"
 outfile.write(triple)
@@ -52,7 +55,9 @@ triple = ":silk \t foaf:homepage \t <http://www4.wiwiss.fu-berlin.de/bizer/silk/
 outfile.write(triple)
 outfile.flush()   
 
-i = 3220
+### IMPORTANT!!!
+### ALWAYS CHANGE THE I WHEN CONVERTING A NEW MAPPING FILE
+i = 314
 for row in reader:
     triple = ""
     #print "to see what is in a row: " + row[0] + "\n"
