@@ -72,10 +72,12 @@ PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
 Select distinct ?gene
 where {?gene rdfs:label ?label . filter regex(?label, \"^"""
 
-queryDiseasomePart2 = """\", \"i\")}"""
+queryDiseasomePart2 = """$\", \"i\")} limit 10"""
 
 
-resultset = sparqlWithPorts("naxos.zoo.ox.ac.uk", 8890, "/sparql", query) 
+resultset = sparqlWithPorts("rodos.zoo.ox.ac.uk", 8890, "/sparql", query)
+
+count = 0 
     
 #    print "multiple mapping gene "
     
@@ -84,6 +86,11 @@ if (len(resultset["results"]["bindings"])>0):
         tcmgene = binding["s"]["value"]
         gene = binding["gene"]["value"]
         print gene
+        count = count + 1
+        
+        print "mapped"
+        print count
+        print "genes"
         
         queryDeri = queryPart1 + gene + queryPart2
         
@@ -101,11 +108,11 @@ if (len(resultset["results"]["bindings"])>0):
                 
                 mappingGene = sparql("www4.wiwiss.fu-berlin.de", "/diseasome/sparql", queryDiseasome)
                 
-                if (len(mappingGene["results"]["bindings"])==1):
+                if (len(mappingGene["results"]["bindings"])>0):
                     for binding in mappingGene["results"]["bindings"]:
                         disgene =  binding["gene"]["value"]
                         print "has a mapping gene " + disgene
-                        triple = tcmgene + "\t" + disgene + "\n"       
+                        triple = tcmgene + "," + disgene + "\n"       
                         outfile.write(triple)
                         outfile.flush
     
