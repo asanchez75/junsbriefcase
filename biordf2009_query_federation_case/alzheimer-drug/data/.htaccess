@@ -23,3 +23,6 @@ RewriteRule ^dailymed(.*) http://www4.wiwiss.fu-berlin.de/dailymed/sparql$1 [pro
 
 # sider
 RewriteRule ^sider(.*) http://www4.wiwiss.fu-berlin.de/sider/sparql$1 [proxy]
+
+#atags
+RewriteRule ^atags(.*) http://hcls.deri.org/sparql$1 [proxy]
