@@ -6,6 +6,7 @@ import StringIO
 import sys
 import codecs
 import csv
+import re
 
 def sparql(host, path, query):
     params = urllib.urlencode({"query": query})
@@ -63,7 +64,28 @@ def countMappedTCMGenes():
     return count
 
 
-def searchforDisGene(tcmgene):
+def searchforDisGenes(tcmgene):
+    queryPart1 = """
+        PREFIX tcm:      <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/>
+        prefix owl:     <http://www.w3.org/2002/07/owl#> 
+        SELECT DISTINCT ?disgene
+        from <http://www.open-biomed.org.uk/gene-mapping/1/>
+        WHERE {<"""
+        
+    queryPart2 = """> owl:sameAs ?disgene}
+        """
+        
+    disgenes = []
+    resultset = sparqlWithPorts("rodos.zoo.ox.ac.uk", 8890, "/sparql", queryPart1+tcmgene+queryPart2)
+    
+    if (len(resultset["results"]["bindings"])>0):
+        for binding in resultset["results"]["bindings"]:
+            disgene = binding["disgene"]["value"]
+            disgenes.append(disgene)
+    return disgenes
+
+
+def searchforDisGene (tcmgene):
     queryPart1 = """
         PREFIX tcm:      <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/>
         prefix owl:     <http://www.w3.org/2002/07/owl#> 
@@ -85,11 +107,13 @@ def searchforSilkGene (tcmgene):
     queryPart1 = """
         PREFIX tcm:      <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/>
         prefix owl:     <http://www.w3.org/2002/07/owl#> 
-        SELECT DISTINCT ?disgene
+        SELECT DISTINCT ?silkgene
         from <http://open-biomed.org.uk/genes_tcm_diseasome_simple/190609/>
         WHERE {?silkgene owl:sameAs <"""
         
     queryPart2 = """>}"""
+    
+    silkgene = ""
     
     resultset = sparqlWithPorts("rodos.zoo.ox.ac.uk", 8890, "/sparql", queryPart1+tcmgene+queryPart2)
     
@@ -97,7 +121,7 @@ def searchforSilkGene (tcmgene):
         for binding in resultset["results"]["bindings"]:
            silkgene = binding["silkgene"]["value"]
             
-    return silkgen
+    return silkgene
 
 
 
@@ -114,6 +138,7 @@ outfile = codecs.open(outfilename, mode='w', encoding='UTF-8')
 count = countMappedTCMGenes()
 outfile.write("the number of mapped TCM genes are: ")
 outfile.write(count)
+outfile.write("\n")
 outfile.flush()
 
 
@@ -140,8 +165,9 @@ multigene = []
 if (len(resultset["results"]["bindings"])>0):
     for binding in resultset["results"]["bindings"]:
         tcmgene = binding["gene"]["value"]
-        mapped = binding["count"]["value"]
-        if (mapped == 1):
+        mapped = binding["mapped"]["value"]
+        print mapped
+        if (re.match("1", mapped)):
             print "One to one mapping for gene: " + tcmgene
             onegene.append(tcmgene)
         else:
@@ -149,11 +175,13 @@ if (len(resultset["results"]["bindings"])>0):
             multigene.append(tcmgene)
 
 outfile.write("the number of one-to-one mapping TCM genes are: ")
-outfile.write(len(onegene))
+outfile.write(str(len(onegene)))
+outfile.write("\n")
 outfile.flush()
 
 outfile.write("the number of one-to-many mapping TCM genes are: ")
-outfile.write(len(multigene))
+outfile.write(str(len(multigene)))
+outfile.write("\n")
 outfile.flush()
 
 
@@ -172,23 +200,28 @@ outfile.flush()
 #### analyze the one-to-one mapping
 
 
-outfile.write("########correctly mapped disease gene######")
+outfile.write("########correctly mapped disease gene######\n")
 outfile.flush()
 todofilename = '\\workspaces\\zhaoj\\biordf2009_query_federation_case\\dataset\\mapping_by_silk\\todo_one_to_one_gene_mapping_to_diseasome.txt'
 todofile = codecs.open(todofilename, mode='w', encoding='UTF-8')
-todofile.write("#### the wrongly mismatched one-to-one mapping TCM genes are ####")
+todofile.write("#### the wrongly mismatched one-to-one mapping TCM genes are ####\n")
 todofile.flush()
 
 analyzed = 0
 for gene in onegene:
     analyzed = analyzed + 1
     disgene = searchforDisGene(gene)
+    silkgene = searchforSilkGene (gene)
     if (re.match(disgene, silkgene)):
-        triple = gene + "\towl:sameAs\t" + disgene
-        outfile.write()
+        triple = gene + "\towl:sameAs\t" + disgene + "\n"
+        outfile.write(triple)
+        outfile.flush()
     else:
-        todofile.write(gene + "\t" + disgene + "\t" + silkgene + "\t")
+        todofile.write(gene + "\t" + disgene + "\t" + silkgene + "\n")
+        todofile.flush()
         
+todofile.close()
+outfile.close()        
 print "analyzed the one-to-one mapping"
 print analyzed
 
@@ -196,3 +229,51 @@ print analyzed
 
 
 #### analyze the one-to-many mapping
+manyfilename = '\\workspaces\\zhaoj\\biordf2009_query_federation_case\\dataset\\mapping_by_silk\\one_to_many_gene_mapping_to_diseasome.txt'
+manyfile = codecs.open(manyfilename, mode='w', encoding='UTF-8')
+manyfile.write("TCMGene\tDiseasomeGene Manually\tDiseasomeGenebySilk\n")
+manyfile.flush()
+
+for gene in multigene:
+    disgenes = searchforDisGenes(gene)    
+    silkgene = searchforSilkGene(gene)
+    for disgene in disgenes:
+        triple = gene + "\t" + disgene + "\t" + silkgene + "\n"
+        manyfile.write(triple)
+        manyfile.flush()
+        
+        
+
+manyfile.write("#### Genes with no mapping by Silk for the one-to-many mapping TCM genes ####\n")
+analyzed = 0
+notmapped = 0
+mappingsBySilk = {}
+hasMappingBySilk = False
+for gene in multigene:
+    analyzed = analyzed + 1
+    disgenes = searchforDisGenes(gene)
+    
+    silkgene = searchforSilkGene(gene)
+    for disgene in disgenes:
+        if (re.match(disgene, silkgene)):
+            hasMappingBySilk = True
+            mappingsBySilk[gene] = silkgene
+            
+    if (not hasMappingBySilk):
+        notmapped = notmapped + 1
+        manyfile.write(gene)
+        manyfile.flush()
+
+manyfile.write("Not mapped genes " + str(notmapped) + "genes\n")
+manyfile.flush()            
+
+manyfile.write("#### Genes with at least one mapping by Silk for the one-to-many mapping TCM genes ####\n")
+for gene in mappingsBySilk:
+    triple = gene + "\t" + mappingsBySilk[gene] + "\n"
+    manyfile.write(triple)
+    manyfile.flush()
+    
+manyfile.write("Analyzed " + str(analyzed) + "genes\n")
+manyfile.flush()
+    
+manyfile.close()    
