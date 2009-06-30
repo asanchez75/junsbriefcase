@@ -1,5 +1,5 @@
 // create a namespace if not already defined
-admed.namespace("admed.dbherb");
+admed.namespace("admed.atags");
 
 
 /*
@@ -13,10 +13,10 @@ admed.namespace("admed.dbherb");
  * Create a tcm widget
  * @class
   * @constructor
- * @param {admed.dbherb.Service} service the service to use to fetch data
- * @param {admed.dbherb.DefaultRenderer} renderer the renderer to use
+ * @param {admed.atags.Service} service the service to use to fetch data
+ * @param {admed.atags.DefaultRenderer} renderer the renderer to use
  */
-admed.dbherb.Widget = function( service, renderer ) {
+admed.atags.Widget = function( service, renderer ) {
 
 	try {
 		var that = this;
@@ -36,10 +36,10 @@ admed.dbherb.Widget = function( service, renderer ) {
 		this._init = function() {
 			// create a model
 			var model = new admed.mvcutils.GenericModel2();
-			model.setDefinition(admed.dbherb.Widget.modelDefinition);
+			model.setDefinition(admed.atags.Widget.modelDefinition);
 			
 			// instantiate the controller
-			this._controller = new admed.dbherb.Widget.Controller(model, service, this);
+			this._controller = new admed.atags.Widget.Controller(model, service, this);
 			
 			// connect the renderer to the model
 			renderer.connect(model);
@@ -48,7 +48,7 @@ admed.dbherb.Widget = function( service, renderer ) {
     	// do initialisation
     	this._init(service, renderer);
     } catch (error) {
-        throw new admed.UnexpectedException("admed.dbherb.Widget", error);
+        throw new admed.UnexpectedException("admed.atags.Widget", error);
     }	
 };
 
@@ -57,12 +57,12 @@ admed.dbherb.Widget = function( service, renderer ) {
  * Find medicines by disease names
  * @param {String} diseaseName 
  */
-admed.dbherb.Widget.prototype.findMedicineFromDbpedia = function( medicineName ) {
+admed.atags.Widget.prototype.findAtagsForMedicine = function( dbpediaHerbURI ) {
 	// pass through to controller
 	try {
-		this._controller.findMedicineFromDbpedia(medicineName);
+		this._controller.findAtagsForMedicine(dbpediaHerbURI);
 	}catch (error) {
-        throw new admed.UnexpectedException("admed.dbherb.Widget.prototype.findMedicineFromDbpedia", error);
+        throw new admed.UnexpectedException("admed.atags.Widget.prototype.findAtagsForMedicine", error);
     }
 };
 
@@ -80,10 +80,10 @@ admed.dbherb.Widget.prototype.findMedicineFromDbpedia = function( medicineName )
  * A controller class for the flyted image widget internal MVC.
  * @constructor
  * @param {admed.mvcutils.GenericModel2} model the model to store widget state data
- * @param {admed.dbherb.Service} service the service to use to fetch data
- * @param {admed.dbherb.Widget} widget the widget to control
+ * @param {admed.atags.Service} service the service to use to fetch data
+ * @param {admed.atags.Widget} widget the widget to control
  */
-admed.dbherb.Widget.Controller = function( model, service, widget ) {
+admed.atags.Widget.Controller = function( model, service, widget ) {
 	
 	var that = this;
 	
@@ -106,19 +106,19 @@ admed.dbherb.Widget.Controller = function( model, service, widget ) {
 	/**
 	 * @private
 	 * Success case callback.
-	 * @param {Array<admed.dbherb.Image>} images
+	 * @param {Array<admed.atags.Image>} images
 	 */	
-	this._findMedicinesSuccess = function( Medicines ) {
+	this._findAtagsSuccess = function( atags ) {
 		try {
 			admed.info("request success");
 		
 			// set the results
-			that._model.set("RESULTS", Medicines);
+			that._model.set("RESULTS", atags);
 			
 			// set the state
 			that._model.set("STATE", "READY");
 		}catch (error) {
-        	throw new admed.UnexpectedException("_findMedicinesSuccess", error);
+        	throw new admed.UnexpectedException("_findAtagsSuccess", error);
     	}
 
 	};
@@ -129,31 +129,31 @@ admed.dbherb.Widget.Controller = function( model, service, widget ) {
 	 * Failure case callback.
 	 * @param {Object} response the HTTP response (YUI)
 	 */	
-	this._findMedicinesFailure = function( response ) {
+	this._findAtagsFailure = function( response ) {
 		try {
 			admed.err("request failed, status "+response.status+" "+response.statusText);
 			
 			// set an error message
-			var msg = "There was an error retrieving data from TCM, see the logs for more info.";		
+			var msg = "There was an error retrieving data from Hcls Deri, see the logs for more info.";		
 	
 			that._model.set("ERRORMESSAGE", msg);
 	
 			// set the state
 			that._model.set("STATE", "SERVERERROR");
 		}catch (error) {
-        	throw new admed.UnexpectedException("_findMedicinesFailure", error);
+        	throw new admed.UnexpectedException("_findAtagsFailure", error);
     	}		
 	};
 	
 };
 
 
-admed.dbherb.Widget.Controller.prototype.findMedicineFromDbpedia = function( medicineName ) {
+admed.atags.Widget.Controller.prototype.findAtagsForMedicine = function( dbpediaHerbURI ) {
 	try {
 		// pass through to private implementation
-		this._findMedicineFromDbpedia(medicineName, this._findMedicinesSuccess, this._findMedicinesFailure);
+		this._findAtagsForMedicine(dbpediaHerbURI, this._findAtagsSuccess, this._findAtagsFailure);
 	}catch (error) {
-        	throw new admed.UnexpectedException("admed.dbherb.Widget.Controller.prototype.findMedicineFromDbpedia", error);
+        	throw new admed.UnexpectedException("admed.atags.Widget.Controller.prototype.findAtagsForMedicine", error);
     }
 };
 
@@ -165,20 +165,20 @@ admed.dbherb.Widget.Controller.prototype.findMedicineFromDbpedia = function( med
  * @param {Function} success success case callback
  * @param {Function} failure failure case callback
  */
-admed.dbherb.Widget.Controller.prototype._findMedicineFromDbpedia = function( medicineName, success, failure ) {
+admed.atags.Widget.Controller.prototype._findAtagsForMedicine = function( dbpediaHerbURI, success, failure ) {
 	try {
-		admed.info("admed.dbherb.Widget.Controller._findMedicineFromDbpedia :: request: "+medicineName);
+		admed.info("admed.atags.Widget.Controller._findAtagsForMedicine :: request: "+dbpediaHerbURI);
 		
 		// set the model pending
 		this._model.set("STATE", "PENDING");
 		
 		// set the query property
-		this._model.set("QUERY", medicineName);
+		this._model.set("QUERY", dbpediaHerbURI);
 		
 		// kick off the request
-		this._service.findMedicineFromDbpedia(medicineName, success, failure);
+		this._service.findAtagsForMedicine(dbpediaHerbURI, success, failure);
 	}catch (error) {
-        	throw new admed.UnexpectedException("admed.dbherb.Widget.Controller.prototype._findMedicineFromDbpedia", error);
+        	throw new admed.UnexpectedException("admed.atags.Widget.Controller.prototype._findAtagsForMedicine", error);
     }
 };
 
@@ -192,7 +192,7 @@ admed.dbherb.Widget.Controller.prototype._findMedicineFromDbpedia = function( me
 /**
  * Definition of flyted Widget model.
  */
-admed.dbherb.Widget.modelDefinition = {
+admed.atags.Widget.modelDefinition = {
 
 	properties : [ "STATE", "RESULTS", "QUERY", "ERRORMESSAGE" ],
 	
@@ -220,18 +220,18 @@ admed.dbherb.Widget.modelDefinition = {
 /**
  * TODO doc me
  */
-admed.dbherb.Widget.DefaultRenderer = function() {};
+admed.atags.Widget.DefaultRenderer = function() {};
 
 
 /**
  * TODO doc me
  */
-admed.dbherb.Widget.DefaultRenderer.prototype.setCanvas = function( canvas ) {
+admed.atags.Widget.DefaultRenderer.prototype.setCanvas = function( canvas ) {
     try {
 	    this._canvas = canvas;
 	    this._initCanvas();
 	}catch (error) {
-        	throw new admed.UnexpectedException("admed.dbherb.Widget.DefaultRenderer.prototype.setCanvas", error);
+        	throw new admed.UnexpectedException("admed.atags.Widget.DefaultRenderer.prototype.setCanvas", error);
     }
 };
 
@@ -240,13 +240,13 @@ admed.dbherb.Widget.DefaultRenderer.prototype.setCanvas = function( canvas ) {
  * @private
  * TODO doc me
  */
-admed.dbherb.Widget.DefaultRenderer.prototype._initCanvas = function() {
+admed.atags.Widget.DefaultRenderer.prototype._initCanvas = function() {
 	try {
-	    YAHOO.util.Dom.addClass(this._canvas, "dbpediaHerbWidget");
+	    YAHOO.util.Dom.addClass(this._canvas, "atagsWidget");
 	    
 	    // set up the pending pane
         this._pendingPane = document.createElement("p");
-        this._pendingPane.innerHTML = "pending...";
+        this._pendingPane.innerHTML = "searching for atags...";
         this._canvas.appendChild(this._pendingPane);
         YAHOO.util.Dom.addClass(this._pendingPane, "pendingPane");
         admed.mvcutils.hide(this._pendingPane);
@@ -271,34 +271,34 @@ admed.dbherb.Widget.DefaultRenderer.prototype._initCanvas = function() {
 	    admed.mvcutils.hide(this._resultsPane);
 	    
 	}catch (error) {
-        	throw new admed.UnexpectedException("admed.dbherb.Widget.DefaultRenderer.prototype._initCanvas", error);
+        	throw new admed.UnexpectedException("admed.atags.Widget.DefaultRenderer.prototype._initCanvas", error);
     }
 };
 
 /**
  * @private
  */
-admed.dbherb.Widget.DefaultRenderer.prototype._canvas = null;
+admed.atags.Widget.DefaultRenderer.prototype._canvas = null;
 
 /**
  * @private
  */
-admed.dbherb.Widget.DefaultRenderer.prototype._pendingPane = null;
+admed.atags.Widget.DefaultRenderer.prototype._pendingPane = null;
 
 /**
  * @private
  */
-admed.dbherb.Widget.DefaultRenderer.prototype._resultsPane = null;
+admed.atags.Widget.DefaultRenderer.prototype._resultsPane = null;
 
 /**
  * @private
  */
-admed.dbherb.Widget.DefaultRenderer.prototype._resultsSummaryPane = null;
+admed.atags.Widget.DefaultRenderer.prototype._resultsSummaryPane = null;
 
 /**
  * @private
  */
-admed.dbherb.Widget.DefaultRenderer.prototype._messagePane = null;
+admed.atags.Widget.DefaultRenderer.prototype._messagePane = null;
 
 
 /**
@@ -308,7 +308,7 @@ admed.dbherb.Widget.DefaultRenderer.prototype._messagePane = null;
  * @param {Array} args the callback args
  * @param {admed.genefinder.DefaultRenderer} self a self reference, to work around callback issues
  */
-admed.dbherb.Widget.DefaultRenderer.prototype._onModelChanged = function(type, args, self) {
+admed.atags.Widget.DefaultRenderer.prototype._onModelChanged = function(type, args, self) {
     try {
 	    var handlers = {
 	        "STATE":"_onStateChanged",
@@ -321,7 +321,7 @@ admed.dbherb.Widget.DefaultRenderer.prototype._onModelChanged = function(type, a
 	    // call the handler
 	    self[handler](args[0], args[1], args[2]);
 	}catch (error) {
-        	throw new admed.UnexpectedException("admed.dbherb.Widget.DefaultRenderer.prototype._onModelChanged", error);
+        	throw new admed.UnexpectedException("admed.atags.Widget.DefaultRenderer.prototype._onModelChanged", error);
     }
 };
 
@@ -330,8 +330,8 @@ admed.dbherb.Widget.DefaultRenderer.prototype._onModelChanged = function(type, a
  * @private
  * TODO doc me
  */
-admed.dbherb.Widget.DefaultRenderer.prototype._onStateChanged = function( from, to, get ) {
-    var _context = "admed.dbherb.Widget.DefaultRenderer.prototype._onStateChanged";
+admed.atags.Widget.DefaultRenderer.prototype._onStateChanged = function( from, to, get ) {
+    var _context = "admed.atags.Widget.DefaultRenderer.prototype._onStateChanged";
     try {
 	    if ( to == "PENDING" ) {
 		    admed.mvcutils.show(this._pendingPane);
@@ -359,7 +359,7 @@ admed.dbherb.Widget.DefaultRenderer.prototype._onStateChanged = function( from, 
 		} 
 		else {
 		    // this should never happen
-	    	throw {name:"admed.dbherb.Widget.UnexpectedStateError", message:"Invalid state: "+newState};
+	    	throw {name:"admed.atags.Widget.UnexpectedStateError", message:"Invalid state: "+newState};
 		}
 	} catch (error) {
         	throw new admed.UnexpectedException(_context, error);
@@ -371,12 +371,12 @@ admed.dbherb.Widget.DefaultRenderer.prototype._onStateChanged = function( from, 
  * @private
  * TODO doc me
  */
-admed.dbherb.Widget.DefaultRenderer.prototype._onQueryChanged = function( from, to ) {
+admed.atags.Widget.DefaultRenderer.prototype._onQueryChanged = function( from, to ) {
 	try {
     	// store query
     	this._query = to;
     }catch (error) {
-        	throw new admed.UnexpectedException("admed.dbherb.Widget.DefaultRenderer.prototype._onQueryChanged", error);
+        	throw new admed.UnexpectedException("admed.atags.Widget.DefaultRenderer.prototype._onQueryChanged", error);
     }
 };
 
@@ -385,8 +385,8 @@ admed.dbherb.Widget.DefaultRenderer.prototype._onQueryChanged = function( from, 
  * @private
  * TODO doc me
  */
-admed.dbherb.Widget.DefaultRenderer.prototype._onResultsChanged = function( from, to ) {
-    var _context = "admed.dbherb.Widget.DefaultRenderer.prototype._onResultsChanged";	
+admed.atags.Widget.DefaultRenderer.prototype._onResultsChanged = function( from, to ) {
+    var _context = "admed.atags.Widget.DefaultRenderer.prototype._onResultsChanged";	
 	try {
         admed.debug("empty results summary pane");
         this._resultsPane.innerHTML = "";
@@ -398,7 +398,7 @@ admed.dbherb.Widget.DefaultRenderer.prototype._onResultsChanged = function( from
 	    if (to.length > 0) {
 
 	        admed.debug("render the results "+to.length, _context);
-	        this._resultsPane.innerHTML = this._medicinesToDivHTML(this._query, to); 
+	        this._resultsPane.innerHTML = this._atagsToDivHTML(this._query, to); 
 	
 	    }
 	    else {
@@ -416,11 +416,11 @@ admed.dbherb.Widget.DefaultRenderer.prototype._onResultsChanged = function( from
 /**
  * @private
  */
-admed.dbherb.Widget.DefaultRenderer.prototype._onErrorMessageChanged = function( from, to) {
+admed.atags.Widget.DefaultRenderer.prototype._onErrorMessageChanged = function( from, to) {
     try {
     	this._messagePane.innerHTML = to;
     }catch (error) {
-        	throw new admed.UnexpectedException("admed.dbherb.Widget.DefaultRenderer.prototype._onErrorMessageChanged", error);
+        	throw new admed.UnexpectedException("admed.atags.Widget.DefaultRenderer.prototype._onErrorMessageChanged", error);
     }
 };
 
@@ -428,11 +428,11 @@ admed.dbherb.Widget.DefaultRenderer.prototype._onErrorMessageChanged = function(
 /**
  * TODO doc me
  */
-admed.dbherb.Widget.DefaultRenderer.prototype.connect = function( model ) {
+admed.atags.Widget.DefaultRenderer.prototype.connect = function( model ) {
 	try {
     	model.subscribeAll(this._onModelChanged, this);
     }catch (error) {
-        	throw new admed.UnexpectedException("admed.dbherb.Widget.DefaultRenderer.prototype.connect", error);
+        	throw new admed.UnexpectedException("admed.atags.Widget.DefaultRenderer.prototype.connect", error);
     }
 
 };
@@ -442,17 +442,17 @@ admed.dbherb.Widget.DefaultRenderer.prototype.connect = function( model ) {
  * @private
  * TODO doc me
  */
-admed.dbherb.Widget.DefaultRenderer.prototype._renderResultsSummary = function( query, count ) {
-    var _context = "admed.dbherb.Widget.DefaultRenderer.prototype._renderResultsSummary";
+admed.atags.Widget.DefaultRenderer.prototype._renderResultsSummary = function( query, count ) {
+    var _context = "admed.atags.Widget.DefaultRenderer.prototype._renderResultsSummary";
 	try {
 	    	    
 		admed.debug("building results summary content", _context);
         var content = "found <span>";
 	    content += count;
-	    content += "</span> matching medicine";
+	    content += "</span> tags";
 	    content += (count == 0 || count > 1) ? "s " : " ";
-	    content += "from <a href='http://dbpedia.org'>DBpedia</a> for ";
-	    content += "medicine <span>'"+query+"'</span>";
+	    content += "from <a href='http://hcls.deri.org/sparql'>aTags</a> for ";
+	    content += "herb <span>'"+query.substr(28,len(query))+"'</span>";
 	    	    
 	    this._resultsSummaryPane.innerHTML = content;
 	    
@@ -466,118 +466,44 @@ admed.dbherb.Widget.DefaultRenderer.prototype._renderResultsSummary = function( 
  * @private
  * TODO doc me
  */
-admed.dbherb.Widget.DefaultRenderer.prototype._medicinesToDivHTML = function( query, medicines ) {
+admed.atags.Widget.DefaultRenderer.prototype._atagsToDivHTML = function( query, atags ) {
 
     try {
 	    // build the divs
 	    
-	    admed.debug("build div content for Medicines "+medicines.length);
-	    var content = "<table class=\"herbResults\">";
-	    for ( var i in medicines ) {
+	    var content = "<table class=\"atagResults\">";
+	    
+	    content = "<tr><th>Number</th><th>Topics</th><th>Content</th></tr>";
+	    for ( var i in atags ) {
+	    	
+	    	content += "<tr><td>" + i + "</td>";
 	        
-	        content += this._medicineToDivHTML(medicines[i]);
-	        admed.debug("Generate the med div" + content); 
+	        atag = atags[i];
+	        
+	        content += "<td>"
+	        
+	        if (atag.topic){
+	        	
+	        	var topics = atag.topic; 
+	        	for ( var t in topics){
+	        		content += topics[t];		
+	        	}	        	 
+	        }
+	        
+	        content += "</td>"
+	        
+	        if (atag.content){
+	        	content += "<td>" + atag.content + "</td>";
+	        }
+	        
+	        content += "</tr>"
+	      
 	    }
 	    
-	    content += "<a href=\"" + query + "\">More from DBPedia.</a>"
+	    content += "</table>"
 	    
 	    return content;
 	}catch (error) {
-        	throw new admed.UnexpectedException("admed.dbherb.Widget.DefaultRenderer.prototype._MedicinesToDivHTML", error);
+        	throw new admed.UnexpectedException("admed.atags.Widget.DefaultRenderer.prototype._atagsToDivHTML", error);
     }
 };
-
-
-/**
- * @private
- * TODO doc me
- */
-admed.dbherb.Widget.DefaultRenderer.prototype._medicineToDivHTML = function( medicine ) {
-  	try {
-	    admed.debug("build content for medicine "+medicine.name);
-	    
-	    var content = "";
-	    
-	    if (medicine.authority){
-		    content +=   "<tr><th>dbpedia:authority</th>";
-		    content +=          "<td><a href=\"" + medicine.authority + "\">";
-		    content +=              medicine.authority;
-		    content +=          "</a></td>"; 
-		    content +=      "</tr>";
-	    }
-	    
-	    if (medicine.classis){
-		    content +=   "<tr><th>dbpedia:classis</th>";
-		    content +=          "<td><a href=\"" + medicine.classis + "\">";
-		    content +=              medicine.classis;
-		    content +=          "</a></td>"; 
-		    content +=      "</tr>";
-	    }
-	    
-	    if (medicine.division){
-		    content +=   "<tr><th>dbpedia:division</th>";
-		    content +=          "<td><a href=\"" + medicine.division + "\">";
-		    content +=              medicine.division;
-		    content +=          "</a></td>"; 
-		    content +=      "</tr>";
-	    }
-	    
-	    if (medicine.family){
-		    content +=   "<tr><th>dbpedia:family</th>";
-		    content +=          "<td><a href=\"" + medicine.family + "\">";
-		    content +=              medicine.family;
-		    content +=          "</a></td>"; 
-		    content +=      "</tr>";
-	    }
-	    
-	    
-	    if (medicine.genus){
-		    content +=   "<tr><th>dbpedia:genus</th>";
-		    content +=          "<td><a href=\"" + medicine.genus + "\">";
-		    content +=              medicine.genus;
-		    content +=          "</a></td>"; 
-		    content +=      "</tr>";
-	    }
-	    
-	    
-	    if (medicine.kingdom){
-		    content +=   "<tr><th>dbpedia:kingdom</th>";
-		    content +=          "<td><a href=\"" + medicine.kingdom + "\">";
-		    content +=              medicine.kingdom;
-		    content +=          "</a></td>"; 
-		    content +=      "</tr>";
-	    }
-	    
-	    
-	    if (medicine.order){
-		    content +=   "<tr><th>dbpedia:order</th>";
-		    content +=          "<td><a href=\"" + medicine.order + "\">";
-		    content +=              medicine.order;
-		    content +=          "</a></td>"; 
-		    content +=      "</tr>";
-	    }
-	    
-	    
-	    if (medicine.species){
-		    content +=   "<tr><th>dbpedia:species</th>";
-		    content +=          "<td><a href=\"" + medicine.species + "\">";
-		    content +=              medicine.species;
-		    content +=          "</a></td>"; 
-		    content +=      "</tr>";
-	    }
-	    
-	    
-	    if (medicine.img){
-		    content +=   "<tr><th>dbpedia:img</th>";
-		    content +=          "<td><a href=\"" + medicine.img + "\"><img class=\"herb\"  src=\"" + medicine.img + "\"/></a>";
-		    content +=          "</td>"; 
-		    content +=      "</tr>";
-	    }
-	    
-	    
-	    return content;
-	}catch (error) {
-        	throw new admed.UnexpectedException("admed.dbherb.Widget.DefaultRenderer.prototype._medicineToDivHTML", error);
-    }
-};
-
