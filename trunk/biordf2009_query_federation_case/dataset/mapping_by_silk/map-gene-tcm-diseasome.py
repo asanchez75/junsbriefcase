@@ -46,13 +46,13 @@ def sparqlWithPorts(host, port, path, query):
         return resultSet
     
 
-infilename = '\\workspaces\\zhaoj\\biordf2009_query_federation_case\\dataset\\genenamelinking\\tcm_genes.csv'
+infilename = '\\workspaces\\zhaoj\\biordf2009_query_federation_case\\dataset\\genenamelinking\\tcm_genes_part2.csv'
 #infilename = '/root/workspace/biordf2009_query_federation_case/genenamelinking/tcm_genes.csv'
 infile = codecs.open(infilename, mode='r', encoding='UTF-8')
 reader = csv.reader(open(infilename, "rb"), delimiter='\n')
 
 
-outfilename = '\\workspaces\\zhaoj\\biordf2009_query_federation_case\\dataset\\mapping_by_silk\\mapping_diseasome_genes.ttl'
+outfilename = '\\workspaces\\zhaoj\\biordf2009_query_federation_case\\dataset\\mapping_by_silk\\mapping_diseasome_genes_part3.ttl'
 #outfilename = '/root/workspace/biordf2009_query_federation_case/genenamelinking/unique_mapping_tcm_genes.csv'
 outfile = codecs.open(outfilename, mode='w', encoding='UTF-8')
 
