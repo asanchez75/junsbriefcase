@@ -1,0 +1,38 @@
+.yui-skin-sam .yui-log {
+    width: 60em;
+    font-size: 1em;
+}
+#queryForm {
+    text-align: center;
+}
+
+#geneFinderWidget {
+    margin-top: 1em;
+    margin-bottom: 1em;    
+    padding: 1em;  
+    display: inline;
+}
+
+div.gene {
+    text-align: left; 
+    display: inline;
+    padding: 4px;
+}
+
+#diseaseWidget {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;    
+    display: inline-table;
+} 
+
+div.disease {
+    display: inline-table;
+    padding: 3px;
+    
+}
+
+div.result{
+    display: inline;
+    padding: 4px;
+}
