@@ -17,7 +17,7 @@ admed.atags.Service.ServiceTests.testFindAtagsForGinkgo = function( testCase, en
 		testCase.resume(function() {
 
 			assert.isNotUndefined(atags, "map should be defined");	
-			assert.areEqual(42, atags.length, "expected number of atags not mapping");
+			assert.areEqual(21, atags.length, "expected number of atags not mapping");
 			
 		});
 			
@@ -28,7 +28,7 @@ admed.atags.Service.ServiceTests.testFindAtagsForGinkgo = function( testCase, en
 	};
 
 	log("initiate request", "test");
-	service.findMedicineFromAtags(herbID, testOnSuccess, testOnFailure);
+	service.findAtagsForMedicine(herbID, testOnSuccess, testOnFailure);
 
 	// 
 	// log("suspend test case (if test runner hangs here, something is wrong)", "test");

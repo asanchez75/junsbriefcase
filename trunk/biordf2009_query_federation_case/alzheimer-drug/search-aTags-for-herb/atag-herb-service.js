@@ -51,12 +51,15 @@ admed.atags.Service.responsToAtags = function( response ) {
 admed.atags.Service._buildQueryForFindMedicineFromAtags = function( dbpediaHerbURI ) {
 
 	try {
-		var prefixes = 	"PREFIX sioc: <http://rdfs.org/sioc/ns#>  ";
+		var prefixes = 	"PREFIX sioc: <http://rdfs.org/sioc/ns#>  " +
+						"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>" ;
 						
-		var body = 		"SELECT DISTINCT ?atag ?topic ?content where { " +
+		var body = 		"SELECT DISTINCT ?atag ?topic ?topiclabel ?content " +
+						"FROM <http://hcls.deri.org/atag/data/tcm_atags.html>" +
+						"where { " +
 							"?atag sioc:topic <" + dbpediaHerbURI +
-							"> ; sioc:topic ?topic; sioc:content ?content ." +
-						"}limit 300";
+							"> ; sioc:topic ?topic; sioc:content ?content . ?topic rdfs:label ?topiclabel" +
+						"}limit 500";
 							
 		var query = prefixes + body;
 	
