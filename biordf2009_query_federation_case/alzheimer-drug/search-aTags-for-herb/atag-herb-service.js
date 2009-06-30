@@ -75,12 +75,18 @@ admed.atags.Service._buildQueryForFindMedicineFromAtags = function( dbpediaHerbU
  */
 admed.atags.Atags = function () {
 	
+	var that = this;
+	
 	/**
 	 * @type String
 	 */
-	this.topic = new Array();
+	this.topic = [];
 	
 	this.content = null;
+	
+	this.addTopic = function (topic){
+			admed.util.appendIfNotMember(that.topic, topic);
+	};
 
 };
 
@@ -93,6 +99,7 @@ admed.atags.Atags.newInstancesFromSPARQLResults = function(resultSet){
 		admed.debug ("buiding query results ");
 		var bindings = resultSet.results.bindings;
 		var atagsPool = new admed.atags.AtagsPool();
+		var topicPool = new admed.atags.TopicPool();
 //		var ingredientPool = new admed.atags.IngredientPool();
 		
 		for (var i=0; i<bindings.length; i++) {
@@ -106,9 +113,12 @@ admed.atags.Atags.newInstancesFromSPARQLResults = function(resultSet){
 				atag.content = binding.content.value;
 			
 			if (binding.topic){
-				topics = atag.topic;
-				admed.util.appendIfNotMember(topics, binding.topic.value);				
-				atag.topic = topics;
+				
+				topic = topicPool.get(binding.topic.value);
+				
+				topic.topiclabel = binding.topiclabel.value;
+				
+				atag.addTopic(topic);
 			}	
 		}
 		
@@ -152,5 +162,40 @@ admed.atags.AtagsPool.prototype.get = function( aTagURI ) {
 		return atag;
 	} catch (error) {
         throw new admed.UnexpectedException("admed.atags.AtagsPool.prototype.get", error);
+    }
+};
+
+admed.atags.TopicPool = function() {
+	/**
+	 * @private
+	 */
+	this._pool = new Object();
+};
+
+admed.atags.TopicPool.prototype.toArray = function() {
+	try {
+		var array = new Array();
+		for (var key in this._pool) {
+			array[array.length] = this._pool[key];
+		}
+		return array;
+	} catch (error) {
+        throw new admed.UnexpectedException("admed.atags.TopicPool.prototype.toArray", error);
+    }
+};
+
+admed.atags.TopicPool.prototype.get = function( topicURI ) {
+	
+	try {
+		var topic = this._pool[topicURI];
+		
+		if (!topic ) {
+			topic = new Object();
+			topic.topicURI = topicURI;
+			this._pool[topicURI] = topic;	
+		}		
+		return topic;
+	} catch (error) {
+        throw new admed.UnexpectedException("admed.atags.TopicPool.prototype.get", error);
     }
 };
