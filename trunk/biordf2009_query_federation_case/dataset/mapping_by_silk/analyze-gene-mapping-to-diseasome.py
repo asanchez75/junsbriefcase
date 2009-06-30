@@ -162,6 +162,8 @@ resultset = sparqlWithPorts("rodos.zoo.ox.ac.uk", 8890, "/sparql", query)
 onegene = []
 multigene = []
 
+silkgene1 = []
+
 if (len(resultset["results"]["bindings"])>0):
     for binding in resultset["results"]["bindings"]:
         tcmgene = binding["gene"]["value"]
@@ -169,7 +171,7 @@ if (len(resultset["results"]["bindings"])>0):
         print mapped
         if (re.match("1", mapped)):
             print "One to one mapping for gene: " + tcmgene
-            onegene.append(tcmgene)
+            onegene.append(tcmgene)            
         else:
             print "One to many mapping for gene: " + tcmgene
             multigene.append(tcmgene)
@@ -214,6 +216,7 @@ for gene in onegene:
     silkgene = searchforSilkGene (gene)
     if (re.match(disgene, silkgene)):
         triple = gene + "\towl:sameAs\t" + disgene + "\n"
+        silkgene1.append(silkgene)
         outfile.write(triple)
         outfile.flush()
     else:
@@ -233,6 +236,8 @@ manyfilename = '\\workspaces\\zhaoj\\biordf2009_query_federation_case\\dataset\\
 manyfile = codecs.open(manyfilename, mode='w', encoding='UTF-8')
 manyfile.write("TCMGene\tDiseasomeGene Manually\tDiseasomeGenebySilk\n")
 manyfile.flush()
+
+silkgene2 = []
 
 for gene in multigene:
     disgenes = searchforDisGenes(gene)    
@@ -258,6 +263,7 @@ for gene in multigene:
         if (re.match(disgene, silkgene)):
             hasMappingBySilk = True
             mappingsBySilk[gene] = silkgene
+            silkgene2.append(silkgene)
             
     if (not hasMappingBySilk):
         notmapped = notmapped + 1
@@ -277,3 +283,12 @@ manyfile.write("Analyzed " + str(analyzed) + "genes\n")
 manyfile.flush()
     
 manyfile.close()    
+
+
+
+### find the two overlapping silk genes
+for gene1 in silkgene1:
+    for gene2 in silkgene2:
+        if (re.match(gene1, gene2)):
+            print "the overlapping gene" + gene1
+            break 
