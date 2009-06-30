@@ -1,0 +1,832 @@
+TCMGene	DiseasomeGene Manually	DiseasomeGenebySilk
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MYO6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MYO6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MYO6
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MYO6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DFNA22	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MYO6
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MYO6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DFNB37	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MYO6
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRSS7	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRSS7	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRSS7
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRSS7	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ENTK	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRSS7
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LMNA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CMD1A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LMNA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LMNA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/EMD2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LMNA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LMNA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FPLD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LMNA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LMNA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HGPS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LMNA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LMNA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LGMD1B	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LMNA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LMNA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LMN1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LMNA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LMNA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LMNA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LMNA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SGCG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LGMD2C	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SGCG
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SGCG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DMDA1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SGCG
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SGCG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SCG3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SGCG
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SGCG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SGCG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SGCG
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PAPSS2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PAPSS2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PAPSS2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PAPSS2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ATPSK2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PAPSS2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ITGB2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ITGB2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ITGB2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ITGB2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CD18	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ITGB2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ITGB2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LAD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ITGB2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ITGB2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LCAMB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ITGB2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SPG7	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CMAR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SPG7
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SPG7	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PGN	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SPG7
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SPG7	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SPG7	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SPG7
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SPG7	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CAR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SPG7
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NDRG1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NDRG1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NDRG1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NDRG1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CMT4D	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NDRG1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NDRG1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HMSNL	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NDRG1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ETFA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ETFA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ETFA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ETFA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GA2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ETFA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ETFA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MADD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ETFA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/L1CAM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/L1CAM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/L1CAM
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/L1CAM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CAML1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/L1CAM
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/L1CAM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HSAS1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/L1CAM
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GNRHR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LHRHR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GNRHR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GNRHR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GNRHR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GNRHR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PICALM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PICALM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PICALM
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PICALM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CALM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PICALM
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PICALM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CLTH	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PICALM
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NF1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NF1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NF1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NF1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NFNS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NF1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NF1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/VRNF	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NF1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NF1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/WSS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NF1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FECH	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FECH	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FECH
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FECH	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FCE	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FECH
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FAS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FAS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FAS
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FAS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALPS1A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FAS
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FAS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FAS
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FAS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CD95	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FAS
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FAS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TNFRSF6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FAS
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MEFV	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MEFV	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MEFV
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MEFV	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FMF	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MEFV
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MEFV	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MEF	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MEFV
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PEO1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/C10orf2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PEO1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PEO1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PEO	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PEO1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PEO1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PEO1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PEO1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CHIT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CHIT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CHIT1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CHIT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CHIT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CHIT1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SRY	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SRY	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SRY
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SRY	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TDF	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SRY
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/RYR1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RYR1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RYR1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/RYR1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CCO	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RYR1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/RYR1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MHS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RYR1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SERPINF2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SERPINF2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SERPINF2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SERPINF2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PLI	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SERPINF2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ACHE	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/YT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACHE
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ACHE	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACHE	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACHE
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LEP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LEP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LEP
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LEP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/OB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LEP
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/POMC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/POMC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/POMC
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/POMC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LPH	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/POMC
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PFC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PFC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PFC
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PFC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PFD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PFC
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CXCR4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CXCR4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CXCR4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CXCR4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/D2S201E	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CXCR4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CXCR4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NPY3R	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CXCR4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CXCR4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/WHIM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CXCR4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MMP3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MMP3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MMP3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MMP3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/STMY1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MMP3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TWIST1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACS3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TWIST1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TWIST1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SCS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TWIST1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TWIST1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TWIST	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TWIST1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TWIST1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TWIST1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TWIST1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABCC2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABCC2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABCC2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABCC2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CMOAT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABCC2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TAL1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TAL1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TAL1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TAL1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SCL	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TAL1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TAL1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TCL5	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TAL1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ACSL6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACSL6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACSL6
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ACSL6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACS2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACSL6
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ACSL6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FACL6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACSL6
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ITGA2B	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ITGA2B	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ITGA2B
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ITGA2B	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CD41B	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ITGA2B
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ITGA2B	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GP2B	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ITGA2B
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SLC11A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SLC11A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SLC11A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SLC11A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NRAMP1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SLC11A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SLC11A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NRAMP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SLC11A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SCN5A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SCN5A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SCN5A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SCN5A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HB1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SCN5A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SCN5A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IVF	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SCN5A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SCN5A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LQT3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SCN5A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SCN5A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SSS1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SCN5A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LYST	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LYST	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LYST
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LYST	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CHS1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LYST
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TGFB1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TGFB1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TGFB1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TGFB1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CED	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TGFB1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TGFB1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DPD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TGFB1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DNAI1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DNAI1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DNAI1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DNAI1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CILD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DNAI1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DNAI1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ICS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DNAI1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DNAI1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PCD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DNAI1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRF1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRF1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRF1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRF1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HPLH2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRF1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/EMD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/EMD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/EMD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/EMD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/EDMD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/EMD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/EMD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/STA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/EMD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/COCH	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/COCH	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/COCH
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/COCH	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DFNA9	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/COCH
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/APP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AAA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APP
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/APP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APP
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/APP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CVAP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APP
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/APP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APP
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CDK4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CMM3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CDK4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CDK4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CDK4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CDK4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TNNI3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TNNI3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TNNI3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TNNI3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TNNC1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TNNI3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PPT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CLN1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPT1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PPT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPT1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NR2E3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ESCS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NR2E3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NR2E3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PNR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NR2E3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NR2E3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NR2E3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NR2E3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ESR1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ESR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ESR1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ESR1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ESR1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ESR1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CALCA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CALCA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CALCA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CALCA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CALC1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CALCA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MKL1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MAL	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MKL1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MKL1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MKL1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MKL1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LTA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LTA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LTA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LTA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TNFB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LTA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABCB1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABCB1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABCB1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABCB1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MDR1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABCB1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABCB1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PGY1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABCB1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MAT1A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MATA1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MAT1A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MAT1A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MAT1A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MAT1A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MAT1A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SAMS1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MAT1A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ZAP70	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ZAP70	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ZAP70
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ZAP70	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SRK	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ZAP70
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ZAP70	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/STD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ZAP70
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ALX4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PFM2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALX4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ALX4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FPP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALX4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ALX4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALX4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALX4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/B4GALT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/B4GALT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/B4GALT1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/B4GALT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GTB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/B4GALT1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/B4GALT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GGTB2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/B4GALT1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/B4GALT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/B4GALT1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PKLR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PK1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PKLR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PKLR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PKLR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PKLR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HAL	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HAL	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HAL
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HAL	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HSTD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HAL
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/KLK3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PSA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/KLK3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/KLK3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/KLK3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/KLK3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NR5A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NR5A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NR5A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NR5A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FTZ1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NR5A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NR5A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FTZF1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NR5A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NR5A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SF1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NR5A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AGPS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AGPS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AGPS
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AGPS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ADHAPS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AGPS
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NFKBIA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NFKBIA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NFKBIA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NFKBIA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IKBA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NFKBIA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PPARG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPARG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPARG
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PPARG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPARG1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPARG
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PPARG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPARG2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPARG
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AFP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HPAFP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AFP
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AFP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AFP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AFP
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MAP3K8	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MAP3K8	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MAP3K8
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MAP3K8	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/EST	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MAP3K8
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MAP3K8	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TPL2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MAP3K8
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MAP3K8	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/COT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MAP3K8
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CYP2C19	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP2C	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP2C19
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CYP2C19	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP2C19	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP2C19
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/POLG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PEO	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/POLG
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/POLG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/POLGA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/POLG
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/POLG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/POLG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/POLG
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/POLG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/POLG1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/POLG
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TERT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TERT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TERT
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TERT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/EST2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TERT
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TERT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TCS1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TERT
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ATN1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ATN1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ATN1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ATN1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DRPLA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ATN1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FSCN2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RFSN	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FSCN2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FSCN2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FSCN2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FSCN2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRPF3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRPF3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRPF3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRPF3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HPRP3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRPF3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRPF3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RP18	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRPF3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IL12B	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IL12B	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IL12B
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IL12B	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NKSF2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IL12B
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABAT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABAT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABAT
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABAT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GABAT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABAT
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IL2RA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IL2RA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IL2RA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IL2RA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IL2R	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IL2RA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PLA2G2A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PLA2G2A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PLA2G2A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PLA2G2A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MOM1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PLA2G2A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PLA2G2A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PLA2B	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PLA2G2A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PLA2G2A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PLA2L	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PLA2G2A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NOS2A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NOS2A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NOS2A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NOS2A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NOS2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NOS2A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GNAS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AHO	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GNAS
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GNAS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GNAS1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GNAS
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GNAS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GPSA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GNAS
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GNAS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PHP1A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GNAS
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GNAS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PHP1B	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GNAS
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GNAS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/POH	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GNAS
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GNAS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GNAS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GNAS
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SOD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SOD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SOD1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SOD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SOD1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SOD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALS1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SOD1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CASP8	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MCH5	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CASP8
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CASP8	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CASP8	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CASP8
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/OPN1MW	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/OPN1MW	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/OPN1MW
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/OPN1MW	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CBBM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/OPN1MW
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/OPN1MW	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CBD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/OPN1MW
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/OPN1MW	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GCP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/OPN1MW
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/BCR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALL	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BCR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/BCR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CML	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BCR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/BCR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PHL	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BCR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/BCR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BCR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BCR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LDLR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LDLR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LDLR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LDLR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FH	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LDLR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LDLR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FHC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LDLR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NR0B2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NR0B2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NR0B2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NR0B2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SHP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NR0B2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NQO1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NQO1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NQO1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NQO1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DIA4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NQO1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NQO1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DTD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NQO1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NQO1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NMOR1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NQO1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FBN2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FBN2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FBN2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FBN2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CCA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FBN2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SLC4A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SLC4A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SLC4A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SLC4A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AE1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SLC4A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SLC4A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/EPB3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SLC4A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CYP27A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP27A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP27A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CYP27A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CTX	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP27A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CYP27A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP27	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP27A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/RUNX2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AML3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RUNX2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/RUNX2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CBFA1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RUNX2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/RUNX2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PEBP2A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RUNX2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/RUNX2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RUNX2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RUNX2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GYPC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GYPC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GYPC
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GYPC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GE	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GYPC
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GYPC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GPC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GYPC
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FKBP5	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FKBP5	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FKBP5
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FKBP5	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FKBP51	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FKBP5
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SGCB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SGCB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SGCB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SGCB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LGMD2E	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SGCB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CD40	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CD40	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CD40
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CD40	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TNFRSF5	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CD40
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FZD4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FZD4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FZD4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FZD4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/EVR1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FZD4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GSS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GSS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GSS
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GSS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GSHS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GSS
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CHAT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CMS1A2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CHAT
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CHAT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CHAT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CHAT
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/BCS1L	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BCS1L	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BCS1L
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/BCS1L	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FLNMS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BCS1L
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/BCS1L	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GRACILE	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BCS1L
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/POU1F1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/POU1F1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/POU1F1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/POU1F1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PIT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/POU1F1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/H6PD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GDH	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/H6PD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/H6PD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/H6PD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/H6PD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MSX2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MSX2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MSX2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MSX2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CRS2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MSX2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MSX2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FPP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MSX2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MSX2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HOX8	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MSX2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ACTG1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACTG1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ACTG1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DFNA20	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACTG1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ACTG1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DFNA26	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACTG1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ACTG1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACTG1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACTG1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABCB7	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABCB7	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABCB7
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABCB7	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABC7	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABCB7
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABCB7	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ASAT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABCB7
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LDHA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LDHA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LDHA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LDHA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LDH1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LDHA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GCLC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GCLC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GCLC
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GCLC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GLCLC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GCLC
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PKHD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PKHD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PKHD1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PKHD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ARPKD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PKHD1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PKHD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FCYT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PKHD1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DSG4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LAH	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DSG4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DSG4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DSG4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DSG4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TITF1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NKX2A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TITF1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TITF1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TTF1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TITF1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TITF1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TITF1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TITF1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/UMOD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/UMOD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/UMOD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/UMOD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ADMCKD2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/UMOD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/UMOD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FJHN	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/UMOD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/UMOD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HNFJ	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/UMOD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/UMOD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MCKD2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/UMOD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AGXT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AGXT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AGXT
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AGXT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AGT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AGXT
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AGXT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SPAT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AGXT
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TTR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TTR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TTR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TTR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PALB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TTR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TH	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TH	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TH
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TH	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TYH	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TH
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CRYGC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CCL	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CRYGC
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CRYGC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CRYG3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CRYGC
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CRYGC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CRYGC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CRYGC
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/VWF	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/VWF	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/VWF
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/VWF	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/F8VWF	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/VWF
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CSRP3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CSRP3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CSRP3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CSRP3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CLP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CSRP3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CSRP3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CMD1M	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CSRP3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CSRP3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CRP3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CSRP3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HNF4A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TCF14	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HNF4A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HNF4A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseases/768	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HNF4A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HNF4A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MODY1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HNF4A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HNF4A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HNF4A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HNF4A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IL10	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IL10	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IL10
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IL10	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CSIF	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IL10
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IL10	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TGIF	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IL10
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PPOX	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPOX	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPOX
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PPOX	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/VP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPOX
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GYPA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GYPA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GYPA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GYPA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GPA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GYPA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GYPA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MN	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GYPA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GYPA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MNS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GYPA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CYLD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYLD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYLD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CYLD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CDMT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYLD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CYLD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYLD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYLD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CYLD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/EAC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYLD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/UGT1A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/UGT1A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/UGT1A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/UGT1A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GNT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/UGT1A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/UGT1A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/UGT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/UGT1A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/UGT1A6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GNT1	
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/UGT1A6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/UGT1	
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MPZ	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CHM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MPZ
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MPZ	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CMTDI3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MPZ
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MPZ	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DSS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MPZ
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MPZ	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CMT1B	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MPZ
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MPZ	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MPZ	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MPZ
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ERCC8	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ERCC8	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ERCC8
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ERCC8	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CSA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ERCC8
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ERCC8	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CKN1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ERCC8
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ERCC2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ERCC2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ERCC2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ERCC2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/EM9	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ERCC2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CDH1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CDH1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CDH1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CDH1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/UVO	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CDH1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ATM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ATM
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ATM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ATA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ATM
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ATM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ATM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ATM
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NR3C1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NR3C1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NR3C1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NR3C1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GCR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NR3C1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NR3C1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GRL	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NR3C1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GNS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GNS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GNS
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GNS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/G6S	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GNS
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ADAMTS2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NPI	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ADAMTS2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ADAMTS2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ADAMTS2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ADAMTS2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SERPINC1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AT3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SERPINC1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SERPINC1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SERPINC1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SERPINC1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SQSTM1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SQSTM1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SQSTM1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SQSTM1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/P62	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SQSTM1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SQSTM1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PDB3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SQSTM1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/APOE	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AD2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APOE
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/APOE	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APOE	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APOE
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GLB1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GLB1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GLB1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GLB1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/EBP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GLB1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AVP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AVP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AVP
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AVP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AVRP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AVP
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AVP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/VP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AVP
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PPARA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPARA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPARA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PPARA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPAR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPARA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DHTR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/KD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SBMA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SMAX1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TFM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/RHO	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/OPN2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RHO
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/RHO	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RHO	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RHO
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/RHO	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RP4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RHO
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PLAU	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PLAU	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PLAU
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PLAU	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/URK	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PLAU
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AGC1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AGC1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AGC1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AGC1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CSPG1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AGC1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AGC1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MSK16	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AGC1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AGC1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SEDK	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AGC1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GNPTAB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GNPTAB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GNPTAB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GNPTAB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GNPTA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GNPTAB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ERBB2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HER2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ERBB2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ERBB2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NEU	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ERBB2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ERBB2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NGL	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ERBB2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ERBB2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ERBB2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ERBB2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ALDH3A2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALDH3A2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALDH3A2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ALDH3A2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALDH10	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALDH3A2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ALDH3A2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FALDH	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALDH3A2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ALDH3A2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SLS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALDH3A2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SERPINA1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SERPINA1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SERPINA1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SERPINA1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PI	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SERPINA1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SERPINA1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AAT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SERPINA1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABCD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABCD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABCD1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABCD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABCD1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABCD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AMN	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABCD1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SGCD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CMD1L	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SGCD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SGCD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SGD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SGCD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SGCD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SGCD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SGCD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CSTB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/STFB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CSTB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CSTB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/EPM1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CSTB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CSTB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CSTB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CSTB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FBN1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MFS1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FBN1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FBN1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/WMS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FBN1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FBN1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FBN1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FBN1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MMP2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CLG4A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MMP2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MMP2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MONA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MMP2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MMP2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MMP2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MMP2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GH1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GHN	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GH1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GH1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GH1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GH1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MLYCD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MLYCD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MLYCD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MLYCD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MCD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MLYCD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MPI	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MPI	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MPI
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MPI	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PMI1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MPI
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SDHB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SDH1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SDHB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SDHB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SDHIP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SDHB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SDHB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SDHB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SDHB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MMP1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CLG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MMP1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MMP1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MMP1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MMP1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ALDH5A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALDH5A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALDH5A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ALDH5A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SSADH	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALDH5A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PPGB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPGB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPGB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PPGB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CTSA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPGB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PPGB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GSL	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPGB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PPGB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GLB2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPGB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PPGB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NGBE	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPGB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SERPIND1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SERPIND1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SERPIND1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SERPIND1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HC2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SERPIND1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SERPIND1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HCF2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SERPIND1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SLC26A4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SLC26A4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SLC26A4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SLC26A4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PDS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SLC26A4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SLC26A4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DFNB4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SLC26A4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ACE	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACE	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACE
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ACE	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACE1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACE
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ACE	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DCP1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACE
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/XIST	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/XIST	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/XIST
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/XIST	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SXI1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/XIST
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/XIST	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/XCE	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/XIST
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/XIST	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/XIC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/XIST
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CD8A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CD8A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CD8A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CD8A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MAL	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CD8A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HBB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HBB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HBB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HBB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HBD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HBB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CCR5	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CCR5	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CCR5
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CCR5	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CCCKR5	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CCR5
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CCR5	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CMKBR5	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CCR5
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MAPT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MAPT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MAPT
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MAPT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DDPAC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MAPT
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MAPT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MSTD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MAPT
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MAPT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MTBT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MAPT
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TNF	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TNF	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TNF
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TNF	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TNFA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TNF
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SACS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ARSACS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SACS
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SACS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SACS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SACS
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MYO5A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MYO5A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MYO5A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MYO5A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GS1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MYO5A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MYO5A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MYH12	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MYO5A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CA4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CA4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CA4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CA4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RP17	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CA4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FANCD2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FANCD2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FANCD2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FANCD2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FACD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FANCD2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FANCD2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FAD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FANCD2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FANCD2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FANCD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FANCD2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRNP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GSS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRNP
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRNP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRIP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRNP
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRNP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRNP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRNP
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/VPS13B	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/VPS13B	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/VPS13B
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/VPS13B	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CHS1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/VPS13B
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/VPS13B	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/COH1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/VPS13B
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/BLM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BLM
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/BLM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RECQ2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BLM
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/BLM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RECQL2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BLM
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/BLM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BLM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BLM
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/BLM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RECQL3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BLM
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AGT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AGT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AGT
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AGT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SERPINA8	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AGT
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CDKN2A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CDKN2A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CDKN2A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CDKN2A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CMM2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CDKN2A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CDKN2A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MLM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CDKN2A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CDKN2A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MTS1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CDKN2A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CDKN2A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/P16	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CDKN2A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRKAR1A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRKAR1A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRKAR1A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRKAR1A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CAR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRKAR1A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRKAR1A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CNC1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRKAR1A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRKAR1A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TSE1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRKAR1A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TP53	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TP53	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TP53
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TP53	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LFS1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TP53
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TP53	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/P53	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TP53
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ATP1A3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ATP1A3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ATP1A3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ATP1A3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RDP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ATP1A3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ATP1A3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DYT12	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ATP1A3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DES	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CMD1I	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DES
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DES	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DES	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DES
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IL6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HGF	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IL6
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IL6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BSF2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IL6
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IL6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IFNB2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IL6
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IL6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IL6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IL6
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CALCR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CALCR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CALCR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CALCR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CRT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CALCR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DBT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BCATE2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DBT
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DBT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DBT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DBT
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CXCL12	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CXCL12	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CXCL12
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CXCL12	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SDF1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CXCL12
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/G6PD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/G6PD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/G6PD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/G6PD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/G6PD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/G6PD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PDLIM4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PDLIM4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PDLIM4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PDLIM4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RIL	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PDLIM4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CYP2C9	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP2C9	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP2C9
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CYP2C9	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP2C	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP2C9
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PSEN1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PSEN1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PSEN1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PSEN1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AD3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PSEN1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PSEN1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FAD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PSEN1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DNASE1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DNASE1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DNASE1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DNASE1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DNL1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DNASE1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/EPB41	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/EPB41	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/EPB41
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/EPB41	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/EL1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/EPB41
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SRC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SRC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SRC
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SRC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ASV	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SRC
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SRC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SRC1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SRC
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IGHM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IGHM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IGHM
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IGHM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MU	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IGHM
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NGFB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HSAN5	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NGFB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NGFB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NGFB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NGFB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TIMP3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TIMP3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TIMP3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TIMP3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SFD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TIMP3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DPAGT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DGPT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DPAGT1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DPAGT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DPAGT2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DPAGT1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DPAGT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DPAGT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DPAGT1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GJA8	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GJA8	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GJA8
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GJA8	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CAE1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GJA8
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GJA8	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CX50	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GJA8
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SMPD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SMPD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SMPD1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SMPD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NPD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SMPD1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HLA-DRB1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HLA-DR1B	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HLA-DRB1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HLA-DRB1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HLA-DRB1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HLA-DRB1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CYP2D6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP2D6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP2D6
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CYP2D6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP2D	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP2D6
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CYP2D6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP2D%40	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP2D6
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CYP2D6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/P450C2D	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP2D6
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TP73L	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/EEC3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TP73L
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TP73L	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/KET	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TP73L
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TP73L	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LMS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TP73L
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TP73L	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RHS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TP73L
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TP73L	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SHFM4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TP73L
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TP73L	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TP63	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TP73L
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TP73L	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TP73L	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TP73L
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRSS1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRSS1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRSS1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRSS1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TRY1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRSS1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/UNG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/UNG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/UNG
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/UNG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DGU	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/UNG
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/UNG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HIGM4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/UNG
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SLPI	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MPI	
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SLPI	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALK1	
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CENPJ	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CPAP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CENPJ
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CENPJ	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CENPJ	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CENPJ
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CENPJ	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MCPH6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CENPJ
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GYPB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GYPA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GYPB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GYPB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GYPB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GYPB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GYPB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GYPB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GYPB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MNS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GYPB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LGI1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LGI1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LGI1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LGI1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/EPT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LGI1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LGI1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ETL1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LGI1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SCGB1A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SCGB1A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SCGB1A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SCGB1A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CC10	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SCGB1A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SCGB1A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CCSP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SCGB1A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SCGB1A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/UGB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SCGB1A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PHEX	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PHEX	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PHEX
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PHEX	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HPDR1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PHEX
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PHEX	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HYP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PHEX
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ZNFN1A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IK1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ZNFN1A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ZNFN1A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LYF1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ZNFN1A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ZNFN1A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ZNFN1A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ZNFN1A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GLUD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GLUD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GLUD1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GLUD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GDH	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GLUD1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/APC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APC
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/APC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DP3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APC
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/APC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APC
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/KNG1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/KNG1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/KNG1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/KNG1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/KNG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/KNG1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/OLR1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/OLR1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/OLR1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/OLR1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LOX1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/OLR1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PTPN1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PTPN1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PTPN1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PTPN1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PTP1B	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PTPN1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABO	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GTB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABO
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABO	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABO	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABO
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CR1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CR1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CR1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CR1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/C3BR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CR1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FASLG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FASLG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FASLG
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FASLG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APT1LG1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FASLG
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FASLG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FASL	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FASLG
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FASLG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TNFSF6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FASLG
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MALT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MLT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MALT1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MALT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MALT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MALT1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PROM1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PROM1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PROM1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PROM1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AC133	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PROM1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PROM1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PROML1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PROM1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/USH1G	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SANS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/USH1G
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/USH1G	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/USH1G	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/USH1G
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CCND1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CCND1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CCND1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CCND1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BCL1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CCND1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CCND1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRAD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CCND1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CCL5	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CCL5	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CCL5
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CCL5	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/D17S136E	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CCL5
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CCL5	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SCYA5	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CCL5
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CCL5	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TCP228	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CCL5
+#### Genes with no mapping by Silk for the one-to-many mapping TCM genes ####
+Not mapped genes 0genes
+#### Genes with at least one mapping by Silk for the one-to-many mapping TCM genes ####
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PDLIM4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PDLIM4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/VPS13B	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/VPS13B
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LEP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LEP
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRPF3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRPF3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HBB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HBB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FZD4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FZD4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NOS2A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NOS2A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PPT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPT1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SACS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SACS
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SQSTM1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SQSTM1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CRYGC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CRYGC
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ERBB2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ERBB2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MMP3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MMP3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MMP2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MMP2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TTR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TTR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NGFB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NGFB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SPG7	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SPG7
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MKL1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MKL1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ATP1A3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ATP1A3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PAPSS2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PAPSS2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABO	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABO
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SDHB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SDHB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ERCC8	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ERCC8
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TP73L	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TP73L
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SERPINC1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SERPINC1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GNS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GNS
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ERCC2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ERCC2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MAT1A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MAT1A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AFP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AFP
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DES	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DES
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PHEX	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PHEX
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CSTB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CSTB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRKAR1A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRKAR1A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LGI1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LGI1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PKHD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PKHD1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TNNI3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TNNI3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/POU1F1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/POU1F1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/RHO	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RHO
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GYPB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GYPB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CD40	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CD40
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ETFA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ETFA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FASLG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FASLG
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/KLK3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/KLK3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FAS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FAS
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CHAT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CHAT
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CCL5	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CCL5
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NR0B2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NR0B2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SGCB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SGCB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/RUNX2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RUNX2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SGCG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SGCG
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SGCD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SGCD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/G6PD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/G6PD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CR1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CR1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SOD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SOD1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AGT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AGT
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GLUD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GLUD1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IL12B	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IL12B
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DNAI1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DNAI1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ZAP70	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ZAP70
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IL10	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IL10
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CYP2D6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP2D6
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRNP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRNP
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PPGB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPGB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/RYR1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/RYR1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/APC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APC
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/L1CAM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/L1CAM
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CDH1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CDH1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TITF1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TITF1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SMPD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SMPD1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRF1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRF1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ITGB2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ITGB2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NDRG1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NDRG1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/H6PD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/H6PD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/APP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APP
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PLAU	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PLAU
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/UNG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/UNG
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CYP2C9	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP2C9
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GNAS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GNAS
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NR2E3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NR2E3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABCC2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABCC2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NQO1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NQO1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LDLR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LDLR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HNF4A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HNF4A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DSG4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DSG4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/POLG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/POLG
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/BCS1L	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BCS1L
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PPOX	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPOX
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NR3C1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NR3C1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SERPINA1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SERPINA1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/XIST	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/XIST
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CYP2C19	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP2C19
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PKLR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PKLR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PROM1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PROM1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ZNFN1A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ZNFN1A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/OPN1MW	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/OPN1MW
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PLA2G2A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PLA2G2A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CCND1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CCND1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DPAGT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DPAGT1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GNPTAB	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GNPTAB
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TH	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TH
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABCB7	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABCB7
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CA4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CA4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABCB1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABCB1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TERT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TERT
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IL6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IL6
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CDK4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CDK4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GNRHR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GNRHR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NR5A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NR5A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ALX4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALX4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SLC4A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SLC4A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ALDH5A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALDH5A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABCD1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABCD1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MYO5A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MYO5A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ITGA2B	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ITGA2B
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SCN5A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SCN5A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MMP1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MMP1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ACHE	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACHE
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SERPINF2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SERPINF2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ESR1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ESR1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/USH1G	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/USH1G
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ADAMTS2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ADAMTS2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CDKN2A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CDKN2A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PICALM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PICALM
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CCR5	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CCR5
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LMNA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LMNA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PPARA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPARA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AGPS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AGPS
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MEFV	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MEFV
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DBT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DBT
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PPARG	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PPARG
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MALT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MALT1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CD8A	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CD8A
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AGXT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AGXT
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SLC11A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SLC11A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TAL1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TAL1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AGC1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AGC1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRSS1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRSS1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PRSS7	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PRSS7
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CXCL12	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CXCL12
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HAL	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HAL
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ATM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ATM
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CASP8	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CASP8
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/APOE	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/APOE
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TWIST1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TWIST1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GSS	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GSS
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CSRP3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CSRP3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FBN2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FBN2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FBN1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FBN1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SLC26A4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SLC26A4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SCGB1A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SCGB1A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ATN1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ATN1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GYPA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GYPA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/POMC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/POMC
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GYPC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GYPC
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/BLM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BLM
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FSCN2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FSCN2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MYO6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MYO6
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/COCH	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/COCH
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/B4GALT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/B4GALT1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ACSL6	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACSL6
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NF1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NF1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ABAT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ABAT
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ACE	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACE
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/AVP	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/AVP
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/HLA-DRB1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/HLA-DRB1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MPZ	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MPZ
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SRY	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SRY
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LTA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LTA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CYP27A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYP27A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/EPB41	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/EPB41
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/VWF	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/VWF
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PTPN1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PTPN1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MAP3K8	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MAP3K8
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SRC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SRC
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MPI	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MPI
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/NFKBIA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/NFKBIA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/SERPIND1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SERPIND1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CHIT1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CHIT1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CYLD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CYLD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FKBP5	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FKBP5
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ALDH3A2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALDH3A2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/UGT1A1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/UGT1A1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CALCA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CALCA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/BCR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/BCR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MSX2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MSX2
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FECH	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FECH
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PSEN1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PSEN1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/DNASE1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/DNASE1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GCLC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GCLC
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CALCR	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CALCR
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GJA8	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GJA8
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LDHA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LDHA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TGFB1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TGFB1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PFC	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PFC
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/ACTG1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ACTG1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IL2RA	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IL2RA
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MAPT	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MAPT
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/KNG1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/KNG1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TNF	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TNF
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/LYST	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/LYST
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GH1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GH1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MLYCD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/MLYCD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/PEO1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/PEO1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/UMOD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/UMOD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/GLB1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/GLB1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TP53	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TP53
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CENPJ	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CENPJ
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/CXCR4	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/CXCR4
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/IGHM	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/IGHM
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/TIMP3	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TIMP3
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/EMD	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/EMD
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/OLR1	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/OLR1
+http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/FANCD2	http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FANCD2
+Analyzed 216genes
