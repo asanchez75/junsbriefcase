@@ -487,7 +487,9 @@ admed.atags.Widget.DefaultRenderer.prototype._atagsToDivHTML = function( query, 
 	        	
 	        	var topics = atag.topic; 
 	        	for ( var t in topics){
-	        		content += topics[t];		
+	        		topic = topics[t]
+	        		topiclabel = topic.topiclabel;
+	        		content += "<a href=\"" + topic + "\">" + topiclabel + "</a>\t";		
 	        	}	        	 
 	        }
 	        
