@@ -44,20 +44,28 @@ def sparqlWithPorts(host, port, path, query):
         resultSet = json.load(res)
         conn.close()
         return resultSet
+    
+
+infilename = '\\workspaces\\zhaoj\\biordf2009_query_federation_case\\dataset\\genenamelinking\\tcm_genes.csv'
+#infilename = '/root/workspace/biordf2009_query_federation_case/genenamelinking/tcm_genes.csv'
+infile = codecs.open(infilename, mode='r', encoding='UTF-8')
+reader = csv.reader(open(infilename, "rb"), delimiter='\n')
 
 
-outfilename = '\\workspaces\\zhaoj\\biordf2009_query_federation_case\\dataset\\mapping_by_silk\\mapping_diseasome_genes.csv'
+outfilename = '\\workspaces\\zhaoj\\biordf2009_query_federation_case\\dataset\\mapping_by_silk\\mapping_diseasome_genes.ttl'
 #outfilename = '/root/workspace/biordf2009_query_federation_case/genenamelinking/unique_mapping_tcm_genes.csv'
 outfile = codecs.open(outfilename, mode='w', encoding='UTF-8')
 
 
-query = """
+queryTcmPart1 = """
 PREFIX tcm:      <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/>
 PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 prefix owl:     <http://www.w3.org/2002/07/owl#> 
-select distinct ?s ?gene
-where {?s rdf:type tcm:Gene ; owl:sameAs ?gene}
-"""
+select distinct ?gene
+from <http://purl.org/net/data/tcm/tcm-20090619>
+where {<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/"""
+
+queryTcmPart2 = """> owl:sameAs ?gene}"""
 
 queryPart1 = """
 PREFIX sc: <http://purl.org/science/owl/sciencecommons/>
@@ -73,47 +81,48 @@ Select distinct ?gene
 where {?gene rdfs:label ?label . filter regex(?label, \"^"""
 
 queryDiseasomePart2 = """$\", \"i\")} limit 10"""
+count = 0
 
-
-resultset = sparqlWithPorts("rodos.zoo.ox.ac.uk", 8890, "/sparql", query)
-
-count = 0 
+for row in reader:
+    tcmgeneid = row[0].strip()
+    print tcmgeneid
+    #print queryTcmPart1+tcmgeneid+queryTcmPart2
+    resultset = sparqlWithPorts("rodos.zoo.ox.ac.uk", 8890, "/sparql", queryTcmPart1+tcmgeneid+queryTcmPart2)
+     
     
-#    print "multiple mapping gene "
-    
-if (len(resultset["results"]["bindings"])>0):
-    for binding in resultset["results"]["bindings"]:
-        tcmgene = binding["s"]["value"]
-        gene = binding["gene"]["value"]
-        print gene
-        count = count + 1
+    #    print "multiple mapping gene "
         
-        print "mapped"
-        print count
-        print "genes"
+    if (len(resultset["results"]["bindings"])>0):
+        for binding in resultset["results"]["bindings"]:            
+            gene = binding["gene"]["value"]
+            print gene
+            count = count + 1        
+            print "mapped"
+            print count
+            print "genes"
+            
+            queryDeri = queryPart1 + gene + queryPart2
         
-        queryDeri = queryPart1 + gene + queryPart2
+            #        print queryDeri
         
-#        print queryDeri
+            deriSymobls = sparql("hcls.deri.org", "/sparql", queryDeri)
         
-        deriSymobls = sparql("hcls.deri.org", "/sparql", queryDeri)
-        
-        if (len(deriSymobls["results"]["bindings"])>0):
-            for binding in deriSymobls["results"]["bindings"]:
-                name =  binding["name"]["value"]
-                print name
+            if (len(deriSymobls["results"]["bindings"])>0):
+                for binding in deriSymobls["results"]["bindings"]:
+                    name =  binding["name"]["value"]
+                    print name
+                    
+                    queryDiseasome = queryDiseasomePart1 + name + queryDiseasomePart2
+                    #                print queryDiseasome
                 
-                queryDiseasome = queryDiseasomePart1 + name + queryDiseasomePart2
-#                print queryDiseasome
-                
-                mappingGene = sparql("www4.wiwiss.fu-berlin.de", "/diseasome/sparql", queryDiseasome)
-                
-                if (len(mappingGene["results"]["bindings"])>0):
-                    for binding in mappingGene["results"]["bindings"]:
-                        disgene =  binding["gene"]["value"]
-                        print "has a mapping gene " + disgene
-                        triple = tcmgene + "," + disgene + "\n"       
-                        outfile.write(triple)
-                        outfile.flush
+                    mappingGene = sparql("www4.wiwiss.fu-berlin.de", "/diseasome/sparql", queryDiseasome)
+                    
+                    if (len(mappingGene["results"]["bindings"])>0):
+                        for binding in mappingGene["results"]["bindings"]:
+                            disgene =  binding["gene"]["value"]
+                            print "has a mapping gene " + disgene
+                            triple = "<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/"+tcmgeneid + ">\t<http://www.w3.org/2002/07/owl#sameAs>\t<" + disgene + "> .\n"       
+                            outfile.write(triple)
+                            outfile.flush
     
 outfile.close()
