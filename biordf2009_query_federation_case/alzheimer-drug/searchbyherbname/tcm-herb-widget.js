@@ -418,8 +418,8 @@ admed.herbtcm.Widget.DefaultRenderer.prototype._onResultsChanged = function( fro
         this._resultsPane.innerHTML = "";
         this._resultsSummaryPane.innerHTML = "";
 		
-//	    admed.debug("render the results summary", _context);
-//	    this._renderResultsSummary(this._query, to.length);
+	    admed.debug("render the results summary", _context);
+	    this._renderResultsSummary(this._query, to.length);
 //	    
 //	    if (to.length > 0) {
 //
