@@ -20,8 +20,8 @@ admed.atags.Service.prototype = new admed.sparql.Service();
 /**
  * TODO doc me
  */
-admed.atags.Service.prototype.findMedicineFromAtags = function( dbpediaHerbURI, success, failure ) {
-    var _context = "admed.atags.Service.prototype.findMedicineFromAtags";
+admed.atags.Service.prototype.findAtagsForMedicine = function( dbpediaHerbURI, success, failure ) {
+    var _context = "admed.atags.Service.prototype.findAtagsForMedicine";
 	try {
 		admed.info("herbURI: "+dbpediaHerbURI, _context);
         var successChain = admed.chain(admed.atags.Service.responsToAtags, success);	

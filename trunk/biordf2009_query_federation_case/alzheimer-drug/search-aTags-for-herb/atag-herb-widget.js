@@ -452,7 +452,7 @@ admed.atags.Widget.DefaultRenderer.prototype._renderResultsSummary = function( q
 	    content += "</span> tags";
 	    content += (count == 0 || count > 1) ? "s " : " ";
 	    content += "from <a href='http://hcls.deri.org/sparql'>aTags</a> for ";
-	    content += "herb <span>'"+query.substr(28,len(query))+"'</span>";
+	    content += "herb <span>'"+query.substr(28,query.length)+"'</span>";
 	    	    
 	    this._resultsSummaryPane.innerHTML = content;
 	    
@@ -473,10 +473,11 @@ admed.atags.Widget.DefaultRenderer.prototype._atagsToDivHTML = function( query, 
 	    
 	    var content = "<table class=\"atagResults\">";
 	    
-	    content = "<tr><th>Number</th><th>Topics</th><th>Content</th></tr>";
+	    content += "<tr><th>Number</th><th>Topics</th><th>Content</th></tr>";
+	    number = 0
 	    for ( var i in atags ) {
-	    	
-	    	content += "<tr><td>" + i + "</td>";
+	    	number ++;
+	    	content += "<tr><td>" + number + "</td>";
 	        
 	        atag = atags[i];
 	        
