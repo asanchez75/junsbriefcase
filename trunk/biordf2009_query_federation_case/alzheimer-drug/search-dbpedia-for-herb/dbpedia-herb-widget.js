@@ -479,6 +479,8 @@ admed.dbherb.Widget.DefaultRenderer.prototype._medicinesToDivHTML = function( qu
 	        admed.debug("Generate the med div" + content); 
 	    }
 	    
+	    content += "</table>"
+	    
 	    content += "<a href=\"" + query + "\">More from DBPedia.</a>"
 	    
 	    return content;
