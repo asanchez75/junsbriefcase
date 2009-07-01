@@ -452,7 +452,8 @@ admed.tcm.Widget.DefaultRenderer.prototype._renderResultsSummary = function( que
 	    content += "</span> matching medicines";
 	    content += (count == 0 || count > 1) ? "s " : " ";
 	    content += "from <a href='http://code.google.com/p/junsbriefcase/wiki/RDFTCMData'>RDF TCMGeneDIT</a> for ";
-	    content += "disease <span>'"+query+"'</span> with confidence of 95%, ordered by the confidence desc";
+	    content += "disease <span>'"+query+"'</span> with confidence of 95%, ordered by the confidence desc. " +
+	    		"Click on the link to find more about the herb.";
 	    	    
 	    this._resultsSummaryPane.innerHTML = content;
 	    
