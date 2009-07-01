@@ -86,7 +86,8 @@ function initState () {
     
     if (qi > 0) {
         var query = url.substring(qi+7,url.length);
-        admed.info("found query: "+query);
+        query = query.replace(/%20/g, ' ')
+        admed.info("found query: "+query); 
         widget.findMedicineFromDbpedia(query);
     }
     
@@ -108,6 +109,8 @@ function initialiseApplication() {
 	initGeneFinder();
 	
 	initDiseaseWidget();
+	
+	initState();
 //	
 	geneFinderwidget.subscribe("GENEFOUND", onGeneFound, null);	
 	widget.subscribe("HERBSFOUND", onHerbsFound, null);
@@ -115,13 +118,13 @@ function initialiseApplication() {
 		
 	log("hook form submission to widget call");
 	YAHOO.util.Event.addListener("effectqueryForm", "submit", onEffectFormSubmit);
-	YAHOO.util.Event.addListener("queryForm", "submit", onFormSubmit);
+//	YAHOO.util.Event.addListener("queryForm", "submit", onFormSubmit);
 		
 	log("application loaded, showing main pane");
 	admed.mvcutils.hide(document.getElementById("loadingPane"));
 	admed.mvcutils.show(document.getElementById("applicationPane"));
 	
-	initState();
+	
 }
 
 function onFormSubmit(event) {
@@ -130,9 +133,12 @@ function onFormSubmit(event) {
 	var query = document.getElementById("queryInput").value;
 	log("query: "+query);
 	
-	widget.findMedicineFromDbpedia(query);
-	
 	setQueryState(query);
+	doQuery(query);
+};
+
+function doQuery(query) {
+	widget.findMedicineFromDbpedia(query);
 };
 
 function setQueryState(query) {
