@@ -78,6 +78,21 @@ function initDiseaseWidget(){
 	
 };
 
+
+function initState () {
+	var url = new String(window.location.href);
+	var qi = url.indexOf("#query=");
+    
+    
+    if (qi > 0) {
+        var query = url.substring(qi+7,url.length);
+        admed.info("found query: "+query);
+        widget.findMedicineFromDbpedia(query);
+    }
+    
+    
+};
+	
 function initialiseApplication() {
 	
 	var logReader = new YAHOO.widget.LogReader("logger");
@@ -105,6 +120,8 @@ function initialiseApplication() {
 	log("application loaded, showing main pane");
 	admed.mvcutils.hide(document.getElementById("loadingPane"));
 	admed.mvcutils.show(document.getElementById("applicationPane"));
+	
+	initState();
 }
 
 function onFormSubmit(event) {
@@ -114,7 +131,20 @@ function onFormSubmit(event) {
 	log("query: "+query);
 	
 	widget.findMedicineFromDbpedia(query);
-}
+	
+	setQueryState(query);
+};
+
+function setQueryState(query) {
+
+	var url = new String(window.location.href);
+	var term = url.indexOf("#");
+	if (term > 0) {
+	    url = url.substring(0, term);
+	}
+	window.location.href = url + "#query=" + query;
+	
+}; 
 
 function onEffectFormSubmit(event){
 	log("effect form submitted");
