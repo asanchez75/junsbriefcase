@@ -1,0 +1,107 @@
+.yui-skin-sam .yui-log {
+    width: 60em;
+    font-size: 1em;
+}
+
+#queryForm {
+    text-align: center;
+}
+
+#tcmWidget {
+    visibility:hidden;
+}
+
+/*#dbpediaHerbWidget {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right:2px;
+    border:double 1px;
+    padding: 1em;
+    width: 400px;
+    float:left;
+}*/
+
+table.herbResults {
+    max-width: 400px;
+}
+
+table.herbResults td{
+    max-width: 100px;
+}
+
+table.herbResults td{
+    max-width: 300px;
+    
+}
+
+#effectTcmWidget {
+    display:inline-table;
+    max-width:450px;
+    width:450px;
+}
+
+#effectTcmWidget p.resultsSummaryPane {
+    max-width: 300px;
+    float:left;
+    margin-right:1em;
+    width:300px;
+    padding-right: 2px;
+}
+
+#effectTcmWidget form{
+    max-width: 100px;
+    float:left;
+    width: 100px;
+    
+}
+
+#effectTcmWidget div.resultsPane{
+    overflow:auto; 
+    max-height:388px;
+    padding-top:2px; 
+    padding-left:2px;
+    clear:left;
+}
+
+#trialWidget {
+    vertical-align: text-top;
+}
+
+#geneFinderWidget {
+    vertical-align: text-top;
+}
+
+div.gene {
+    text-align: left; 
+    display: inline;
+    padding: 4px;
+}
+
+img.herb {
+    width: 15%;
+    height: 15%;
+}
+
+/*#diseaseWidget {
+    max-width: 500px;
+}
+
+table.diseaseResults {
+    max-width: 500px;
+}
+
+table.diseaseResults td.diseases{
+    max-width: 300px;
+}*/
+
+/*    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+    float:left;
+   display: inline-table;
+} */
+
+
+div.result{    
+    padding: 4px;
+}

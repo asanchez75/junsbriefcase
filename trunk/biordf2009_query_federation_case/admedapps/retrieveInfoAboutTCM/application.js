@@ -118,7 +118,6 @@ function initialiseApplication() {
 		
 	log("hook form submission to widget call");
 	YAHOO.util.Event.addListener("effectqueryForm", "submit", onEffectFormSubmit);
-	YAHOO.util.Event.addListener("queryForm", "submit", onFormSubmit);
 		
 	log("application loaded, showing main pane");
 	admed.mvcutils.hide(document.getElementById("loadingPane"));
@@ -126,31 +125,6 @@ function initialiseApplication() {
 	
 	
 };
-
-function onFormSubmit(event) {
-	log("form submitted");
-	
-	var query = document.getElementById("queryInput").value;
-	log("query: "+query);
-	
-	setQueryState(query);
-	doQuery(query);
-};
-
-function doQuery(query) {
-	widget.findMedicineFromDbpedia(query);
-};
-
-function setQueryState(query) {
-
-	var url = new String(window.location.href);
-	var term = url.indexOf("#");
-	if (term > 0) {
-	    url = url.substring(0, term);
-	}
-	window.location.href = url + "#query=" + query;
-	
-}; 
 
 function onEffectFormSubmit(event){
 	log("effect form submitted");
