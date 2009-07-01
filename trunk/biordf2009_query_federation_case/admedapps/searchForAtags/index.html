@@ -18,7 +18,7 @@
         <div id="doc3">
             <div id="hd">
                 <!-- header -->
-                <h1>Searching for ATags</h1>
+                <h1>Searching for <a href="http://hcls.deri.org/atag/generator/">ATags</a></h1>
             </div>
             <div id="bd">
                 
@@ -32,14 +32,14 @@
                         
                         <input type="text" id="queryInput"/>
                         <input type="submit" value="Go"/>
-                        Query by TCM herb name
+                        Query by TCM herb name (e.g. Ginkgo biloba)
                     </form>
                     
                     <hr/>
                     
                    
                    
-                    		<!--div id="geneFinderWidget"></div-->
+                    		<div id="tcmWidget"></div>
                    
                     	
                    
@@ -53,7 +53,12 @@
             </div>
             
             <div id="ft" class="yui-skin-sam">
-                <div id="logger"></div>
+                <div id="logger" class="invisible"></div>
+                <p>
+                    developer options:
+                    <a href="javascript:void(0)" onclick="admed.mvcutils.show(document.getElementById('logger'))">show logger</a>
+                    <a href="javascript:void(0)" onclick="admed.mvcutils.hide(document.getElementById('logger'))">hide logger</a>
+                </p>
             </div>
         </div>
         
