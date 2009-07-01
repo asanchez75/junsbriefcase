@@ -3,12 +3,42 @@
     font-size: 1em;
 }
 
+#queryForm {
+    text-align: center;
+}
+
 #tcmWidget {
     margin-top: 1em;
     margin-bottom: 1em;
 }
 
+.resultsSummaryPane {
+    border-top: 3px solid black; 
+    border-bottom: 3px solid black;
+    font-size: 110%;
+    padding: 6px;
+    background-color: #CCCCFF;
+}
+
+.yui-skin-sam p {
+    border-bottom: 1px solid black;
+    padding: 2px;
+    background-color: #FFFFCC;
+}
+
 .result {
     display: inline-table;
     border-spacing: 1px 1px;
+}
+
+#hd table{
+    border-style:none;
+}
+
+#hd table th{
+    border-style:none;
+}
+
+#hd table td{
+    border-style:none;
 }
