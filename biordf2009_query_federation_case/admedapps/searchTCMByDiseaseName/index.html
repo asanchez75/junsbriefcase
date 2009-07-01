@@ -3,7 +3,7 @@
                       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>Test Application for the TCM Widget</title>
+        <title>Search for Information about Alternative Medicines for a given Disease</title>
 
         <!-- basic style foundations -->
         <link rel="stylesheet" type="text/css" href="../../alzheimer-drug/lib-yui/yui_2.5.1/build/reset-fonts-grids/reset-fonts-grids.css"/>
@@ -16,9 +16,13 @@
     </head>
     <body>
         <div id="doc3">
-            <div id="hd">
+            <div id="hd" class="hd">
                 <!-- header -->
-                <h1>Test Application for the TCM Widget</h1>
+                <table>
+                <tr>
+                <td><a href="http://www.open-biomed.org.uk"><img class="headerimg" border="0" alt="OpenBiomed for TCM logo" src="./Ginkgo_Biloba_Leaves.jpg"/></a></td>
+                <td><h1>Search for Information about Alternative Medicines for a given Disease</h1></td>
+                </table>
             </div>
             <div id="bd">
                 
@@ -32,9 +36,10 @@
                         
                         <input type="text" id="queryInput"/>
                         <input type="submit" value="Go"/>
-                        Query by disease name
+                        Query by disease name (e.g. Alzheimer ...)
                     </form>
                     
+                    <hr/ >
                     <div id="tcmWidget"></div>
                     
                     <hr/>
@@ -44,6 +49,10 @@
             </div>
             
             <div id="ft" class="yui-skin-sam">
+            	<p>Version: <a href="http://code.google.com/p/open-biomed/wiki/OpenBioMedForTCMBeta">Open-BioMed for Alternative Medicine Beta</a></p>
+
+                <p>Developed by the <a href="http://users.ox.ac.uk/~zool0770/">Jun Zhao</a>, powdered by <a href="http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/">Open-Source Edition of OpenLink Virtuoso (Virtuoso 6.0)</a>, funded by <a href="http://www.epsrc.ac.uk/">EPSRC LSI Postdoctoral Fellowship</a>.</p>        
+            	
                 <div id="logger" class="invisible"></div>
                 <p>
                     developer options:
