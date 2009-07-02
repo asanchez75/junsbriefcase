@@ -19,7 +19,7 @@ Also, I needed to comment out the line of
 $this->pdo->setAttribute(eval('return PDO::MYSQL_ATTR_USE_BUFFERED_QUERY;'),false); 
 }}}
 
-in the index.php file for Triplify 5.*. Because that line works particularly for MYSQL databases but not required for the PostgreSQL.
+in the index.php file for Triplify V0.5. Because that line works particularly for MYSQL databases but not required for the PostgreSQL.
 
 Notes:
  * installed in /var/www/html/. It can be installed somewhere else and set up a redirect in /etc/httpd/conf.d/triplify.host
