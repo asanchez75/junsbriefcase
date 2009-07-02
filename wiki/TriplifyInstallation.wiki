@@ -12,4 +12,17 @@ Configure /etc/php.ini, add
 extension=pgsql.so
 }}}
 
+Also, I needed to comment out the line of 
+{{{
+$this->pdo->setAttribute(eval('return PDO::MYSQL_ATTR_USE_BUFFERED_QUERY;'),false); 
+}}}
+
+in the index.php file for Triplify 5.*. Because that line works particularly for MYSQL databases but not required for the PostgreSQL.
+
 The pgsql.so file is installed at /usr/lib/php/modules/ together with mysql.so.
+
+Notes:
+ * installed in /var/www/html/. It can be installed somewhere else and set up a redirect in /etc/httpd/conf.d/triplify.host
+ * created config.flyted.inc.php and config.flybase.inc.php configuration file. they need to be included in the index.php file.
+ * the key is to configure the $triplify['LinkedDataDepth']='1'; right
+ * to check whether everything works well, we can go to http://localhost/triplify/feature/ and see whether some RDF statements could be returned. The metadata can also be returned as JSON format by configuring index.php file.
