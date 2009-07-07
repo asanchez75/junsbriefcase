@@ -500,6 +500,12 @@ admed.dbherb.Widget.DefaultRenderer.prototype._medicineToDivHTML = function( med
 	    
 	    var content = "";
 	    
+	    if (medicine.label){
+		    content +=   "<tr><th>Chinese name</th>";
+		    content +=          "<td>" + medicine.label + "</td>";
+		    content +=      "</tr>";
+	    }
+	    
 	    if (medicine.authority){
 		    content +=   "<tr><th>dbpedia:authority</th>";
 		    content +=          "<td><a href=\"" + medicine.authority + "\">";
