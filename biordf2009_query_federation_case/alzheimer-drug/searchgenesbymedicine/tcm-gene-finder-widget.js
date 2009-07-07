@@ -82,6 +82,15 @@ admed.genetcm.GeneWidget.prototype.findGenesAssociatedWithMedicine = function( m
     }
 };
 
+admed.genetcm.GeneWidget.prototype.findGenesAssociatedWithMedicineForDisease = function( medicineName, diseaseName ) {
+	// pass through to controller
+	try {
+		this._controller.findGenesAssociatedWithMedicineForDisease(medicineName, diseaseName);
+	}catch (error) {
+        throw new admed.UnexpectedException("admed.genetcm.GeneWidget.prototype.findGenesAssociatedWithMedicineForDisease", error);
+    }
+};
+
 
 /*
  * --------------------------------------------------
@@ -180,6 +189,15 @@ admed.genetcm.GeneWidget.Controller.prototype.findGenesAssociatedWithMedicine = 
     }
 };
 
+admed.genetcm.GeneWidget.Controller.prototype.findGenesAssociatedWithMedicineForDisease = function( medicineName, diseaseName ) {
+	try {
+		// pass through to private implementation
+		this._findGenesAssociatedWithMedicineForDisease(medicineName, diseaseName, this._findGenesSuccess, this._findGenesFailure);
+	}catch (error) {
+        	throw new admed.UnexpectedException("admed.genetcm.GeneWidget.Controller.prototype.findGenesAssociatedWithMedicineForDisease", error);
+    }
+};
+
 
 /**
  * @private
@@ -202,6 +220,23 @@ admed.genetcm.GeneWidget.Controller.prototype._findGenesAssociatedWithMedicine =
 		this._service.findGenesAssociatedWithMedicine(medicineName, success, failure);
 	}catch (error) {
         	throw new admed.UnexpectedException("admed.genetcm.GeneWidget.Controller.prototype._findGenesAssociatedWithMedicine", error);
+    }
+};
+
+admed.genetcm.GeneWidget.Controller.prototype._findGenesAssociatedWithMedicineForDisease = function( medicineName, diseaseName, success, failure ) {
+	try {
+		admed.info("admed.genetcm.GeneWidget.Controller._findGenesAssociatedWithMedicineForDisease :: request: "+medicineName);
+		
+		// set the model pending
+		this._model.set("STATE", "PENDING");
+		
+		// set the query property
+		this._model.set("QUERY", medicineName);
+		
+		// kick off the request
+		this._service.findGenesAssociatedWithMedicineForDisease(medicineName, diseaseName, success, failure);
+	}catch (error) {
+        	throw new admed.UnexpectedException("admed.genetcm.GeneWidget.Controller.prototype._findGenesAssociatedWithMedicineForDisease", error);
     }
 };
 

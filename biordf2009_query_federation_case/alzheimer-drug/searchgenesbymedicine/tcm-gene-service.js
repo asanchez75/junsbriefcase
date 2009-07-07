@@ -32,6 +32,18 @@ admed.genetcm.Service.prototype.findGenesAssociatedWithMedicine = function( medi
     }
 };
 
+admed.genetcm.Service.prototype.findGenesAssociatedWithMedicineForDisease = function( medicineName, diseaseName, success, failure ) {
+    var _context = "admed.genetcm.Service.prototype.findGenesAssociatedWithMedicine";
+	try {
+		admed.info("diseaseName: "+diseaseName, _context);
+        var successChain = admed.chain(admed.genetcm.Service.responseToGene, success);	
+		var query = admed.genetcm.Service._buildQueryForFindGenesAssociatedWithMedicineForDisease(medicineName, diseaseName);
+		this.query(query, successChain, failure);
+	}catch (error) {
+        throw new admed.UnexpectedException(_context, error);
+    }
+};
+
 admed.genetcm.Service.responseToGene = function( response ) {
     var _context = "admed.genetcm.Service.responseToGene";
     try {
@@ -74,6 +86,31 @@ admed.genetcm.Service._buildQueryForFindGenesAssociatedWithMedicine = function( 
     }
 };
 
+admed.genetcm.Service._buildQueryForFindGenesAssociatedWithMedicineForDisease = function( medicine, diseasename ) {
+
+	try {
+		var prefixes = 	"PREFIX tcm: <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/> " +
+						"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
+						"PREFIX owl: <http://www.w3.org/2002/07/owl#> " +
+						"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ";
+						
+		var body = 		"SELECT DISTINCT ?gene ?genename ?externalgene ?entrezgene WHERE { " +
+							"?disease rdfs:label ?diseasename . " +
+							" filter regex(?diseasename, \"^" + diseasename + "\")." +
+							"?association tcm:contextAssociation ?disease ; tcm:contextAssociation <" + medicine + "> ; tcm:contextAssociation ?gene ." +
+							"?gene rdf:type tcm:Gene ; rdfs:label ?genename ." +
+							"optional {?externalgene owl:sameAs ?gene } ." +
+							"optional {?gene owl:sameAs ?entrezgene} ." +
+						"}limit 100";
+		
+		admed.info(query, "admed.genetcm.Service._buildQueryForFindGenesAssociatedWithMedicine");					
+		var query = prefixes + body;
+	
+		return query;
+	}catch (error) {
+        throw new admed.UnexpectedException("admed.genetcm.Service._buildQueryForFindGenesAssociatedWithMedicine", error);
+    }
+};
 
 /**
  * TDO doc me
