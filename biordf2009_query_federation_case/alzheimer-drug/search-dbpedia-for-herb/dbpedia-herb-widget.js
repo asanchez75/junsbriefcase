@@ -452,7 +452,7 @@ admed.dbherb.Widget.DefaultRenderer.prototype._renderResultsSummary = function( 
 	    content += "</span> matching medicine";
 	    content += (count == 0 || count > 1) ? "s " : " ";
 	    content += "from <a href='http://dbpedia.org'>DBpedia</a> for ";
-	    content += "medicine <span>'"+query+"'</span>";
+	    content += "medicine <span>'"+query.substring(query.indexOf("/resource")+10, query.length)+"'</span>";
 	    	    
 	    this._resultsSummaryPane.innerHTML = content;
 	    
