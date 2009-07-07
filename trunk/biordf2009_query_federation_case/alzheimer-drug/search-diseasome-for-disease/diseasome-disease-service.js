@@ -93,6 +93,8 @@ admed.genesome.Service.responseToDiseaseBatch = function( map ) {
 	        
 	        var pool = new admed.genesome.DiseasePool();
 	        
+	        var map = {}
+	        
 	        for (var i=0; i<bindings.length; i++) {
 	        	var binding = bindings[i];
 	        	
@@ -105,37 +107,39 @@ admed.genesome.Service.responseToDiseaseBatch = function( map ) {
 	        	disease.diseaseName = binding.diseasename.value;
 	        	
 	        	
-				if (binding.superdisease){
-					var superdiseaseURL = binding.superdisease.value;
-					
-					var supername = binding.supername.value;
-									
-					var superdisease = new admed.genesome.Disease();
-					
-					superdisease.diseaseURL = superdiseaseURL;
-					
-					superdisease.diseaseName = supername;
-		
-					admed.util.appendIfNotMember(disease.superdiseases, superdisease);
-					
-					
-				}	
+//				if (binding.superdisease){
+//					var superdiseaseURL = binding.superdisease.value;
+//					
+//					var supername = binding.supername.value;
+//									
+//					var superdisease = new admed.genesome.Disease();
+//					
+//					superdisease.diseaseURL = superdiseaseURL;
+//					
+//					superdisease.diseaseName = supername;
+//		
+//					admed.util.appendIfNotMember(disease.superdiseases, superdisease);
+//					
+//					
+//				}	
 				
-				if (binding.subdisease){
-					var subdiseaseURL = binding.subdisease.value;
-					
-					var subname = binding.subname.value;
-									
-					var subdisease = new admed.genesome.Disease();
-					
-					subdisease.diseaseURL = subdiseaseURL;
-					
-					subdisease.diseaseName = subname;
-		
-					admed.util.appendIfNotMember(disease.subdiseases, subdisease);
-				}
-				
-				admed.util.appendIfNotMember(map[geneURL], disease);
+//				if (binding.subdisease){
+//					var subdiseaseURL = binding.subdisease.value;
+//					
+//					var subname = binding.subname.value;
+//									
+//					var subdisease = new admed.genesome.Disease();
+//					
+//					subdisease.diseaseURL = subdiseaseURL;
+//					
+//					subdisease.diseaseName = subname;
+//		
+//					admed.util.appendIfNotMember(disease.subdiseases, subdisease);
+//				}
+	        	
+	        	if (!map[geneURL])
+	        		map[geneURL] = new Array();
+	        	admed.util.appendIfNotMember(map[geneURL], disease);
 	        }
 	        admed.debug("return map", _context);
 	        return map;
@@ -180,7 +184,10 @@ admed.genesome.Service._buildQueryForDiseaseAssociatedWithGene = function( gene 
 						"PREFIX owl: <http://www.w3.org/2002/07/owl#> " +
 						"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ";
 						
-		var body = 		"SELECT DISTINCT ?disease ?diseasename ?superdisease ?supername ?subdisease ?subname WHERE { " +
+		var body = 		"SELECT DISTINCT ?disease ?diseasename ?superdisease ?supername ?subdisease ?subname " +
+						"from <http://purl.org/net/data/tcm/tcm-20090619>" +
+						"from <http://open-biomed.org.uk/genes_tcm_diseasome_simple/190609/>"+
+						"WHERE { " +
 							"?disease dis:associatedGene <" + gene + "> ;" +
 									" dis:name ?diseasename . " +
 						 	"optional {?disease dis:diseaseSubtypeOf ?superdisease . ?superdisease dis:name ?supername .}" +
@@ -210,21 +217,21 @@ admed.genesome.Service._buildQueryForDiseaseAssociatedWithGeneBatch = function( 
 		if (genes.length == 1)
 		{
 			var body_union = "{\n" +
-								"?gene rdf:type dis:genes . filter regex(str(?gene), \"" + genes[0] + "\").\n" +
+								"?gene rdf:type dis:genes . filter regex(str(?gene), \"^" + genes[0] + "$\").\n" +
 								"?disease dis:associatedGene ?gene .\n" +
 							 "}\n";
 		}else{
 		
 			var body_union = "{\n " +
 								"{\n" +
-									"?gene rdf:type dis:genes . filter regex(str(?gene), \"" + genes[0] + "\").\n" +
+									"?gene rdf:type dis:genes . filter regex(str(?gene), \"^" + genes[0] + "$\").\n" +
 									"?disease dis:associatedGene ?gene .\n" +
 								"}\n";
 			
 			for (var i=1; i<genes.length; i++) {
 				body_union += "union \n"+
 							  	"{\n" +
-									"?gene rdf:type dis:genes . filter regex(str(?gene), \"" + genes[i] + "\").\n" +
+									"?gene rdf:type dis:genes . filter regex(str(?gene), \"^" + genes[i] + "$\").\n" +
 									"?disease dis:associatedGene ?gene .\n" +
 								"}\n";
 			}

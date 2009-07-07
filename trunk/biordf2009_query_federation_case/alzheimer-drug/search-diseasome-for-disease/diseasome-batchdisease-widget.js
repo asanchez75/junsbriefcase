@@ -660,7 +660,7 @@ admed.genesome.BatchWidget.DefaultRenderer.prototype._renderResults = function( 
             content += "<tr><td><a href=\"" + keyGene + "\">" + keyGene.substr(57, keyGene.length) + "</a></td><td class=\"diseases\">";
             
             var diseases = results[keyGene];
-            admed.debug("counting diseases for "+keyGene + ": " + diseases.length, _context);
+//            admed.debug("counting diseases for "+keyGene + ": " + diseases.length, _context);
             var isAlzheimer = false;
             
             for (var i=0; i < diseases.length; i++){
@@ -673,8 +673,8 @@ admed.genesome.BatchWidget.DefaultRenderer.prototype._renderResults = function( 
             	}
             	var diseaseURL = disease.diseaseURL;
             	
-            	admed.debug("found disease "+disease+" in result for gene "+keyGene, _context);
-            	admed.debug("found disease "+diseaseURL+" in result for gene "+keyGene, _context);
+//            	admed.debug("found disease "+disease+" in result for gene "+keyGene, _context);
+//            	admed.debug("found disease "+diseaseURL+" in result for gene "+keyGene, _context);
             	content +=   "<div class=\"result\">";
 	    		content +=          "<a href=\"" + diseaseURL + "\">" + diseasename + "</a>";
 			    content +=      "</div>";
@@ -684,7 +684,7 @@ admed.genesome.BatchWidget.DefaultRenderer.prototype._renderResults = function( 
         
         content += "</tbody></table>";
         
-        admed.debug("results pane content: "+content, _context);
+//        admed.debug("results pane content: "+content, _context);
         this._resultsPane.innerHTML = content;
         
         
