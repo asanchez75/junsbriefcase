@@ -114,6 +114,19 @@ admed.genesome.BatchWidget.prototype.findDiseaseAssociatedWithGeneBatch = functi
     }
 };
 
+admed.genesome.BatchWidget.prototype.findDiseaseAssociatedWithGeneBatch = function( geneURLs, diseaseName ) {
+    var _context = "admed.genesome.BatchWidget.prototype.findDiseaseAssociatedWithGeneBatch";
+    try {
+        
+        admed.debug("pass ["+geneURLs+"] through to controller", _context);
+        this._controller.findDiseaseAssociatedWithGeneBatch(geneURLs, diseaseName);
+        
+    } catch (unexpected) {
+        admed.debug("rethrowing "+unexpected.name+", "+unexpected.message, _context);
+        throw unexpected;    
+    }
+};
+
 
 
 
@@ -200,7 +213,19 @@ admed.genesome.BatchWidget.Controller.prototype.findDiseaseAssociatedWithGeneBat
 };
 
 
-
+admed.genesome.BatchWidget.Controller.prototype.findDiseaseAssociatedWithGeneBatch = function( geneURLs, diseaseName ) {
+    var _context = "admed.genesome.BatchWidget.Controller.prototype.findDiseaseAssociatedWithGeneBatch";
+    try {
+        
+        admed.info("findDiseaseAssociatedWithGeneBatch: "+geneURLs, _context);
+        admed.debug("pass through to private implementation", _context);
+        this._findDiseaseAssociatedWithGeneBatch(geneURLs, diseaseName, this._findDiseaseByGeneBatchSuccess(), this._findDiseaseByGeneBatchFailure());
+        
+    } catch (unexpected) {
+        admed.debug("rethrowing "+unexpected.name+", "+unexpected.message, _context);
+        throw unexpected;    
+    }
+};
 
 
 
@@ -220,6 +245,35 @@ admed.genesome.BatchWidget.Controller.prototype._findDiseaseAssociatedWithGeneBa
         
         admed.debug("set model property query", _context);
         this._model.set("QUERY", [geneURLs]);
+
+        admed.debug("set result null", _context);
+        this._model.set("RESULTS", null);
+        
+        admed.debug("kick off request: "+geneURLs, _context);
+        this._service.findDiseaseAssociatedWithGeneBatch(geneURLs, success, failure);        
+        
+    } catch (unexpected) {
+        admed.debug("rethrowing "+unexpected.name+", "+unexpected.message, _context);
+        throw unexpected;    
+    }
+};
+
+admed.genesome.BatchWidget.Controller.prototype._findDiseaseAssociatedWithGeneBatch = function( geneURLs, diseaseName, success, failure ) {
+    var _context = "admed.genesome.BatchWidget.Controller.prototype._findDiseaseAssociatedWithGeneBatch";
+    try {
+        
+        admed.debug("querynames: "+geneURLs, _context);
+               
+        admed.debug("set state pending", _context);
+        this._model.set("STATE", "PENDING");
+        
+        admed.debug("set model property query", _context);
+        if (diseaseName){
+        	this._model.set("QUERY", [geneURLs]);
+        	this._model.set("DISEASE", diseaseName);
+        }
+        else
+        	this._model.set("QUERY", [geneURLs]);
 
         admed.debug("set result null", _context);
         this._model.set("RESULTS", null);
@@ -318,7 +372,7 @@ admed.genesome.BatchWidget.Controller.prototype._findDiseaseByGeneBatchFailure =
  */
 admed.genesome.BatchWidget.modelDefinition = {
 
-    properties : [ "STATE", "RESULTS", "QUERY" ],
+    properties : [ "STATE", "RESULTS", "QUERY", "DISEASE" ],
     
     values : {
         "STATE" : [ "READY", "PENDING", "SERVERERROR", "UNEXPECTEDERROR" ]
@@ -328,6 +382,7 @@ admed.genesome.BatchWidget.modelDefinition = {
         data["STATE"] = "READY";
         data["RESULTS"] = null;
         data["QUERY"] = null;
+        data["DISEASE"] = null;
     }
 
 };
@@ -489,7 +544,8 @@ admed.genesome.BatchWidget.DefaultRenderer.prototype._onModelChanged = function(
         var handlers = {
             "STATE":"_onStateChanged",
             "QUERY":"_onQueryChanged",
-            "RESULTS":"_onResultsChanged"
+            "RESULTS":"_onResultsChanged", 
+            "DISEASE": "_onDiseaseChanged"
         };
         var handler = handlers[type];
         admed.debug("call model changed handler: "+handler, _context);
@@ -513,8 +569,9 @@ admed.genesome.BatchWidget.DefaultRenderer.prototype._onQueryChanged = function(
     var _context = "admed.genesome.BatchWidget.DefaultRenderer.prototype._onQueryChanged";
     try {
         
-        // do nothing, we will access the value later
+        // store the query
         admed.debug("query changed from "+from+" to "+to, _context);
+        this._query = to;
         
     } catch (unexpected) {
         admed.debug("rethrowing "+unexpected.name+", "+unexpected.message, _context);
@@ -522,6 +579,19 @@ admed.genesome.BatchWidget.DefaultRenderer.prototype._onQueryChanged = function(
     }
 };
 
+admed.genesome.BatchWidget.DefaultRenderer.prototype._onDiseaseChanged = function( from, to, get ) {
+    var _context = "admed.genesome.BatchWidget.DefaultRenderer.prototype._onDiseaseChanged";
+    try {
+        
+        // do nothing, we will access the value later
+        admed.debug("disease changed from "+from+" to "+to, _context);
+        this._disease = to;
+        
+    } catch (unexpected) {
+        admed.debug("rethrowing "+unexpected.name+", "+unexpected.message, _context);
+        throw unexpected;    
+    }
+};
 
 
 
@@ -653,7 +723,7 @@ admed.genesome.BatchWidget.DefaultRenderer.prototype._renderResults = function( 
         
         var content = "<table class=\"diseaseResults\">";
 
-        content += "<thead><tr><th>Mapping Diseasome gene</th><th>associated diseases</th><th>Alzheimer's gene</th></tr></thead><tbody>";
+        content += "<thead><tr><th>Mapping Diseasome gene</th><th>associated diseases</th><th>" + this._disease + " gene</th></tr></thead><tbody>";
         
         for (var keyGene in results) {
             
@@ -667,7 +737,7 @@ admed.genesome.BatchWidget.DefaultRenderer.prototype._renderResults = function( 
             	var disease = diseases[i];
             	var diseasename = disease.diseaseName;
             	
-            	if (diseasename.match("Alzheimer")){
+            	if (diseasename.match(this._disease)){
             		admed.debug("Alzheimer "+diseasename + "for gene : " + keyGene, _context);
             		isAlzheimer = true;
             	}
