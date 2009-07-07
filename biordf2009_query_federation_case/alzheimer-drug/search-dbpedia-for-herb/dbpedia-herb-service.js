@@ -55,10 +55,18 @@ admed.dbherb.Service._buildQueryForFindMedicineFromDbpedia = function( medicine 
 						"PREFIX foaf: <http://xmlns.com/foaf/0.1/> " +
 						"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ";
 						
-		var body = 		"SELECT DISTINCT ?authority ?classis ?division ?family ?genus ?kingdom ?order ?species ?img where { " +
-							"<" + medicine + "> dbpedia:binomial_authority ?authority; dbpedia:classis ?classis; dbpedia:division ?division; " +
-										"dbpedia:family ?family; dbpedia:genus ?genus; dbpedia:kingdom ?kingdom; dbpedia:order ?order; dbpedia:species ?species ;"+
-										"foaf:img ?img ." +
+		var body = 		"SELECT DISTINCT ?uri ?authority ?classis ?division ?family ?genus ?kingdom ?order ?species ?img ?label where { " +
+							"<" + medicine + "> foaf:page ?uri ." +
+							"optional{ <" + medicine + "> dbpedia:binomial_authority ?authority .}" +
+							"optional{ <" + medicine + "> dbpedia:classis ?classis.}" +
+							"optional{ <" + medicine + "> dbpedia:division ?division.} " +
+							"optional{ <" + medicine + "> dbpedia:family ?family.} " +
+							"optional{ <" + medicine + "> dbpedia:genus ?genus.} " +
+							"optional{ <" + medicine + "> dbpedia:kingdom ?kingdom.} " +
+							"optional{ <" + medicine + "> dbpedia:order ?order. }" +
+							"optional{ <" + medicine + "> dbpedia:species ?species .}"+
+							"optional{ <" + medicine + "> foaf:img ?img .} " +
+							"optional{ <" + medicine + "> rdfs:label ?label. filter (lang(?label) = \"zh\").}" +
 						"}limit 100";
 							
 		var query = prefixes + body;
@@ -95,6 +103,8 @@ admed.dbherb.Medicine = function () {
 	this.species = null;
 	
 	this.img = null;
+	
+	this.label = null;
 
 };
 
@@ -112,19 +122,40 @@ admed.dbherb.Medicine.newInstancesFromSPARQLResults = function(resultSet){
 		for (var i=0; i<bindings.length; i++) {
 			var binding = bindings[i];
 			
-			var imgURL = binding.img.value;
+			var imgURL = binding.uri.value;
 			
 			var medicine = medicinePool.get(imgURL);
-			 
-			medicine.authority = binding.authority.value;
-			medicine.classis = binding.classis.value;
-			medicine.division = binding.division.value;
-			medicine.family = binding.family.value;
-			medicine.genus = binding.genus.value;
-			medicine.kingdom = binding.kingdom.value;
-			medicine.order = binding.order.value;
-			medicine.species = binding.species.value;
-			medicine.img = binding.img.value;
+			
+			if (binding.authority) {
+				medicine.authority = binding.authority.value;
+			}
+			if (binding.classis) {
+				medicine.classis = binding.classis.value;
+			}
+			if (binding.division) {
+				medicine.division = binding.division.value;
+			}
+			if (binding.family) {
+				medicine.family = binding.family.value;
+			}
+			if (binding.genus) {
+				medicine.genus = binding.genus.value;
+			}
+			if (binding.kingdom) {
+				medicine.kingdom = binding.kingdom.value;
+			}
+			if (binding.order) {
+				medicine.order = binding.order.value;
+			}
+			if (binding.species) {
+				medicine.species = binding.species.value;
+			}
+			if (binding.img) {
+				medicine.img = binding.img.value;
+			}
+			if (binding.label){
+				medicine.label = binding.label.value;
+			}
 		}
 		
 		return medicinePool.toArray();
