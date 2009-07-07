@@ -516,12 +516,12 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._onSelectionTvalueChanged = fun
 		inputForm.setAttribute("value", "Go");
 		this._confidenceSelection.appendChild(inputForm); 
 		
-		admed.info("debug the query form " + this._confidenceSelection.innerHTML, _context);
-		admed.debug("debug the query form " + this._confidenceSelection.innerHTML, _context);
-		admed.info("kick off the submit", _context);
-						
+//		admed.info("debug the query form " + this._confidenceSelection.innerHTML, _context);
+//		admed.debug("debug the query form " + this._confidenceSelection.innerHTML, _context);
+//		admed.info("kick off the submit", _context);
+//						
 		var effectSelection = document.getElementById("effectqueryForm");
-	    admed.info("the selection object " + effectSelection.innerHTML, _context);  
+//	    admed.info("the selection object " + effectSelection.innerHTML, _context);  
 	    
 	    var select = document.getElementById("effectSelection");
 	    var value = select.options[select.selectedIndex].value;
@@ -682,7 +682,7 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._effectsToDivHTML = function( e
 	    for ( var i in effects ) {
 	        
 	        content += this._effectToDivHTML(effects[i]);
-	        admed.debug("Generate the eff div" + content); 
+//	        admed.debug("Generate the eff div" + content); 
 	    }
 	    
 	    content += "</table>";
@@ -700,7 +700,7 @@ admed.effecttcm.Widget.DefaultRenderer.prototype._effectsToDivHTML = function( e
  */
 admed.effecttcm.Widget.DefaultRenderer.prototype._effectToDivHTML = function( effect ) {
   	try {
-	    admed.debug("build content for effect "+effect.name);
+//	    admed.debug("build content for effect "+effect.name);
 	    
 	    var content =   "<div class=\"effect\">";
 	    content +=          "<tr><td><a href=\"" + effect.effectURL + "\">";
