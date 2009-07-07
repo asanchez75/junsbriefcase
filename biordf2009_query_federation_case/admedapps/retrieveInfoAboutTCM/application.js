@@ -85,9 +85,12 @@ function initState () {
     
     
     if (qi > 0) {
-        var query = url.substring(qi+7,url.length);
+    	var qd = url.indexOf("&disease");
+        var query = url.substring(qi+7,qd);
         query = query.replace(/%20/g, ' ')
-        admed.info("found query: "+query); 
+        queryDisease = url.substring(qd+9,url.length);
+        admed.debug("found query: "+query);
+          
         widget.findMedicineFromDbpedia(query);
     }
     
@@ -170,7 +173,8 @@ function onHerbsFound(type, args){
 	var dbherb = herbs[0].herbFromDbpedia;
 	effectWidget.findEffectByMedicineName(herb);
 	trialWidget.findTrialsForMedicine(herbname);
-	geneFinderwidget.findGenesAssociatedWithMedicine(herb);
+//	admed.debug("found query disease: "+queryDisease);
+	geneFinderwidget.findGenesAssociatedWithMedicineForDisease(herb, queryDisease);
 	dbpediaHerbWidget.findMedicineFromDbpedia(dbherb);
 };
 
