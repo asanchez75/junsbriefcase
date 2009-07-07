@@ -57,7 +57,7 @@ admed.tcm.Service._buildQueryForFindMedicineByDiseaseName = function( diseaseNam
 						
 		var body = 		"SELECT DISTINCT ?disease ?medicine ?medicinename WHERE { " +
 							"?disease rdfs:label ?diseasename . " +
-							" filter regex(?diseasename, \"^" + diseaseName + "\")." +
+							" filter regex(?diseasename, \"^" + diseaseName + "\", \"i\")." +
 							"?statistics tcm:source ?disease ; tcm:medicine_disease_tvalue ?tvalue ." +
 							"filter (?tvalue > 1.645) . " +
 							"?statistics tcm:source ?medicine . ?medicine rdf:type tcm:Medicine ." +
