@@ -510,7 +510,7 @@ admed.genetcm.GeneWidget.DefaultRenderer.prototype._renderResultsSummary = funct
 	    content += "</span> matching gene";
 	    content += (count == 0 || count > 1) ? "s " : " ";
 	    content += "from <a href='http://code.google.com/p/junsbriefcase/wiki/RDFTCMData'>RDF TCMGeneDIT</a> for ";
-	    content += "herb <span>'"+query+"'</span>";
+	    content += "herb <span>'"+query.substring(query.indexOf("/medicine")+10, query.length)+"'</span>";
 	    	    
 	    this._resultsSummaryPane.innerHTML = content;
 	    
