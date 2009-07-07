@@ -496,7 +496,7 @@ admed.tcm.Widget.DefaultRenderer.prototype._medicineToDivHTML = function( medici
 	    admed.debug("build content for medicine "+medicine.name);
 	    
 	    var content =   "<div class=\"medicine\">";
-	    content +=          "<p><a href=\"../retrieveInfoAboutTCM/#query=" + medicine.name + "\" target=\"_blank\">";
+	    content +=          "<p><a href=\"../retrieveInfoAboutTCM/#query=" + medicine.name + "&disease=" + this._query + "\" target=\"_blank\">";
 	    content +=              medicine.name;
 	    content +=          "</a></p>"; 
 	    content +=      "</div>";
