@@ -482,6 +482,8 @@ admed.herbtcm.Widget.DefaultRenderer.prototype._renderResultsSummary = function(
 	    	    
 	    this._resultsSummaryPane.innerHTML = content;
 	    
+	    admed.debug("summary: " + content, _context);
+	    
 	    
 	} catch (error) {
         	throw new admed.UnexpectedException(_context, error);
