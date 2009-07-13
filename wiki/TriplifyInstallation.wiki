@@ -26,3 +26,61 @@ Notes:
  * created config.flyted.inc.php and config.flybase.inc.php configuration file. they need to be included in the index.php file.
  * the key is to configure the $triplify['LinkedDataDepth']='1'; right
  * to check whether everything works well, we can go to http://localhost/triplify/feature/ and see whether some RDF statements could be returned. The metadata can also be returned as JSON format by configuring index.php file.
+
+= Triplify FlyBase =
+
+http://openflydata.org/id/flybase/feature/Drosophila_melanogaster/SO_0000704/FB
+gn0036925
+
+{{{
+<rdf:Description rdf:about="http://openflydata.org/id/flybase/feature/Drosophila_melanogaster/SO_0000704/FBgn0036925">
+<j.1:feature_dbxref rdf:resource="http://openflydata.org/id/flybase/dbxref/geo_FBgn0036925"/>
+<j.0:altLabel>cg17736</j.0:altLabel>
+<j.1:feature_dbxref rdf:resource="http://openflydata.org/id/flybase/dbxref/dedb_3490"/>
+<j.1:organism rdf:resource="http://openflydata.org/id/flybase/organism/Drosophila_melanogaster"/>
+<j.1:feature_pub rdf:resource="http://openflydata.org/id/flybase/pub/FBrf0178789"/>
+<j.1:feature_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3113228</j.1:feature_id>
+<j.1:feature_dbxref rdf:resource="http://openflydata.org/id/flybase/dbxref/flyatlas_FBgn0036925"/>
+<j.1:feature_pub rdf:resource="http://openflydata.org/id/flybase/pub/FBrf0189116"/>
+<j.1:feature_dbxref rdf:resource="http://openflydata.org/id/flybase/dbxref/GB_AE003515"/>
+<rdf:type rdf:resource="http://purl.org/net/chado/schema/Feature"/>
+<j.1:uniquename rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBgn0036925</j.1:uniquename>
+<j.0:altLabel>schuy</j.0:altLabel>
+<j.1:feature_dbxref rdf:resource="http://openflydata.org/id/flybase/dbxref/INTERPRO_IPR007087"/>
+<j.0:altLabel>schumacher-levy</j.0:altLabel>
+<j.1:is_analysis rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</j.1:is_analysis>
+<j.1:feature_dbxref rdf:resource="http://openflydata.org/id/flybase/dbxref/drsc_FBgn0036925"/>
+<j.1:feature_pub rdf:resource="http://openflydata.org/id/flybase/pub/FBrf0200327"/>
+<j.1:feature_pub rdf:resource="http://openflydata.org/id/flybase/pub/FBrf0205264"/>
+<j.1:feature_dbxref rdf:resource="http://openflydata.org/id/flybase/dbxref/hdri_FBgn0036925"/>
+<j.1:feature_pub rdf:resource="http://openflydata.org/id/flybase/pub/FBrf0137492"/>
+<j.1:feature_dbxref rdf:resource="http://openflydata.org/id/flybase/dbxref/FlyBase_FBan0017736"/>
+<j.1:feature_dbxref rdf:resource="http://openflydata.org/id/flybase/dbxref/GB_AI945287"/>
+<j.1:feature_dbxref rdf:resource="http://openflydata.org/id/flybase/dbxref/FlyBase_Annotation_IDs_CG17736"/>
+<j.1:feature_pub rdf:resource="http://openflydata.org/id/flybase/pub/FBrf0184732"/>
+<j.1:is_obsolete rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</j.1:is_obsolete>
+<j.1:feature_pub rdf:resource="http://openflydata.org/id/flybase/pub/FBrf0173441"/>
+<j.1:feature_dbxref rdf:resource="http://openflydata.org/id/flybase/dbxref/flymine_FBgn0036925"/>
+<j.1:feature_dbxref rdf:resource="http://openflydata.org/id/flybase/dbxref/ihop_65439"/>
+<rdf:type rdf:resource="http://purl.org/obo/owl/SO#SO_0000704"/>
+<j.1:feature_dbxref rdf:resource="http://openflydata.org/id/flybase/dbxref/flyexpress_FBgn0036925"/>
+<j.1:feature_dbxref rdf:resource="http://openflydata.org/id/flybase/dbxref/GB%5Fprotein_AAM50528"/>
+<j.1:feature_dbxref rdf:resource="http://openflydata.org/id/flybase/dbxref/UniProt%2FTrEMBL_Q9VW64"/>
+<j.0:altLabel>CG17736</j.0:altLabel>
+<j.1:feature_dbxref rdf:resource="http://openflydata.org/id/flybase/dbxref/GB%5Fprotein_AAF49085"/>
+<j.1:dbxref rdf:resource="http://openflydata.org/id/flybase/dbxref/FlyBase_FBgn0036925"/>
+<j.1:feature_dbxref rdf:resource="http://openflydata.org/id/flybase/dbxref/GB_BF493291"/>
+<j.1:feature_dbxref rdf:resource="http://openflydata.org/id/flybase/dbxref/flygrid_65451"/>
+<j.1:feature_dbxref rdf:resource="http://openflydata.org/id/flybase/dbxref/flight_FBgn0036925"/>
+<j.1:seqlen rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1996</j.1:seqlen>
+<j.1:feature_dbxref rdf:resource="http://openflydata.org/id/flybase/dbxref/UniProt%2FTrEMBL_Q8MSQ0"/>
+<j.0:altLabel>FBgn0036925</j.0:altLabel>
+<j.0:altLabel>fbgn0036925</j.0:altLabel>
+<j.1:feature_dbxref rdf:resource="http://openflydata.org/id/flybase/dbxref/kwexpression_FBgn0036925"/>
+<j.1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">schuy</j.1:name>
+<j.1:feature_dbxref rdf:resource="http://openflydata.org/id/flybase/dbxref/GB_AY118668"/>
+<j.1:feature_dbxref rdf:resource="http://openflydata.org/id/flybase/dbxref/FlyBase_FBgn0036925"/>
+<j.1:feature_pub rdf:resource="http://openflydata.org/id/flybase/pub/FBrf0125078"/>
+</rdf:Description>
+
+}}}
