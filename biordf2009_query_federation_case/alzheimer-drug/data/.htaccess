@@ -6,7 +6,8 @@ RewriteEngine On
 # tcm
 #RewriteRule ^tcm(.*) http://lod.openlinksw.com/sparql$1 [proxy]
 #RewriteRule ^tcm(.*) http://naxos.zoo.ox.ac.uk:8890/sparql$1 [proxy]
-RewriteRule ^tcm(.*) http://www.open-biomed.org.uk/sparql/$1 [proxy]
+#RewriteRule ^tcm(.*) http://www.open-biomed.org.uk/sparql/$1 [proxy]
+RewriteRule ^tcm(.*) http://hcls.deri.org/sparql/$1 [proxy]
 
 
 #dbpedia
