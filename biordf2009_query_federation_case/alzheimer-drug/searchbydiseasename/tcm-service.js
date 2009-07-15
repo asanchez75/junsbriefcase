@@ -55,7 +55,9 @@ admed.tcm.Service._buildQueryForFindMedicineByDiseaseName = function( diseaseNam
 						"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
 						"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ";
 						
-		var body = 		"SELECT DISTINCT ?disease ?medicine ?medicinename WHERE { " +
+		var body = 		"SELECT DISTINCT ?disease ?medicine ?medicinename " +
+							"FROM <http://hcls.deri.org/resource/graph/tcm>" +
+							"WHERE { " +
 							"?disease rdfs:label ?diseasename . " +
 							" filter regex(?diseasename, \"^" + diseaseName + "\", \"i\")." +
 							"?statistics tcm:source ?disease ; tcm:medicine_disease_tvalue ?tvalue ." +

@@ -67,7 +67,9 @@ admed.effecttcm.Service._buildQueryForFindEffectByMedicineName = function( medic
 						"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
 						"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ";
 		//TODO						
-		var body = 		"SELECT DISTINCT ?effect ?effectname ?tvalue WHERE { " +
+		var body = 		"SELECT DISTINCT ?effect ?effectname ?tvalue " +
+							"FROM <http://hcls.deri.org/resource/graph/tcm>" +
+							"WHERE { " +
 							"?statistics tcm:medicine_effect_association_tvalue ?tvalue ." +
 							"filter (?tvalue > 2.576)." +
 							"?statistics tcm:source <" + medicine + "> ; tcm:source ?effect ." +
