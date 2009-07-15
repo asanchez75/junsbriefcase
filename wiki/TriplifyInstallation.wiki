@@ -29,6 +29,10 @@ Notes:
 
 = Triplify FlyBase =
 
+http://naxos.zoo.ox.ac.uk/triplify/feature/3101873
+
+rdfs:seeAlso
+
 http://openflydata.org/id/flybase/feature/Drosophila_melanogaster/SO_0000704/FBgn0004372
 
 {{{
