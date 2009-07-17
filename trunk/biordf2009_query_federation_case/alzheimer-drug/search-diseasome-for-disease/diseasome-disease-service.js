@@ -212,7 +212,10 @@ admed.genesome.Service._buildQueryForDiseaseAssociatedWithGeneBatch = function( 
 						"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ";
 						
 //		var body = 		"SELECT DISTINCT ?gene ?disease ?diseasename ?superdisease ?supername ?subdisease ?subname WHERE { \n";
-		var body = 		"SELECT DISTINCT ?gene ?disease ?diseasename WHERE { \n";
+		var body = 		"SELECT DISTINCT ?gene ?disease ?diseasename " +
+						"from <http://hcls.deri.org/resource/graph/tcm>" +
+						"from <http://hcls.deri.org/resource/graph/diseasome>"+
+						"WHERE { \n";
 		
 		if (genes.length == 1)
 		{
