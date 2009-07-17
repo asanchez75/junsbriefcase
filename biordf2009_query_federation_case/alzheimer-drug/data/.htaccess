@@ -9,12 +9,12 @@ RewriteEngine On
 #RewriteRule ^tcm(.*) http://www.open-biomed.org.uk/sparql/$1 [proxy]
 RewriteRule ^tcm(.*) http://hcls.deri.org/sparql/$1 [proxy]
 
-
 #dbpedia
 RewriteRule ^dbpedia(.*)  http://dbpedia.org/sparql$1 [proxy]
 
 # Diseasesome
-RewriteRule ^diseasome(.*) http://www4.wiwiss.fu-berlin.de/diseasome/sparql$1 [proxy]
+#RewriteRule ^diseasome(.*) http://www4.wiwiss.fu-berlin.de/diseasome/sparql$1 [proxy]
+RewriteRule ^diseasome(.*) http://hcls.deri.org/sparql$1 [proxy]
 
 # LinkedCT
 RewriteRule ^linkedct(.*) http://data.linkedct.org/sparql$1 [proxy]
