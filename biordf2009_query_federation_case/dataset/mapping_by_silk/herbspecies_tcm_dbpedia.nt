@@ -1,438 +1,496 @@
-[1]: <http://dbpedia.org/resource/Chelidonium> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Chelidonium_majus> .
-[1]: <http://dbpedia.org/resource/Turmeric> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Curcuma_longa> .
-[1]: <http://dbpedia.org/resource/Prunus_mume> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Prunus_mume> .
-[1]: <http://dbpedia.org/resource/Corydalis_ambigua> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Corydalis_ambigua> .
-[1]: <http://dbpedia.org/resource/Tree_Sparrow> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Passer_montanus> .
-[1]: <http://dbpedia.org/resource/Senna_auriculata> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cassia_auriculata> .
-[1]: <http://dbpedia.org/resource/Lobelia_chinensis> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lobelia_chinensis> .
-[1]: <http://dbpedia.org/resource/Celosia_argentea> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Celosia_argentea> .
-[1]: <http://dbpedia.org/resource/Alternanthera_philoxeroides> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Alternanthera_philoxeroides> .
-[0.952222222222]: <http://dbpedia.org/resource/Phytolacca_icosandra> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Phytolacca_acinosa> .
-[1]: <http://dbpedia.org/resource/Gnaphalium_affine> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gnaphalium_affine> .
-[1]: <http://dbpedia.org/resource/Winter_melon> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Benincasa_hispida> .
-[1]: <http://dbpedia.org/resource/Aralia_cordata> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Aralia_cordata> .
-[1]: <http://dbpedia.org/resource/Eclipta_alba> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Eclipta_prostrata> .
-[1]: <http://dbpedia.org/resource/Bungarus_multicinctus> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Bungarus_multicinctus> .
-[1]: <http://dbpedia.org/resource/Schefflera_arboricola> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Schefflera_arboricola> .
-[1]: <http://dbpedia.org/resource/Brassica_rapa> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Brassica_campestris> .
-[1]: <http://dbpedia.org/resource/Pinellia_ternata> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Pinellia_ternata> .
-[1]: <http://dbpedia.org/resource/Pomegranate> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Punica_granatum> .
-[1]: <http://dbpedia.org/resource/Duttaphrynus_melanostictus> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Bufo_melanostictus> .
-[1]: <http://dbpedia.org/resource/Euryale_ferox> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Euryale_ferox> .
-[1]: <http://dbpedia.org/resource/Calabash> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lagenaria_siceraria> .
-[1]: <http://dbpedia.org/resource/Indian_Cobra> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Naja_naja> .
-[1]: <http://dbpedia.org/resource/Lac> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Laccifer_lacca> .
-[1]: <http://dbpedia.org/resource/Kudzu> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Pueraria_lobata> .
-[1]: <http://dbpedia.org/resource/Star_anise> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Illicium_verum> .
-[1]: <http://dbpedia.org/resource/Codonopsis_pilosula> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Codonopsis_pilosula> .
-[1]: <http://dbpedia.org/resource/Akebia> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Akebia_quinata> .
-[1]: <http://dbpedia.org/resource/Polygonum_multiflorum> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Polygonum_multiflorum> .
-[1]: <http://dbpedia.org/resource/Stephania_tetrandra> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Stephania_tetrandra> .
-[1]: <http://dbpedia.org/resource/Physalis_alkekengi> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Physalis_alkekengi> .
-[1]: <http://dbpedia.org/resource/Panax_pseudoginseng> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Panax_pseudoginseng> .
-[1]: <http://dbpedia.org/resource/Sika_Deer> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cervus_nippon> .
-[1]: <http://dbpedia.org/resource/Sesame> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Sesamum_indicum> .
-[1]: <http://dbpedia.org/resource/Typha_angustifolia> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Typha_angustifolia> .
-[1]: <http://dbpedia.org/resource/Vitis_vinifera> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Vitis_vinifera> .
-[1]: <http://dbpedia.org/resource/Leopard> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Panthera_pardus> .
-[1]: <http://dbpedia.org/resource/Beauveria_bassiana> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Beauveria_bassiana> .
-[1]: <http://dbpedia.org/resource/Phytolacca_americana> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Phytolacca_americana> .
-[1]: <http://dbpedia.org/resource/Commelina_communis> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Commelina_communis> .
-[1]: <http://dbpedia.org/resource/Perilla_frutescens> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Perilla_frutescens> .
-[1]: <http://dbpedia.org/resource/Abutilon_indicum> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Abutilon_indicum> .
-[1]: <http://dbpedia.org/resource/Humulus_lupulus> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Humulus_lupulus> .
-[1]: <http://dbpedia.org/resource/Aralia_elata> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Aralia_elata> .
-[1]: <http://dbpedia.org/resource/Eleutherococcus_senticosus> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Acanthopanax_senticosus> .
-[1]: <http://dbpedia.org/resource/Sweet_Flag> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Acorus_calamus> .
-[1]: <http://dbpedia.org/resource/Oregano> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Origanum_vulgare> .
-[1]: <http://dbpedia.org/resource/Patchouli> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Pogostemon_cablin> .
-[1]: <http://dbpedia.org/resource/Elecampane> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Inula_helenium> .
-[0.952941176471]: <http://dbpedia.org/resource/Polygala_sinisica> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Polygala_sibirica> .
-[1]: <http://dbpedia.org/resource/Roe_Deer> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Capreolus_capreolus> .
-[1]: <http://dbpedia.org/resource/Artemisia_annua> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Artemisia_annua> .
-[1]: <http://dbpedia.org/resource/Greater_burdock> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Arctium_lappa> .
-[1]: <http://dbpedia.org/resource/Myrrh> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Commiphora_myrrha> .
-[1]: <http://dbpedia.org/resource/Lychee> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Litchi_chinensis> .
-[1]: <http://dbpedia.org/resource/Red_Deer> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cervus_elaphus> .
-[1]: <http://dbpedia.org/resource/Sanguisorba_officinalis> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Sanguisorba_officinalis> .
-[1]: <http://dbpedia.org/resource/Dryobalanops_aromatica> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Dryobalanops_aromatica> .
-[1]: <http://dbpedia.org/resource/Areca_catechu> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Areca_catechu> .
-[1]: <http://dbpedia.org/resource/Litsea_cubeba> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Litsea_cubeba> .
-[1]: <http://dbpedia.org/resource/Digitalis_lanata> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Digitalis_lanata> .
-[1]: <http://dbpedia.org/resource/European_Badger> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Meles_meles> .
-[1]: <http://dbpedia.org/resource/Boar> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Sus_scrofa> .
-[1]: <http://dbpedia.org/resource/Glycyrrhiza_uralensis> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Glycyrrhiza_uralensis> .
-[1]: <http://dbpedia.org/resource/Hibiscus_syriacus> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Hibiscus_syriacus> .
-[1]: <http://dbpedia.org/resource/Japanese_Honeysuckle> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lonicera_japonica> .
-[1]: <http://dbpedia.org/resource/Lilium_longiflorum> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lilium_longiflorum> .
-[1]: <http://dbpedia.org/resource/Dianthus_superbus> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Dianthus_superbus> .
-[0.982608695652]: <http://dbpedia.org/resource/Chinese_bellflower> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Platycodon_grandiflorum> .
-[1]: <http://dbpedia.org/resource/Angelica_gigas> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Angelica_gigas> .
-[1]: <http://dbpedia.org/resource/Gac> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Momordica_cochinchinensis> .
-[1]: <http://dbpedia.org/resource/Eupatorium_cannabinum> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Eupatorium_cannabinum> .
-[1]: <http://dbpedia.org/resource/Azuki_bean> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Phaseolus_angularis> .
-[1]: <http://dbpedia.org/resource/Arundo_donax> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Arundo_donax> .
-[1]: <http://dbpedia.org/resource/Hijiki> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Sargassum_fusiforme> .
-[1]: <http://dbpedia.org/resource/Trichosanthes_kirilowii> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Trichosanthes_kirilowii> .
-[1]: <http://dbpedia.org/resource/Rheum_palmatum> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rheum_palmatum> .
-[1]: <http://dbpedia.org/resource/Chinese_Pond_Turtle> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Chinemys_reevesii> .
-[1]: <http://dbpedia.org/resource/Chenopodium_album> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Chenopodium_album> .
-[1]: <http://dbpedia.org/resource/Gentiana_triflora> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gentiana_triflora> .
-[1]: <http://dbpedia.org/resource/Frog_Orchid> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Coeloglossum_viride> .
-[1]: <http://dbpedia.org/resource/Dendrobium_nobile> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Dendrobium_nobile> .
-[1]: <http://dbpedia.org/resource/Digitalis_purpurea> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Digitalis_purpurea> .
-[1]: <http://dbpedia.org/resource/Abelmoschus_manihot> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Abelmoschus_manihot> .
-[1]: <http://dbpedia.org/resource/Echinacea_purpurea> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Echinacea_purpurea> .
-[1]: <http://dbpedia.org/resource/Safflower> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Carthamus_tinctorius> .
-[1]: <http://dbpedia.org/resource/Bupleurum_chinense> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Bupleurum_chinense> .
-[1]: <http://dbpedia.org/resource/Persimmon> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Diospyros_kaki> .
-[1]: <http://dbpedia.org/resource/Euphorbia_helioscopia> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Euphorbia_helioscopia> .
-[1]: <http://dbpedia.org/resource/Plantago_asiatica> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Plantago_asiatica> .
-[1]: <http://dbpedia.org/resource/Vernicia_fordii> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Aleurites_fordii> .
-[1]: <http://dbpedia.org/resource/Eucommia> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Eucommia_ulmoides> .
-[1]: <http://dbpedia.org/resource/Ginkgo_biloba> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ginkgo_biloba> .
-[1]: <http://dbpedia.org/resource/Domestic_sheep> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ovis_aries> .
-[1]: <http://dbpedia.org/resource/Maize> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Zea_mays> .
-[1]: <http://dbpedia.org/resource/Gardenia_jasminoides> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gardenia_jasminoides> .
-[1]: <http://dbpedia.org/resource/Spirodela> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Spirodela_polyrhiza> .
-[1]: <http://dbpedia.org/resource/Angelica_sinensis> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Angelica_sinensis> .
-[1]: <http://dbpedia.org/resource/Black_pepper> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Piper_nigrum> .
-[1]: <http://dbpedia.org/resource/Alpinia_galanga> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Alpinia_galanga> .
-[1]: <http://dbpedia.org/resource/Celosia_cristata> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Celosia_cristata> .
-[1]: <http://dbpedia.org/resource/Syzygium_jambos> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Syzygium_jambos> .
-[1]: <http://dbpedia.org/resource/Xanthoceras> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Xanthoceras_sorbifolia> .
-[1]: <http://dbpedia.org/resource/Zanthoxylum_simulans> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Zanthoxylum_simulans> .
-[1]: <http://dbpedia.org/resource/Kaempferia_galanga> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Kaempferia_galanga> .
-[1]: <http://dbpedia.org/resource/Vicia_hirsuta> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Vicia_hirsuta> .
-[1]: <http://dbpedia.org/resource/Cattle> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Bos_taurus> .
-[1]: <http://dbpedia.org/resource/Beleric> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Terminalia_bellerica> .
-[1]: <http://dbpedia.org/resource/European_Otter> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lutra_lutra> .
-[1]: <http://dbpedia.org/resource/Platycladus> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Thuja_orientalis> .
-[1]: <http://dbpedia.org/resource/Hyacinth_bean> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Dolichos_lablab> .
-[1]: <http://dbpedia.org/resource/Horse> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Equus_caballus> .
-[1]: <http://dbpedia.org/resource/Acacia_confusa> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Acacia_confusa> .
-[1]: <http://dbpedia.org/resource/Achillea_millefolium> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Achillea_millefolium> .
-[1]: <http://dbpedia.org/resource/Soybean> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Glycine_max> .
-[1]: <http://dbpedia.org/resource/Justicia_adhatoda> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Adhatoda_vasica> .
-[1]: <http://dbpedia.org/resource/Emilia_sonchifolia> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Emilia_sonchifolia> .
-[1]: <http://dbpedia.org/resource/Leonurus_sibiricus> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Leonurus_sibiricus> .
-[1]: <http://dbpedia.org/resource/Loquat> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Eriobotrya_japonica> .
-[1]: <http://dbpedia.org/resource/Euphorbia_lathyris> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Euphorbia_lathyris> .
-[1]: <http://dbpedia.org/resource/Scutellaria_barbata> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Scutellaria_barbata> .
-[1]: <http://dbpedia.org/resource/Cubeb> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Piper_cubeba> .
-[1]: <http://dbpedia.org/resource/Gomphrena_globosa> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gomphrena_globosa> .
-[1]: <http://dbpedia.org/resource/Coptis_chinensis> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Coptis_chinensis> .
-[1]: <http://dbpedia.org/resource/Sperm_Whale> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Physeter_catodon> .
-[1]: <http://dbpedia.org/resource/Euonymus_alatus> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Euonymus_alatus> .
-[1]: <http://dbpedia.org/resource/Styphnolobium_japonicum> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Sophora_japonica> .
-[1]: <http://dbpedia.org/resource/Shiitake> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lentinus_edodes> .
-[1]: <http://dbpedia.org/resource/Sappanwood> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Caesalpinia_sappan> .
-[1]: <http://dbpedia.org/resource/Alstonia_scholaris> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Alstonia_scholaris> .
-[1]: <http://dbpedia.org/resource/Salvia_miltiorrhiza> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Salvia_miltiorrhiza> .
-[1]: <http://dbpedia.org/resource/Ligustrum_lucidum> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ligustrum_lucidum> .
-[1]: <http://dbpedia.org/resource/Lettuce> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lactuca_sativa> .
-[1]: <http://dbpedia.org/resource/Shishiudo> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Angelica_pubescens> .
-[1]: <http://dbpedia.org/resource/Andrographis_paniculata> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Andrographis_paniculata> .
-[1]: <http://dbpedia.org/resource/Carduus_crispus> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Carduus_crispus> .
-[1]: <http://dbpedia.org/resource/Brown_Bear> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ursus_arctos> .
-[1]: <http://dbpedia.org/resource/Common_seahorse> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Hippocampus_kuda> .
-[1]: <http://dbpedia.org/resource/Croton_tiglium> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Croton_tiglium> .
-[1]: <http://dbpedia.org/resource/Equisetum_arvense> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Equisetum_arvense> .
-[1]: <http://dbpedia.org/resource/Saffron> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Crocus_sativus> .
-[1]: <http://dbpedia.org/resource/Mandarin_orange> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Citrus_reticulata> .
-[1]: <http://dbpedia.org/resource/Prunella_%28plant%29> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Prunella_vulgaris> .
-[1]: <http://dbpedia.org/resource/Papaya> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Carica_papaya> .
-[1]: <http://dbpedia.org/resource/Eucalyptus_globulus> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Eucalyptus_globulus> .
-[1]: <http://dbpedia.org/resource/Isatis_tinctoria> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Isatis_tinctoria> .
-[1]: <http://dbpedia.org/resource/Torreya_grandis> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Torreya_grandis> .
-[1]: <http://dbpedia.org/resource/Sophora_flavescens> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Sophora_flavescens> .
-[1]: <http://dbpedia.org/resource/Toxicodendron_vernicifluum> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rhus_verniciflua> .
-[0.952564102564]: <http://dbpedia.org/resource/Trichosanthes_cucumerina> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Trichosanthes_cucumeroides> .
-[1]: <http://dbpedia.org/resource/Reindeer> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rangifer_tarandus> .
-[1]: <http://dbpedia.org/resource/Dioscorea_opposita> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Dioscorea_opposita> .
-[1]: <http://dbpedia.org/resource/Lycopodium_annotinum> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lycopodium_annotinum> .
-[1]: <http://dbpedia.org/resource/Wikstroemia_indica> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Wikstroemia_indica> .
-[1]: <http://dbpedia.org/resource/Paeonia_lactiflora> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Paeonia_lactiflora> .
-[1]: <http://dbpedia.org/resource/Tribulus_terrestris> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Tribulus_terrestris> .
-[0.970952380952]: <http://dbpedia.org/resource/Ranunculus_lapponicus> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ranunculus_japonicus> .
-[1]: <http://dbpedia.org/resource/Plantago_major> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Plantago_major> .
-[1]: <http://dbpedia.org/resource/Dioscorea_bulbifera> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Dioscorea_bulbifera> .
-[1]: <http://dbpedia.org/resource/Ramie> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Boehmeria_nivea> .
-[1]: <http://dbpedia.org/resource/Daphne_genkwa> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Daphne_genkwa> .
-[1]: <http://dbpedia.org/resource/Polygonatum_odoratum> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Polygonatum_odoratum> .
-[1]: <http://dbpedia.org/resource/P%C3%A8re_David%27s_Deer> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Elaphurus_davidianus> .
-[1]: <http://dbpedia.org/resource/Vegetable_caterpillar> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cordyceps_sinensis> .
-[1]: <http://dbpedia.org/resource/Hippophae_rhamnoides> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Hippophae_rhamnoides> .
-[1]: <http://dbpedia.org/resource/Ulva_lactuca> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ulva_lactuca> .
-[1]: <http://dbpedia.org/resource/Magnolia_officinalis> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Magnolia_officinalis> .
-[1]: <http://dbpedia.org/resource/Madder> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rubia_cordifolia> .
-[1]: <http://dbpedia.org/resource/Apricot> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Prunus_armeniaca> .
-[1]: <http://dbpedia.org/resource/Podophyllum_hexandrum> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Podophyllum_emodi> .
-[1]: <http://dbpedia.org/resource/Melia_azedarach> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Melia_azedarach> .
-[1]: <http://dbpedia.org/resource/Fritillaria_pallidiflora> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Fritillaria_pallidiflora> .
-[1]: <http://dbpedia.org/resource/Basil> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ocimum_basilicum> .
-[1]: <http://dbpedia.org/resource/Cinnamomum_camphora> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cinnamomum_camphora> .
-[1]: <http://dbpedia.org/resource/Murraya_paniculata> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Murraya_paniculata> .
-[1]: <http://dbpedia.org/resource/Eucalyptus_robusta> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Eucalyptus_robusta> .
-[1]: <http://dbpedia.org/resource/Cow_Parsley> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Anthriscus_sylvestris> .
-[1]: <http://dbpedia.org/resource/Muskmelon> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cucumis_melo> .
-[1]: <http://dbpedia.org/resource/Foxtail_millet> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Setaria_italica> .
-[1]: <http://dbpedia.org/resource/Long_pepper> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Piper_longum> .
-[1]: <http://dbpedia.org/resource/Hyoscyamus_niger> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Hyoscyamus_niger> .
-[1]: <http://dbpedia.org/resource/Trametes_versicolor> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Coriolus_versicolor> .
-[1]: <http://dbpedia.org/resource/Echinops_ritro> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Echinops_ritro> .
-[1]: <http://dbpedia.org/resource/Abrus_precatorius> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Abrus_precatorius> .
-[1]: <http://dbpedia.org/resource/Ginger> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Zingiber_officinale> .
-[1]: <http://dbpedia.org/resource/Datura_stramonium> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Datura_stramonium> .
-[1]: <http://dbpedia.org/resource/Wakame> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Undaria_pinnatifida> .
-[1]: <http://dbpedia.org/resource/Vicia_sativa> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Vicia_sativa> .
-[1]: <http://dbpedia.org/resource/Scutellaria_baicalensis> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Scutellaria_baicalensis> .
-[1]: <http://dbpedia.org/resource/Solanum_nigrum> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Solanum_nigrum> .
-[1]: <http://dbpedia.org/resource/Monascus_purpureus> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Monascus_purpureus> .
-[1]: <http://dbpedia.org/resource/Fragrant_orchid> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gymnadenia_conopsea> .
-[1]: <http://dbpedia.org/resource/Paper_Mulberry> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Broussonetia_papyrifera> .
-[1]: <http://dbpedia.org/resource/Impatiens_balsamina> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Impatiens_balsamina> .
-[1]: <http://dbpedia.org/resource/Lemna_minor> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lemna_minor> .
-[1]: <http://dbpedia.org/resource/Pale_Persicaria> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Polygonum_lapathifolium> .
-[1]: <http://dbpedia.org/resource/Carrot> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Daucus_carota> .
-[1]: <http://dbpedia.org/resource/Forsythia_suspensa> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Forsythia_suspensa> .
-[1]: <http://dbpedia.org/resource/Grapefruit> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Citrus_grandis> .
-[1]: <http://dbpedia.org/resource/Althaea_officinalis> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Althaea_officinalis> .
-[1]: <http://dbpedia.org/resource/Artemisia_scoparia> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Artemisia_scoparia> .
-[1]: <http://dbpedia.org/resource/Oriental_Staff_Vine> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Celastrus_orbiculatus> .
-[1]: <http://dbpedia.org/resource/Trifoliate_orange> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Poncirus_trifoliata> .
-[1]: <http://dbpedia.org/resource/Aloe_vera> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Aloe_vera> .
-[1]: <http://dbpedia.org/resource/Nutmeg> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Myristica_fragrans> .
-[1]: <http://dbpedia.org/resource/Fenugreek> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Trigonella_foenum-graecum> .
-[1]: <http://dbpedia.org/resource/Vicia_faba> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Vicia_faba> .
-[1]: <http://dbpedia.org/resource/Centella_asiatica> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Centella_asiatica> .
-[1]: <http://dbpedia.org/resource/Hovenia_dulcis> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Hovenia_dulcis> .
-[1]: <http://dbpedia.org/resource/Soft_rush> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Juncus_effusus> .
-[1]: <http://dbpedia.org/resource/Saiga_Antelope> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Saiga_tatarica> .
-[1]: <http://dbpedia.org/resource/Astragalus_propinquus> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Astragalus_membranaceus> .
-[1]: <http://dbpedia.org/resource/Agastache_rugosa> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Agastache_rugosa> .
-[1]: <http://dbpedia.org/resource/Tiger> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Panthera_tigris> .
-[0.990476190476]: <http://dbpedia.org/resource/Aconitum_carmichaelii> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Aconitum_carmichaeli> .
-[1]: <http://dbpedia.org/resource/Cyperus_rotundus> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cyperus_rotundus> .
-[1]: <http://dbpedia.org/resource/Santalum_album> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Santalum_album> .
-[1]: <http://dbpedia.org/resource/Black_cardamom> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Amomum_subulatum> .
-[1]: <http://dbpedia.org/resource/Peach> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Prunus_persica> .
-[1]: <http://dbpedia.org/resource/Glehnia_littoralis> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Glehnia_littoralis> .
-[1]: <http://dbpedia.org/resource/Sambar_%28deer%29> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cervus_unicolor> .
-[1]: <http://dbpedia.org/resource/Opium_poppy> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Papaver_somniferum> .
-[1]: <http://dbpedia.org/resource/Saussurea> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Saussurea_medusa> .
-[1]: <http://dbpedia.org/resource/Hericium_erinaceus> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Hericium_erinaceus> .
-[1]: <http://dbpedia.org/resource/St_John%27s_wort> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Hypericum_perforatum> .
-[1]: <http://dbpedia.org/resource/Eggplant> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Solanum_melongena> .
-[1]: <http://dbpedia.org/resource/Deinagkistrodon> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Agkistrodon_acutus> .
-[1]: <http://dbpedia.org/resource/Rumex_obtusifolius> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rumex_obtusifolius> .
-[1]: <http://dbpedia.org/resource/Astilbe_chinensis> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Astilbe_chinensis> .
-[1]: <http://dbpedia.org/resource/Yak> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Bos_grunniens> .
-[1]: <http://dbpedia.org/resource/Pteris_vittata> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Pteris_vittata> .
-[1]: <http://dbpedia.org/resource/Camellia_sinensis> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Camellia_sinensis> .
-[1]: <http://dbpedia.org/resource/Chrysanthemum> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Chrysanthemum_indicum> .
-[1]: <http://dbpedia.org/resource/Agrimonia_eupatoria> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Agrimonia_eupatoria> .
-[1]: <http://dbpedia.org/resource/Kombu> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Laminaria_japonica> .
-[1]: <http://dbpedia.org/resource/Gentiana_scabra> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gentiana_scabra> .
-[1]: <http://dbpedia.org/resource/Indian_Rhinoceros> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rhinoceros_unicornis> .
-[1]: <http://dbpedia.org/resource/Opuntia_stricta> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Opuntia_dillenii> .
-[1]: <http://dbpedia.org/resource/Cocculus_laurifolius> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cocculus_laurifolius> .
-[1]: <http://dbpedia.org/resource/Zedoary> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Curcuma_zedoaria> .
-[0.981818181818]: <http://dbpedia.org/resource/Tetrapanax> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Tetrapanax_papyriferus> .
-[1]: <http://dbpedia.org/resource/Garlic_chives> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Allium_tuberosum> .
-[1]: <http://dbpedia.org/resource/Ipomoea_aquatica> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ipomoea_aquatica> .
-[1]: <http://dbpedia.org/resource/Paua> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Haliotis_laevigata> .
-[1]: <http://dbpedia.org/resource/Asparagus> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Asparagus_officinalis> .
-[1]: <http://dbpedia.org/resource/Potato> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Solanum_tuberosum> .
-[1]: <http://dbpedia.org/resource/Common_Frog> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rana_temporaria> .
-[1]: <http://dbpedia.org/resource/Caraway> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Carum_carvi> .
-[1]: <http://dbpedia.org/resource/Cyathula_officinalis> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cyathula_officinalis> .
-[1]: <http://dbpedia.org/resource/Verbena_officinalis> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Verbena_officinalis> .
-[1]: <http://dbpedia.org/resource/Acorus_gramineus> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Acorus_gramineus> .
-[1]: <http://dbpedia.org/resource/Harbor_Seal> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Phoca_vitulina> .
-[1]: <http://dbpedia.org/resource/Alfalfa> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Medicago_sativa> .
-[1]: <http://dbpedia.org/resource/Mirabilis_jalapa> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Mirabilis_jalapa> .
-[1]: <http://dbpedia.org/resource/Chicory> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cichorium_intybus> .
-[1]: <http://dbpedia.org/resource/Cinnamomum_aromaticum> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cinnamomum_cassia> .
-[1]: <http://dbpedia.org/resource/Codonopsis_lanceolata> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Codonopsis_lanceolata> .
-[1]: <http://dbpedia.org/resource/Aster_tataricus> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Aster_tataricus> .
-[1]: <http://dbpedia.org/resource/Cissampelos_pareira> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cissampelos_pareira> .
-[1]: <http://dbpedia.org/resource/Petasites_japonicus> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Petasites_japonicus> .
-[1]: <http://dbpedia.org/resource/Pinus_koraiensis> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Pinus_koraiensis> .
-[1]: <http://dbpedia.org/resource/Magnolia_grandiflora> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Magnolia_grandiflora> .
-[1]: <http://dbpedia.org/resource/Cistanche_deserticola> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cistanche_deserticola> .
-[1]: <http://dbpedia.org/resource/Common_fig> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ficus_carica> .
-[1]: <http://dbpedia.org/resource/Gentiana_macrophylla> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gentiana_macrophylla> .
-[1]: <http://dbpedia.org/resource/Cannabis_sativa> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cannabis_sativa> .
-[1]: <http://dbpedia.org/resource/Gossypium_herbaceum> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gossypium_herbaceum> .
-[1]: <http://dbpedia.org/resource/Japanese_wrinkled_frog> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rana_rugosa> .
-[1]: <http://dbpedia.org/resource/Hawksbill_turtle> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Eretmochelys_imbricata> .
-[1]: <http://dbpedia.org/resource/Gypsywort> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lycopus_europaeus> .
-[1]: <http://dbpedia.org/resource/Erysimum_cheiranthoides> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Erysimum_cheiranthoides> .
-[1]: <http://dbpedia.org/resource/Trachelospermum_jasminoides> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Trachelospermum_jasminoides> .
-[1]: <http://dbpedia.org/resource/Amaranthus_retroflexus> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Amaranthus_retroflexus> .
-[1]: <http://dbpedia.org/resource/Asian_giant_hornet> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Vespa_mandarinia> .
-[1]: <http://dbpedia.org/resource/Ziziphus_mauritiana> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Zizyphus_jujuba> .
-[1]: <http://dbpedia.org/resource/Acacia_catechu> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Acacia_catechu> .
-[1]: <http://dbpedia.org/resource/Magnolia_sprengeri> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Magnolia_sprengeri> .
-[1]: <http://dbpedia.org/resource/Ningpo_figwort> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Scrophularia_ningpoensis> .
-[1]: <http://dbpedia.org/resource/Pigeon_pea> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cajanus_cajan> .
-[1]: <http://dbpedia.org/resource/Garlic> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Allium_sativum> .
-[1]: <http://dbpedia.org/resource/Common_wheat> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Triticum_aestivum> .
-[1]: <http://dbpedia.org/resource/Senna_alexandrina> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cassia_angustifolia> .
-[1]: <http://dbpedia.org/resource/Imperata_cylindrica> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Imperata_cylindrica> .
-[1]: <http://dbpedia.org/resource/Complex-toothed_flying_squirrel> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Trogopterus_xanthipes> .
-[1]: <http://dbpedia.org/resource/Hemerocallis_fulva> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Hemerocallis_fulva> .
-[1]: <http://dbpedia.org/resource/Lingzhi> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ganoderma_lucidum> .
-[1]: <http://dbpedia.org/resource/Liquorice> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Glycyrrhiza_glabra> .
-[1]: <http://dbpedia.org/resource/Albizia_julibrissin> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Albizia_julibrissin> .
-[1]: <http://dbpedia.org/resource/Dichroa_febrifuga> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Dichroa_febrifuga> .
-[1]: <http://dbpedia.org/resource/Gleditsia_sinensis> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gleditsia_sinensis> .
-[1]: <http://dbpedia.org/resource/Onion> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Allium_cepa> .
-[1]: <http://dbpedia.org/resource/Solanum_dulcamara> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Solanum_dulcamara> .
-[1]: <http://dbpedia.org/resource/Lion> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Panthera_leo> .
-[1]: <http://dbpedia.org/resource/Ephedra_intermedia> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ephedra_intermedia> .
-[1]: <http://dbpedia.org/resource/Leopard_Cat> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Felis_bengalensis> .
-[1]: <http://dbpedia.org/resource/Apis_cerana> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Apis_cerana> .
-[1]: <http://dbpedia.org/resource/Spinach> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Spinacia_oleracea> .
-[1]: <http://dbpedia.org/resource/Jasminum_sambac> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Jasminum_sambac> .
-[1]: <http://dbpedia.org/resource/Lilium_davidii> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lilium_davidii> .
-[1]: <http://dbpedia.org/resource/Brassica_juncea> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Brassica_juncea> .
-[1]: <http://dbpedia.org/resource/Bitter_orange> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Citrus_aurantium> .
-[1]: <http://dbpedia.org/resource/Peanut> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Arachis_hypogaea> .
-[1]: <http://dbpedia.org/resource/Masson%27s_Pine> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Pinus_massoniana> .
-[1]: <http://dbpedia.org/resource/Rosa_rugosa> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rosa_rugosa> .
-[1]: <http://dbpedia.org/resource/Belamcanda_chinensis> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Belamcanda_chinensis> .
-[1]: <http://dbpedia.org/resource/Daikon> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Raphanus_sativus> .
-[1]: <http://dbpedia.org/resource/Gossypium_hirsutum> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gossypium_hirsutum> .
-[1]: <http://dbpedia.org/resource/Mountain_Hare> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lepus_timidus> .
-[1]: <http://dbpedia.org/resource/Russian_Tortoise> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Testudo_horsfieldi> .
-[1]: <http://dbpedia.org/resource/Potamogeton_perfoliatus> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Potamogeton_perfoliatus> .
-[1]: <http://dbpedia.org/resource/Strychnine_tree> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Strychnos_nux-vomica> .
-[1]: <http://dbpedia.org/resource/Rubus_idaeus> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rubus_idaeus> .
-[1]: <http://dbpedia.org/resource/Cephalotaxus_fortunei> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cephalotaxus_fortunei> .
-[1]: <http://dbpedia.org/resource/Scolopendra_subspinipes> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Scolopendra_subspinipes> .
-[1]: <http://dbpedia.org/resource/Diphasiastrum_complanatum> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lycopodium_complanatum> .
-[1]: <http://dbpedia.org/resource/Schisandra_chinensis> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Schisandra_chinensis> .
-[1]: <http://dbpedia.org/resource/Houttuynia> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Houttuynia_cordata> .
-[1]: <http://dbpedia.org/resource/Asian_Elephant> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Elephas_maximus> .
-[1]: <http://dbpedia.org/resource/Siraitia_grosvenorii> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Momordica_grosvenori> .
-[1]: <http://dbpedia.org/resource/Typha_latifolia> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Typha_latifolia> .
-[1]: <http://dbpedia.org/resource/Strychnos_ignatia> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Strychnos_ignatii> .
-[1]: <http://dbpedia.org/resource/Crataegus_pinnatifida> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Crataegus_pinnatifida> .
-[1]: <http://dbpedia.org/resource/Barley> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Hordeum_vulgare> .
-[1]: <http://dbpedia.org/resource/Japanese_knotweed> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Polygonum_cuspidatum> .
-[1]: <http://dbpedia.org/resource/Juglans_mandshurica> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Juglans_mandshurica> .
-[1]: <http://dbpedia.org/resource/Ailanthus_altissima> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ailanthus_altissima> .
-[0.99]: <http://dbpedia.org/resource/Polygonum_tinctorum> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Polygonum_tinctorium> .
-[1]: <http://dbpedia.org/resource/Ube> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Dioscorea_alata> .
-[1]: <http://dbpedia.org/resource/Portulaca_oleracea> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Portulaca_oleracea> .
-[1]: <http://dbpedia.org/resource/Ardisia_japonica> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ardisia_japonica> .
-[1]: <http://dbpedia.org/resource/Camellia_japonica> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Camellia_japonica> .
-[1]: <http://dbpedia.org/resource/Atropa_belladonna> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Atropa_belladonna> .
-[1]: <http://dbpedia.org/resource/Senna_obtusifolia> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cassia_tora> .
-[0.951428571429]: <http://dbpedia.org/resource/Horkelia_marinensis> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Potentilla_chinensis> .
-[1]: <http://dbpedia.org/resource/Rice> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Oryza_sativa> .
-[1]: <http://dbpedia.org/resource/Catharanthus_roseus> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Catharanthus_roseus> .
-[1]: <http://dbpedia.org/resource/Tripterygium_wilfordii> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Tripterygium_wilfordii> .
-[1]: <http://dbpedia.org/resource/Rosa_laevigata> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rosa_laevigata> .
-[1]: <http://dbpedia.org/resource/Inula_racemosa> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Inula_racemosa> .
-[1]: <http://dbpedia.org/resource/Choerospondias_axillaris> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Choerospondias_axillaris> .
-[1]: <http://dbpedia.org/resource/Longan> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Dimocarpus_longan> .
-[1]: <http://dbpedia.org/resource/Zostera> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Zostera_marina> .
-[1]: <http://dbpedia.org/resource/Ophiopogon_japonicus> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ophiopogon_japonicus> .
-[1]: <http://dbpedia.org/resource/Moose> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Alces_alces> .
-[1]: <http://dbpedia.org/resource/Ptyas_korros> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ptyas_korros> .
-[1]: <http://dbpedia.org/resource/Dark-spotted_frog> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rana_nigromaculata> .
-[1]: <http://dbpedia.org/resource/Castor_oil_plant> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ricinus_communis> .
-[1]: <http://dbpedia.org/resource/Silver_carp> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Hypophthalmichthys_molitrix> .
-[1]: <http://dbpedia.org/resource/Macleaya_cordata> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Macleaya_cordata> .
-[1]: <http://dbpedia.org/resource/European_honey_bee> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Apis_mellifera> .
-[1]: <http://dbpedia.org/resource/Allium_chinense> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Allium_chinense> .
-[1]: <http://dbpedia.org/resource/Nelumbo_nucifera> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Nelumbo_nucifera> .
-[1]: <http://dbpedia.org/resource/Bactrian_Camel> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Camelus_bactrianus> .
-[1]: <http://dbpedia.org/resource/Luffa_aegyptiaca> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Luffa_cylindrica> .
-[1]: <http://dbpedia.org/resource/Cornus_officinalis> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cornus_officinalis> .
-[1]: <http://dbpedia.org/resource/Domestic_water_buffalo> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Bubalus_bubalis> .
-[1]: <http://dbpedia.org/resource/Dog> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Canis_familiaris> .
-[1]: <http://dbpedia.org/resource/Aquilaria_sinensis> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Aquilaria_sinensis> .
-[1]: <http://dbpedia.org/resource/American_Ginseng> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Panax_quinquefolium> .
-[1]: <http://dbpedia.org/resource/Pseudostellaria_heterophylla> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Pseudostellaria_heterophylla> .
-[1]: <http://dbpedia.org/resource/Colocasia_esculenta> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Colocasia_esculenta> .
-[1]: <http://dbpedia.org/resource/Red_Junglefowl> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gallus_gallus> .
-[1]: <http://dbpedia.org/resource/Camellia_oleifera> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Camellia_oleifera> .
-[1]: <http://dbpedia.org/resource/Chinese_trumpet_vine> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Campsis_grandiflora> .
-[1]: <http://dbpedia.org/resource/Auricularia_auricula-judae> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Auricularia_auricula> .
-[1]: <http://dbpedia.org/resource/Stemona_tuberosa> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Stemona_tuberosa> .
-[1]: <http://dbpedia.org/resource/Wolfberry> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lycium_chinense> .
-[1]: <http://dbpedia.org/resource/Phyllostachys_nigra> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Phyllostachys_nigra> .
-[1]: <http://dbpedia.org/resource/Euphorbia_pulcherrima> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Euphorbia_pulcherrima> .
-[1]: <http://dbpedia.org/resource/Indian_gooseberry> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Phyllanthus_emblica> .
-[1]: <http://dbpedia.org/resource/Paulownia_tomentosa> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Paulownia_tomentosa> .
-[1]: <http://dbpedia.org/resource/Toona_sinensis> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Toona_sinensis> .
-[1]: <http://dbpedia.org/resource/Juglans_regia> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Juglans_regia> .
-[1]: <http://dbpedia.org/resource/White_mustard> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Sinapis_alba> .
-[1]: <http://dbpedia.org/resource/Persicaria_bistorta> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Polygonum_bistorta> .
-[1]: <http://dbpedia.org/resource/Canavalia_gladiata> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Canavalia_gladiata> .
-[1]: <http://dbpedia.org/resource/Pisolithus_tinctorius> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Pisolithus_tinctorius> .
-[1]: <http://dbpedia.org/resource/Tokay_gecko> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gekko_gecko> .
-[1]: <http://dbpedia.org/resource/Vicia_cracca> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Vicia_cracca> .
-[1]: <http://dbpedia.org/resource/Avena_fatua> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Avena_fatua> .
-[1]: <http://dbpedia.org/resource/Cudrania_tricuspidata> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cudrania_tricuspidata> .
-[1]: <http://dbpedia.org/resource/Pegasus_laternarius> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Pegasus_laternarius> .
-[1]: <http://dbpedia.org/resource/Morus_alba> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Morus_alba> .
-[1]: <http://dbpedia.org/resource/Orange_%28fruit%29> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Citrus_sinensis> .
-[1]: <http://dbpedia.org/resource/Asian_trampsnail> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Bradybaena_similaris> .
-[1]: <http://dbpedia.org/resource/Snow_fungus> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Tremella_fuciformis> .
-[1]: <http://dbpedia.org/resource/Clove> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Eugenia_caryophyllata> .
-[1]: <http://dbpedia.org/resource/Ipomoea_cairica> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ipomoea_cairica> .
-[1]: <http://dbpedia.org/resource/Terminalia_chebula> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Terminalia_chebula> .
-[1]: <http://dbpedia.org/resource/Coltsfoot> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Tussilago_farfara> .
-[1]: <http://dbpedia.org/resource/Ilex_purpurea> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ilex_purpurea> .
-[1]: <http://dbpedia.org/resource/Pterocarpus_indicus> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Pterocarpus_indicus> .
-[1]: <http://dbpedia.org/resource/Aralia_chinensis> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Aralia_chinensis> .
-[1]: <http://dbpedia.org/resource/Phragmites> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Phragmites_communis> .
-[1]: <http://dbpedia.org/resource/Dalbergia_odorifera> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Dalbergia_odorifera> .
-[1]: <http://dbpedia.org/resource/Alocasia> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Alocasia_macrorrhiza> .
-[1]: <http://dbpedia.org/resource/Vitex_negundo> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Vitex_negundo> .
-[1]: <http://dbpedia.org/resource/Phellodendron_amurense> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Phellodendron_amurense> .
-[1]: <http://dbpedia.org/resource/Liriope_%28genus%29> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Liriope_spicata> .
-[1]: <http://dbpedia.org/resource/Goat> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Capra_hircus> .
-[1]: <http://dbpedia.org/resource/Eurasian_Lynx> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lynx_lynx> .
-[1]: <http://dbpedia.org/resource/Common_Toad> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Bufo_bufo> .
-[1]: <http://dbpedia.org/resource/Northern_Fur_Seal> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Callorhinus_ursinus> .
-[1]: <http://dbpedia.org/resource/Indigofera_tinctoria> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Indigofera_tinctoria> .
-[0.976666666667]: <http://dbpedia.org/resource/Rauwolfia_serpentina> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rauvolfia_serpentina> .
-[1]: <http://dbpedia.org/resource/Datura_metel> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Datura_metel> .
-[1]: <http://dbpedia.org/resource/Chaenomeles_speciosa> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Chaenomeles_speciosa> .
-[1]: <http://dbpedia.org/resource/Flax> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Linum_usitatissimum> .
-[1]: <http://dbpedia.org/resource/Cucurbita_moschata> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cucurbita_moschata> .
-[1]: <http://dbpedia.org/resource/Fennel> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Foeniculum_vulgare> .
-[1]: <http://dbpedia.org/resource/Eupatorium_lindleyanum> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Eupatorium_lindleyanum> .
-[1]: <http://dbpedia.org/resource/Sagittaria_sagittifolia> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Sagittaria_sagittifolia> .
-[1]: <http://dbpedia.org/resource/Northern_Pacific_seastar> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Asterias_amurensis> .
-[1]: <http://dbpedia.org/resource/Rheum_officinale> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rheum_officinale> .
-[1]: <http://dbpedia.org/resource/Snow_Leopard> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Panthera_uncia> .
-[1]: <http://dbpedia.org/resource/Watermelon> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Citrullus_vulgaris> .
-[1]: <http://dbpedia.org/resource/Dracocephalum_moldavica> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Dracocephalum_moldavica> .
-[1]: <http://dbpedia.org/resource/Drynaria_fortunei> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Drynaria_fortunei> .
-[1]: <http://dbpedia.org/resource/Artemisia_vulgaris> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Artemisia_vulgaris> .
-[1]: <http://dbpedia.org/resource/Donkey> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Equus_asinus> .
-[1]: <http://dbpedia.org/resource/Gastrodia_elata> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gastrodia_elata> .
-[1]: <http://dbpedia.org/resource/Capparis_masaikai> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Capparis_masaikai> .
-[1]: <http://dbpedia.org/resource/Datura_inoxia> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Datura_innoxia> .
-[1]: <http://dbpedia.org/resource/Magnolia_denudata> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Magnolia_denudata> .
-[1]: <http://dbpedia.org/resource/Dill> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Anethum_graveolens> .
-[1]: <http://dbpedia.org/resource/Euphorbia_pekinensis> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Euphorbia_pekinensis> .
-[1]: <http://dbpedia.org/resource/Erythrina_variegata> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Erythrina_variegata> .
-[1]: <http://dbpedia.org/resource/Pea> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Pisum_sativum> .
-[1]: <http://dbpedia.org/resource/Citron> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Citrus_medica> .
-[1]: <http://dbpedia.org/resource/Camptotheca> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Camptotheca_acuminata> .
-[1]: <http://dbpedia.org/resource/Capsicum_frutescens> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Capsicum_frutescens> .
-[1]: <http://dbpedia.org/resource/Epimedium> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Epimedium_sagittatum> .
-[1]: <http://dbpedia.org/resource/Vitex_trifolia> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Vitex_trifolia> .
-[1]: <http://dbpedia.org/resource/Ginseng> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Panax_ginseng> .
-[1]: <http://dbpedia.org/resource/Alpinia_zerumbet> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Alpinia_zerumbet> .
-[1]: <http://dbpedia.org/resource/Piper_sarmentosum> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Piper_sarmentosum> .
-[1]: <http://dbpedia.org/resource/Polygala_tenuifolia> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Polygala_tenuifolia> .
-[1]: <http://dbpedia.org/resource/Artemisia_princeps> owl:sameAs <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Artemisia_princeps> .
+<http://dbpedia.org/resource/Shishiudo> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Angelica_pubescens> .
+<http://dbpedia.org/resource/Hericium_erinaceus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Hericium_erinaceus> .
+<http://dbpedia.org/resource/Brown_Bear> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ursus_arctos> .
+<http://dbpedia.org/resource/Crataegus_pinnatifida> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Crataegus_pinnatifida> .
+<http://dbpedia.org/resource/Cistanche_deserticola> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cistanche_deserticola> .
+<http://dbpedia.org/resource/Hippocampus_kuda> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Hippocampus_kuda> .
+<http://dbpedia.org/resource/Persimmon> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Diospyros_kaki> .
+<http://dbpedia.org/resource/Solanum_dulcamara> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Solanum_dulcamara> .
+<http://dbpedia.org/resource/Hovenia_dulcis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Hovenia_dulcis> .
+<http://dbpedia.org/resource/Tree_Sparrow> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Passer_montanus> .
+<http://dbpedia.org/resource/Strychnos_ignatia> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Strychnos_ignatii> .
+<http://dbpedia.org/resource/Alocasia_macrorrhizos> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Alocasia_macrorrhiza> .
+<http://dbpedia.org/resource/Dolichousnea_longissima> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Usnea_longissima> .
+<http://dbpedia.org/resource/Holly> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Acacia_catechu> .
+<http://dbpedia.org/resource/Rosa_laevigata> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rosa_laevigata> .
+<http://dbpedia.org/resource/Aralia_cordata> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Aralia_cordata> .
+<http://dbpedia.org/resource/Justicia_adhatoda> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Adhatoda_vasica> .
+<http://dbpedia.org/resource/Atropa_belladonna> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Atropa_belladonna> .
+<http://dbpedia.org/resource/Morus_alba> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Morus_alba> .
+<http://dbpedia.org/resource/Gypsywort> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lycopus_europaeus> .
+<http://dbpedia.org/resource/Rauvolfia_serpentina> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rauvolfia_serpentina> .
+<http://dbpedia.org/resource/Magnolia_denudata> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Magnolia_denudata> .
+<http://dbpedia.org/resource/Chinese_trumpet_vine> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Campsis_grandiflora> .
+<http://dbpedia.org/resource/Euphorbia_pulcherrima> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Euphorbia_pulcherrima> .
+<http://dbpedia.org/resource/Camellia_japonica> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Camellia_japonica> .
+<http://dbpedia.org/resource/Ranunculus_lapponicus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ranunculus_japonicus> .
+<http://dbpedia.org/resource/Jujube> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Zizyphus_jujuba> .
+<http://dbpedia.org/resource/Codonopsis_lanceolata> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Codonopsis_lanceolata> .
+<http://dbpedia.org/resource/Agrimonia_eupatoria> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Agrimonia_eupatoria> .
+<http://dbpedia.org/resource/Bactrian_Camel> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Camelus_bactrianus> .
+<http://dbpedia.org/resource/Ube> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Dioscorea_alata> .
+<http://dbpedia.org/resource/Pseudostellaria_heterophylla> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Pseudostellaria_heterophylla> .
+<http://dbpedia.org/resource/Celosia_argentea> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Celosia_argentea> .
+<http://dbpedia.org/resource/Common_wheat> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Triticum_aestivum> .
+<http://dbpedia.org/resource/Dendrobium_nobile> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Dendrobium_nobile> .
+<http://dbpedia.org/resource/Scutellaria_baicalensis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Scutellaria_baicalensis> .
+<http://dbpedia.org/resource/Jaguar> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Panthera_uncia> .
+<http://dbpedia.org/resource/Phytolacca_americana> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Phytolacca_americana> .
+<http://dbpedia.org/resource/Hemerocallis_lilioasphodelus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Hemerocallis_fulva> .
+<http://dbpedia.org/resource/Corydalis_ambigua> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Corydalis_ambigua> .
+<http://dbpedia.org/resource/Forsythia_suspensa> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Forsythia_suspensa> .
+<http://dbpedia.org/resource/Deinagkistrodon> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Agkistrodon_acutus> .
+<http://dbpedia.org/resource/Gentiana_triflora> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gentiana_triflora> .
+<http://dbpedia.org/resource/Diphasiastrum_complanatum> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lycopodium_complanatum> .
+<http://dbpedia.org/resource/Polygala_sinisica> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Polygala_sibirica> .
+<http://dbpedia.org/resource/Canavalia_gladiata> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Canavalia_gladiata> .
+<http://dbpedia.org/resource/Scolopendra_subspinipes> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Scolopendra_subspinipes> .
+<http://dbpedia.org/resource/Thuja_occidentalis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Thuja_orientalis> .
+<http://dbpedia.org/resource/Astilbe_chinensis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Astilbe_chinensis> .
+<http://dbpedia.org/resource/Star_anise> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Illicium_verum> .
+<http://dbpedia.org/resource/Oregano> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Origanum_vulgare> .
+<http://dbpedia.org/resource/Chicken> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gallus_gallus> .
+<http://dbpedia.org/resource/Beauveria_bassiana> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Beauveria_bassiana> .
+<http://dbpedia.org/resource/Basil> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ocimum_basilicum> .
+<http://dbpedia.org/resource/Cinnamomum_camphora> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cinnamomum_camphora> .
+<http://dbpedia.org/resource/Taro> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Colocasia_esculenta> .
+<http://dbpedia.org/resource/Solanum_sisymbriifolium> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Boehmeria_nivea> .
+<http://dbpedia.org/resource/Acacia_catechu> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Acacia_catechu> .
+<http://dbpedia.org/resource/Radish> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Raphanus_sativus> .
+<http://dbpedia.org/resource/Tripterygium_wilfordii> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Tripterygium_wilfordii> .
+<http://dbpedia.org/resource/Saussurea> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Saussurea_medusa> .
+<http://dbpedia.org/resource/Potato> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Solanum_tuberosum> .
+<http://dbpedia.org/resource/Eleutherococcus_senticosus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Acanthopanax_senticosus> .
+<http://dbpedia.org/resource/Gardenia_jasminoides> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gardenia_jasminoides> .
+<http://dbpedia.org/resource/Centella_asiatica> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Centella_asiatica> .
+<http://dbpedia.org/resource/Cornus_officinalis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cornus_officinalis> .
+<http://dbpedia.org/resource/Long_pepper> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Piper_longum> .
+<http://dbpedia.org/resource/Vicia_faba> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Vicia_faba> .
+<http://dbpedia.org/resource/Macleaya_cordata> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Macleaya_cordata> .
+<http://dbpedia.org/resource/Horkelia_marinensis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Potentilla_chinensis> .
+<http://dbpedia.org/resource/Cocculus_laurifolius> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cocculus_laurifolius> .
+<http://dbpedia.org/resource/Lilium_longiflorum> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lilium_longiflorum> .
+<http://dbpedia.org/resource/Tussilago_farfara> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Tussilago_farfara> .
+<http://dbpedia.org/resource/Salvinia> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lobelia_chinensis> .
+<http://dbpedia.org/resource/Pigeon_pea> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cajanus_cajan> .
+<http://dbpedia.org/resource/Brassica_juncea> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Brassica_juncea> .
+<http://dbpedia.org/resource/Auricularia_auricula-judae> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Auricularia_auricula> .
+<http://dbpedia.org/resource/Cleome_gynandra> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cleome_gynandra> .
+<http://dbpedia.org/resource/Fennel> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Foeniculum_vulgare> .
+<http://dbpedia.org/resource/Senna_obtusifolia> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cassia_obtusifolia> .
+<http://dbpedia.org/resource/Senna_obtusifolia> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cassia_tora> .
+<http://dbpedia.org/resource/Toona_sinensis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cedrela_sinensis> .
+<http://dbpedia.org/resource/Toona_sinensis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Toona_sinensis> .
+<http://dbpedia.org/resource/Datura_inoxia> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Datura_innoxia> .
+<http://dbpedia.org/resource/Toxicodendron_vernicifluum> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rhus_verniciflua> .
+<http://dbpedia.org/resource/Trichosanthes> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Wikstroemia_indica> .
+<http://dbpedia.org/resource/Fragrant_orchid> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gymnadenia_conopsea> .
+<http://dbpedia.org/resource/Greater_burdock> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Arctium_lappa> .
+<http://dbpedia.org/resource/Elecampane> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Inula_helenium> .
+<http://dbpedia.org/resource/Piper_sarmentosum> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Piper_sarmentosum> .
+<http://dbpedia.org/resource/Rumex_obtusifolius> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rumex_obtusifolius> .
+<http://dbpedia.org/resource/Wullschlaegelia> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gastrodia_elata> .
+<http://dbpedia.org/resource/Orange_%28fruit%29> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Citrus_sinensis> .
+<http://dbpedia.org/resource/Eucommia> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Eucommia_ulmoides> .
+<http://dbpedia.org/resource/Dichroa_febrifuga> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Dichroa_febrifuga> .
+<http://dbpedia.org/resource/Opuntia_stricta> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Opuntia_dillenii> .
+<http://dbpedia.org/resource/Plantago_major> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Plantago_major> .
+<http://dbpedia.org/resource/European_honey_bee> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Apis_mellifera> .
+<http://dbpedia.org/resource/Orizaba_Pinyon> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Pinus_koraiensis> .
+<http://dbpedia.org/resource/Akebia_quinata> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Akebia_quinata> .
+<http://dbpedia.org/resource/Magnolia_sprengeri> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Magnolia_sprengeri> .
+<http://dbpedia.org/resource/Lesser_galangal> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Alpinia_officinarum> .
+<http://dbpedia.org/resource/Zanthoxylum_simulans> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Zanthoxylum_bungeanum> .
+<http://dbpedia.org/resource/Zanthoxylum_simulans> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Zanthoxylum_simulans> .
+<http://dbpedia.org/resource/Ginseng> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Panax_ginseng> .
+<http://dbpedia.org/resource/Areca_catechu> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Areca_catechu> .
+<http://dbpedia.org/resource/Ocimum_basilicum> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ocimum_basilicum> .
+<http://dbpedia.org/resource/Flax> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Linum_usitatissimum> .
+<http://dbpedia.org/resource/Horse> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Equus_caballus> .
+<http://dbpedia.org/resource/Ligusticum_wallichii> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ligusticum_chuanxiong> .
+<http://dbpedia.org/resource/Senna_alexandrina> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cassia_acutifolia> .
+<http://dbpedia.org/resource/Senna_alexandrina> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cassia_angustifolia> .
+<http://dbpedia.org/resource/Chinese_mantis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Tenodera_sinensis> .
+<http://dbpedia.org/resource/Aralia_chinensis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Aralia_chinensis> .
+<http://dbpedia.org/resource/Gossypium_herbaceum> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gossypium_herbaceum> .
+<http://dbpedia.org/resource/Pteris_vittata> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Pteris_vittata> .
+<http://dbpedia.org/resource/Pterocarpus_indicus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Pterocarpus_indicus> .
+<http://dbpedia.org/resource/Eurasian_Lynx> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lynx_lynx> .
+<http://dbpedia.org/resource/Monascus_purpureus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Monascus_purpureus> .
+<http://dbpedia.org/resource/Salvia_miltiorrhiza> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Salvia_miltiorrhiza> .
+<http://dbpedia.org/resource/Juglans_regia> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Juglans_regia> .
+<http://dbpedia.org/resource/Equisetum_pratense> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Equisetum_arvense> .
+<http://dbpedia.org/resource/Nutmeg> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Myristica_fragrans> .
+<http://dbpedia.org/resource/Chaenomeles_speciosa> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Chaenomeles_speciosa> .
+<http://dbpedia.org/resource/Vitex_trifolia> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Vitex_trifolia> .
+<http://dbpedia.org/resource/Snow_fungus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Tremella_fuciformis> .
+<http://dbpedia.org/resource/Common_fig> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ficus_carica> .
+<http://dbpedia.org/resource/Polygonum_tinctorum> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Polygonum_tinctorium> .
+<http://dbpedia.org/resource/Trachelospermum_jasminoides> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Trachelospermum_jasminoides> .
+<http://dbpedia.org/resource/European_Badger> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Meles_meles> .
+<http://dbpedia.org/resource/Jasminum_sambac> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Jasminum_sambac> .
+<http://dbpedia.org/resource/Glehnia_littoralis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Glehnia_littoralis> .
+<http://dbpedia.org/resource/Phytolacca_icosandra> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Phytolacca_acinosa> .
+<http://dbpedia.org/resource/P%C3%A8re_David%27s_Deer> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Elaphurus_davidianus> .
+<http://dbpedia.org/resource/Paua> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Haliotis_laevigata> .
+<http://dbpedia.org/resource/Vitex_negundo> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Vitex_negundo> .
+<http://dbpedia.org/resource/Euryale_ferox> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Euryale_ferox> .
+<http://dbpedia.org/resource/Daucus_carota> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Daucus_carota> .
+<http://dbpedia.org/resource/Castor_oil_plant> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ricinus_communis> .
+<http://dbpedia.org/resource/Rheum_officinale> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rheum_officinale> .
+<http://dbpedia.org/resource/Celosia_cristata> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Celosia_cristata> .
+<http://dbpedia.org/resource/Grapefruit> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Citrus_grandis> .
+<http://dbpedia.org/resource/Strobilanthes_crispa> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Strobilanthes_cusia> .
+<http://dbpedia.org/resource/Choerospondias_axillaris> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Choerospondias_axillaris> .
+<http://dbpedia.org/resource/Japanese_knotweed> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Polygonum_cuspidatum> .
+<http://dbpedia.org/resource/Trifoliate_orange> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Poncirus_trifoliata> .
+<http://dbpedia.org/resource/Codonopsis_pilosula> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Codonopsis_pilosula> .
+<http://dbpedia.org/resource/Japanese_wrinkled_frog> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rana_rugosa> .
+<http://dbpedia.org/resource/St_John%27s_wort> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Hypericum_perforatum> .
+<http://dbpedia.org/resource/Boxthorn> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lycium_chinense> .
+<http://dbpedia.org/resource/Trametes_versicolor> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Coriolus_versicolor> .
+<http://dbpedia.org/resource/Houttuynia> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Houttuynia_cordata> .
+<http://dbpedia.org/resource/Albizia_julibrissin> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Albizia_julibrissin> .
+<http://dbpedia.org/resource/Podophyllum_hexandrum> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Podophyllum_emodi> .
+<http://dbpedia.org/resource/Abutilon_indicum> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Abutilon_indicum> .
+<http://dbpedia.org/resource/Lingzhi> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ganoderma_lucidum> .
+<http://dbpedia.org/resource/Hyrachyus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Amaranthus_retroflexus> .
+<http://dbpedia.org/resource/Mountain_Hare> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lepus_timidus> .
+<http://dbpedia.org/resource/Fenugreek> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Trigonella_foenum-graecum> .
+<http://dbpedia.org/resource/Bitter_orange> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Citrus_aurantium> .
+<http://dbpedia.org/resource/Prunella_vulgaris> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Prunella_vulgaris> .
+<http://dbpedia.org/resource/Daphne_genkwa> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Daphne_genkwa> .
+<http://dbpedia.org/resource/Leopard_Cat> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Felis_bengalensis> .
+<http://dbpedia.org/resource/Panax_pseudoginseng> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Panax_notoginseng> .
+<http://dbpedia.org/resource/Panax_pseudoginseng> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Panax_pseudoginseng> .
+<http://dbpedia.org/resource/Cyperus_rotundus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cyperus_rotundus> .
+<http://dbpedia.org/resource/Papaya> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Carica_papaya> .
+<http://dbpedia.org/resource/Lecythidaceae> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Piper_cubeba> .
+<http://dbpedia.org/resource/Cow_Parsley> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Anthriscus_sylvestris> .
+<http://dbpedia.org/resource/Prunus_americana> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Prunus_armeniaca> .
+<http://dbpedia.org/resource/Vitis_vinifera> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Vitis_vinifera> .
+<http://dbpedia.org/resource/Vicia_sativa> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Vicia_angustifolia> .
+<http://dbpedia.org/resource/Vicia_sativa> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Vicia_sativa> .
+<http://dbpedia.org/resource/Phragmites> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Phragmites_communis> .
+<http://dbpedia.org/resource/Flueggea_suffruticosa> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gleditsia_sinensis> .
+<http://dbpedia.org/resource/Harbor_Seal> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Phoca_vitulina> .
+<http://dbpedia.org/resource/Typha_latifolia> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Typha_latifolia> .
+<http://dbpedia.org/resource/Artemisia_princeps> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Artemisia_princeps> .
+<http://dbpedia.org/resource/Impatiens_balsamina> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Impatiens_balsamina> .
+<http://dbpedia.org/resource/Echinacea_purpurea> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Echinacea_purpurea> .
+<http://dbpedia.org/resource/Camellia_sinensis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Camellia_sinensis> .
+<http://dbpedia.org/resource/Digitalis_lanata> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Digitalis_lanata> .
+<http://dbpedia.org/resource/Juncus_effusus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Juncus_effusus> .
+<http://dbpedia.org/resource/Epimedium> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Epimedium_sagittatum> .
+<http://dbpedia.org/resource/Artemisia_vulgaris> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Artemisia_vulgaris> .
+<http://dbpedia.org/resource/Indian_Cobra> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Naja_naja> .
+<http://dbpedia.org/resource/Andrographis_paniculata> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Andrographis_paniculata> .
+<http://dbpedia.org/resource/Melia_azedarach> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Melia_azedarach> .
+<http://dbpedia.org/resource/Safflower> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Carthamus_tinctorius> .
+<http://dbpedia.org/resource/Liriope_%28genus%29> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Liriope_spicata> .
+<http://dbpedia.org/resource/Glycyrrhiza_uralensis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Glycyrrhiza_uralensis> .
+<http://dbpedia.org/resource/Saffron> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Crocus_sativus> .
+<http://dbpedia.org/resource/Typha_angustifolia> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Typha_angustifolia> .
+<http://dbpedia.org/resource/Saiga_Antelope> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Saiga_tatarica> .
+<http://dbpedia.org/resource/Caraway> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Carum_carvi> .
+<http://dbpedia.org/resource/Lychee> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Litchi_chinensis> .
+<http://dbpedia.org/resource/Paeonia_lactiflora> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Paeonia_lactiflora> .
+<http://dbpedia.org/resource/Cattle> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Bos_taurus> .
+<http://dbpedia.org/resource/Astragalus_propinquus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Astragalus_membranaceus> .
+<http://dbpedia.org/resource/Gecko> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gekko_gecko> .
+<http://dbpedia.org/resource/Bungarus_multicinctus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Bungarus_multicinctus> .
+<http://dbpedia.org/resource/Rubus_idaeus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rubus_idaeus> .
+<http://dbpedia.org/resource/Scutellaria_barbata> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Scutellaria_barbata> .
+<http://dbpedia.org/resource/Cinnamomum_aromaticum> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cinnamomum_cassia> .
+<http://dbpedia.org/resource/Dark-spotted_frog> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rana_nigromaculata> .
+<http://dbpedia.org/resource/Xanthoceras> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Xanthoceras_sorbifolia> .
+<http://dbpedia.org/resource/Dalbergia_odorifera> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Dalbergia_odorifera> .
+<http://dbpedia.org/resource/Sesame> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Sesamum_indicum> .
+<http://dbpedia.org/resource/Ipomoea_cairica> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ipomoea_cairica> .
+<http://dbpedia.org/resource/Goat> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Capra_hircus> .
+<http://dbpedia.org/resource/Lemna_minor> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lemna_minor> .
+<http://dbpedia.org/resource/Russian_Tortoise> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Testudo_horsfieldi> .
+<http://dbpedia.org/resource/Iberus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Vicia_hirsuta> .
+<http://dbpedia.org/resource/Dianthus_superbus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Dianthus_superbus> .
+<http://dbpedia.org/resource/Aloe_vera> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Aloe_barbadensis> .
+<http://dbpedia.org/resource/Aloe_vera> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Aloe_vera> .
+<http://dbpedia.org/resource/Ginger> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Zingiber_officinale> .
+<http://dbpedia.org/resource/Prunus_mume> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Prunus_mume> .
+<http://dbpedia.org/resource/Eucalyptus_robusta> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Eucalyptus_robusta> .
+<http://dbpedia.org/resource/Leopard> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Panthera_pardus> .
+<http://dbpedia.org/resource/Pinus_koraiensis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Pinus_koraiensis> .
+<http://dbpedia.org/resource/Capparis_masaikai> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Capparis_masaikai> .
+<http://dbpedia.org/resource/Croton_tiglium> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Croton_tiglium> .
+<http://dbpedia.org/resource/Erythrina_variegata> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Erythrina_indica> .
+<http://dbpedia.org/resource/Erythrina_variegata> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Erythrina_variegata> .
+<http://dbpedia.org/resource/Potamogeton_perfoliatus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Potamogeton_perfoliatus> .
+<http://dbpedia.org/resource/Gastrodia_elata> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gastrodia_elata> .
+<http://dbpedia.org/resource/Gentiana_scabra> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gentiana_scabra> .
+<http://dbpedia.org/resource/Japanese_Honeysuckle> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lonicera_japonica> .
+<http://dbpedia.org/resource/Watermelon> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Citrullus_lanatus> .
+<http://dbpedia.org/resource/Watermelon> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Citrullus_vulgaris> .
+<http://dbpedia.org/resource/Styphnolobium_japonicum> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Sophora_japonica> .
+<http://dbpedia.org/resource/Alstonia_scholaris> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Alstonia_scholaris> .
+<http://dbpedia.org/resource/Apis_cerana> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Apis_cerana> .
+<http://dbpedia.org/resource/Ptyas_korros> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ptyas_korros> .
+<http://dbpedia.org/resource/Platycladus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Platycladus_orientalis> .
+<http://dbpedia.org/resource/Platycladus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Thuja_orientalis> .
+<http://dbpedia.org/resource/Digitalis_purpurea> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Digitalis_purpurea> .
+<http://dbpedia.org/resource/Euphorbia_emirnensis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Euphorbia_pekinensis> .
+<http://dbpedia.org/resource/Equisetum_arvense> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Equisetum_arvense> .
+<http://dbpedia.org/resource/Eupatorium_cannabinum> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Eupatorium_cannabinum> .
+<http://dbpedia.org/resource/Calabash> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lagenaria_siceraria> .
+<http://dbpedia.org/resource/Liquorice> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Glycyrrhiza_glabra> .
+<http://dbpedia.org/resource/Zedoary> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Curcuma_zedoaria> .
+<http://dbpedia.org/resource/Apricot> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Prunus_armeniaca> .
+<http://dbpedia.org/resource/American_Ginseng> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Panax_quinquefolium> .
+<http://dbpedia.org/resource/Radde%27s_Accentor> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Prunella_vulgaris> .
+<http://dbpedia.org/resource/Achillea_millefolium> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Achillea_millefolium> .
+<http://dbpedia.org/resource/Dipsacus_pilosus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Equisetum_arvense> .
+<http://dbpedia.org/resource/Magnolia_grandiflora> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Magnolia_grandiflora> .
+<http://dbpedia.org/resource/Dracocephalum_moldavicum> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Dracocephalum_moldavica> .
+<http://dbpedia.org/resource/Dioscorea_bulbifera> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Dioscorea_bulbifera> .
+<http://dbpedia.org/resource/Crataegus_aestivalis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Crataegus_pinnatifida> .
+<http://dbpedia.org/resource/Paulownia_tomentosa> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Paulownia_tomentosa> .
+<http://dbpedia.org/resource/Eclipta_alba> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Eclipta_prostrata> .
+<http://dbpedia.org/resource/Commelina_communis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Commelina_communis> .
+<http://dbpedia.org/resource/Gentiana_macrophylla> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gentiana_macrophylla> .
+<http://dbpedia.org/resource/Solanum_nigrum> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Solanum_nigrum> .
+<http://dbpedia.org/resource/Northern_Fur_Seal> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Callorhinus_ursinus> .
+<http://dbpedia.org/resource/Ailanthus_altissima> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ailanthus_altissima> .
+<http://dbpedia.org/resource/Aralia_elata> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Aralia_elata> .
+<http://dbpedia.org/resource/Tetrapanax> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Tetrapanax_papyriferus> .
+<http://dbpedia.org/resource/Boswellia_sacra> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Boswellia_carterii> .
+<http://dbpedia.org/resource/Azuki_bean> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Phaseolus_angularis> .
+<http://dbpedia.org/resource/Torreya_grandis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Torreya_grandis> .
+<http://dbpedia.org/resource/Sophora_flavescens> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Sophora_flavescens> .
+<http://dbpedia.org/resource/Amaranthus_retroflexus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Amaranthus_retroflexus> .
+<http://dbpedia.org/resource/Carduus_crispus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Carduus_crispus> .
+<http://dbpedia.org/resource/Ardisia_japonica> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ardisia_japonica> .
+<http://dbpedia.org/resource/Eucalyptus_globulus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Eucalyptus_globulus> .
+<http://dbpedia.org/resource/Stemona_tuberosa> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Stemona_tuberosa> .
+<http://dbpedia.org/resource/Trichosanthes_kirilowii> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Trichosanthes_kirilowii> .
+<http://dbpedia.org/resource/Allium_chinense> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Allium_bakeri> .
+<http://dbpedia.org/resource/Allium_chinense> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Allium_chinense> .
+<http://dbpedia.org/resource/Sappanwood> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Caesalpinia_sappan> .
+<http://dbpedia.org/resource/Common_Frog> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rana_temporaria> .
+<http://dbpedia.org/resource/Datura_stramonium> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Datura_stramonium> .
+<http://dbpedia.org/resource/Euphorbia_pekinensis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Euphorbia_pekinensis> .
+<http://dbpedia.org/resource/Asian_giant_hornet> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Vespa_mandarinia> .
+<http://dbpedia.org/resource/Euphorbia_lathyris> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Euphorbia_lathyris> .
+<http://dbpedia.org/resource/Euphorbia_delphinensis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Euphorbia_pekinensis> .
+<http://dbpedia.org/resource/Cucurbita_moschata> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cucurbita_moschata> .
+<http://dbpedia.org/resource/Alangium_chinense> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Agastache_rugosa> .
+<http://dbpedia.org/resource/Longan> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Dimocarpus_longan> .
+<http://dbpedia.org/resource/Hyacinth_bean> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Dolichos_lablab> .
+<http://dbpedia.org/resource/Spinach> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Spinacia_oleracea> .
+<http://dbpedia.org/resource/Arundo_donax> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Arundo_donax> .
+<http://dbpedia.org/resource/Sika_Deer> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cervus_nippon> .
+<http://dbpedia.org/resource/Polygala_tenuifolia> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Polygala_tenuifolia> .
+<http://dbpedia.org/resource/Muskmelon> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cucumis_melo> .
+<http://dbpedia.org/resource/Alternanthera_philoxeroides> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Alternanthera_philoxeroides> .
+<http://dbpedia.org/resource/Aconitum_carmichaelii> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Aconitum_carmichaeli> .
+<http://dbpedia.org/resource/Aster_tataricus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Aster_tataricus> .
+<http://dbpedia.org/resource/Indian_gooseberry> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Phyllanthus_emblica> .
+<http://dbpedia.org/resource/Phyllostachys_nigra> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Phyllostachys_nigra> .
+<http://dbpedia.org/resource/Althaea_officinalis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Althaea_officinalis> .
+<http://dbpedia.org/resource/Patchouli> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Pogostemon_cablin> .
+<http://dbpedia.org/resource/Wolfberry> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lycium_barbarum> .
+<http://dbpedia.org/resource/Wolfberry> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lycium_chinense> .
+<http://dbpedia.org/resource/Garlic> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Allium_sativum> .
+<http://dbpedia.org/resource/Kaempferia_galanga> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Kaempferia_galanga> .
+<http://dbpedia.org/resource/Reindeer> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rangifer_tarandus> .
+<http://dbpedia.org/resource/Rosa_rugosa> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rosa_rugosa> .
+<http://dbpedia.org/resource/Fritillaria_pallidiflora> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Fritillaria_pallidiflora> .
+<http://dbpedia.org/resource/Garlic_chives> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Allium_tuberosum> .
+<http://dbpedia.org/resource/Chicory> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cichorium_intybus> .
+<http://dbpedia.org/resource/Cephalotaxus_fortunei> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cephalotaxus_fortunei> .
+<http://dbpedia.org/resource/Angelica_sinensis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Angelica_sinensis> .
+<http://dbpedia.org/resource/Alpinia_zerumbet> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Alpinia_zerumbet> .
+<http://dbpedia.org/resource/Turmeric> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Curcuma_longa> .
+<http://dbpedia.org/resource/Carrot> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Daucus_carota> .
+<http://dbpedia.org/resource/Pea> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Pisum_sativum> .
+<http://dbpedia.org/resource/Northern_Pacific_seastar> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Asterias_amurensis> .
+<http://dbpedia.org/resource/Lion> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Panthera_leo> .
+<http://dbpedia.org/resource/Agastache_rugosa> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Agastache_rugosa> .
+<http://dbpedia.org/resource/Euphorbia_helioscopia> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Euphorbia_helioscopia> .
+<http://dbpedia.org/resource/Dog> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Canis_familiaris> .
+<http://dbpedia.org/resource/Common_Toad> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Bufo_bufo> .
+<http://dbpedia.org/resource/Terminalia_chebula> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Terminalia_chebula> .
+<http://dbpedia.org/resource/Persicaria_bistorta> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Polygonum_bistorta> .
+<http://dbpedia.org/resource/Echinops_ritro> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Echinops_ritro> .
+<http://dbpedia.org/resource/Euonymus_alatus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Euonymus_alatus> .
+<http://dbpedia.org/resource/Asian_trampsnail> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Bradybaena_similaris> .
+<http://dbpedia.org/resource/Physalis_alkekengi> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Physalis_alkekengi> .
+<http://dbpedia.org/resource/Roe_Deer> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Capreolus_capreolus> .
+<http://dbpedia.org/resource/Colocasia_esculenta> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Colocasia_esculenta> .
+<http://dbpedia.org/resource/Gomphrena_globosa> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gomphrena_globosa> .
+<http://dbpedia.org/resource/Peach> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Prunus_persica> .
+<http://dbpedia.org/resource/Polygonum_multiflorum> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Polygonum_multiflorum> .
+<http://dbpedia.org/resource/Mirabilis_jalapa> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Mirabilis_jalapa> .
+<http://dbpedia.org/resource/Ipomoea_aquatica> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ipomoea_aquatica> .
+<http://dbpedia.org/resource/Litsea_cubeba> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Litsea_cubeba> .
+<http://dbpedia.org/resource/Gac> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Momordica_cochinchinensis> .
+<http://dbpedia.org/resource/Clove> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Eugenia_caryophyllata> .
+<http://dbpedia.org/resource/Schisandra_chinensis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Schisandra_chinensis> .
+<http://dbpedia.org/resource/Stachys_officinalis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Petasites_japonicus> .
+<http://dbpedia.org/resource/Gleditsia_sinensis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gleditsia_sinensis> .
+<http://dbpedia.org/resource/Artemisia_annua> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Artemisia_annua> .
+<http://dbpedia.org/resource/Artemisia_scoparia> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Artemisia_scoparia> .
+<http://dbpedia.org/resource/Indian_Rhinoceros> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rhinoceros_unicornis> .
+<http://dbpedia.org/resource/Emilia_sonchifolia> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Emilia_sonchifolia> .
+<http://dbpedia.org/resource/Plantago_asiatica> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Plantago_asiatica> .
+<http://dbpedia.org/resource/Polygonatum_odoratum> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Polygonatum_odoratum> .
+<http://dbpedia.org/resource/Chrysanthemum> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Chrysanthemum_indicum> .
+<http://dbpedia.org/resource/Barley> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Hordeum_vulgare> .
+<http://dbpedia.org/resource/Cissampelos_pareira> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cissampelos_pareira> .
+<http://dbpedia.org/resource/Spirodela> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Spirodela_polyrhiza> .
+<http://dbpedia.org/resource/Caesalpinia_mexicana> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Caesalpinia_minax> .
+<http://dbpedia.org/resource/Donkey> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Equus_asinus> .
+<http://dbpedia.org/resource/Belamcanda_chinensis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Belamcanda_chinensis> .
+<http://dbpedia.org/resource/Soybean> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Glycine_max> .
+<http://dbpedia.org/resource/Pegasus_laternarius> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Pegasus_laternarius> .
+<http://dbpedia.org/resource/Tribulus_terrestris> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Tribulus_terrestris> .
+<http://dbpedia.org/resource/Yak> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Bos_grunniens> .
+<http://dbpedia.org/resource/Complex-toothed_flying_squirrel> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Trogopterus_xanthipes> .
+<http://dbpedia.org/resource/Commiphora_myrrha> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Commiphora_myrrha> .
+<http://dbpedia.org/resource/Acacia_confusa> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Acacia_confusa> .
+<http://dbpedia.org/resource/Ilex_purpurea> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ilex_purpurea> .
+<http://dbpedia.org/resource/White_mustard> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Sinapis_alba> .
+<http://dbpedia.org/resource/Capsicum_frutescens> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Capsicum_frutescens> .
+<http://dbpedia.org/resource/Silver_carp> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Hypophthalmichthys_molitrix> .
+<http://dbpedia.org/resource/Murraya_paniculata> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Murraya_paniculata> .
+<http://dbpedia.org/resource/Catharanthus_roseus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Catharanthus_roseus> .
+<http://dbpedia.org/resource/Acorus_gramineus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Acorus_gramineus> .
+<http://dbpedia.org/resource/Hibiscus_syriacus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Hibiscus_syriacus> .
+<http://dbpedia.org/resource/Siraitia_grosvenorii> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Momordica_grosvenori> .
+<http://dbpedia.org/resource/Chinese_Pond_Turtle> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Chinemys_reevesii> .
+<http://dbpedia.org/resource/Rheum_palmatum> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rheum_palmatum> .
+<http://dbpedia.org/resource/Dill> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Anethum_graveolens> .
+<http://dbpedia.org/resource/Alocasia> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Alocasia_macrorrhiza> .
+<http://dbpedia.org/resource/Domestic_sheep> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ovis_aries> .
+<http://dbpedia.org/resource/Cubeb> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Piper_cubeba> .
+<http://dbpedia.org/resource/Brassica_rapa> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Brassica_campestris> .
+<http://dbpedia.org/resource/Perilla_frutescens> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Perilla_frutescens> .
+<http://dbpedia.org/resource/Lobelia_chinensis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lobelia_chinensis> .
+<http://dbpedia.org/resource/Chelidonium> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Chelidonium_majus> .
+<http://dbpedia.org/resource/Hyoscyamus_niger> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Hyoscyamus_niger> .
+<http://dbpedia.org/resource/Morinda_officinalis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Morinda_officinalis> .
+<http://dbpedia.org/resource/Humulus_lupulus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Humulus_lupulus> .
+<http://dbpedia.org/resource/Senna_auriculata> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cassia_auriculata> .
+<http://dbpedia.org/resource/Paeonia_veitchii> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Paeonia_veitchii> .
+<http://dbpedia.org/resource/Pisolithus_tinctorius> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Pisolithus_tinctorius> .
+<http://dbpedia.org/resource/Magnolia_officinalis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Magnolia_officinalis> .
+<http://dbpedia.org/resource/Datura_metel> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Datura_metel> .
+<http://dbpedia.org/resource/Luffa_aegyptiaca> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Luffa_cylindrica> .
+<http://dbpedia.org/resource/Rubia_cordifolia> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rubia_cordifolia> .
+<http://dbpedia.org/resource/Vicia_hirsuta> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Vicia_hirsuta> .
+<http://dbpedia.org/resource/Rubus_coreanus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Rubus_coreanus> .
+<http://dbpedia.org/resource/Ningpo_figwort> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Scrophularia_ningpoensis> .
+<http://dbpedia.org/resource/Santalum_album> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Santalum_album> .
+<http://dbpedia.org/resource/Hawksbill_turtle> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Eretmochelys_imbricata> .
+<http://dbpedia.org/resource/Ephedra_intermedia> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ephedra_intermedia> .
+<http://dbpedia.org/resource/Indigofera_tinctoria> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Indigofera_tinctoria> .
+<http://dbpedia.org/resource/Imperata_cylindrica> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Imperata_cylindrica> .
+<http://dbpedia.org/resource/Paper_Mulberry> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Broussonetia_papyrifera> .
+<http://dbpedia.org/resource/Pinellia_ternata> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Pinellia_ternata> .
+<http://dbpedia.org/resource/Ophiopogon_japonicus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ophiopogon_japonicus> .
+<http://dbpedia.org/resource/Ginkgo_biloba> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ginkgo_biloba> .
+<http://dbpedia.org/resource/Moose> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Alces_alces> .
+<http://dbpedia.org/resource/Hippophae_rhamnoides> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Hippophae_rhamnoides> .
+<http://dbpedia.org/resource/Verbena_officinalis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Verbena_officinalis> .
+<http://dbpedia.org/resource/Petasites_japonicus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Petasites_japonicus> .
+<http://dbpedia.org/resource/Abelmoschus_manihot> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Abelmoschus_manihot> .
+<http://dbpedia.org/resource/Red_Junglefowl> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gallus_gallus> .
+<http://dbpedia.org/resource/Syzygium_jambos> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Syzygium_jambos> .
+<http://dbpedia.org/resource/Juglans_nigra> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Juglans_regia> .
+<http://dbpedia.org/resource/Loquat> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Eriobotrya_japonica> .
+<http://dbpedia.org/resource/Isatis_tinctoria> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Isatis_indigotica> .
+<http://dbpedia.org/resource/Isatis_tinctoria> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Isatis_tinctoria> .
+<http://dbpedia.org/resource/Inula_racemosa> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Inula_racemosa> .
+<http://dbpedia.org/resource/Lettuce> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lactuca_sativa> .
+<http://dbpedia.org/resource/Red_Deer> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cervus_elaphus> .
+<http://dbpedia.org/resource/Amaranthus_deflexus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Amaranthus_retroflexus> .
+<http://dbpedia.org/resource/Aquilaria_sinensis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Aquilaria_sinensis> .
+<http://dbpedia.org/resource/Chenopodium_album> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Chenopodium_album> .
+<http://dbpedia.org/resource/Pomegranate> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Punica_granatum> .
+<http://dbpedia.org/resource/Phellodendron_amurense> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Phellodendron_amurense> .
+<http://dbpedia.org/resource/Water_Buffalo> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Bubalus_bubalis> .
+<http://dbpedia.org/resource/Black_pepper> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Piper_nigrum> .
+<http://dbpedia.org/resource/Tiger> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Panthera_tigris> .
+<http://dbpedia.org/resource/Gossypium_hirsutum> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gossypium_hirsutum> .
+<http://dbpedia.org/resource/Duttaphrynus_melanostictus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Bufo_melanostictus> .
+<http://dbpedia.org/resource/Caterpillar_fungus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cordyceps_sinensis> .
+<http://dbpedia.org/resource/Platycodon_grandiflorus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Platycodon_grandiflorum> .
+<http://dbpedia.org/resource/Gnaphalium_affine> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gnaphalium_affine> .
+<http://dbpedia.org/resource/Lycopodium_annotinum> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lycopodium_annotinum> .
+<http://dbpedia.org/resource/Prunella_%28plant%29> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Prunella_vulgaris> .
+<http://dbpedia.org/resource/Strychnine_tree> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Strychnos_nux-vomica> .
+<http://dbpedia.org/resource/Coptis_chinensis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Coptis_chinensis> .
+<http://dbpedia.org/resource/Opium_poppy> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Papaver_somniferum> .
+<http://dbpedia.org/resource/Bupleurum_chinense> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Bupleurum_chinense> .
+<http://dbpedia.org/resource/Oriental_Staff_Vine> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Celastrus_orbiculatus> .
+<http://dbpedia.org/resource/Dracocephalum_moldavica> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Dracocephalum_moldavica> .
+<http://dbpedia.org/resource/Banggai_Crow> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cervus_unicolor> .
+<http://dbpedia.org/resource/European_Otter> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lutra_lutra> .
+<http://dbpedia.org/resource/Frog_Orchid> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Coeloglossum_viride> .
+<http://dbpedia.org/resource/Salvia_przewalskii> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Salvia_przewalskii> .
+<http://dbpedia.org/resource/Piper_aduncum> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Piper_longum> .
+<http://dbpedia.org/resource/Asparagus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Asparagus_officinalis> .
+<http://dbpedia.org/resource/Sanguisorba_officinalis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Sanguisorba_officinalis> .
+<http://dbpedia.org/resource/Onion> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Allium_cepa> .
+<http://dbpedia.org/resource/Oryza_sativa> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Oryza_sativa> .
+<http://dbpedia.org/resource/Foxtail_millet> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Setaria_italica> .
+<http://dbpedia.org/resource/Sagittaria_sagittifolia> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Sagittaria_sagittifolia> .
+<http://dbpedia.org/resource/Saccharina_japonica> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Laminaria_japonica> .
+<http://dbpedia.org/resource/Alpinia_galanga> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Alpinia_galanga> .
+<http://dbpedia.org/resource/Abrus_precatorius> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Abrus_precatorius> .
+<http://dbpedia.org/resource/Wakame> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Undaria_pinnatifida> .
+<http://dbpedia.org/resource/Alfalfa> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Medicago_sativa> .
+<http://dbpedia.org/resource/Drynaria_fortunei> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Drynaria_fortunei> .
+<http://dbpedia.org/resource/Maclura_tricuspidata> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cudrania_tricuspidata> .
+<http://dbpedia.org/resource/Vernicia_fordii> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Aleurites_fordii> .
+<http://dbpedia.org/resource/Kudzu> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Pueraria_lobata> .
+<http://dbpedia.org/resource/Maize> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Zea_mays> .
+<http://dbpedia.org/resource/Ligustrum_lucidum> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ligustrum_lucidum> .
+<http://dbpedia.org/resource/Black_cardamom> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Amomum_subulatum> .
+<http://dbpedia.org/resource/Portulaca_oleracea> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Portulaca_oleracea> .
+<http://dbpedia.org/resource/Sweet_Flag> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Acorus_calamus> .
+<http://dbpedia.org/resource/Juglans_mandshurica> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Juglans_mandshurica> .
+<http://dbpedia.org/resource/Erysimum_cheiranthoides> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Erysimum_cheiranthoides> .
+<http://dbpedia.org/resource/Lilium_davidii> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lilium_davidii> .
+<http://dbpedia.org/resource/Hijiki> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Sargassum_fusiforme> .
+<http://dbpedia.org/resource/Eggplant> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Solanum_melongena> .
+<http://dbpedia.org/resource/Dioscorea_opposita> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Dioscorea_opposita> .
+<http://dbpedia.org/resource/Beleric> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Terminalia_bellerica> .
+<http://dbpedia.org/resource/Camptotheca> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Camptotheca_acuminata> .
+<http://dbpedia.org/resource/Trichosanthes_cucumerina> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Trichosanthes_cucumeroides> .
+<http://dbpedia.org/resource/Mandarin_orange> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Citrus_reticulata> .
+<http://dbpedia.org/resource/Wild_Boar> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Sus_scrofa> .
+<http://dbpedia.org/resource/Vicia_cracca> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Vicia_cracca> .
+<http://dbpedia.org/resource/Senna_tora> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cassia_tora> .
+<http://dbpedia.org/resource/Schefflera_arboricola> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Schefflera_arboricola> .
+<http://dbpedia.org/resource/Sperm_Whale> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Physeter_catodon> .
+<http://dbpedia.org/resource/Sambar_%28deer%29> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cervus_unicolor> .
+<http://dbpedia.org/resource/Cannabis_sativa> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cannabis_sativa> .
+<http://dbpedia.org/resource/Hemerocallis_fulva> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Hemerocallis_fulva> .
+<http://dbpedia.org/resource/Angelica_gigas> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Angelica_gigas> .
+<http://dbpedia.org/resource/Asian_Elephant> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Elephas_maximus> .
+<http://dbpedia.org/resource/Camellia_oleifera> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Camellia_oleifera> .
+<http://dbpedia.org/resource/Cyathula_officinalis> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Cyathula_officinalis> .
+<http://dbpedia.org/resource/Nelumbo_nucifera> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Nelumbo_nucifera> .
+<http://dbpedia.org/resource/Gaur> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Bos_taurus> .
+<http://dbpedia.org/resource/Wikstroemia_indica> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Wikstroemia_indica> .
+<http://dbpedia.org/resource/Lac> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Laccifer_lacca> .
+<http://dbpedia.org/resource/Tokay_gecko> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Gekko_gecko> .
+<http://dbpedia.org/resource/Stephania_tetrandra> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Stephania_tetrandra> .
+<http://dbpedia.org/resource/Winter_melon> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Benincasa_hispida> .
+<http://dbpedia.org/resource/Shiitake> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Lentinus_edodes> .
+<http://dbpedia.org/resource/Leonurus_sibiricus> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Leonurus_sibiricus> .
+<http://dbpedia.org/resource/Masson%27s_Pine> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Pinus_massoniana> .
+<http://dbpedia.org/resource/Citron> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Citrus_medica> .
+<http://dbpedia.org/resource/Ramie> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Boehmeria_nivea> .
+<http://dbpedia.org/resource/Eupatorium_lindleyanum> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Eupatorium_lindleyanum> .
+<http://dbpedia.org/resource/Ulva_lactuca> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ulva_lactuca> .
+<http://dbpedia.org/resource/Peanut> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Arachis_hypogaea> .
+<http://dbpedia.org/resource/Dryobalanops_aromatica> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Dryobalanops_aromatica> .
