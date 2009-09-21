@@ -132,3 +132,42 @@ Loaded in 52.063 seconds [957 triples/s]
  sdbconfig --verbose --time --sdb=/etc/sdb11/sdb-pgsql-hash-flyted-20081105.ttl --index
   Operation: add indexes: Time 3.409 seconds
 }}}
+
+= Configure sparqlite for a SDB database =
+== Edit /META-INF/context.xml file ==
+Add:
+{{{
+ <!-- most current -->
+    <Resource 
+        name="jdbc/bdgp" 
+        auth="Container"
+        type="javax.sql.DataSource" 
+        driverClassName="org.postgresql.Driver"
+        url="jdbc:postgresql://localhost/pointothemostrecentdb" # this name has to be the same as your SDB database
+        username="flyweb" 
+        password="obah10gu" 
+        maxActive="20" 
+        maxIdle="10"
+        maxWait="5000"
+        removeAbandoned="true"
+        removeAbandonedTimeout="10"
+        logAbandoned="true"
+    />
+
+    <!-- config for bdgp YYYYMMDD hash layout -->
+    <Resource
+        name="jdbc/bdgp-20081017-hash"
+        auth="Container"
+        type="javax.sql.DataSource"
+        driverClassName="org.postgresql.Driver"
+        url="jdbc:postgresql://localhost/bdgp-YYYYMMDD-sdb-hash"
+        username="flyweb"
+        password="obah10gu"
+        maxActive="20"
+        maxIdle="10"
+        maxWait="5000"
+        removeAbandoned="true"
+        removeAbandonedTimeout="10"
+        logAbandoned="true"
+   />
+}}}
