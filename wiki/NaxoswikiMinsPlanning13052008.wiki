@@ -1,0 +1,129 @@
+This meeting is divided into two parts:
+* The first part will take place in the afternoon of 13 May, from 14.30 onwards, and it will focus on generating product backlogs for the three activities in our group.
+* The second part will take place in the morning of 14 May, expected from 10am to 13pm, and it will focus on the planning of the Sprint.
+
+'''card usage: Blue: stories; White: tasks; Red: bugs'''
+
+
+== 13/05 Afternoon -- Generate Product Backlogs and Select Features (Allocated 165mins, and actually spent 200 mins)==
+
+This session actually started at 14.50 pm and had to be ended at 16.00 pm. 
+
+=== 1430-1445 Preamble (15 mins) ===
+
+Briefly review structure and goals of the day.
+
+=== 1445-1515 FlyWeb Product Backlog (30 mins) (Actually 14:50-16:00, 70 mins)===
+
+Update the product backlog for FlyWeb, as a set of user stories, to be led by Alistair?
+
+''The analysis of FlyWeb was well overrun (70 mins). We spent the first 30 mins reviewing and simplifying the user stories in the product backlog. Then we decided to analyze and prioritize these stories, for the duration of the  next three sprints. ''
+
+''Although this took longer than we expected, this practice would help us in setting a longer term goal and in speeding up the next sprint planning meeting''.
+
+=== 1515-1545 FlyData Product Backlog (30 mins) (actually 9.10-9.40, 30mins)===
+
+Generate a product backlog for FlyData, to be led by Graham?
+
+The longer term of FlyData is not set yet. We only reviewed the user stories in the current backlog.
+
+There are 9 user stories and 1 something unknown (probe map access delay).
+
+=== 1545-1715 Research Group Development Product Backlog (90 mins) (actually 9:40-11:00, 100mins)===
+
+'''Yellow''' cards for milestones/deadlines.
+'''Pink''' for subgroups.
+
+Generate a product backlog for research group development. 
+
+Our current RGD focuses on:
+* Semantic Publishing
+* Web Science
+* Animal Behavior and Digital Video
+* Web Site Development
+* Amnesty
+
+I would suggest we will:
+* first, review the user stories in the current product backlog; (20 mins)
+* then, collect new data for RGD, thinking in terms of (60mins)
+** Potential collaborators (people) you want to work with
+** User stories that capture real world needs
+** Research questions that you would like to explore
+** Funding sources
+* finally, fit these new data into the current user stories; if something not fitting, creating a new activity. (10 mins)
+
+''David'': review the current stories, and at the same time, discuss any recent affairs that could fit into the stories. This should help us with reorganizing the stories.
+
+''Alistair'' suggested us to use pink cards to define super-tasks for each activity, which can be finished in one sprint. So we have finer-grained activity suitable for being carried out in each sprint.
+
+== 14/05 Morning -- Pre-Sprint Planning(Allocated 200 mins, actually spent 170mins (excl. standup)) ==
+
+=== 1000-1005 Preamble (5 mins) ===
+
+Briefly discuss structure and goals.
+
+=== 1005-1025 Time & Effort (20 mins) (Actually 11:00-11:30, 30 mins)===
+
+Effort tally.
+* Total time: t = sprint duration - holidays (days)
+* Preassigned (e.g. away for conference): x days
+* Your own time: u = (0.1 * (t-p) days)
+* Days for unplanned tasks, i.e. your blank card (y days)
+* Available for plan = t - x - y - u (days)
+
+Please prepare for this session by working out how many days of available effort you would have for our group activities, for a 3, 4 or 5 week sprint, subtracting holiday and 10% personal exploratory time.
+
+Agree period of sprint (end date): 17 June.
+
+Set time and date for post-sprint demo meeting (N.B. this might be an 
+internal demo?):
+* Release plan/review (17 June, A.M. 11:00-13:00)
+* Retrospective (17 June, P.M. 13:30-16:00), Graham
+* Sprint planning (17 June, whole day), Alistair
+
+Set time and date for post-sprint retrospective, choose facilitator.
+
+=== 1025-1045 FlyData Initial Scope & Tasks (20 mins) (Actually 12:20-12:40, 20 mins)===
+
+Propose FlyData scope for sprint, list concrete tasks.
+
+=== 1045-1105 FlyWeb Initial Scope & Tasks (20 mins) (Actually 11:30-12:10, 40 mins)===
+
+Propose FlyWeb scope for sprint (chosen user story/ies), list concrete tasks.
+
+=== 1105-1135 Research Group Development Scope & Tasks (30 mins) (14:10-14:50)===
+
+Propose scope for sprint, list concrete tasks.
+
+=== 1135-1235 Scope bartering (60 mins) (Actually 14:50-15:30, 40 mins)===
+* Layout all estimated task cards on an open space
+* In light of effort estimates, review against available effort and decide (based on user priorities) what must be dropped (or added!)
+* Individuals assign or account for “availability tokens” for unplanned and pre-assigned activities
+* Individuals sign up for specific tasks, placing their “availability tokens” on specific tasks
+* When available effort is allocated, note in reporting are on card and move active tasks to radiators (along with yellow cards). File other task cards with backlog
+
+=== 1235-1255 Task Amnesty (20 mins) (Actually, no time spent on this)===
+
+All unaccounted tasks go on the table! E.g. meetings with people, attending seminars, etc.
+
+Sort, what can we live without?
+
+=== 1255-1320 Meeting Retrospective (15 mins) ===
+
+What worked in this meeting, what didn't?
+
+''We moved this together with daily standup.''
+
+== Retrospective of the planning meeting ==
+* David:
+** For the Research Development activities, it is good to introduce super-task cards;
+** Good to have separation between longer term plans and sprint plans 
+* Alistair
+** Same as David
+** Sprint diary on the paper is quite helpful
+* Jun
+** How to constrain brainstorming discussions and the planning session
+** 
+* Graham
+** We should continue to use blue cards for tasks
+** Maybe we should have a break-down session for each project/activity to prepare the task cards
