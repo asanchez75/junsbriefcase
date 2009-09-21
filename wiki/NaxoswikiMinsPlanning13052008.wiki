@@ -1,3 +1,4 @@
+= Planning13052008 =
 This meeting is divided into two parts:
  * The first part will take place in the afternoon of 13 May, from 14.30 onwards, and it will focus on generating product backlogs for the three activities in our group.
  * The second part will take place in the morning of 14 May, expected from 10am to 13pm, and it will focus on the planning of the Sprint.
