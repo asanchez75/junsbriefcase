@@ -15,8 +15,10 @@ Create the postgres database
 }}}
 
 Make SDB configurations for each database
-
+{{{
  vi /etc/sdb11/sdb-pgsql-hash-bdgp-YYYYMMDD.ttl
+}}}
+
 {{{ 
  @prefix sdb:     <http://jena.hpl.hp.com/2007/sdb#> .
  @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
@@ -42,10 +44,11 @@ Format each of the SDB databases.
 }}}
 
 Load data:
-
+{{{
  sdbload --time --verbose --sdb=/etc/sdb11/sdb-pgsql-hash-bdgp-YYYYMMDD.ttl /tmp/file.nt
- 
-<pre>
+}}} 
+
+{{{
 Add: 20,000 triples  (Batch: 1943 / Run: 1943)   [M:30,072,832/F:5,190,248]
 Add: 40,000 triples  (Batch: 2626 / Run: 2233)   [M:30,072,832/F:20,614,608]
 Add: 60,000 triples  (Batch: 1561 / Run: 1953)   [M:30,072,832/F:21,635,448]
@@ -107,16 +110,16 @@ Add: 1,060,000 triples  (Batch: 248 / Run: 497)   [M:50,302,976/F:24,670,152]
 Add: 1,080,000 triples  (Batch: 220 / Run: 486)   [M:50,302,976/F:2,639,264]
 Added 1080060 triples
 Loaded in 2358.574 seconds [457 triples/s]
-</pre>
+}}}
 
  * For the FlyTED dataset generated on 05/11/2008:
-<pre>
+{{{
 Start load: /var/www/html/flyweb-data/flyted-full-dump-2008-11-05-03.n3
 Add: 20,000 triples  (Batch: 819 / Run: 819)   [M:17,113,088/F:1,102,704]
 Add: 40,000 triples  (Batch: 1066 / Run: 927)   [M:24,195,072/F:9,820,328]
 Added 49836 triples
 Loaded in 52.063 seconds [957 triples/s]
-</pre>
+}}}
 
  * Create the index:
 {{{
