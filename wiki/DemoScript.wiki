@@ -1,0 +1,19 @@
+#summary One-sentence summary of this page.
+
+1. Input a disease name, find  a list of alternative herbs for the disease
+2. select a herb, find out more about this herb, including
+1/ additional information about the herb from dbpedia, and a link to dbpedia for the whole record
+2/ putative effect information about the herb, mined from literature, by the TCM database
+3/ clinical trials of the herb, from clinicaltrial.org
+4/ genes might be associated with the herb for this particular disease, as published by TCM literature, and then, use the diseasome dataset, to search for these genes and their association with the disease, to confirm
+
+Second application:search for ingredients and side effects information about herbs
+1. search for ingredients of herbs for the Alzheimer's
+2. find western drugs sharing active ingredients with these herbs (Dailymed)
+3. find side effects information about these drugs from SIDER
+
+The query result shows that all the herbs are potentially associated with some side effects. But we need further understanding about the SIDER database in order ot understand under which condition the side effects of these drugs were observed and how serious they are to the patients.
+
+Another possible application in the future: search for targets of herbs
+1. find chemical ingredients of herbs
+2. find chemicals and proteins known or predicted interacting with these ingredients; find other proteins interacting with these proteins, etc etces
