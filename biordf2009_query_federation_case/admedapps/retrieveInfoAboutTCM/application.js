@@ -162,7 +162,7 @@ function onGeneFound(type, args){
 		}
 	}
 	
-	diseaseBatchWidget.findDiseaseAssociatedWithGeneBatch(diseasomeGeneIDs);
+	diseaseBatchWidget.findDiseaseAssociatedWithGeneBatch(diseasomeGeneIDs, queryDisease);
 };
 
 function onHerbsFound(type, args){
