@@ -84,6 +84,11 @@ TCM genes are associated with:
  * Integrated protein interaction and pathway information from HPRD
  * Pathway information from KEGG, NetPath and CGAP/BioCarta
 
+== Map RDF-TCM to PharmGKB ==
+There is one RDF PharmGKB hosted by Bio2RDF at: http://bio2rdf.semanticscience.org:8017/sparql.
+
+An example gene record: http://bio2rdf.org/pharmgkb:PA334; http://www.pharmgkb.org/views/index.jsp?objCls=Gene&objId=PA334
+
 = Example SPARQL Queries =
 == Find all the genes associated with Alzheimer's disease ==
 {{{
