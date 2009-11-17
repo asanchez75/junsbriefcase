@@ -73,6 +73,17 @@ See also http://esw.w3.org/topic/DataSetRDFDumps
  * Mapping ingredient names to Dailymed: 21 links
  * Mapping herb/specie names to DBpedia: 438 links
 
+== Map RDF-TCM to STITCH dataset ==
+STITCH (http://stitch.embl.de/) "is a resource to explore known and predicted interactions of chemicals and proteins. Chemicals are linked to other chemicals and proteins by evidence derived from experiments, databases and the literature." Its data dumps can be downloaded under the license of CreatedCommons Attribution 3.0 (http://creativecommons.org/licenses/by/3.0/) and Attribution-Noncommercial-Share Alike 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/).
+
+*The database is still up to periodical updates.*
+
+TCM genes are associated with:
+ * Gene Ontology annotations
+ * cross reference to PharmaGKB and STITCH
+ * Integrated protein interaction and pathway information from HPRD
+ * Pathway information from KEGG, NetPath and CGAP/BioCarta
+
 = Example SPARQL Queries =
 == Find all the genes associated with Alzheimer's disease ==
 {{{
