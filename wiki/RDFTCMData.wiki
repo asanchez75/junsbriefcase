@@ -1,4 +1,5 @@
 #summary Describe the schema and example queries of the RDF TCMGeneDIT dataset (http://tcm.lifescience.ntu.edu.tw/).
+#labels rdftcm
 
 You can access the latest RDF-TCM through the following SPARQL endpoints:
  * http://hcls.deri.org/sparql, through the graph of http://hcls.deri.org/resource/graph/tcm
