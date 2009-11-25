@@ -1,4 +1,5 @@
 #summary created ec2 image for open-biomed.
+#labels ec2,virtuoso,sysadmin
 
 = Create a test image =
 {{{
