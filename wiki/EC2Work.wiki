@@ -108,6 +108,7 @@ ssh -i id_rsa-gsg-keypair root@ec2-75-101-194-85.compute-1.amazonaws.com
 }}}
 
 == Create the customized image for open-biomed ==
+{{{
 ## assume that keypair for open-biomed has been generated openbiomed-keypair and put in the right place and give the right access right
 #### create an instance of ubuntu 9.01 jaunty 32-bit server, created by Eric Hammond:  ami-ccf615a5
 #
@@ -123,5 +124,5 @@ ec2-describe-instances i-656d190d
 ssh -i .ec2/id_rsa-openbiomed-keypair root@ec2-72-44-34-80.compute-1.amazonaws.com
 #
 ## apache was then installed on the instance
-
+}}}
 === Bundle the image ===
