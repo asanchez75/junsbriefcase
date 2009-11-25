@@ -186,7 +186,40 @@ ec2-describe-availability-zones
 ec2-create-volume --size 10 --zone us-east-1a
 ec2-create-volume --size 10 -z us-east-1a
 ## VOLUME  vol-8dcd35e4    10              us-east-1a      creating        2009-11-25T11:57:12+0000
-
+#### try to attach volume
+## to instance: i-73582c1b; vol: vol-8dcd35e4 
+ec2-describe-instances
+ec2-attach-volume vol-8dcd35e4 -i i-73582c1b -d /dev/sdh
+## the instance is not in the same zone. so have to terminate the old instance and start a new one
+## terminate the instance
+ec2-terminate-instances i-73582c1b
+## check status of instances
+ec2-describe-instances
+## instance i-73582c1b is terminated
+## launch a new instance in the zone of us-east-1a
+ec2-run-instances -z us-east-1a ami-10fc1e79
+#### check the status of the instance of i-1fbdc977
+ec2-describe-instances i-1fbdc977
+#### try again to attach the volume
+ec2-attach-volume vol-8dcd35e4 -i i-1fbdc977 -d /dev/sdh
+## attachees volume vol-8dcd35e4 to instance i-1fbdc977 and exposes it as device /dev/sdh
+## ATTACHMENT      vol-8dcd35e4    i-1fbdc977      /dev/sdh        attaching       2009-11-25T14:37:55+0000
+ec2-describe-volumes
+## VOLUME  vol-8dcd35e4    10              us-east-1a      in-use  2009-11-25T11:57:12+0000
+ATTACHMENT      vol-8dcd35e4    i-1fbdc977      /dev/sdh        attached        2009-11-25T14:37:55+0000
+ec2-describe-instances
+## all looks good
+## ok, now log in to instance to do further work...
+ssh -i .ec2/id_rsa-openbiomed-keypair root@ec2-75-101-170-147.compute-1.amazonaws.com
+## ssh connection worked
+## next upload open-biomed related data to the instance
+scp - .ec2/id_rsa-openbiomed-keypair open-biomed-data/flyatlas-dataset-all-20090519.ttl root@ec2-75-101-170-147.compute-1.amazonaws.com:/mnt/tmp
+scp -i .ec2/id_rsa-openbiomed-keypair open-biomed-data/flyatlas-dataset-all-20090519.ttl root@ec2-75-101-170-147.compute-1.amazonaws.com:/mnt/tmp
+scp -i .ec2/id_rsa-openbiomed-keypair open-biomed-data/flyatlas_probe2gene_20090923.nt root@ec2-75-101-170-147.compute-1.amazonaws.com:/mnt/tmp
+scp -i .ec2/id_rsa-openbiomed-keypair open-biomed-data/flyted-full-dump-2009-11-18.ttl root@ec2-75-101-170-147.compute-1.amazonaws.com:/mnt/tmp
+scp -i .ec2/id_rsa-openbiomed-keypair open-biomed-data/flyted2flybase_20090715.nt root@ec2-75-101-170-147.compute-1.amazonaws.com:/mnt/tmp
+#### start to ssh in in order to set up virtuoso
+ssh -i .ec2/id_rsa-openbiomed-keypair root@ec2-75-101-170-147.compute-1.amazonaws.com
 }}}
 
 
