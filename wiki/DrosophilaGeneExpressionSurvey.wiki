@@ -1,5 +1,5 @@
-#summary One-sentence summary of this page.
-
+#summary Recording surveys of Drosophila-related datasets.
+#labels review,drosophila,datasets
 = ArrayExpress =
 http://www.ebi.ac.uk/microarray-as/ae/
 
