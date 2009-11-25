@@ -126,3 +126,41 @@ ssh -i .ec2/id_rsa-openbiomed-keypair root@ec2-72-44-34-80.compute-1.amazonaws.c
 ## apache was then installed on the instance
 }}}
 === Bundle the image ===
+{{{
+#### copy key and certificate to the machine to be bundled.
+#
+scp -i .ec2/id_rsa-openbiomed-keypair .ec2/pk-XXXX.pem .ec2/cert-XXXX.pem root@ec2-72-4
+4-34-80.compute-1.amazonaws.com:/mnt
+## copy to /mnt to prevent them being bundled with the new AMI
+#### start the bundle
+#
+## now use AWS account ID as username to bundle
+#
+ssh -i .ec2/id_rsa-openbiomed-keypair root@ec2-72-44-34-80.compute-1.amazonaws.com
+## the bundle is successfully uploaed and ready for register
+## bucket name open-biomed-bucket
+ssh -i .ec2/id_rsa-openbiomed-keypair root@ec2-72-44-34-80.compute-1.amazonaws.com
+ec2-register open-biomed-bucket/image.manifest.xml
+## got image ami-10fc1e79
+#### start an instance of this image
+#
+ec2-run-instances ami-10fc1e79
+#### check the status of the instance
+#
+ec2-describe-instances i-73582c1b
+#### check instance running at ec2-75-101-206-234.compute-1.amazonaws.com
+## it works
+#### ssh to the instance
+#
+ssh -i .ec2/id_rsa-openbiomed-keypair root@ec2-75-101-206-234.compute-1.amazonaws.com
+## ssh worked
+ec2-describe-instances
+#### copy keys to the new instance
+scp -i .ec2/id_rsa-openbiomed-keypair .ec2/pk-XXXX.pem .ec2/cert-XXXX.pem root@ec2-75-101-206-234.compute-1.amazonaws.com:/mnt
+#### terminate the old instance
+#
+ec2-terminate-instances i-656d190d
+ec2-describe-instances
+## terminated the old instance
+## end of the session 
+}}}
