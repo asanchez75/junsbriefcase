@@ -1,4 +1,5 @@
 #summary Review of information quality related work
+#labels review
 
 = Pipino et al. Data Quality Assessment 2002 =
 
