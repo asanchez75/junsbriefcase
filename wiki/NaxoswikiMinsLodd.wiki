@@ -1,3 +1,4 @@
+#labels lodd,rdftcm
 == Load DBPedia information ==
 All information are loaded using the name of the graph: http://naxos/dbpedia/zh/20081121
 
