@@ -186,9 +186,12 @@ ec2-describe-availability-zones
 ec2-create-volume --size 10 --zone us-east-1a
 ec2-create-volume --size 10 -z us-east-1a
 ## VOLUME  vol-8dcd35e4    10              us-east-1a      creating        2009-11-25T11:57:12+0000
+
 }}}
 
-= Set the account =
+
+= Old logs during FlyWeb project =
+== Set the account ==
  * set up a ssh key for my user account
  ssh-keygen -q -f ./.ssh/openflydata_id_rsa -t rsa
 
