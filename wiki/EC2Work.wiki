@@ -164,3 +164,26 @@ ec2-describe-instances
 ## terminated the old instance
 ## end of the session 
 }}}
+
+= set up virtuoso on ec2 =
+{{{
+##############################
+##### ec2 work on open-biomed on 2009-11-25
+##### start to set up virtuoso on ec2
+##############################
+#### first, create a new EBS volume
+#### following docs at http://docs.amazonwebservices.com/AWSEC2/latest/DeveloperGuide (API version 2009-08-15)
+#### following docs at http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/ (API version 2009-08-15)
+#
+# what availability zone?
+#
+ec2-describe-availability-zones 
+#
+# let's use us-east-1a
+#
+# create a 10GiB volume
+#
+ec2-create-volume --size 10 --zone us-east-1a
+ec2-create-volume --size 10 -z us-east-1a
+## VOLUME  vol-8dcd35e4    10              us-east-1a      creating        2009-11-25T11:57:12+0000
+}}}
