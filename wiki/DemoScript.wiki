@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Script used for demonstrating lodd application in DILS'2009
 #labels lodd,rdf-tcm
 
  # Input a disease name, find  a list of alternative herbs for the disease
