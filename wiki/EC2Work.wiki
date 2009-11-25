@@ -38,8 +38,8 @@ mv *.pem ~./ec2/
 #
 #### set up paths for the keys
 #
-export EC2_PRIVATE_KEY=~/.ec2/pk-ROMP3RRRNWCYH4DW2NTM5YFVFYODQZVF.pem
-export EC2_CERT=~/.ec2/cert-ROMP3RRRNWCYH4DW2NTM5YFVFYODQZVF.pem
+export EC2_PRIVATE_KEY=~/.ec2/pk-XXXX.pem
+export EC2_CERT=~/.ec2/cert-XXXX.pem
 echo $JAVA_HOME
 #
 ## All worked!!
@@ -172,7 +172,6 @@ ec2-describe-instances
 ##### start to set up virtuoso on ec2
 ##############################
 #### first, create a new EBS volume
-#### following docs at http://docs.amazonwebservices.com/AWSEC2/latest/DeveloperGuide (API version 2009-08-15)
 #### following docs at http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/ (API version 2009-08-15)
 #
 # what availability zone?
