@@ -1,3 +1,4 @@
+#labels minutes
 Al gave the outline of the vision:
  * use the web to access distributed data rather than drawing everything together
  * everybody would use a unified and standardized way, working on an agreed format of data
