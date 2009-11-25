@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Notes for setting up virtuoso on a Linux OS.
 #labels virtuoso,sysadmin
 
 = Virtuoso set up =
