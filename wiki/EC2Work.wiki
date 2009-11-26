@@ -225,7 +225,7 @@ ssh -i .ec2/id_rsa-openbiomed-keypair root@ec2-75-101-170-147.compute-1.amazonaw
 {{{
 ### created a new image to preserve today's work
 ### now I have two images but no instances running
-### images: ami-10fc1e79(basic); (with virtuoso store)
+### images: ami-10fc1e79(basic); ami-cec123a7 (with virtuoso store)
 }}}
 
 
