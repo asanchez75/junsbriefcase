@@ -1,6 +1,34 @@
 #summary created ec2 image for open-biomed.
 #labels ec2,virtuoso,sysadmin,tdb
 
+= Generate process =
+== For starting up ==
+ # get an amazon account for the web services, EC2 and S3
+ # experiment launching instances through the web-based management console, so that you can have some default security setting for your account
+ # install the ec2 command line tool on your local machine
+ # follow the gettingstartedguide to 1) create your keypair, 2) run an instance using a public image, 3) access your instance through http and ssh, 4) customize your instance such as its security level, and 5) finally, terminate your instance.
+
+Note:
+ * terminate the instance whenever you can since you are billed whenever you have a running instance.
+
+== For creating your own image ==
+ # find an image with your favorite OS or including your favorite software systems
+ # launch an instance of such an image
+ # customize the instance, finish as much as you can in one way
+ # create a bundle of the instance and register it as your own image, which you can start from the next time by launching an instance of this image
+
+Note:
+ * try to configure access to the instance before making it public
+ * need to have an elastic storage volume to keep the data persistent
+
+== For having a public server using your image ==
+ # do all above
+ # allocate an elastic IP address to the instance
+
+Note:
+ * we can launch different types of instances for one image, allowing us to use a larger instance to perform demanding tasks
+ * to preserve modifications to the instance, we need to create a bundle and register a new image; otherwise the change would be lost. 
+
 = Create a test image =
 {{{
 ########################################################################################
