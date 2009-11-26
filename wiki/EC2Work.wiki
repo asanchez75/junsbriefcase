@@ -138,9 +138,15 @@ scp -i .ec2/id_rsa-openbiomed-keypair .ec2/pk-XXXX.pem .ec2/cert-XXXX.pem root@e
 ## now use AWS account ID as username to bundle
 #
 ssh -i .ec2/id_rsa-openbiomed-keypair root@ec2-72-44-34-80.compute-1.amazonaws.com
+## follow the instruction in the GettingStartedGuide to create the bundle
+#
 ## the bundle is successfully uploaed and ready for register
-## bucket name open-biomed-bucket
+## bucket name open-biomed-bucket/open-biomed-rdf
+#
+## ssh in to see whether it worked
 ssh -i .ec2/id_rsa-openbiomed-keypair root@ec2-72-44-34-80.compute-1.amazonaws.com
+## ssh worked; now register the bundle as my EC2 image
+##
 ec2-register open-biomed-bucket/image.manifest.xml
 ## got image ami-10fc1e79
 #### start an instance of this image
