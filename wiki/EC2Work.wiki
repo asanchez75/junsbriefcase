@@ -234,6 +234,39 @@ ssh -i .ec2/id_rsa-openbiomed-keypair root@ec2-75-101-170-147.compute-1.amazonaw
 ### images: ami-10fc1e79(basic); ami-cec123a7 (with virtuoso store)
 }}}
 
+= obtain and associate elastic IP for open-biomed =
+{{{
+### see documents at: http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/
+### ssh to my instance to check its public and private IP addresses
+#
+ifconfig eth0
+curl http://169.254.169.254/latest/meta-data/local-ipv4
+curl http://169.254.169.254/latest/meta-data/public-ipv4
+#
+#### allocate a new IP address for use 
+#
+ec2-allocate-address
+## ADDRESS: ********
+#### map the instance to this IP address
+#
+ec2-associate-address -i i-debf14b7 75.101.163.187
+ec2-describe-addresses
+#
+#### de-assocaite an instance with the address, in order to launch a larger instance, for example
+#
+ec2-run-instances ami-6ba54002 -n 1 --availability-zone us-east-1a 
+ec2-disassociate-address 75.101.163.187
+ec2-describe-addresses
+ec2-associate-address -i i-3ea74257 67.202.55.255
+ec2-terminate-instances i-4bc32334
+#
+##### all set. ready to redirect the open-biomed dns to this new address, before doing the following 
+#####
+##### do some security configuration with the current instance
+##### create a snap shot of the current volume and delete the old snapshot
+##### delete the old image open-biomed-bucket
+##### create and register a new image based on the current instance
+}}}
 
 = Old logs during FlyWeb project =
 == Set the account ==
