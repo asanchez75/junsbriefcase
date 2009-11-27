@@ -297,8 +297,27 @@ ec2-terminate-instances i-4bc32334
 }}}
 
 = Set up the instance =
+== Install Apache ==
+{{{
+##### install apache on ubuntu ami
+##### check and configure the locations for apt-get
+##### see document at: https://help.ubuntu.com/community/Repositories/CommandLine
+#### see whether the addition locations works
+sudo apt-get update
+sudo apt-get update
+sudo apt-get install emacs
+#### install apache http://www.howtogeek.com/howto/ubuntu/installing-php5-and-apache-on-ubuntu/
+sudo apt-get install apache2
+sudo /etc/init.d/apache2 restart
+}}}
+
 == Install Tomcat ==
 See notes at: http://www.howtogeek.com/howto/linux/installing-tomcat-6-on-ubuntu/
+
+It can also be installed using apt-get
+{{{
+sudo apt-get install tomcat6
+}}}
 
 = Old logs during FlyWeb project =
 == Set the account ==
