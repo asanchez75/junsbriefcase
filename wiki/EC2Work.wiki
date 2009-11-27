@@ -296,6 +296,10 @@ ec2-terminate-instances i-4bc32334
 ##### create and register a new image based on the current instance
 }}}
 
+= Set up the instance =
+== Install Tomcat ==
+See notes at: http://www.howtogeek.com/howto/linux/installing-tomcat-6-on-ubuntu/
+
 = Old logs during FlyWeb project =
 == Set the account ==
  * set up a ssh key for my user account
