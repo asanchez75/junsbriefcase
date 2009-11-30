@@ -309,6 +309,15 @@ sudo apt-get install emacs
 #### install apache http://www.howtogeek.com/howto/ubuntu/installing-php5-and-apache-on-ubuntu/
 sudo apt-get install apache2
 sudo /etc/init.d/apache2 restart
+#### enable modules
+{{{
+a2enmode module_name
+}}}
+or edit http.conf file by adding a line like
+{{{
+LoadModule mod_rewrite /usr/lib/apache2/modules/mod_rewrite.so
+}}}
+
 }}}
 
 == Install Tomcat ==
