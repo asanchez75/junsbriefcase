@@ -1,5 +1,12 @@
-#summary Commands for loading data into virtuoso rdf store.
+#summary Commands for manipulating data of a virtuoso RDF store.
 #labels virtuoso
+
+= Delete data =
+{{{
+delete from DB.DBA.RDF_QUAD
+where G = DB.DBA.RDF_MAKE_IID_OF_QNAME (
+    'http://local.virt/DAV/sparql_demo/data/data-xml/source-simple2/source-data-01.rdf' );
+}}}
 
 = Load data into Virtuoso RDF Store at Rodos =
 
