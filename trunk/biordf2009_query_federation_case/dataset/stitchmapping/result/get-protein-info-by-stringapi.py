@@ -33,6 +33,7 @@ outfile = codecs.open(outfilename, mode='w', encoding='UTF-8')
 
 genename = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/'
 proteinname = '<http://purl.org/net/open-biomed/id/ensembl/protein/'
+berlinprotein = '<http://www4.wiwiss.fu-berlin.de/stitch/resource/proteins/'
 
 type_protein = '<http://purl.org/net/open-biomed/ensembl/schema/Protein>'
 
@@ -59,7 +60,9 @@ for row in reader:
     # process the result, add the tsv file to the outfile
     if (result):
         
-        output = genename + tcmgeneid.strip() + ">\t" + predicate_owlsame + "\t" + proteinname.strip() + ensemblproteinid + "> .\n"
+        output = genename + tcmgeneid.strip() + ">\t" + predicate_owlsame + "\t" + proteinname + ensemblproteinid + "> .\n"
+        
+        output = proteinname + ensemblproteinid + ">\t" + predicate_owlsame + "\t" + berlinprotein + ensemblproteinid[5:len(ensemblproteinid)] + "> .\n"
         
         read_result = result.split("\t")
         
