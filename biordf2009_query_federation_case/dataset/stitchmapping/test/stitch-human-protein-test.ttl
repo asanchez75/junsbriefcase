@@ -1,0 +1,163 @@
+<http://purl.org/net/open-biomed/id/ensembl/link/855108>
+        <http://www.w3.org/2000/01/rdf-schema#label>    "HIST2H2AA" ;
+        <http://purl.org/net/open-biomed/ensembl/schema/ensembl>        <http://purl.org/net/open-biomed/id/ensembl/protein/ENSP00000358155> ;
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_EntrezGene" ; 
+.
+
+<http://purl.org/net/open-biomed/id/ensembl/link/855109>
+        <http://www.w3.org/2000/01/rdf-schema#label>    "HIST2H2AA3" ;
+        <http://purl.org/net/open-biomed/ensembl/schema/ensembl>        <http://purl.org/net/open-biomed/id/ensembl/protein/ENSP00000328644> ;
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "BLAST_UniProt_GN" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "BioMart_HUGO" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_HUGO" ; 
+.
+<http://purl.org/net/open-biomed/id/ensembl/link/855110>
+        <http://www.w3.org/2000/01/rdf-schema#label>    "HIST2H2AA3" ;
+        <http://purl.org/net/open-biomed/ensembl/schema/ensembl>        <http://purl.org/net/open-biomed/id/ensembl/protein/ENSP00000358155> ;
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_EntrezGene" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_UniProt_GN" ; 
+.
+
+<http://purl.org/net/open-biomed/id/ensembl/link/855111>
+        <http://www.w3.org/2000/01/rdf-schema#label>    "HIST2H2AA4" ;
+        <http://purl.org/net/open-biomed/ensembl/schema/ensembl>        <http://purl.org/net/open-biomed/id/ensembl/protein/ENSP00000328644> ;
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "BLAST_UniProt_GN" ; 
+.
+<http://purl.org/net/open-biomed/id/ensembl/link/855112>
+        <http://www.w3.org/2000/01/rdf-schema#label>    "HIST2H2AA4" ;
+        <http://purl.org/net/open-biomed/ensembl/schema/ensembl>        <http://purl.org/net/open-biomed/id/ensembl/protein/ENSP00000358155> ;
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "BioMart_HUGO" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_EntrezGene" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_HUGO" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_UniProt_GN" ; 
+.
+
+<http://purl.org/net/open-biomed/id/ensembl/link/1279460>
+        <http://www.w3.org/2000/01/rdf-schema#label>    "TNFRSF10A" ;
+        <http://purl.org/net/open-biomed/ensembl/schema/ensembl>        <http://purl.org/net/open-biomed/id/ensembl/protein/ENSP00000370315> ;
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "BLAST_UniProt_GN" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "BioMart_HUGO" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_EntrezGene" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_HUGO" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_UniProt_GN" ; 
+.
+
+<http://purl.org/net/open-biomed/id/ensembl/link/1336455>
+        <http://www.w3.org/2000/01/rdf-schema#label>    "cDNA FLJ75685, highly similar to Homo sapiens tumor necrosis factor receptor superfamily, member 10 a (TNFRSF10A), mRNA" ;
+        <http://purl.org/net/open-biomed/ensembl/schema/ensembl>        <http://purl.org/net/open-biomed/id/ensembl/protein/ENSP00000370315> ;
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "BLAST_UniProt_DE" ; 
+.
+
+<http://purl.org/net/open-biomed/id/ensembl/link/855116>
+        <http://www.w3.org/2000/01/rdf-schema#label>    "HIST2H2BE" ;
+        <http://purl.org/net/open-biomed/ensembl/schema/ensembl>        <http://purl.org/net/open-biomed/id/ensembl/protein/ENSP00000336417> ;
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "BLAST_UniProt_GN" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "BioMart_HUGO" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_EntrezGene" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_HUGO" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_UniProt_GN" ; 
+.
+
+<http://purl.org/net/open-biomed/id/ensembl/link/117536>
+        <http://www.w3.org/2000/01/rdf-schema#label>    "A8K6E8" ;
+        <http://purl.org/net/open-biomed/ensembl/schema/ensembl>        <http://purl.org/net/open-biomed/id/ensembl/protein/ENSP00000354631> ;
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "BLAST_UniProt_AC" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_UniProt_AC" ; 
+.
+
+<http://purl.org/net/open-biomed/id/ensembl/link/125670>
+        <http://www.w3.org/2000/01/rdf-schema#label>    "AAA52416.1" ;
+        <http://purl.org/net/open-biomed/ensembl/schema/ensembl>        <http://purl.org/net/open-biomed/id/ensembl/protein/ENSP00000354631> ;
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_protein_id" ; 
+.
+
+<http://purl.org/net/open-biomed/id/ensembl/link/793225>
+        <http://www.w3.org/2000/01/rdf-schema#label>    "F5" ;
+        <http://purl.org/net/open-biomed/ensembl/schema/ensembl>        <http://purl.org/net/open-biomed/id/ensembl/protein/ENSP00000354631> ;
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "BLAST_UniProt_GN" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "BioMart_HUGO" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_EntrezGene" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_HUGO" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_UniProt_GN" ; 
+.
+<http://purl.org/net/open-biomed/id/ensembl/link/793226>
+        <http://www.w3.org/2000/01/rdf-schema#label>    "F52" ;
+        <http://purl.org/net/open-biomed/ensembl/schema/ensembl>        <http://purl.org/net/open-biomed/id/ensembl/protein/ENSP00000362638> ;
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_EntrezGene" ; 
+.
+<http://purl.org/net/open-biomed/id/ensembl/link/793227>
+        <http://www.w3.org/2000/01/rdf-schema#label>    "F54024" ;
+        <http://purl.org/net/open-biomed/ensembl/schema/ensembl>        <http://purl.org/net/open-biomed/id/ensembl/protein/ENSP00000367900> ;
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_UniProt_DR_PIR" ; 
+.
+<http://purl.org/net/open-biomed/id/ensembl/link/793228>
+        <http://www.w3.org/2000/01/rdf-schema#label>    "F56" ;
+        <http://purl.org/net/open-biomed/ensembl/schema/ensembl>        <http://purl.org/net/open-biomed/id/ensembl/protein/ENSP00000315914> ;
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_EntrezGene" ; 
+.
+<http://purl.org/net/open-biomed/id/ensembl/link/793229>
+        <http://www.w3.org/2000/01/rdf-schema#label>    "F59430" ;
+        <http://purl.org/net/open-biomed/ensembl/schema/ensembl>        <http://purl.org/net/open-biomed/id/ensembl/protein/ENSP00000274498> ;
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "BLAST_UniProt_DR_PIR" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_UniProt_DR_PIR" ; 
+.
+<http://purl.org/net/open-biomed/id/ensembl/link/793230>
+        <http://www.w3.org/2000/01/rdf-schema#label>    "F59433" ;
+        <http://purl.org/net/open-biomed/ensembl/schema/ensembl>        <http://purl.org/net/open-biomed/id/ensembl/protein/ENSP00000289968> ;
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_UniProt_DR_PIR" ; 
+.
+
+<http://purl.org/net/open-biomed/id/ensembl/link/6732>
+        <http://www.w3.org/2000/01/rdf-schema#label>    "1577_at" ;
+        <http://purl.org/net/open-biomed/ensembl/schema/ensembl>        <http://purl.org/net/open-biomed/id/ensembl/protein/ENSP00000363822> ;
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_AFFY_HC_G110" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_AFFY_HG_U95A" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_AFFY_HG_U95Av2" ; 
+.
+<http://purl.org/net/open-biomed/id/ensembl/link/6733>
+        <http://www.w3.org/2000/01/rdf-schema#label>    "1578_g_at" ;
+        <http://purl.org/net/open-biomed/ensembl/schema/ensembl>        <http://purl.org/net/open-biomed/id/ensembl/protein/ENSP00000363822> ;
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_AFFY_HC_G110" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_AFFY_HG_U95A" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_AFFY_HG_U95Av2" ; 
+.
+
+<http://purl.org/net/open-biomed/id/ensembl/link/336209>
+        <http://www.w3.org/2000/01/rdf-schema#label>    "AR" ;
+        <http://purl.org/net/open-biomed/ensembl/schema/ensembl>        <http://purl.org/net/open-biomed/id/ensembl/protein/ENSP00000363822> ;
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "BLAST_UniProt_GN" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "BioMart_HUGO" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_EntrezGene" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_HUGO" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_UniProt_GN" ; 
+.
+<http://purl.org/net/open-biomed/id/ensembl/link/336210>
+        <http://www.w3.org/2000/01/rdf-schema#label>    "AR-JP" ;
+        <http://purl.org/net/open-biomed/ensembl/schema/ensembl>        <http://purl.org/net/open-biomed/id/ensembl/protein/ENSP00000355865> ;
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_EntrezGene" ; 
+.
+<http://purl.org/net/open-biomed/id/ensembl/link/336211>
+        <http://www.w3.org/2000/01/rdf-schema#label>    "AR1" ;
+        <http://purl.org/net/open-biomed/ensembl/schema/ensembl>        <http://purl.org/net/open-biomed/id/ensembl/protein/ENSP00000352463> ;
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "BLAST_UniProt_DE" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_EntrezGene" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_HUGO" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_UniProt_DE" ; 
+.
+<http://purl.org/net/open-biomed/id/ensembl/link/336212>
+        <http://www.w3.org/2000/01/rdf-schema#label>    "AR13A_HUMAN" ;
+        <http://purl.org/net/open-biomed/ensembl/schema/ensembl>        <http://purl.org/net/open-biomed/id/ensembl/protein/ENSP00000362044> ;
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "BLAST_UniProt_ID" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_UniProt" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_UniProt_ID" ; 
+.
+<http://purl.org/net/open-biomed/id/ensembl/link/336213>
+        <http://www.w3.org/2000/01/rdf-schema#label>    "AR13B_HUMAN" ;
+        <http://purl.org/net/open-biomed/ensembl/schema/ensembl>        <http://purl.org/net/open-biomed/id/ensembl/protein/ENSP00000335400> ;
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "BLAST_UniProt_ID" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_UniProt" ; 
+        <http://purl.org/net/open-biomed/ensembl/schema/source> "Ensembl_UniProt_ID" ; 
+.
+
+
+
