@@ -5,6 +5,9 @@ You can access the latest RDF-TCM through the following SPARQL endpoints:
  * http://hcls.deri.org/sparql, through the graph of http://hcls.deri.org/resource/graph/tcm
  * http://www.open-biomed.org.uk/sparql, through the graph of http://purl.org/net/data/tcm/tcm-20090619
 
+The dataset is free for academic use and available under Creative Commons Attribution License. Please cite the original work published in BMC Complementary and Alternative Medicine when re-using the data.
+
+
 The first SPARQL endpoint is more stable and performs faster than the second one.
 
 
