@@ -1,0 +1,842 @@
+myricetin	CID005281672
+beta-sitosterol	CID000006744
+glucoside	CID000000206
+saponin
+sophoradiol	CID000124061
+soyasapogenol
+ethanol	CID000000702
+abrin
+galactose	CID000000206
+sugar	CID000003981
+d-galactose	CID000000206
+tryptophan	CID000001148
+glucose	CID000000206
+triterpenoid	CID000289984
+d-mannose	CID000000206
+raffinose	CID000010542
+mucin	CID000000607
+alanine	CID000000602
+histamine	CID000000774
+arginine	CID000000232
+calcium
+sucrose	CID000001115
+acetate	CID000000175
+catechin	CID000000289
+caffeine	CID000002519
+tannin	CID016129778
+flavonoid	CID005464381
+triterpene
+isofraxidin	CID005318565
+syringaresinol	CID000100067
+syringin	CID000323959
+ash	CID005460583
+cholesterol	CID000000304
+sesamin	CID000005204
+liriodendrin	CID000073636
+hyperin	CID005280804
+rutin	CID005280805
+scoparone	CID000008417
+protocatechuic
+beta-pinene	CID000014896
+sesquiterpene	CID000031304
+pinene	CID000006654
+beta-caryophyllene	CID000006887
+alpha-pinene	CID000006654
+lactone	CID000005585
+borneol	CID000010049
+sabinene	CID000018818
+apigenin	CID005280443
+luteolin	CID005280445
+alcohol	CID000000702
+1,8-cineole	CID000002758
+camphor	CID000002537
+cineole	CID000002758
+caryophyllene	CID000006887
+alpha-thujone	CID000011027
+casticin	CID005281608
+thujone	CID000011027
+alpha-phellandrene	CID000007460
+alpha-terpineol	CID000017100
+beta-amyrin	CID000073145
+linalool	CID000006549
+limonene	CID000022311
+eugenol	CID000003314
+terpene
+sitosterol	CID000006744
+flavone	CID000010680
+quercetin	CID005280343
+ecdysterone	CID000021362
+inokosterone	CID000119238
+ecdysone	CID000019212
+chikusetsusaponin
+alkaloid
+aconitine	CID000002012
+mesaconitine	CID000017679
+hypaconitine	CID000023337
+lactate	CID000000612
+neoline	CID000120682
+talatisamine	CID000159891
+beta-asarone	CID000017903
+asarone	CID000017903
+alpha-asarone	CID000017903
+acorone	CID000098934
+calamendiol	CID005315610
+isocalamendiol	CID000181982
+shyobunone	CID000591309
+toluene	CID000001140
+benzene	CID000000241
+phenol	CID000000996
+urea	CID000001176
+copper	CID000023978
+beta-eudesmol	CID000091457
+vasicine	CID000072610
+beta-guaiene
+methylchavicol	CID000008815
+d-limonene	CID000022311
+estragole	CID000008815
+ADP	CID000000197
+zinc
+histidine	CID000000773
+adenosine	CID000000191
+cellulose
+phosphatidylcholine	CID010425705
+chlorophyll	CID004626993
+ailanthone	CID000072965
+iridoid	CID000453214
+cyasterone	CID000119444
+hederagenin	CID000073299
+hyperoside	CID005280804
+glucosamine	CID000000739
+yohimbine	CID000002866
+aluminum	CID006398525
+iron	CID000023925
+diterpene	CID000392472
+sesquiterpenoid
+anthocyanin	CID000145857
+colchicine	CID000002833
+pectin
+anthocyanidin
+ATP	CID000000238
+uracil	CID000001174
+uridine	CID000001177
+cyanidin	CID000068247
+kaempferol	CID005280863
+aluminium	CID000104727
+xylose	CID000000229
+deoxyandrographolide	CID000343586
+terpineol	CID016211350
+glaucogenin
+caudatin	CID005315749
+paeonol	CID000011092
+daucosterol	CID000071628
+dalbergin	CID000442768
+liquiritigenin	CID000001889
+isoliquiritigenin	CID000000425
+yuanhuacine	CID000429656
+genkwanin	CID005281617
+genkwadaphnin	CID000124210
+phenylacetaldehyde	CID000000998
+terpinolene	CID000011463
+bisabolene	CID000068128
+p-cymene	CID000007463
+humulene	CID000023204
+cymene	CID000007463
+myrcene	CID000031253
+phosphoinositide	CID016738692
+phenanthrene	CID000000995
+quinazolinone	CID000334935
+fraxinellone	CID000124039
+rutaevin	CID000441805
+diosgenin	CID000010536
+dioscin	CID000119245
+demethylwedelolactone	CID005316528
+icariside
+icariin	CID005318997
+epimedokoreanoside
+azulene	CID000009231
+amygdalin	CID000002180
+alpha-amyrin	CID000073170
+strophanthidin	CID000005303
+hypaphorine	CID000160488
+xylan
+aucubin	CID000091458
+geniposide	CID000107848
+rutaecarpine	CID000099644
+evodiamine	CID000151289
+dehydroevodiamine	CID000125675
+evocarpine	CID005317303
+hydroxyevodiamine	CID005318211
+anethole	CID000007703
+fenchone	CID000014525
+trans-anethole	CID000007703
+carvacrol	CID000010364
+phellandrene
+anisaldehyde	CID000031244
+chavicol	CID000068148
+riboflavin	CID000001072
+Gl-PS
+lanostanoid
+GLPG
+GLPP
+biliverdin	CID000000251
+kadsurenone	CID000122159
+oroxylin	CID005320315
+wogonin	CID005281703
+liquiritin	CID000503737
+isoliquiritin	CID005318591
+gomphrenin
+ocimene	CID006434062
+cadinene	CID000010657
+thiamine	CID000001130
+isoalantolactone	CID000073285
+indigotin	CID005318432
+indican	CID000092769
+momordin
+cyclohexene	CID010873974
+lamiophlomiol
+12-olide
+3-butylphthalide	CID000061361
+neocnidilide	CID003083857
+oleuropein	CID003789874
+linamarin	CID000011128
+mucilage
+ruscogenin	CID000441893
+shikonin	CID000005208
+acetylshikonin	CID000032464
+deoxyshikonin	CID000098914
+isovalerylshikonin	CID000335426
+citral	CID000008843
+chlorophyl
+trichosanthin
+scopoletin	CID005280460
+luteolin-7-glucoside	CID005280637
+magnolin	CID000169234
+fargesin	CID000129290
+costunolide	CID000556919
+honokiol	CID000072303
+luteolin-7-o-glucoside	CID005280637
+beta-carboline	CID000064961
+dauricine	CID000073400
+acutumine	CID000176893
+linarin	CID005317025
+rubiadin	CID000124062
+myristicin	CID000004276
+nardosinone	CID000168136
+nardosinonediol
+aristolene	CID000530421
+2-o-beta-d-glucopyranoside
+pedunculagin	CID000442688
+delphinidin	CID000068245
+oridonin	CID000034378
+ponicidin	CID000171176
+rugosin
+anemonin	CID000010496
+arbutin	CID000000346
+fustin	CID000072282
+rubilactone	CID000132415
+cantharidin	CID000002545
+alizarin	CID000006293
+nitidine	CID000004501
+dihydrochelerythrine	CID000485077
+skimmianine	CID000006760
+shogaol	CID000011152
+6-shogaol	CID000011152
+6-gingerol	CID000090942
+zingerone	CID000031211
+beta-sesquiphellandrene	CID000519764
+copaene	CID000019725
+ar-curcumene
+beta-bisabolene	CID000068128
+glycoprotein	CID000439212
+mannose	CID000000206
+polysaccharide	CID000000871
+lactose	CID000000294
+fructose	CID000003426
+dopamine	CID000000681
+lignan	CID000261166
+tyrosine	CID000001153
+14-deoxy-11,12-didehydroandrographolide	CID005316558
+testosterone	CID000005408
+mangiferin	CID005281647
+sarsasapogenin	CID000091433
+timosaponin
+xanthone	CID000007020
+estradiol	CID000000450
+betulin	CID000072326
+carvone	CID000007439
+beta-myrcene	CID000031253
+furocoumarin	CID000006199
+oxypeucedanin	CID000033306
+imperatorin	CID000010212
+isoimperatorin	CID000068081
+byakangelicol	CID000616062
+bergapten	CID000002355
+psoralen	CID000006199
+xanthotoxol	CID000065090
+byak-angelicin	CID000010211
+xanthotoxin	CID000004114
+angelicin	CID000010658
+decursin	CID000442126
+nodakenin	CID000073191
+androgen	CID000005410
+scopolamine	CID000005184
+marmesin	CID000026305
+nicotine	CID000000942
+osthole	CID000010228
+columbianetin	CID000092201
+osthol	CID000010228
+ligustilide	CID000529865
+butylidenephthalide	CID000062368
+senkyunolide	CID000173843
+rhamnose	CID000019233
+butylphthalide	CID000061361
+tetramethylpyrazine	CID000014296
+aniline	CID000006115
+isoflavone	CID000072304
+acetaldehyde	CID000000177
+tyramine	CID000005610
+adrenaline	CID000000838
+isoleucine	CID000000791
+threonine	CID000000205
+menthol	CID000001254
+alpha-humulene	CID000023204
+phytosterol	CID000006746
+thymol	CID000006989
+maltose	CID000000294
+melanin	CID006325610
+epigallocatechin	CID000001203
+isoquercitrin	CID005280804
+biotin	CID000000253
+resveratrol	CID000005056
+kinetin	CID000003830
+naringenin	CID000000932
+progesterone	CID000004920
+inositol	CID000000892
+lignin
+stigmasterol	CID000006746
+araloside
+arctigenin	CID000064981
+arctiin	CID000100528
+matairesinol	CID000119205
+bergenin	CID000002356
+arecaidine	CID000010355
+tetrandrine	CID000005422
+qinghaosu	CID000068911
+arteannuin	CID000002240
+terpenoid
+artemisitene	CID000127742
+beta-farnesene	CID000010407
+hypoxanthine	CID000000790
+artemetin	CID005320351
+alpha-terpinene	CID000007462
+cedrol	CID000065575
+beta-selinene	CID000028237
+betaine	CID000000247
+jaceosidin	CID005379096
+capillarisin	CID005281342
+bilirubin	CID000000250
+6,7-dimethoxycoumarin	CID000008417
+hydroxyacetophenone	CID000440113
+safrole	CID000005144
+methyleugenol	CID000007127
+ceramide	CID000002508
+oleanane	CID000182011
+astragaloside
+calycosin	CID005280448
+formononetin	CID005280378
+taurine	CID000001123
+cycloastragenol	CID000134801
+fangchinoline	CID000073481
+ginsenoside	CID000122880
+eudesmol	CID000065575
+hinesol	CID000161437
+atractylodin	CID005321047
+atractylon	CID003080635
+polyacetylene	CID000006326
+atractylenolide
+atractylone	CID003080635
+hyoscyamine	CID000003661
+gibberellin	CID000006466
+pentose	CID000000854
+chitin	CID000453624
+erythritol	CID000008998
+trehalose	CID000001143
+elastin	CID000439221
+mycose	CID000001143
+naphthalene	CID000000931
+alginate
+tectorigenin	CID005281811
+tectoridin	CID005281810
+irigenin	CID005464170
+genistein	CID005280961
+daidzein	CID005281708
+guanine	CID000000764
+gum	CID000171284
+fumarate	CID000000723
+pyridine	CID000001049
+sinigrin	CID000417411
+phosphatidylserine	CID000445141
+bruceoside
+brusatol	CID000073432
+bruceantin	CID000295929
+cinobufagin	CID000633349
+bufalin	CID000002464
+resibufogenin	CID000010063
+bufotenine	CID000010257
+estrone	CID000000698
+strychnine	CID000005304
+dopa	CID000161048
+alumina	CID000014769
+hydroquinone	CID000000785
+silicon	CID005461123
+cyanogen	CID005359238
+lecithin	CID010425705
+saikosaponin	CID000107793
+brazilin	CID000073384
+protosappanin
+sappanchalcone	CID005319493
+urease
+catechol	CID000000289
+lutein	CID000181579
+beta-carotene	CID000000573
+piperidine	CID000008082
+cannabinol	CID000002543
+morphine	CID000004253
+vitexin	CID005280441
+mabinlin
+harpagoside	CID004221373
+salicin	CID000005145
+vanillin	CID000001183
+phenylacetonitrile	CID000008794
+prunasin	CID023641103
+cryptoxanthin	CID000092111
+galactan	CID016218585
+chitosan	CID000439300
+carthamin	CID011968340
+acacetin	CID005280442
+tracheloside	CID000169511
+rutinoside
+sennoside	CID000005199
+galactomannan	CID000439336
+rhein	CID000010168
+cassiaside	CID005315728
+toralactone	CID005321980
+physcion	CID000010639
+chrysophanol	CID000010208
+citronellal	CID000007794
+rubrofusarin	CID000072537
+aurantio-obtusin	CID000155011
+obtusin	CID000155380
+nor-rubrofusarin	CID005320218
+torachrysone	CID005321977
+catharanthine	CID000072314
+tryptamine	CID000001150
+vincristine	CID000005978
+secologanin	CID000161276
+geraniol	CID000004458
+loganin	CID000087691
+campesterol	CID000010134
+nerol	CID000004458
+phytol	CID000145386
+cinnamate	CID000008784
+sorbitol	CID000000453
+citronellol	CID000007793
+spermine	CID000001103
+dihydroagarofuran	CID003082158
+asiaticoside	CID000108062
+madecassoside	CID011968719
+mucopolysaccharide
+amyrin	CID000073145
+cephalotaxine	CID000065305
+avicularin	CID000462688
+sanguinarine	CID000005154
+chelerythrine	CID000002703
+coptisine	CID000072321
+berberine	CID000002353
+protopine	CID000004970
+papaverine	CID000004680
+faradiol	CID005317314
+chrysin	CID005281607
+lactucopicrin	CID000174880
+lactucin	CID000442266
+beta-elemene	CID000010583
+esculetin	CID005281416
+esculin	CID005281417
+elemene	CID000010583
+cimigenol	CID005315871
+cinnamaldehyde	CID000000307
+pectolinarin	CID000168849
+acteoside	CID000354009
+echinacoside	CID000442786
+cistanoside
+citrulline	CID000000833
+synephrine	CID000007172
+neohesperidin	CID000073395
+naringin	CID000004441
+hesperidin	CID000003594
+ephedrine	CID000005032
+hordenine	CID000068313
+narirutin	CID000085704
+n-methyltyramine	CID000009727
+tangerine
+umbelliferone	CID005281426
+nobiletin	CID000072344
+obacunone	CID000119041
+limonin	CID000065071
+nomilin	CID000072320
+tangeretin	CID000068077
+zeaxanthin	CID000091445
+leucosceptoside
+isopimpinellin	CID000068079
+cnidilide	CID000160710
+curzerenone	CID003081930
+palmatine	CID000019009
+jatrorrhizine	CID000072323
+epiberberine	CID000160876
+baicalin	CID000064982
+reticuline	CID000010233
+tetrahydroberberine	CID000021171
+baicalein	CID005281605
+ergosterol	CID000005996
+indirubin	CID005318433
+laccase	CID003013170
+lentinan	CID000037723
+syringaldehyde	CID000008655
+morroniside	CID011228693
+procyanidin	CID000107876
+crocin	CID003510570
+crocetin	CID000073245
+safranal	CID000061041
+picrocrocin	CID000130796
+crotin
+stachyose	CID000091455
+geranylacetone	CID000019633
+beta-ionone	CID000026955
+alpha-carotene	CID000024090
+curculigoside	CID000158845
+neocurdione	CID005316216
+curcumol	CID000160771
+curdione	CID005316216
+curcumene	CID000092139
+demethoxycurcumin	CID005324476
+bisdemethoxycurcumin	CID000147439
+turmerone
+ar-turmerone	CID000160512
+zingiberene	CID000092776
+gastrin	CID016132262
+curcumine
+alpha-curcumene	CID000092139
+l-rhamnose	CID000000840
+germacrone	CID000081323
+curcumenol	CID000167812
+procurcumenol	CID000189061
+heteropolysaccharide
+lutein-5,6-epoxide
+alpha-cyperone	CID000273568
+selinene
+beta-cyperone	CID000527222
+homoserine	CID000000779
+2,4,5-trimethoxybenzaldehyde	CID000020525
+pseudoephedrine	CID000005032
+norephedrine	CID000004786
+norpseudoephedrine	CID000004786
+methylpseudoephedrine
+nerolidol	CID000008888
+coronaridine	CID000073489
+astragalin	CID005282102
+acetyleugenol	CID000007136
+isoeugenol	CID000007338
+euphol	CID000000856
+ingenol	CID000003719
+phillyrin	CID000101712
+imperialine	CID000005221
+peiminine	CID000005221
+cerebroside	CID000025437
+genipin	CID000023340
+gardenoside	CID000100058
+shanzhiside	CID011948668
+gastrodin	CID000115067
+gentiopicroside	CID000088708
+sweroside	CID000161036
+gentiopicrin	CID000088708
+ginkgolide
+bilobalide	CID000073581
+ginkgetin	CID005271805
+isoginkgetin	CID005318569
+amentoflavone	CID005281600
+bilobetin	CID005315459
+carnitine	CID000000085
+fisetin	CID005281614
+tamarixetin	CID005281699
+bicuculline	CID000002376
+androsterone	CID000000225
+isorhamnetin-3-o-rutinoside	CID005320020
+glycyrrhizin	CID000003495
+cycloartenol	CID000092110
+squalene	CID000001105
+magnolol	CID000072300
+lupeol	CID000073040
+araban
+alpha-farnesene	CID000442368
+beta-ocimene	CID000018756
+gypsogenin	CID000092825
+spinasterol	CID000521229
+xylene
+dammarane	CID003036917
+lupulone	CID000068051
+hypericin	CID005281051
+hyperforin	CID000003662
+pseudohypericin	CID005281751
+astilbin	CID000398784
+daidzin	CID000107971
+piperine	CID000004840
+puerarin	CID005281807
+pedunculoside
+indigo	CID005318432
+axillarin	CID005281603
+alantolactone	CID000072724
+afzelin	CID005316673
+myricitrin	CID005281673
+ellagitannin
+schisandrin	CID000023915
+trigonelline	CID000005570
+afrormosin	CID005281704
+stachydrine	CID000000554
+chrysoeriol	CID005280666
+gallotannin	CID016129778
+toosendanin	CID005321976
+morin	CID003365422
+trimyristin	CID000011148
+elemicin	CID000010248
+napthalene
+palmitate	CID000000985
+neferine	CID000159654
+isoliensinine	CID005274591
+liensinine	CID000160644
+nuciferine	CID000821348
+pronuciferine	CID000200480
+armepavine	CID000098348
+eucalyptol	CID000002758
+linalol	CID000006549
+neral	CID000008843
+geranial	CID000008843
+carene	CID000026049
+isoorientin	CID000114776
+perillaldehyde	CID000016441
+scutellarin	CID000185617
+nodakenetin	CID000026305
+decursidin
+praeruptorin
+acetophenone	CID000007410
+phellodendrine	CID000059818
+magnoflorine	CID000003999
+dibenzofuran	CID000000568
+corilagin	CID000073568
+orientin	CID005281675
+pellitorine	CID005318516
+sarmentosine	CID004479456
+otto
+pogostone	CID005320652
+alpha-guaiene	CID000107152
+delta-guaiene	CID000094275
+seychellene	CID000519743
+pachypodol	CID005281677
+alpha-bulnesene
+gamma-sitosterol	CID000006744
+friedelin	CID000091472
+polydatin	CID000393787
+anthraglycoside
+emodin-8-o-beta-d-glucoside
+vinblastine	CID000013342
+epicatechin	CID000001203
+n-acetylglucosamine	CID000065150
+mannitol	CID000000453
+phosphatidylethanolamine	CID000446872
+cGMP	CID000000295
+acetylcholine	CID000000187
+isofucosterol	CID000086747
+5-hydroxymethylfurfural	CID000237332
+pulegone	CID000006988
+gaba	CID000000119
+cysteine	CID000000594
+serine	CID000000617
+heparin	CID000000772
+guanidine	CID000003520
+hexanol	CID000008103
+lysine	CID000000866
+1-hexanol	CID000008103
+l-leucine	CID000000857
+sphingomyelin	CID023657817
+asparagine	CID000000236
+leucine	CID000000857
+agrimonolide	CID000161362
+quercitrin	CID005280459
+thymidine	CID000001134
+invertase
+choline	CID000000305
+alliin	CID000087310
+isorhamnetin	CID005281654
+F3	CID003485264
+fucose	CID000000840
+carotenoid	CID000181579
+auxin	CID000000801
+harmine	CID000022382
+flavanol	CID000253959
+inulin	CID000024763
+cystine	CID000000595
+succinate	CID000001110
+adenine	CID000000190
+manganese	CID000023930
+arabinose	CID000000229
+euphorbia
+citrate	CID000000311
+sterol	CID000001107
+phenylalanine	CID000000994
+resin
+methionine	CID000000876
+tigogenin	CID000091433
+allicin	CID000065036
+ajoene	CID000072373
+anthracene	CID000008418
+hirudin
+allitridin	CID000016315
+valine	CID000001182
+ornithine	CID000000389
+hydroxyproline	CID000000825
+proline	CID000000614
+aloin	CID000014989
+emodin	CID000003220
+anthraquinone	CID000006780
+aloe-emodin	CID000010207
+pyrene	CID000031423
+glucomannan
+glutamine	CID000000738
+allantoin	CID000000204
+chromone	CID000003828
+magnesium	CID000000888
+capsaicin	CID000002548
+xanthine	CID000001188
+glucan	CID000000871
+heptane	CID000008900
+curcumin	CID000442783
+gamma-terpinene	CID000007461
+alpinetin	CID000154279
+galangin	CID005281616
+triolein	CID000031207
+terpinen-4-ol	CID000011468
+indole	CID000000798
+alpha-spinasterol	CID000521229
+coumarin	CID000000323
+ampelopsin	CID000161557
+andrographolide	CID000343585
+neoandrographolide	CID000160143
+14-deoxy-11
+phorbol	CID000028683
+atropine	CID000003661
+cAMP	CID000000274
+byakangelicin	CID000010211
+cineol	CID000002758
+paeoniflorin	CID000073358
+albiflorin	CID011968455
+oxypaeoniflorin	CID000099650
+sinomenine	CID000073084
+galloylpaeoniflorin
+benzoylpaeoniflorin	CID010099827
+paeoniflorigenone	CID000133475
+apiopaeonoside	CID000127509
+paeonolide	CID000442923
+protopanaxadiol	CID003080633
+protopanaxatriol	CID000161798
+oxymatrine	CID000114850
+Oxymatrine	CID000114850
+ocotillol
+codeine	CID023724833
+narcotine	CID000004544
+salutaridine	CID000159633
+l-tyrosine	CID000001153
+octanol	CID000000957
+hispidulin	CID005281628
+hirsutine	CID000251574
+hirsuteine	CID003000320
+rhynchophylline	CID000065570
+isorhynchophylline	CID000065570
+dihydrocorynantheine	CID000251574
+vaccaroside
+hastatoside	CID000599030
+verbenalin	CID000073467
+benzothiazole	CID000384525
+laminarin	CID000439306
+nortrachelogenin	CID000099938
+tricin	CID005281702
+3,4-dihydroxybenzaldehyde	CID000008768
+poncirin	CID000084718
+benzaldehyde	CID000000240
+tyr-gly	CID000259323
+bakuchiol	CID000122834
+isopsoralen	CID000010658
+bavachinin	CID000122835
+bavachalcone	CID005321765
+genistin	CID005281377
+kaikasaponin
+purpurin	CID000006683
+munjistin	CID000160476
+pseudopurpurin	CID000442765
+cryptotanshinone	CID000160254
+miltirone	CID000160142
+hydroxytanshinone
+sugiol	CID000094162
+tanshinlactone
+sanguiin
+santalol	CID005351571
+alpha-santalol	CID000008283
+beta-santalene	CID000010534
+beta-santalol	CID000060970
+5-o-methylvisamminol	CID000441970
+schizandrin	CID003001666
+deoxyschizandrin
+schisantherin
+menthone	CID000006986
+l-limonene	CID005319026
+wogonoside	CID003084961
+skullcapflavone
+scutellarein	CID005281697
+alpha-globulin
+sesamolin	CID000101746
+sinalbin	CID000415565
+scirpusin
+soladulcidine	CID000065576
+cycloartanol	CID005316233
+solasodine	CID000005250
+solanidine	CID000065727
+matrine	CID000091466
+sophocarpine	CID000115269
+sophoridine	CID000091466
+sophoramine	CID000169014
+kuraridin
+trifolirhizin	CID000442827
+oxysophocarpine	CID000161544
+maackiain	CID000091510
+kuraridinol	CID005318880
+aloperine	CID000162147
+anagyrine	CID000010246
+methylcytisine
+n-methylcytisine	CID000234566
+sophoranol	CID000619052
+sophoricoside	CID005321398
+sophorabioside	CID011968944
+cytisine	CID000010235
+tuberostemonine	CID000100781
+stenine	CID000177761
+cepharanthine	CID000010206
+isotetrandrine	CID000458618
+berbamine	CID000010170
+cauloside
+brucine	CID000009649
+pinitol	CID000151108
+protodioscin	CID000441891
+hecogenin	CID000003573
+neotigogenin	CID000091433
+gitogenin	CID000287688
+yamogenin	CID000010536
+neogitogenin	CID000287688
+cucurbitacin

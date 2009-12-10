@@ -28,7 +28,7 @@ def service(path):
 infilename = '../test/not_unique_mapping.csv'
 infile = codecs.open(infilename, mode='r', encoding='UTF-8')
 
-outfilename = 'protein-info-2.ttl'
+outfilename = 'protein-mapping.ttl'
 outfile = codecs.open(outfilename, mode='w', encoding='UTF-8')
 
 genename = '<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/'
@@ -36,14 +36,12 @@ proteinname = '<http://purl.org/net/open-biomed/id/ensembl/protein/'
 berlinprotein = '<http://www4.wiwiss.fu-berlin.de/stitch/resource/proteins/'
 
 type_protein = '<http://purl.org/net/open-biomed/ensembl/schema/Protein>'
-type_protein_interactions = '<http://purl.org/net/open-biomed/ensembl/schema/ProteinInteractions>'
 
 predicate_owlsame = '<http://www.w3.org/2002/07/owl#sameAs>'
 predicate_species = '<http://purl.org/net/open-biomed/ensembl/schema/species>'
 predicate_description = '<http://www.w3.org/2000/01/rdf-schema#description>'
 predicate_label = '<http://www.w3.org/2000/01/rdf-schema#label>'
 predicate_symbol = '<http://purl.org/net/open-biomed/ensembl/schema/symbol>'
-predicate_protein = '<http://purl.org/net/open-biomed/ensembl/schema/proteinOfPI>'
 
 # read in the genes
 
@@ -62,17 +60,9 @@ for row in reader:
     # process the result, add the tsv file to the outfile
     if (result):
         
-        read_result = result.split("\t")
+        output = genename + tcmgeneid.strip() + ">\t" + predicate_owlsame + "\t" + proteinname + ensemblproteinid + "> .\n"
         
-        output = proteinname + ensemblproteinid + ">\t a \t" + type_protein + " ; \n"
-        
-        output += "\t " + predicate_species + "\t \"" + read_result[2].strip() + "\" ; \n"
-        
-        output += "\t " + predicate_symbol + "\t \"" + read_result[3].strip() + "\" ; \n"
-        
-        output += "\t " + predicate_label + "\t \"" + read_result[3].strip() + "\" ; \n"
-        
-        output += "\t " + predicate_description + "\t \"" + read_result[4].strip() + "\" .\n"
+        output = proteinname + ensemblproteinid + ">\t" + predicate_owlsame + "\t" + berlinprotein + ensemblproteinid[5:len(ensemblproteinid)] + "> .\n"
             
         outfile.write(output+"\n")
         outfile.flush
