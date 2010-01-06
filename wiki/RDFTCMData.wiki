@@ -60,6 +60,15 @@ Notice: there is a server move on the weeks of  26 June - 3 July, 2009
 === Release 3 ===
  * http://www.open-biomed.org.uk/tcmdata/tcm_rdf_data_release3_190609_ttl.tar.gz
 
+Statistics about the data:
+ * Number of triples: 117,643
+ * Number of outgoing links: 3,438
+ * Number of genes: 1236
+ * Number of herbs: 1155
+ * Number of ingredients: 1064
+ * Number of diseases: 553
+ * Number of effects: 241
+
 === Release 2 ===
  * http://purl.oclc.org/NET/tcm/tcm_rdf_data_release2_270409.tar.gz
  * http://purl.oclc.org/NET/tcm/tcm_rdf_data_release2_270409_ttl.tar.gz
