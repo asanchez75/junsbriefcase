@@ -63,8 +63,8 @@ Notice: there is a server move on the weeks of  26 June - 3 July, 2009
 Statistics about the data:
  * Number of triples: 117,643
  * Number of outgoing links: 3,438
- * Number of genes: 1236
- * Number of herbs: 1155
+ * Number of genes: 945
+ * Number of herbs: 848
  * Number of ingredients: 1064
  * Number of diseases: 553
  * Number of effects: 241
