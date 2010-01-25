@@ -61,7 +61,7 @@ Notice: there is a server move on the weeks of  26 June - 3 July, 2009
  * http://www.open-biomed.org.uk/tcmdata/tcm_rdf_data_release3_190609_ttl.tar.gz
 
 Statistics about the data:
- * Number of triples: 117,643
+ * Number of triples: 111,021
  * Number of outgoing links: 3,438
  * Number of genes: 945
  * Number of herbs: 848
