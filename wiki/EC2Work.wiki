@@ -167,7 +167,7 @@ scp -i .ec2/id_rsa-openbiomed-keypair .ec2/pk-XXXX.pem .ec2/cert-XXXX.pem root@e
 #
 ssh -i .ec2/id_rsa-openbiomed-keypair root@ec2-72-44-34-80.compute-1.amazonaws.com
 ## follow the instruction in the GettingStartedGuide to create the bundle
-#
+# http://docs.amazonwebservices.com/AWSEC2/2009-08-15/GettingStartedGuide/
 ## the bundle is successfully uploaed and ready for register
 ## bucket name open-biomed-bucket/open-biomed-rdf
 #
