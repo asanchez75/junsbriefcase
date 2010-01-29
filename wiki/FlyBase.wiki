@@ -2,7 +2,7 @@
 
 = FlyBase =
 
-On openbiomed-alpha (ec2-174-129-182-224.compute-1.amazonaws.com, m1.medium) (graph name: )
+On openbiomed-alpha (ec2-174-129-182-224.compute-1.amazonaws.com, m1.medium) (graph name: http://purl.org/net/id/dataset/flybase-2010m2)
  * flybase-genetic-vanilla.nt: 766720 msec
  * 
 
