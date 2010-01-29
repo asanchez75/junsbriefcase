@@ -1,0 +1,7 @@
+#summary Load flybase on open-biomed and benchmarks
+
+= FlyBase =
+
+On openbiomed-alpha m1.medium
+ * flybase-genetic-vanilla.nt: 766720 msec
+ * 
