@@ -8,4 +8,4 @@ On openbiomed-alpha (ec2-174-129-182-224.compute-1.amazonaws.com, m1.medium) (gr
 
 On ubuntu9.10-64bit (ec2-75-101-203-98.compute-1.amazonaws.com, m1.large) (graph name: http://purl.org/net/id/dataset/flybase-2010m2)
  * flybase-genetic-vanilla.net: 710435 msec
- * flybase-sequence-feature-label.nt: 
+ * flybase-sequence-feature-label.nt: 1746268 msec
