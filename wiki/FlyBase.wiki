@@ -1,4 +1,5 @@
 #summary Load flybase on open-biomed and benchmarks
+#labels v
 
 = FlyBase =
 
@@ -12,3 +13,6 @@ On ubuntu9.10-64bit (ec2-75-101-203-98.compute-1.amazonaws.com, m1.large) (graph
  * flybase-sequence-feature-label.nt: 1746268 msec
  * flybase-sequence-feature-label-lowercase.nt: 3,491,306 msec
  * flybase-sequence-vanilla-synonyms.nt: 13,135,377 msec
+ * flybase-general-vanilla.nt: has to split the file
+ * flybase-sequence-feature-type.nt:
+ * flybase-sequence-synonym-type.nt:
