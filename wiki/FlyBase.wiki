@@ -9,11 +9,11 @@ On openbiomed-alpha (ec2-174-129-182-224.compute-1.amazonaws.com, m1.medium) (gr
  * flybase-sequence-feature-label-lowercase.nt:  msec
 
 On ubuntu9.10-64bit (ec2-75-101-203-98.compute-1.amazonaws.com, m1.large) (graph name: http://purl.org/net/id/dataset/flybase-2010m2)
- * flybase-genetic-vanilla.net: 710435 msec
- * flybase-sequence-feature-label.nt: 1746268 msec
+ * flybase-genetic-vanilla.net: 710,435 msec
+ * flybase-sequence-feature-label.nt: 1,746,268 msec
  * flybase-sequence-feature-label-lowercase.nt: 3,491,306 msec
  * flybase-sequence-vanilla-synonyms.nt: 13,135,377 msec
  * flybase-general-vanilla.nt: has to split the file
- * flybase-sequence-feature-type.nt: 1311540+167618msec
+ * flybase-sequence-feature-type.nt: 1,479,158 msec (24.6 mins)
  * flybase-sequence-synonym-type.nt:
  * flybase-sequence-vanilla-feature.nt:has to split the file
