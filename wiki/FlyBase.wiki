@@ -23,7 +23,10 @@ sudo mount /media/virtuoso
 {{{
 ### to make the volume available for a small instance
 ### create a snapshot of the volume
-
+ec2-create-snapshot volume_id
+### describe a snapshot
+ec2-describe-snapshots snap-78a54011
+ec2-describe-snapshot-attribute snap-78a54011
 }}}
 
 = Attach the volume to a small instance =
