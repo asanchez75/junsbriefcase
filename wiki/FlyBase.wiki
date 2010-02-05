@@ -1,19 +1,37 @@
-#summary Load flybase on open-biomed and benchmarks
-#labels v
+#summary Load flybase on ec2
+#labels flybase,ec2
 
-= FlyBase =
+= Load FlyBase on an XL Instance=
+{{{
+# create an extra large instance through the console
+# create a volume of 40GB and attach it to the instance through the console
+# format the volume to make it available for the instance
+sudo modprobe xfs
+sudo mkfs.xfs /dev/sdi 
 
-On openbiomed-alpha (ec2-174-129-182-224.compute-1.amazonaws.com, m1.medium) (graph name: http://purl.org/net/id/dataset/flybase-2010m2)
- * flybase-genetic-vanilla.nt: 635526 msec
- * flybase-sequence-feature-label.nt: 693529 msec
- * flybase-sequence-feature-label-lowercase.nt:  msec
+echo "/dev/sdi /media/virtuoso xfs noatime 0 0" | sudo tee -a /etc/fstab
+sudo mkdir /media/virtuoso
+sudo mount /media/virtuoso 
 
-On ubuntu9.10-64bit (ec2-75-101-203-98.compute-1.amazonaws.com, m1.large) (graph name: http://purl.org/net/id/dataset/flybase-2010m2)
- * flybase-genetic-vanilla.net: 710,435 msec
- * flybase-sequence-feature-label.nt: 1,746,268 msec
- * flybase-sequence-feature-label-lowercase.nt: 3,491,306 msec
- * flybase-sequence-vanilla-synonyms.nt: 13,135,377 msec
- * flybase-general-vanilla.nt: has to split the file
- * flybase-sequence-feature-type.nt: 1,479,158 msec (24.6 mins)
- * flybase-sequence-synonym-type.nt:
- * flybase-sequence-vanilla-feature.nt:has to split the file
+# install virtuoso on /media/virtuoso
+
+#### load flybase data using isql
+#### see http://www.openlinksw.com/dataspace/dav/wiki/Main/VirtBulkRDFLoader
+}}}
+
+= Create a snapshot of the volume ==
+{{{
+### to make the volume available for a small instance
+### create a snapshot of the volume
+
+}}}
+
+= Attach the volume to a small instance =
+{{{
+## create another small instance of open-biomed
+## create a volume using the snapshot
+
+## attach the volume to the instance
+
+## check virtuoso works and query works
+}}}
