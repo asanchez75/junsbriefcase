@@ -7,6 +7,7 @@
 # create a volume of 40GB and attach it to the instance through the console
 # format the volume to make it available for the instance
 sudo modprobe xfs
+sudo apt-get install xfsprogs
 sudo mkfs.xfs /dev/sdi 
 
 echo "/dev/sdi /media/virtuoso xfs noatime 0 0" | sudo tee -a /etc/fstab
