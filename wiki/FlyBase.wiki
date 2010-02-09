@@ -14,6 +14,8 @@ echo "/dev/sdi /media/virtuoso xfs noatime 0 0" | sudo tee -a /etc/fstab
 sudo mkdir /media/virtuoso
 sudo mount /media/virtuoso 
 
+sudo mount /dev/sdh /mnt/data-store
+
 # install virtuoso on /media/virtuoso
 
 #### load flybase data using isql
@@ -23,6 +25,10 @@ sudo mount /media/virtuoso
 = Create a snapshot of the volume ==
 {{{
 ### to make the volume available for a small instance
+### stop the virtuoso service
+lsof aux | grep virtuoso
+### umount the disk
+umount /mnt/virtuoso
 ### create a snapshot of the volume
 ec2-create-snapshot volume_id
 ### describe a snapshot
