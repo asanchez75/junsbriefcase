@@ -57,7 +57,7 @@ admed.dbherb.Service._buildQueryForFindMedicineFromDbpedia = function( medicine 
 						
 		var body = 		"SELECT DISTINCT ?uri ?authority ?classis ?division ?family ?genus ?kingdom ?order ?species ?img ?label where { " +
 							"<" + medicine + "> foaf:page ?uri ." +
-							"optional{ <" + medicine + "> dbpedia:binomial_authority ?authority .}" +
+							"optional{ <" + medicine + "> dbpedia:binomialAuthority ?authority .}" +
 							"optional{ <" + medicine + "> dbpedia:classis ?classis.}" +
 							"optional{ <" + medicine + "> dbpedia:division ?division.} " +
 							"optional{ <" + medicine + "> dbpedia:family ?family.} " +

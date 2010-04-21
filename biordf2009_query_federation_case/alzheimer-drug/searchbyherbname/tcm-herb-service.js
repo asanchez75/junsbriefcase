@@ -56,11 +56,11 @@ admed.herbtcm.Service._buildQueryForFindMedicineFromDbpedia = function( medicine
 						"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ";
 						
 		var body = 		"SELECT DISTINCT ?herb ?medicine ?medicinename " +
-						"FROM <http://hcls.deri.org/resource/graph/tcm>" +
+						"FROM <http://purl.org/net/id/dataset/rdftcm-20100421> " +
 						"WHERE { " +
 							"?medicine rdfs:label ?medicinename . " +
 							" filter regex(?medicinename, \"^" + medicineName + "\")." +
-							"?herb owl:sameAs ?medicine ." +
+							"?herb owl:sameAs ?medicine . filter regex(?herb, \"http://dbpedia.org/\")" +
 						"}limit 7000";
 							
 		var query = prefixes + body;

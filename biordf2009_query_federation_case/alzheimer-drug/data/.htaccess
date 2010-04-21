@@ -6,8 +6,8 @@ RewriteEngine On
 # tcm
 #RewriteRule ^tcm(.*) http://lod.openlinksw.com/sparql$1 [proxy]
 #RewriteRule ^tcm(.*) http://naxos.zoo.ox.ac.uk:8890/sparql$1 [proxy]
-#RewriteRule ^tcm(.*) http://www.open-biomed.org.uk/sparql/$1 [proxy]
-RewriteRule ^tcm(.*) http://hcls.deri.org/sparql/$1 [proxy]
+RewriteRule ^tcm(.*) http://www.open-biomed.org.uk/sparql/$1 [proxy]
+#RewriteRule ^tcm(.*) http://hcls.deri.org/sparql/$1 [proxy]
 
 #dbpedia
 RewriteRule ^dbpedia(.*)  http://dbpedia.org/sparql$1 [proxy]
@@ -17,7 +17,8 @@ RewriteRule ^dbpedia(.*)  http://dbpedia.org/sparql$1 [proxy]
 RewriteRule ^diseasome(.*) http://hcls.deri.org/sparql$1 [proxy]
 
 # LinkedCT
-RewriteRule ^linkedct(.*) http://data.linkedct.org/sparql$1 [proxy]
+#RewriteRule ^linkedct(.*) http://data.linkedct.org/sparql$1 [proxy]
+RewriteRule ^linkedct(.*) http://linkedlifedata.com/sparql$1 [proxy]
 
 # dailyMed
 RewriteRule ^dailymed(.*) http://www4.wiwiss.fu-berlin.de/dailymed/sparql$1 [proxy]

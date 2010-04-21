@@ -194,6 +194,7 @@ function onHerbsFound(type, args){
 	herb = 	herbs[0].fullmedicineURL;
 	var herbname = herbs[0].herbname;
 	var dbherb = herbs[0].herbFromDbpedia;
+	log ("Find dbpedia herb " + dbherb);
 	effectWidget.findEffectByMedicineName(herb);
 	trialWidget.findTrialsForMedicine(herbname);
 	geneFinderwidget.findGenesAssociatedWithMedicine(herb);
