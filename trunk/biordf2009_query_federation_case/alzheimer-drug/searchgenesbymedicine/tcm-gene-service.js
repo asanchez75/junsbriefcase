@@ -69,7 +69,8 @@ admed.genetcm.Service._buildQueryForFindGenesAssociatedWithMedicine = function( 
 						"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ";
 						
 		var body = 		"SELECT DISTINCT ?gene ?genename ?externalgene ?entrezgene " +
-							"FROM <http://hcls.deri.org/resource/graph/tcm> " +
+							//"FROM <http://hcls.deri.org/resource/graph/tcm> " +
+							"FROM <http://purl.org/net/id/dataset/rdftcm-20100421>" +
 							"WHERE { " +
 							"?disease rdfs:label ?diseasename . " +
 							" filter regex(?diseasename, \"^Alzheimer\")." +
@@ -97,7 +98,8 @@ admed.genetcm.Service._buildQueryForFindGenesAssociatedWithMedicineForDisease = 
 						"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ";
 						
 		var body = 		"SELECT DISTINCT ?gene ?genename ?externalgene ?entrezgene " +
-							"FROM <http://hcls.deri.org/resource/graph/tcm> " +
+							//"FROM <http://hcls.deri.org/resource/graph/tcm> " +
+							"FROM <http://purl.org/net/id/dataset/rdftcm-20100421>" +
 							"WHERE { " +
 							"?disease rdfs:label ?diseasename . " +
 							" filter regex(?diseasename, \"^" + diseasename + "\")." +
