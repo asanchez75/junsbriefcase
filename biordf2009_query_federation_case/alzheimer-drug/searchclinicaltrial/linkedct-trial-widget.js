@@ -451,7 +451,7 @@ admed.linkedct.Widget.DefaultRenderer.prototype._renderResultsSummary = function
 	    content += count;
 	    content += "</span> matching trial";
 	    content += (count == 0 || count > 1) ? "s " : " ";
-	    content += "from <a href='http://data.linkedct.org/'>LinkedCT</a> for ";
+	    content += "from <a href='http://linkedlifedata.com/sparql/'>LinkedCT</a>, powered by <a href='http://linkedlifedata.com/'>Linked Life Data project</a>, for ";
 	    content += "medicine <span>'"+query+"'</span>";
 	    	    
 	    this._resultsSummaryPane.innerHTML = content;
