@@ -8,6 +8,31 @@ where G = DB.DBA.RDF_MAKE_IID_OF_QNAME (
     'http://local.virt/DAV/sparql_demo/data/data-xml/source-simple2/source-data-01.rdf' );
 }}}
 
+= find all the graphs in the store =
+In the isql interface
+
+{{{
+create procedure all_graphs ()
+{
+  declare i any;
+  declare g varchar;
+  result_names (g);
+ i := iri_id_from_num (0);
+  while (1)
+    {
+    i := (select top 1 g from rdf_quad where g > i);
+      if (i is  null) return;
+      result (id_to_iri (i));
+    } 
+ done: ;
+}
+}}}
+
+Then 
+{{{
+call all_graphs();
+}}}
+
 = Load data into Virtuoso RDF Store at Rodos =
 
 == Load TCM RDF Release 3 into local virtuoso ==
