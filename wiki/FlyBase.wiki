@@ -44,4 +44,8 @@ ec2-describe-snapshot-attribute snap-78a54011
 ## attach the volume to the instance
 
 ## check virtuoso works and query works
+
+The virtuoso configuration file has to be changed to point to the data store in the attached volume, because the virtuoso software on the volume is compile for 64-bit machine and cannot be directly launched by the small instance.
 }}}
+
+Note: it's always a good idea to use the XL instance to load and index the data, and to create new snapshots and volumes for the small instance to use.
