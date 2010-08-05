@@ -1,5 +1,81 @@
-#summary Load flybase on ec2
+#summary Recipe for creating new Flybase dump and then loading flybase on ec2
 #labels flybase,ec2
+
+
+= Recipe =
+ # create dump
+  ## create a m.large instance
+  ## create or attach a volume (~20G) to the instance
+  ## using d2r dump-rdf to create RDF dump of FlyBase
+ # load dump
+  ## create a m.xlarge instance
+  ## create or attach a volume to the instance, with virtuoso installed
+  ## create small RDF files to be loaded to the RDF store
+
+= Create RDF data dump =
+
+== create instance ==
+# create a large 64-bit ubuntu instance through the console
+
+== create volume ==
+
+fb20106: the small dump is ~2G and the full dump is ~12G.
+
+Launch a volume based on the 40G snapshot snap-6240e509 and attach it to m.large instance through the console.
+
+Mount the volume to the instance:
+{{{
+mkdir /mnt/flybase-data-dump/
+
+mount /dev/sdh/ /mnt/flybase-data-dump/
+}}}
+
+== create dump ==
+{{{
+# go to ./googlecode_openflydata_chado/utils/
+# set paths
+export D2RROOT = /mnt/flybase-data-dump/d2r-server-0.7
+export CHADOROOT = /mnt/flybase-data-dump/googlecode_openflydata_chado
+
+# create dump
+./flybase-mini-dump.sh ../flybase-data-dump-milestone/
+
+}}}
+
+The dump has to be created table by table, because flybase restricts how many users can connect to the postgres server synchronously.
+
+To create a small dump the script should set to:
+{{{
+echo "=== general module ==="
+dump dbxref dbxref-vanilla-small
+dump general general-vanilla-small
+
+echo "=== organism module ==="
+dump organism organism-vanilla
+
+echo "=== sequence module ==="
+dump synonym synonym-small
+dump feature feature-type-small
+dump featurelabel feature-label-small
+dump synonymtype synonym-type-small
+}}}
+
+To create a full dump, the script should be set to:
+{{{
+echo "=== general module ==="
+dump dbxref dbxref-vanilla
+dump general general-vanilla
+
+echo "=== organism module ==="
+dump organism organism-vanilla
+
+echo "=== sequence module ==="
+dump synonym synonym
+dump feature feature-type
+dump featurelabel feature-label
+dump synonymtype synonym-type
+
+}}}
 
 = Load FlyBase on an XL Instance=
 {{{
