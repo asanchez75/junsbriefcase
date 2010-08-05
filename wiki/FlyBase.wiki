@@ -15,7 +15,9 @@
 = Create RDF data dump =
 
 == create instance ==
-# create a large 64-bit ubuntu instance through the console
+# create a large 64-bit ubuntu instance through the console, such as ami-eef61587
+
+See also: http://alestic.com/
 
 == create volume ==
 
@@ -23,7 +25,7 @@ fb20106: the small dump is ~2G and the full dump is ~12G.
 
 Launch a volume based on the 40G snapshot snap-6240e509 and attach it to m.large instance through the console.
 
-Mount the volume to the instance:
+Log into the m.large instance and mount the volume to the instance:
 {{{
 mkdir /mnt/flybase-data-dump/
 
@@ -38,7 +40,7 @@ export D2RROOT = /mnt/flybase-data-dump/d2r-server-0.7
 export CHADOROOT = /mnt/flybase-data-dump/googlecode_openflydata_chado
 
 # create dump
-./flybase-mini-dump.sh ../flybase-data-dump-milestone/
+./flybase-mini-dump.sh ../flybase-dump-fbyyyymm/
 
 }}}
 
@@ -78,6 +80,64 @@ dump synonymtype synonym-type
 }}}
 
 = Load FlyBase on an XL Instance=
+
+== Create an instance ==
+
+== Attach volume ==
+
+== Load data ==
+=== Install screen ===
+{{{
+cp /etc/apt/sources.list /etc/apt/sources.list.bk
+
+less /etc/apt/sources.list
+}}}
+
+### add the following lines to the file
+{{{
+deb http://us.archive.ubuntu.com/ubuntu/ jaunty universe
+deb-src http://us.archive.ubuntu.com/ubuntu/ jaunty universe
+deb http://us.archive.ubuntu.com/ubuntu/ jaunty-updates universe
+deb-src http://us.archive.ubuntu.com/ubuntu/ jaunty-updates universe
+}}}
+
+{{{
+sudo apt-get update
+apt-get install screen
+}}}
+
+=== Load data in screen ===
+{{{
+# start up virtuoso
+/mnt/virtuoso/bin/virtuoso-t
+# check virtuoso is up
+less virtuoso.log
+ps aux | grep virtuoso
+}}}
+
+{{{
+#Create an empty file with name: flybase-dbxref-vanilla-small.ext.graph
+
+cd /mnt/flybase-data-dump/flybase-dump-fb201006-small/
+
+apt-get install emacs
+
+emacs flybase-dbxref-vanilla-small.ext.graph
+
+# adding the graph IRI in the file
+http://purl.org/net/dataset/flybase-201006
+
+#Register the RDF data file with graph IRI 
+
+SQL>ld_dir ('/mnt/flybase-data-dump/flybase-dump-fb201006-small/', 'flybase-dbxref-vanilla-small.nt', 'http://purl.org/net/dataset/flybase-201006');
+
+# then execute
+SQL>rdf_loader_run ();
+}}}
+
+
+
+= Sandbox =
 {{{
 # create an extra large instance through the console
 # create a volume of 40GB and attach it to the instance through the console
