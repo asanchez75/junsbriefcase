@@ -124,12 +124,22 @@ apt-get install emacs
 
 emacs flybase-dbxref-vanilla-small.ext.graph
 
+or
+
+#Create an empty file with name: global.graph
+
+cd /mnt/flybase-data-dump/flybase-dump-fb201006-small/
+
+emacs global.graph
+
 # adding the graph IRI in the file
 http://purl.org/net/dataset/flybase-201006
 
 #Register the RDF data file with graph IRI 
 
 SQL>ld_dir ('/mnt/flybase-data-dump/flybase-dump-fb201006-small/', 'flybase-dbxref-vanilla-small.nt', 'http://purl.org/net/dataset/flybase-201006');
+
+SQL>ld_dir ('/mnt/flybase-data-dump/flybase-dump-fb201006-small/', '*.nt', 'http://purl.org/net/dataset/flybase-201006');
 
 # then execute
 SQL>rdf_loader_run ();
