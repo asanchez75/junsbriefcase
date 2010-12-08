@@ -1,16 +1,16 @@
 #summary instructions for creating an openflydata backup
 
-* set up TDB stor
-* set up SPARQLite server
+ * set up TDB store
+ * set up SPARQLite server
 
 
 = Dataset =
 
 The set of datasets used by the final openflydata release are:
-* Flybase: http://code.google.com/p/openflydata/wiki/FlyBaseMilestone3
-* BDGP: http://openflydata.org/dump/bdgp_images_20081030
-* FlyAtlas: http://openflydata.org/dump/flyatlas_20080916
-* FlyTED: http://openflydata.org/dump/flyted_20081203
+ * Flybase: http://code.google.com/p/openflydata/wiki/FlyBaseMilestone3
+ * BDGP: http://openflydata.org/dump/bdgp_images_20081030
+ * FlyAtlas: http://openflydata.org/dump/flyatlas_20080916
+ * FlyTED: http://openflydata.org/dump/flyted_20081203
 
 All the datasets were loaded into `/mnt/tmp/`.
 
