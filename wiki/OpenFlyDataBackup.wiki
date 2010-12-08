@@ -44,3 +44,14 @@ tdbloader --verbose --loc=/mnt/data1/tdb/flybase_genenames_20081017 /mnt/tmp/fly
 }}}
 
 = Set up SPARQLite =
+
+== deploy sparqlite from war ==
+
+ * http://sparqlite.googlecode.com/files/sparqlite-20090226-0.4-alpha4.war
+ * http://code.google.com/p/sparqlite/wiki/InstallConfigureSparqlite04
+
+{{{
+### in tomcat/webapps/sparqlite-0.4-alpha/
+unzip sparqlite-20090226-0.4-alpha4.war
+
+}}}
