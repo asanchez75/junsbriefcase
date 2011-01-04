@@ -15,3 +15,20 @@ Copy the `webapps/` directory to your tomcat/webapps/ directory such as tomcat/w
 The latest release of MILARQ is tested against TDB-0.8.8. It is not guaranteed to work with any other older or more recent versions.
 
 Loading data into TDB requires setting up the following class paths:
+{{{
+## go to MILARQROOT/workspace/tools
+
+## edit the file define_paths.sh according to your system
+## for example
+
+JAVA_BIN=${JAVA_BIN:-/usr/bin/java}
+
+WORKSPACE_ROOT=${WORKSPACE_ROOT:-/home/zhaoj/workspace}
+
+MILARQ_PROJECT=${MILARQ_PROJECT:-googlecode-milarq-20110104}
+
+## in the same directory, load data into a tdb database
+
+./tdbloader.sh -v --loc=/mnt/data/tdb/bdgp_20081030 /mnt/tmp/bdgp-images-all-20081030.nt >> /var/log/tdbloader-08.20110104.log
+
+}}}
