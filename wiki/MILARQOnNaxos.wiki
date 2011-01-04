@@ -32,3 +32,22 @@ MILARQ_PROJECT=${MILARQ_PROJECT:-googlecode-milarq-20110104}
 ./tdbloader.sh -v --loc=/mnt/data/tdb/bdgp_20081030 /mnt/tmp/bdgp-images-all-20081030.nt >> /var/log/tdbloader-08.20110104.log
 
 }}}
+
+
+== Create configure file in the MILARQ webapps ==
+{{{
+## go to tomcat/webapps/milarq/WEB_LIB/tdb/
+## you can find some existing milarq/sparlite configure files
+
+## create one named as bdgp-20081030.ttl
+
+@prefix tdb:     <http://jena.hpl.hp.com/2008/tdb#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ja:      <http://jena.hpl.hp.com/2005/11/Assembler#> .
+
+[] ja:loadClass "com.hp.hpl.jena.tdb.TDB" .
+
+<#dataset> rdf:type tdb:DatasetTDB ;
+    tdb:location "/mnt/data/tdb/bdgp_20081030" ;
+    .
+}}}
