@@ -38,3 +38,9 @@ tdbloader --verbose --loc=/mnt/data/tdb/bdgp_20081030 /mnt/tmp/bdgp-images-all-2
 ### in tomcat/webapps/sparqlite-0.4-alpha/
 unzip sparqlite-20090226-0.4-alpha4.war
 }}}
+
+== Test the BDGP SPARQL endpoint ==
+
+== Test the FlyBase SPARQL endpoint ==
+
+TODO
