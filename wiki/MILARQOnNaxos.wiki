@@ -1,0 +1,33 @@
+#summary Set up test and dev environment of MILARQ on Naxos
+
+= Install TDB =
+
+{{{
+mkdir /mnt/data
+mkdir /mnt/data/tdb
+cd /mnt/data
+
+wget http://downloads.sourceforge.net/jena/TDB-0.6.0.zip?modtime=1225187084&big_mirror=0
+ls
+unzip TDB-0.6.0.zip 
+ls
+mv TDB-0.6.0 /usr/local
+rm /usr/local/tdb
+ln -s /usr/local/TDB-0.6.0 /usr/local/tdb
+
+export TDBROOT=/usr/local/tdb
+export PATH=$TDBROOT/bin:$PATH
+chmod -R a+x /usr/local/tdb
+tdbloader --help
+
+#
+# tdbloader looks ok, try loading
+#
+tdbloader --verbose --loc=/mnt/data/tdb/bdgp_20081030 /mnt/tmp/bdgp-images-all-20081030.nt >> /var/log/tdbloader.20110104.log
+
+}}}
+
+= Install SPARQLite =
+
+
+
