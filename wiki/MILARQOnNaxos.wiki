@@ -41,6 +41,11 @@ unzip sparqlite-20090226-0.4-alpha4.war
 
 == Test the BDGP SPARQL endpoint ==
 
+The BDGP SPARQL endpoint at; http://localhost:8080/sparqlite-0.4/endpoint-lax/bdgp_20081030
+
+Run the endpoint test suite at: http://localhost/flyuidev/src/flyui/bdgp/test/
+
+
 == Test the FlyBase SPARQL endpoint ==
 
 TODO
