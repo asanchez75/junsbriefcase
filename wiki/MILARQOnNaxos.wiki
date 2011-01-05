@@ -35,6 +35,9 @@ MILARQ_PROJECT=${MILARQ_PROJECT:-googlecode-milarq-20110104}
 
 
 == Create configure file in the MILARQ webapps ==
+
+To use MILARQ to host SPARQL endpoint, you need to create configuration files for your TDB RDF data stores in the `MILARQ/WEB_LIB/tdb` directory. Note that the `sparqlite-assembly.ttl` file in the upper directory defines which configuration files are recognized by MILARQ.
+
 {{{
 ## go to tomcat/webapps/milarq/WEB_LIB/tdb/
 ## you can find some existing milarq/sparlite configure files
