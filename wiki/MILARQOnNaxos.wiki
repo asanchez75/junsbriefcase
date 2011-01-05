@@ -1,8 +1,6 @@
 #summary Set up test and dev environment of MILARQ on Naxos
 
 
-= Use MILARQ =
-
 Check out the milarq source code following the link at [http://code.google.com/p/milarq/source/checkout http://code.google.com/p/milarq/source/checkout].
 
 == Deploy MILARQ ==
@@ -10,7 +8,7 @@ Check out the milarq source code following the link at [http://code.google.com/p
 Build the checked out milarq project and then copy the `webapps/` directory to your tomcat/webapps/ directory such as tomcat/webapps/milarq. The `webapps/` directory should contain all the necessary configuration files, jar files and classes in the `WEB-INF/` directory. The deployment should work when you point to http://localhost:8080/milarq/
 
 
-== Load data into TDB ==
+=== Load data into TDB ===
 
 The latest release of MILARQ is tested against TDB-0.8.8. It is not guaranteed to work with any other older or more recent versions.
 
@@ -34,7 +32,7 @@ MILARQ_PROJECT=${MILARQ_PROJECT:-googlecode-milarq-20110104}
 }}}
 
 
-== Create configure file in the MILARQ webapps ==
+=== Create configure file for SPARQL endpoint ===
 
 To use MILARQ to host SPARQL endpoint, you need to create configuration files for your TDB RDF data stores in the `MILARQ/WEB_LIB/tdb` directory. Note that the `sparqlite-assembly.ttl` file in the upper directory defines which configuration files are recognized by MILARQ.
 
@@ -54,3 +52,6 @@ To use MILARQ to host SPARQL endpoint, you need to create configuration files fo
     tdb:location "/mnt/data/tdb/bdgp_20081030" ;
     .
 }}}
+
+
+== Create LARQ index ==
