@@ -52,6 +52,25 @@ To use MILARQ to host SPARQL endpoint, you need to create configuration files fo
     .
 }}}
 
+If you load your RDF data into separate Named Graphs and you don't want to specify the graph names in your SPARQL query, you need to edit the `sparqlite_assembly.ttl` file setting `lite:defaultGraphIsUnion` to `true`.
+
+{{{
+
+# Sparqlite assembly file.
+#
+# created by chris for milarq
+#
+@prefix tdb:    <http://jena.hpl.hp.com/2008/tdb#>.
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix ja:     <http://jena.hpl.hp.com/2005/11/Assembler#>.
+@prefix lite:   <http://purl.org/net/sparqlite/vocab#>.
+
+lite:root a lite:Sparqlite
+    ; lite:mapIf [lite:matches ".*"; lite:replacement "WEB-INF/tdb/%s.ttl"]
+    ; lite:defaultGraphIsUnion true
+    .
+
+}}}
 
 == Create The Basic LARQ index ==
 
@@ -63,7 +82,6 @@ The basic enhancement is to create Lucene indexes. This can be done by:
  * load your RDF data into an appropriate TDB data store
  * create the Lucene index using the `tdblarqindex` command line tool
 
-By copying from the `makecombineddata.sh` file we managed to create the extra lucene index in the milarq application file directories. The BDGP SPARQL test won't pass because we have to specify graph names in the test queries. But the basic test in the page of [http://localhost:8080/milarq/query.html http://localhost:8080/milarq/query.html] shows that the updated SPARQL endpoint still works.
+By copying from the `makecombineddata.sh` file we managed to create the extra lucene index in the milarq application file directories. 
 
 == Create Additional Indexes ==
-
