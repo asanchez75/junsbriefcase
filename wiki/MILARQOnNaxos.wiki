@@ -14,7 +14,7 @@ Build the checked out milarq project and then copy the `webapps/` directory to y
 
 The latest release of MILARQ is tested against TDB-0.8.8. It is not guaranteed to work with any other older or more recent versions.
 
-Loading data into TDB requires setting up the following class paths:
+You can use the script in the folder `workspace/tools/tdbloader.sh` to load data into TDB. The script uses the `define_paths.sh` script in the same directory. You need to set up the following class paths in the `define_paths.sh` script:
 {{{
 ## go to MILARQROOT/workspace/tools
 
