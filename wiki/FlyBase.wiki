@@ -36,7 +36,7 @@ mount /dev/sdh/ /mnt/flybase-data-dump/
 {{{
 # go to ./googlecode_openflydata_chado/utils/
 # set paths
-export D2RQOOT=/mnt/flybase-data-dump/d2r-server-0.7
+export D2RQROOT=/mnt/flybase-data-dump/d2r-server-0.7
 export CHADOROOT=/mnt/flybase-data-dump/googlecode_openflydata_chado
 
 # create dump, for example
