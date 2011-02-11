@@ -1,0 +1,113 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix : <#> .
+
+## your dataset
+:myDS rdf:type void:Dataset ;
+ foaf:homepage <http://www.open-biomed.org.uk/rdf-tcm/> ;
+ dcterms:title "RDF-TCM" ;
+ dcterms:description "A linked dataset based on TCMGeneDIT." ;
+ dcterms:publisher <http://users.ox.ac.uk/~zool0770/foaf.rdf#me> ;
+ dcterms:source <http://tcm.lifescience.ntu.edu.tw> ;
+ dcterms:license <http://creativecommons.org/licenses/by/2.0> ;
+ void:sparqlEndpoint <http://www.open-biomed.org.uk/sparql/> ;
+ void:dataDump <http://www.open-biomed.org.uk/tcmdata/tcm_rdf_data_release3_190609.tar.gz> ;
+ void:vocabulary <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/> ;
+ void:exampleResource <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/gene/MAPT> ;
+ void:exampleResource <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/medicine/Ginkgo_biloba> ;
+ void:exampleResource <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/effect/antiinflammatory> ;
+ void:exampleResource <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/disease/Alzheimer_Disease> ;
+ void:exampleResource <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/ingredient/glucoside> ;
+ void:exampleResource <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/association/1> ;
+ void:exampleResource <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/statistics/19087> ;
+ void:subset :myDS-DS1 ;
+ void:subset :myDS-DS2 ;
+ void:subset :myDS-DS3 ;
+ void:subset :myDS-DS4 ;
+ void:subset :myDS-DS5 ;
+ void:subset :myDS-DS6 ;
+ void:subset :myDS-DS7 .
+
+## datasets you link to
+
+# interlinking to :DS1
+:DS1 rdf:type void:Dataset ;
+ foaf:homepage <http://www4.wiwiss.fu-berlin.de/drugbank> ;
+ dcterms:title "Drugbank" ;
+ dcterms:description "Drugbank linked data" . 
+
+:myDS-DS1 rdf:type void:Linkset ;
+ void:linkPredicate <http://www.w3.org/2002/07/owl#sameAs> ;
+ void:target :myDS ;
+ void:target :DS1 .
+
+# interlinking to :DS2
+:DS2 rdf:type void:Dataset ;
+ foaf:homepage <http://dbpedia.org/> ;
+ dcterms:title "DBPedia" ;
+ dcterms:description "Linked Data version of Wikipedia." ; 
+ void:exampleResource <http://dbpedia.org/resource/Ludwig_van_Beethoven> .
+
+:myDS-DS2 rdf:type void:Linkset ;
+ void:linkPredicate <http://www.w3.org/2002/07/owl#sameAs> ;
+ void:target :myDS ;
+ void:target :DS2 .
+
+# interlinking to :DS3
+:DS3 rdf:type void:Dataset ;
+ foaf:homepage <http://www4.wiwiss.fu-berlin.de/dailymed/> ;
+ dcterms:title "DBPedia" ;
+ dcterms:description "Linked Data version of Wikipedia." ; 
+ void:exampleResource <http://dbpedia.org/resource/Ludwig_van_Beethoven> .
+
+:myDS-DS3 rdf:type void:Linkset ;
+ void:linkPredicate <http://www.w3.org/2002/07/owl#sameAs> ;
+ void:target :myDS ;
+ void:target :DS3 .
+
+# interlinking to :DS4
+:DS4 rdf:type void:Dataset ;
+ foaf:homepage <http://www4.wiwiss.fu-berlin.de/diseasome/> ;
+ dcterms:title "Diseasome" ;
+ dcterms:description "No description available." . 
+
+:myDS-DS4 rdf:type void:Linkset ;
+ void:linkPredicate <http://www.w3.org/2002/07/owl#sameAs> ;
+ void:target :myDS ;
+ void:target :DS4 .
+
+# interlinking to :DS5
+:DS5 rdf:type void:Dataset ;
+ foaf:homepage <http://www4.wiwiss.fu-berlin.de/sider/> ;
+ dcterms:title "SIDER" ;
+ dcterms:description "Side-effect database." . 
+
+:myDS-DS5 rdf:type void:Linkset ;
+ void:linkPredicate <http://www.w3.org/2002/07/owl#sameAs> ;
+ void:target :myDS ;
+ void:target :DS5 .
+
+# interlinking to :DS6
+:DS6 rdf:type void:Dataset ;
+ foaf:homepage <http://hcls.deri.org/sparql/> ;
+ dcterms:title "EntrezGene" ;
+ dcterms:description "Entrez Gene dataset hosted at DERI." . 
+
+:myDS-DS6 rdf:type void:Linkset ;
+ void:linkPredicate <http://www.w3.org/2002/07/owl#sameAs> ;
+ void:target :myDS ;
+ void:target :DS6 .
+
+# interlinking to :DS7
+:DS7 rdf:type void:Dataset ;
+ foaf:homepage <http://www4.wiwiss.fu-berlin.de/stitch/> ;
+ dcterms:title "STITCH" ;
+ dcterms:description "STITCH database containing protein and chemical interaction information." . 
+
+:myDS-DS7 rdf:type void:Linkset ;
+ void:linkPredicate <http://www.w3.org/2002/07/owl#sameAs> ;
+ void:target :myDS ;
+ void:target :DS7 .
