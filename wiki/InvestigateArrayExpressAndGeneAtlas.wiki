@@ -20,4 +20,4 @@ This investigation was created around 2011-Feb-18. It is based on !ArrayExpress 
    * Probe set–level queries are also permitted.
 
 == !GeneExpressionAtlas ==
-The Gene Expression Atlas is a semantically enriched database of meta-analysis based summary statistics over a curated subset of ArrayExpress Archive, servicing queries for condition-specific gene expression patterns as well as broader exploratory searches for biologically interesting genes/samples. 
+The Gene Expression Atlas is a semantically enriched database of meta-analysis based summary statistics over a curated subset of !ArrayExpress Archive, servicing queries for condition-specific gene expression patterns as well as broader exploratory searches for biologically interesting genes/samples. 
