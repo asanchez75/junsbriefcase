@@ -14,7 +14,7 @@ This investigation was created around 2011-Feb-18. It is based on !ArrayExpress 
 
 === Plan for demo applications ===
  * Recreate application by [http://genomebiology.com/2010/11/12/R124/about Zheng Genome Biology 2010]
- * Recreate the application by [http://www.nature.com/nbt/journal/v28/n4/full/nbt0410-322.html Lukk Nature BioTech 2010]
+ * Recreate the application by [http://www.nature.com/nbt/journal/v28/n4/full/nbt0410-322.html Lukk Nature BioTech 2010] ([http://www.ebi.ac.uk/gxa/array/U133A published app link broken]
    * After selecting a particular sample binning (e.g., by tissue of origin), the user can find all genes up- or downregulated in a particular sample class (such as liver)
    * choosing a gene of interest will produce box plots showing the gene's expression across the samples within each of the groups. The coloring of each box plot indicates the outcome of a statistical test for over- or underexpression.
    * Probe set–level queries are also permitted.
