@@ -21,3 +21,13 @@ This investigation was created around 2011-Feb-18. It is based on !ArrayExpress 
 
 == !GeneExpressionAtlas ==
 The Gene Expression Atlas is a semantically enriched database of meta-analysis based summary statistics over a curated subset of !ArrayExpress Archive, servicing queries for condition-specific gene expression patterns as well as broader exploratory searches for biologically interesting genes/samples. 
+
+GEA allows us to query for experiments reporting gene expression information about a given gene, along with some basic information about a gene.
+ * It does not provide access to e.g. latest flyatlas, flyted and flybase information.
+ * It is difficult to run queries, like genes matching a particular gene expression profile, or search for expressions of a set of homologue/orthologue genes across organisms
+
+=== Plan for demo applications ===
+  * Search experiments by gene name, mashed-up with the existing open-biomed batch gene search
+  * Search for genes and experiments matching a given expression profile (probably requiring a mapping between the EFO ontology and tissue names used by FlyAtlas)
+  * Search for expression data of homologue genes for Drosophila and Human
+  * Search for expression data of orthologue genes for Drosophila and Human
