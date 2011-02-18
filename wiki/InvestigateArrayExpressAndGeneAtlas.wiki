@@ -6,3 +6,7 @@ This investigation was created around 2011-Feb-18. It is based on !ArrayExpress 
 
  * [http://www.ebi.ac.uk/arrayexpress/browse.html?keywords=E-MTAB-27 A sample experiment record], as published in [http://genomebiology.com/2010/11/12/R124/about Zheng Genome Biology 2010]
  * Information about the database schema and access: http://www.ebi.ac.uk/fg/doc/software/ae_index.html
+
+=== Plan for demo applications ===
+ * Recreate application by [http://genomebiology.com/2010/11/12/R124/about Zheng Genome Biology 2010]
+ * Recreate the application by [http://www.nature.com/nbt/journal/v28/n4/full/nbt0410-322.html Lukk Nature BioTech 2010]
