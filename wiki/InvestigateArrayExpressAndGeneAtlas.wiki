@@ -28,6 +28,6 @@ GEA allows us to query for experiments reporting gene expression information abo
 
 === Plan for demo applications ===
   * Search experiments by gene name, mashed-up with the existing open-biomed batch gene search
-  * Search for genes and experiments matching a given expression profile (probably requiring a mapping between the EFO ontology and tissue names used by FlyAtlas)
+  * Search for genes and experiments matching a given expression profile (probably requiring a mapping between the EFO ontology and tissue names used by !FlyAtlas)
   * Search for expression data of homologue genes for Drosophila and Human
   * Search for expression data of orthologue genes for Drosophila and Human
