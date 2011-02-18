@@ -18,3 +18,6 @@ This investigation was created around 2011-Feb-18. It is based on !ArrayExpress 
    * After selecting a particular sample binning (e.g., by tissue of origin), the user can find all genes up- or downregulated in a particular sample class (such as liver)
    * choosing a gene of interest will produce box plots showing the gene's expression across the samples within each of the groups. The coloring of each box plot indicates the outcome of a statistical test for over- or underexpression.
    * Probe set–level queries are also permitted.
+
+== !GeneExpressionAtlas ==
+The Gene Expression Atlas is a semantically enriched database of meta-analysis based summary statistics over a curated subset of ArrayExpress Archive, servicing queries for condition-specific gene expression patterns as well as broader exploratory searches for biologically interesting genes/samples. 
