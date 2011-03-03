@@ -29,7 +29,9 @@ sudo apt-get install memcached php5-memcache
 }}}
 
 * Enable mod_rewrite
-`a2enmod rewrite`
+{{{
+a2enmod rewrite
+}}}
 
 * Enable .httpaccess to be recognized
 {{{
