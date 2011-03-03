@@ -27,3 +27,16 @@ sudo apt-get install php5-curl
 {{{
 sudo apt-get install memcached php5-memcache
 }}}
+
+* Enable mod_rewrite
+`a2enmod rewrite`
+
+* Enable .httpaccess to be recognized
+{{{
+<Directory /var/www/>
+Options FollowSymLinks MultiViews
+AllowOverride All
+Order allow,deny
+allow from all
+</Directory>
+}}}
