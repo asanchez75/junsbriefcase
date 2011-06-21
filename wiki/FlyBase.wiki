@@ -15,7 +15,7 @@
 = Create RDF data dump =
 
 == create instance ==
-# create a large 64-bit ubuntu instance through the console, such as ami-eef61587
+# create a large 64-bit ubuntu instance through the console, such as ami-eef61587 (ami-87a243ee the more recent and better one June 21, 2011)
 
 See also: http://alestic.com/
 
