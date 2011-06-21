@@ -129,6 +129,9 @@ mkdir /mnt/arrayexpress-tdb/lucene-literals
 }}}
 
 === Install java ===
+{{{
+sudo apt-get install sun-java6-jdk
+}}}
 === Install milarq ===
 {{{
 scp -i id_rsa-gsg-keypair milarq-201102-FM3.tar.gz root@ec2-50-17-150-17.compute-1.amazonaws.com:/mnt/
