@@ -115,7 +115,11 @@ apt-get install screen
 {{{
 mkdir /mnt/arrayexpress-tdb/
 
-mount /mnt/arrayexpress-tdb/ /dev/sdh/
+sudo modprobe xfs
+sudo apt-get install xfsprogs
+sudo mkfs.xfs /dev/sdi 
+
+mount /dev/sdh/ /mnt/arrayexpress-tdb/
 
 mkdir /mnt/arrayexpress-tdb/arrayexpress-data/20110621
 
