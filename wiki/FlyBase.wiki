@@ -111,6 +111,16 @@ sudo apt-get update
 apt-get install screen
 }}}
 
+=== Mount volume ===
+{{{
+ scp -i id_rsa-gsg-keypair milarq-201102-FM3.tar.gz root@ec2-50-17-150-17.compute-1.amazonaws.com:/mnt/
+
+scp -i id_rsa-gsg-keypair googlecode-milarq-20110104.tar.gz root@ec2-50-17-150-17.compute-1.amazonaws.com:/mnt/
+}}}
+=== Install milarq ===
+{{{
+scp 
+}}}
 === Load data in screen ===
 {{{
 # start up virtuoso
