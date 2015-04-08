@@ -1,0 +1,4 @@
+|Name | Date first processed | Date last processed | Data dump | Executed by | Toolkit | Data source page |
+|:----|:---------------------|:--------------------|:----------|:------------|:--------|:-----------------|
+| FlyTED | 2008-Nov-04 | 2010-Jul-09 | [tar.gz](http://www.open-biomed.org.uk/open-biomed-data/flyted-201007.tar.gz) | Jun | [oai2sparql](http://code.google.com/p/open-biomed/source/browse/#svn/trunk/oai2sparql) | [Flyted](http://code.google.com/p/open-biomed/wiki/Flyted) |
+| FlyTED-TO-FlyBase | 2008-Nov-04 | 2009-Jul-15 | [N-Triple](http://www.open-biomed.org.uk/open-biomed-data/flyted2flybase_20090715.nt) | Jun | [openflydata/flyted](http://code.google.com/p/openflydata/source/browse/#svn/trunk/flyted) | [Flyted](http://code.google.com/p/open-biomed/wiki/Flyted) |
